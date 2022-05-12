@@ -48,6 +48,9 @@ body {
 }
 .main_div0 {
   display: flex;
+    align-content: center;
+    justify-content: center;
+}
 }
 .main_div1 {
   margin-left: 30px;
