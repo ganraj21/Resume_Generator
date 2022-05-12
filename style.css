@@ -80,3 +80,6 @@ body {
   text-decoration: none;
   color: #2aacea;
 }
+.resume_t {
+  min-height: 100vh;
+}
