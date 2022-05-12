@@ -3,7 +3,9 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+.nav-link{
+ color: white; 
+}
 .header {
   width: 100%;
   display: flex;
