@@ -60,6 +60,9 @@ body {
   text-align: center;
   justify-content: center;
 }
+.main_div1 span{
+  color:#edb20e;
+}
 
 #cv-template {
   display: none;
