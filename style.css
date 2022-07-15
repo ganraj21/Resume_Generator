@@ -70,6 +70,7 @@ body {
 
 .row {
   display: flex;
+  width: 100%;
 }
 
 #cv-template {
