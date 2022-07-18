@@ -59,7 +59,7 @@
 
 @media (max-width: 480px) {
   .logo {
-    font-size: 24px;
+    font-size: 30px;
   }
   .nav_link {
     display: none;
@@ -71,7 +71,7 @@
     display: flex;
     font-size: 20px;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
   }
   .hamburger {
     display: flex;
@@ -134,7 +134,6 @@
   align-content: center;
 }
 h3 {
-  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
