@@ -57,6 +57,18 @@
   color: #2aacea;
 }
 
+.ab_footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.s_text,
+.p_text {
+  text-decoration: none;
+  color: rgb(0, 153, 255);
+}
+
 @media (max-width: 480px) {
   .logo {
     font-size: 30px;
