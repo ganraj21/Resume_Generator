@@ -1,6 +1,27 @@
+// menu for mobile
+
+const menu_fun = () => {
+  console.log('clicked on menu_fun')
+  document.getElementById('nav_link').style.display = 'block'
+}
+
+var menu = document.getElementById('menus')
+if (menu) {
+  menu.addEventListener('click', menu_fun)
+}
+
+// --------------------|--<
+
+backFun = () => {
+  // --------->
+}
+var back = document.getElementById('back_button')
+if (back) {
+  back.addEventListener('click', backFun)
+}
+
 function addNewWEField() {
   //   console.log('hey hii this is ganesh')
-
   let newNode = document.createElement('textarea')
   newNode.classList.add('form-control')
   newNode.classList.add('weField')
@@ -115,7 +136,6 @@ function generateCV() {
 }
 
 // print cv
-
 function printCV() {
   // window.print()
   const element = document.getElementById('cv-template')

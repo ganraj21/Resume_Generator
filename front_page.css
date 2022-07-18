@@ -1,0 +1,90 @@
+body {
+  background-color: rgb(80, 226, 219);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav_container {
+  display: flex;
+  padding: 9px;
+  height: 55px;
+  background-color: white;
+}
+.n_cp {
+  width: 100%;
+  display: flex;
+}
+.logo {
+  height: 33px;
+  margin-left: 15px;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+.hamburger {
+  display: none;
+}
+.side_narbar {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.nav_link {
+  display: flex;
+  margin-left: 27px;
+  color: black;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.front_page {
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main_div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-content: flex-start;
+  width: 70%;
+}
+h1 {
+  font-size: 55px;
+  margin-bottom: 1px;
+}
+.img_div {
+  width: 30%;
+}
+.btn_gs {
+  width: 98px;
+  height: 35px;
+  display: flex;
+  text-decoration: none;
+  background-color: aliceblue;
+  color: black;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 3px;
+}
+.lead {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
