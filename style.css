@@ -145,6 +145,17 @@
   flex-wrap: wrap;
   align-content: center;
 }
+.div_fields {
+  display: flex;
+  flex-direction: column;
+}
+.fields {
+  display: flex;
+}
+label,
+input {
+  display: flex;
+}
 h3 {
   display: flex;
   align-items: center;
