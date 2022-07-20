@@ -151,6 +151,8 @@
 }
 .fields {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 label,
 input {
@@ -173,6 +175,9 @@ h3 {
 .img_div {
   display: flex;
   width: fit-content;
+}
+.wrapper {
+  display: flex;
 }
 .second_col {
   display: none;
