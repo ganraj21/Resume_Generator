@@ -52,140 +52,143 @@
       </main>
     </div>
     <div class="container_01" id="cv-form">
-      <!-- first column -->
-      <div class="first_col">
-        <h3>Personal Information</h3>
-        <div class="div_fields">
-          <div class="fields">
-            <label for="nameField">Your Name</label>
+      <!-- 1,2,3 column wrapper div --->
+      <div class="wrapper">
+        <!-- first column -->
+        <div class="first_col">
+          <h3>Personal Information</h3>
+          <div class="div_fields">
+            <div class="fields">
+              <label for="nameField">Your Name</label>
+              <input
+                type="text"
+                id="nameField"
+                placeholder="Enter Here"
+                class="form-control"
+              />
+            </div>
+
+            <div class="fields">
+              <label for="contactField">Your Contact</label>
+              <input
+                type="text"
+                id="contactField"
+                placeholder="Enter Here"
+                class="form-control"
+              />
+            </div>
+
+            <div class="fields">
+              <label for="addressField">Your Address</label>
+              <textarea
+                id="addressField"
+                placeholder="Enter Here"
+                class="form-control"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="photo_field">
+              <label for="nameField">Select Your Profile Photo</label>
+              <input id="imgField" type="file" class="form-control" />
+            </div>
+          </div>
+        </div>
+
+        <!-- ----- -->
+        <!-- second coloum -->
+        <div class="second_col">
+          <h5>Important Links</h5>
+
+          <div class="form-group mt-2">
+            <label for="fbField">Facebook</label>
             <input
               type="text"
-              id="nameField"
+              id="fbField"
               placeholder="Enter Here"
               class="form-control"
             />
           </div>
-
-          <div class="fields">
-            <label for="contactField">Your Contact</label>
+          <div class="form-group mt-2">
+            <label for="instaField">Instagram</label>
             <input
               type="text"
-              id="contactField"
+              id="instaField"
               placeholder="Enter Here"
               class="form-control"
             />
           </div>
+          <div class="form-group mt-2">
+            <label for="linkedinField">LinkedIn</label>
+            <input
+              type="text"
+              id="linkedinField"
+              placeholder="Enter Here"
+              class="form-control"
+            />
+          </div>
+        </div>
+        <!-- ----- -->
+        <!-- third coloumn -->
+        <div class="third_col" id="ab">
+          <h3>Professional Information</h3>
 
-          <div class="fields">
-            <label for="addressField">Your Address</label>
+          <div class="form-group mt-2">
+            <label for="objectiveField">About Your-Self</label>
             <textarea
-              id="addressField"
+              id="objectiveField"
               placeholder="Enter Here"
-              class="form-control"
-              rows="5"
+              class="form-control weField"
             ></textarea>
           </div>
-          <div class="fields">
-            <label for="nameField">Select Your Profile Photo</label>
-            <input id="imgField" type="file" class="form-control" />
+
+          <div class="form-group mt-2" id="we">
+            <label for="">Work Experience</label>
+            <textarea
+              placeholder="Enter Here"
+              class="form-control weField"
+            ></textarea>
+            <!-- new textarea -->
+            <div class="container text-center mt-2" id="weAddButton">
+              <button
+                onclick="addNewWEField()"
+                class="btn btn-outline-warning btn-sm"
+              >
+                Add More Experience
+              </button>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <!-- ----- -->
-      <!-- second coloum -->
-      <div class="second_col">
-        <h5>Important Links</h5>
-
-        <div class="form-group mt-2">
-          <label for="fbField">Facebook</label>
-          <input
-            type="text"
-            id="fbField"
-            placeholder="Enter Here"
-            class="form-control"
-          />
-        </div>
-        <div class="form-group mt-2">
-          <label for="instaField">Instagram</label>
-          <input
-            type="text"
-            id="instaField"
-            placeholder="Enter Here"
-            class="form-control"
-          />
-        </div>
-        <div class="form-group mt-2">
-          <label for="linkedinField">LinkedIn</label>
-          <input
-            type="text"
-            id="linkedinField"
-            placeholder="Enter Here"
-            class="form-control"
-          />
-        </div>
-      </div>
-      <!-- ----- -->
-      <!-- third coloumn -->
-      <div class="third_col" id="ab">
-        <h3>Professional Information</h3>
-
-        <div class="form-group mt-2">
-          <label for="objectiveField">About Your-Self</label>
-          <textarea
-            id="objectiveField"
-            placeholder="Enter Here"
-            class="form-control weField"
-          ></textarea>
-        </div>
-
-        <div class="form-group mt-2" id="we">
-          <label for="">Work Experience</label>
-          <textarea
-            placeholder="Enter Here"
-            class="form-control weField"
-          ></textarea>
-          <!-- new textarea -->
-          <div class="container text-center mt-2" id="weAddButton">
-            <button
-              onclick="addNewWEField()"
-              class="btn btn-outline-warning btn-sm"
-            >
-              Add More Experience
-            </button>
+          <div class="form-group mt-2" id="aq">
+            <label for="">Academic Qualification</label>
+            <textarea
+              placeholder="Enter Here"
+              class="form-control aqField"
+            ></textarea>
+            <div class="container text-center mt-2" id="aqAddButton">
+              <button
+                onclick="addNewAQField()"
+                class="btn btn-outline-info btn-sm"
+              >
+                Add More Qualification
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div class="form-group mt-2" id="aq">
-          <label for="">Academic Qualification</label>
-          <textarea
-            placeholder="Enter Here"
-            class="form-control aqField"
-          ></textarea>
-          <div class="container text-center mt-2" id="aqAddButton">
-            <button
-              onclick="addNewAQField()"
-              class="btn btn-outline-info btn-sm"
-            >
-              Add More Qualification
-            </button>
-          </div>
-        </div>
-
-        <div class="form-group mt-2" id="sk">
-          <label for="">Your-Skills & Expertise</label>
-          <textarea
-            placeholder="Enter Here"
-            class="form-control skField"
-            rows="1"
-          ></textarea>
-          <div class="container text-center mt-2" id="skAddButton">
-            <button
-              onclick="addNewSKField()"
-              class="btn btn-outline-info btn-sm"
-            >
-              Add More Skills
-            </button>
+          <div class="form-group mt-2" id="sk">
+            <label for="">Your-Skills & Expertise</label>
+            <textarea
+              placeholder="Enter Here"
+              class="form-control skField"
+              rows="1"
+            ></textarea>
+            <div class="container text-center mt-2" id="skAddButton">
+              <button
+                onclick="addNewSKField()"
+                class="btn btn-outline-info btn-sm"
+              >
+                Add More Skills
+              </button>
+            </div>
           </div>
         </div>
       </div>
