@@ -94,4 +94,11 @@ h1 {
 }
 .photo_field {
   display: flex;
+  margin: 18px 0px 6px 3px;
+}
+#imgField {
+  border: none;
+}
+input[type="text"]:focus {
+  border: 3px solid rgb(34, 34, 34);
 }
