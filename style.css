@@ -148,15 +148,25 @@
 .div_fields {
   display: flex;
   flex-direction: column;
+  margin: 12px;
 }
 .fields {
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
-label,
+label {
+  display: flex;
+  height: 30px;
+  margin-left: 3px;
+  align-items: flex-end;
+}
 input {
   display: flex;
+  box-sizing: border-box;
+  height: 35px;
+  border-radius: 6px;
+  border: 1px solid rgb(255, 255, 255);
 }
 h3 {
   display: flex;
@@ -178,6 +188,10 @@ h3 {
 }
 .wrapper {
   display: flex;
+}
+.photo_field {
+  display: flex;
+  margin: 18px 0px 6px 3px;
 }
 .second_col {
   display: none;
