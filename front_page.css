@@ -99,6 +99,6 @@ h1 {
 #imgField {
   border: none;
 }
-input[type="text"]:focus {
+/* input[type="text"]:focus {
   border: 3px solid rgb(34, 34, 34);
-}
+} */
