@@ -20,6 +20,7 @@
     /> -->
     <link rel="stylesheet" href="./front_page.css" />
     <link rel="stylesheet" href="./second_page.css" />
+    <link rel="stylesheet" href="./third_page.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -139,76 +140,65 @@
         <div class="third_col" id="ab">
           <h3>Professional Information</h3>
 
-          <div class="form-group mt-2">
+          <div class="fields">
             <label for="objectiveField">About Your-Self</label>
             <textarea
               id="objectiveField"
               placeholder="Enter Here"
-              class="form-control weField"
+              class="form_input weField"
             ></textarea>
           </div>
 
-          <div class="form-group mt-2" id="we">
+          <div class="fields" id="we">
             <label for="">Work Experience</label>
             <textarea
               placeholder="Enter Here"
-              class="form-control weField"
+              class="form_input weField"
             ></textarea>
             <!-- new textarea -->
-            <div class="container text-center mt-2" id="weAddButton">
-              <button
-                onclick="addNewWEField()"
-                class="btn btn-outline-warning btn-sm"
-              >
+            <div class="add_button" id="weAddButton">
+              <button onclick="addNewWEField()" class="btns">
                 Add More Experience
               </button>
             </div>
           </div>
 
-          <div class="form-group mt-2" id="aq">
+          <div class="fields" id="aq">
             <label for="">Academic Qualification</label>
             <textarea
               placeholder="Enter Here"
-              class="form-control aqField"
+              class="form_input aqField"
             ></textarea>
-            <div class="container text-center mt-2" id="aqAddButton">
-              <button
-                onclick="addNewAQField()"
-                class="btn btn-outline-info btn-sm"
-              >
+            <div class="add_button" id="aqAddButton">
+              <button onclick="addNewAQField()" class="btns">
                 Add More Qualification
               </button>
             </div>
           </div>
 
-          <div class="form-group mt-2" id="sk">
+          <div class="fields" id="sk">
             <label for="">Your-Skills & Expertise</label>
             <textarea
               placeholder="Enter Here"
-              class="form-control skField"
+              class="form_input skField"
               rows="1"
             ></textarea>
-            <div class="container text-center mt-2" id="skAddButton">
-              <button
-                onclick="addNewSKField()"
-                class="btn btn-outline-info btn-sm"
-              >
+            <div class="add_button" id="skAddButton">
+              <button onclick="addNewSKField()" class="btns">
                 Add More Skills
               </button>
             </div>
           </div>
+          <!-- ----- -->
+          <!-- fourth column added to third col-->
+          <div class="field_generate"></div>
         </div>
       </div>
-      <!-- ----- -->
-      <!-- fourth column -->
-      <div class="fourth_col">
-        <button onclick="generateCV()" class="btn btn-success btn-lg mt-0">
-          Generate CV
-        </button>
-      </div>
+
       <div class="direction_button">
         <button class="back_button">Back</button>
         <button class="next_button">Next</button>
+        <button onclick="generateCV()" class="btn_gen">Generate CV</button>
       </div>
       <footer class="ab_footer">
         <p>
