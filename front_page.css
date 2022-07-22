@@ -99,9 +99,6 @@ h1 {
 #imgField {
   border: none;
 }
-/* input[type="text"]:focus {
-  border: 3px solid rgb(34, 34, 34);
-} */
 
 .form_group {
   width: 100%;
@@ -114,4 +111,3 @@ h1 {
   display: flex;
   width: 100%;
 }
-
