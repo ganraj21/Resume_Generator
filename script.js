@@ -10,7 +10,42 @@ if (menu) {
   menu.addEventListener('click', menu_fun)
 }
 
-// --------------------|--<
+// back button ---->
+var cnt = 1
+// first back button is disable only enable when click first next button
+document.getElementById('bb_btn').disabled = true
+
+document.getElementById('bb_btn').onclick = function () {
+  if (cnt == 1) {
+    document.getElementById('fc_div').style.display = 'block'
+    document.getElementById('sc_div').style.display = 'none'
+    document.getElementById('bb_btn').disabled = true
+    document.getElementById('nb_btn').disabled = false
+    document.getElementById('nb_btn').style.display = 'block'
+  } else if (cnt == 2) {
+    document.getElementById('sc_div').style.display = 'block'
+    document.getElementById('ab').style.display = 'none'
+    document.getElementById('nb_btn').style.display = 'block'
+  }
+  cnt--
+}
+// -----------|-<
+// for-ward button
+document.getElementById('nb_btn').disabled = false
+document.getElementById('nb_btn').onclick = function () {
+  if (cnt == 1) {
+    document.getElementById('fc_div').style.display = 'none'
+    document.getElementById('sc_div').style.display = 'block'
+    document.getElementById('bb_btn').disabled = false
+    document.getElementById('nb_btn').style.display = 'block'
+  } else if (cnt == 2) {
+    document.getElementById('sc_div').style.display = 'none'
+    document.getElementById('ab').style.display = 'block'
+    document.getElementById('nb_btn').style.display = 'none'
+    // document.getElementById('bt_gen').style.display = 'block'
+  }
+  cnt++
+}
 
 backFun = () => {
   // --------->
@@ -122,14 +157,14 @@ function generateCV() {
   }
   document.getElementById('aqT').innerHTML = str1
 
-//this code is for setting photo
-//let file = document.getElementById('imgField').files[0]
-//let reader = new FileReader()
-//reader.readAsDataURL(file)
+  //this code is for setting photo
+  //let file = document.getElementById('imgField').files[0]
+  //let reader = new FileReader()
+  //reader.readAsDataURL(file)
 
- // reader.onloadend = function () {
+  // reader.onloadend = function () {
   //   document.getElementById('imgTemplate').src = reader.result
- // }
+  // }
 
   document.getElementById('cv-form').style.display = 'none'
   document.getElementById('cv-template').style.display = 'block'
