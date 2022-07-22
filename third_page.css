@@ -29,3 +29,23 @@
   /* display: flex;
   padding: 12px; */
 }
+.back_button {
+  display: flex;
+  width: 75px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  border-radius: 6px;
+  border: 1px;
+}
+.next_button {
+  display: flex;
+  width: 75px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  border-radius: 6px;
+  border: 1px;
+}
