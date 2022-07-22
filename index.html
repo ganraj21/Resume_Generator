@@ -57,7 +57,7 @@
       <!-- 1,2,3 column wrapper div --->
       <div class="wrapper">
         <!-- first column -->
-        <div class="first_col">
+        <div class="first_col" id="fc_div">
           <h3>Personal Information</h3>
 
           <div class="div_fields">
@@ -101,7 +101,7 @@
 
         <!-- ----- -->
         <!-- second coloum -->
-        <div class="second_col">
+        <div class="second_col" id="sc_div">
           <h2>Important Links</h2>
           <!-- <div class="updiv"> -->
           <div class="div_fields">
@@ -189,17 +189,18 @@
               </button>
             </div>
           </div>
-          <!-- ----- -->
-          <!-- fourth column added to third col-->
-          <div class="field_generate"></div>
         </div>
       </div>
 
       <div class="direction_button">
-        <button class="back_button">Back</button>
-        <button class="next_button">Next</button>
-        <button onclick="generateCV()" class="btn_gen">Generate CV</button>
+        <button id="bb_btn" class="back_button">Back</button>
+        <button id="nb_btn" class="next_button">Next</button>
+        <button onclick="generateCV()" class="btn_gen" id="bt_gen">
+          Generate CV
+        </button>
       </div>
+
+      <!-- footer of this project -->
       <footer class="ab_footer">
         <p>
           Resume template for
