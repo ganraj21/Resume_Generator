@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap");
+
 .container_01 {
   flex-direction: column;
   display: flex;
@@ -18,7 +20,7 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-content: center;
 }
 .first_col {
@@ -33,6 +35,7 @@
   align-items: center;
   justify-content: center;
   font-size: 27px;
+  color: #0099ef;
 }
 .div_fields {
   display: flex;
@@ -50,7 +53,15 @@ label {
   display: flex;
   height: 30px;
   margin-left: 3px;
+  font-weight: 500;
   align-items: flex-end;
+  font-family: "Poppins", sans-serif;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: "Poppins", sans-serif;
+  margin-left: 16px;
+  padding-left: 10px;
 }
 input {
   display: flex;
@@ -61,17 +72,33 @@ input {
 }
 .form_input {
   border-radius: 3px;
-  height: 30px;
+  background-color: #e5e5e5;
+  height: 35px;
   border: 1px;
 }
-
+input[type="file"] {
+  opacity: 0; /* make transparent */
+  z-index: -1; /* move under anything else */
+  position: absolute; /* don't let it take up space */
+}
 .photo_field {
   display: flex;
   margin: 18px 0px 6px 3px;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 .supp {
+  height: 35px;
   display: flex;
-  align-items: flex-start;
+  width: 100%;
+  font-weight: 600;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: #0099ef;
+  border-color: #0099ef;
+}
+.supp:hover {
+  background-color: #0099ef;
+  color: white;
 }
