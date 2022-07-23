@@ -1,0 +1,15 @@
+.second_col {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+.second_col h2 {
+  display: flex;
+  align-items: center;
+  font-size: 27px;
+  align-content: center;
+  justify-content: center;
+}

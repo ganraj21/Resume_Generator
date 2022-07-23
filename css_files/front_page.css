@@ -1,41 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Kanit:wght@400;500;600;800;900&family=Poppins:wght@200;300;400;500;600&display=swap");
 body {
   background-color: rgb(80, 226, 219);
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-.nav_container {
-  display: flex;
-  padding: 9px;
-  height: 55px;
-  background-color: white;
-}
-.n_cp {
-  width: 100%;
-  display: flex;
-}
-.logo {
-  height: 33px;
-  margin-left: 15px;
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-}
-.hamburger {
-  display: none;
-}
-.side_narbar {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-}
-.nav_link {
-  display: flex;
-  margin-left: 27px;
-  color: black;
-  text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 .front_page {
   height: 200vh;
   display: flex;
@@ -62,11 +32,15 @@ body {
   width: 70%;
 }
 h1 {
-  font-size: 55px;
+  font-size: 45px;
   margin-bottom: 1px;
 }
-.img_div {
-  width: 30%;
+.lead {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .btn_gs {
   width: 98px;
@@ -81,10 +55,29 @@ h1 {
   align-content: center;
   border-radius: 3px;
 }
-.lead {
+.img_div {
+  width: 30%;
+}
+
+.photo_field {
   display: flex;
-  width: 80%;
+  margin: 18px 0px 6px 3px;
+}
+.img_div {
+  display: flex;
+  width: fit-content;
+}
+.first_img {
+  width: 100%;
+  height: auto;
+}
+#imgField {
+  border: none;
+}
+
+.form_group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }

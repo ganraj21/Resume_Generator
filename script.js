@@ -10,15 +10,52 @@ if (menu) {
   menu.addEventListener('click', menu_fun)
 }
 
-// --------------------|--<
+// back button ---->
+var cnt = 1
+// first back button is disable only enable when click first next button
+document.getElementById('bb_btn').disabled = true
 
 backFun = () => {
-  // --------->
+  if (cnt == 1) {
+    document.getElementById('fc_div').style.display = 'flex'
+    document.getElementById('sc_div').style.display = 'none'
+    document.getElementById('bb_btn').disabled = true
+    document.getElementById('nb_btn').disabled = false
+    document.getElementById('nb_btn').style.display = 'flex'
+    document.getElementById('bt_gen').style.display = 'none'
+  } else if (cnt == 2) {
+    document.getElementById('sc_div').style.display = 'flex'
+    document.getElementById('ab').style.display = 'none'
+    document.getElementById('nb_btn').style.display = 'flex'
+    document.getElementById('bt_gen').style.display = 'none'
+  }
+  cnt--
 }
-var back = document.getElementById('back_button')
-if (back) {
-  back.addEventListener('click', backFun)
+// -----------|-<
+// for-ward button
+document.getElementById('nb_btn').disabled = false
+nextFun = () => {
+  if (cnt == 1) {
+    document.getElementById('fc_div').style.display = 'none'
+    document.getElementById('sc_div').style.display = 'flex'
+    document.getElementById('bb_btn').disabled = false
+    document.getElementById('nb_btn').style.display = 'flex'
+  } else if (cnt == 2) {
+    document.getElementById('sc_div').style.display = 'none'
+    document.getElementById('ab').style.display = 'flex'
+    document.getElementById('nb_btn').style.display = 'none'
+    document.getElementById('bt_gen').style.display = 'flex'
+  }
+  cnt++
 }
+
+// events for button back , next
+const back = document.getElementById('bb_btn')
+const next = document.getElementById('nb_btn')
+
+back.addEventListener('click', backFun)
+next.addEventListener('click', nextFun)
+// ----------|-<
 
 function addNewWEField() {
   //   console.log('hey hii this is ganesh')
@@ -53,7 +90,7 @@ function addNewSKField() {
   newNode.classList.add('form-control')
   newNode.classList.add('skField')
   newNode.classList.add('mt-2')
-  newNode.setAttribute('rows', 1)
+  newNode.setAttribute('rows', 2)
   newNode.setAttribute('placeholder', 'Enter Here')
 
   let skOb = document.getElementById('sk')
@@ -122,14 +159,14 @@ function generateCV() {
   }
   document.getElementById('aqT').innerHTML = str1
 
-//this code is for setting photo
-//let file = document.getElementById('imgField').files[0]
-//let reader = new FileReader()
-//reader.readAsDataURL(file)
+  //this code is for setting photo
+  //let file = document.getElementById('imgField').files[0]
+  //let reader = new FileReader()
+  //reader.readAsDataURL(file)
 
- // reader.onloadend = function () {
+  // reader.onloadend = function () {
   //   document.getElementById('imgTemplate').src = reader.result
- // }
+  // }
 
   document.getElementById('cv-form').style.display = 'none'
   document.getElementById('cv-template').style.display = 'block'

@@ -1,0 +1,22 @@
+{
+  "name": "responsive-resume-cv-website-using-html-css-and-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganraj21/Resume_generator.git"
+  },
+  "author": "Ganesh Ghadge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ganraj21/Resume_generator/issues"
+  },
+  "homepage": "https://github.com/ganraj21/Resume_generator#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
