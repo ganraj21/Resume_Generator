@@ -19,6 +19,9 @@
       crossorigin="anonymous"
     /> -->
     <link rel="stylesheet" href="./front_page.css" />
+    <link rel="stylesheet" href="./first_col.css" />
+    <link rel="stylesheet" href="./second_col.css" />
+    <link rel="stylesheet" href="./third_col.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -35,6 +38,7 @@
         <a class="nav_link" href="#">Contact</a>
       </nav>
     </div>
+    <!-- front_page  -->
     <div class="front_page">
       <main class="container">
         <div class="main_div1">
@@ -51,158 +55,163 @@
         </div>
       </main>
     </div>
+    <!-- -------------------|-< -->
     <div class="container_01" id="cv-form">
-      <!-- first column -->
-      <div class="first_col">
-        <h3>Personal Information</h3>
-        <div class="form-group">
-          <label for="nameField">Your Name</label>
-          <input
-            type="text"
-            id="nameField"
-            placeholder="Enter Here"
-            class="form-control"
-          />
-        </div>
+      <!-- 1,2,3 column wrapper div --->
+      <!-- <div class="wrapper"> -->
+      <div class="updiv">
+        <!-- first column -->
+        <div class="first_col" id="fc_div">
+          <h3>Personal Information</h3>
 
-        <div class="form-group mt-2">
-          <label for="contactField">Your Contact</label>
-          <input
-            type="text"
-            id="contactField"
-            placeholder="Enter Here"
-            class="form-control"
-          />
-        </div>
+          <div class="div_fields">
+            <div class="fields">
+              <label for="nameField">Your Name</label>
+              <input
+                type="text"
+                id="nameField"
+                placeholder="Enter Here"
+                class="form_input"
+              />
+            </div>
 
-        <div class="form-group mt-2">
-          <label for="addressField">Your Address</label>
-          <textarea
-            id="addressField"
-            placeholder="Enter Here"
-            class="form-control"
-            rows="5"
-          ></textarea>
-        </div>
-        <div class="form-group mt-2">
-          <label for="nameField">Select Your Profile Photo</label>
-          <input id="imgField" type="file" class="form-control" />
-        </div>
-      </div>
+            <div class="fields">
+              <label for="contactField">Your Contact</label>
+              <input
+                type="text"
+                id="contactField"
+                placeholder="Enter Here"
+                class="form_input"
+              />
+            </div>
 
-      <!-- ----- -->
-      <!-- second coloum -->
-      <div class="second_col">
-        <h5>Important Links</h5>
-
-        <div class="form-group mt-2">
-          <label for="fbField">Facebook</label>
-          <input
-            type="text"
-            id="fbField"
-            placeholder="Enter Here"
-            class="form-control"
-          />
-        </div>
-        <div class="form-group mt-2">
-          <label for="instaField">Instagram</label>
-          <input
-            type="text"
-            id="instaField"
-            placeholder="Enter Here"
-            class="form-control"
-          />
-        </div>
-        <div class="form-group mt-2">
-          <label for="linkedinField">LinkedIn</label>
-          <input
-            type="text"
-            id="linkedinField"
-            placeholder="Enter Here"
-            class="form-control"
-          />
-        </div>
-      </div>
-      <!-- ----- -->
-      <!-- third coloumn -->
-      <div class="third_col" id="ab">
-        <h3>Professional Information</h3>
-
-        <div class="form-group mt-2">
-          <label for="objectiveField">About Your-Self</label>
-          <textarea
-            id="objectiveField"
-            placeholder="Enter Here"
-            class="form-control weField"
-          ></textarea>
-        </div>
-
-        <div class="form-group mt-2" id="we">
-          <label for="">Work Experience</label>
-          <textarea
-            placeholder="Enter Here"
-            class="form-control weField"
-          ></textarea>
-          <!-- new textarea -->
-          <div class="container text-center mt-2" id="weAddButton">
-            <button
-              onclick="addNewWEField()"
-              class="btn btn-outline-warning btn-sm"
-            >
-              Add More Experience
-            </button>
+            <div class="fields">
+              <label for="addressField">Your Address</label>
+              <textarea
+                id="addressField"
+                placeholder="Enter Here"
+                class="form_input"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="photo_field">
+              <label class="supp" for="nameField"
+                >Select Your Profile Photo</label
+              >
+              <input id="imgField" type="file" class="form_input" />
+            </div>
           </div>
         </div>
 
-        <div class="form-group mt-2" id="aq">
-          <label for="">Academic Qualification</label>
-          <textarea
-            placeholder="Enter Here"
-            class="form-control aqField"
-          ></textarea>
-          <div class="container text-center mt-2" id="aqAddButton">
-            <button
-              onclick="addNewAQField()"
-              class="btn btn-outline-info btn-sm"
-            >
-              Add More Qualification
-            </button>
+        <!-- ----- -->
+        <!-- second coloum -->
+        <div class="second_col" id="sc_div">
+          <h2>Important Links</h2>
+          <!-- <div class="updiv"> -->
+          <div class="div_fields">
+            <div class="fields">
+              <label for="fbField">Facebook</label>
+              <input
+                type="text"
+                id="fbField"
+                placeholder="Enter Here"
+                class="form_input"
+              />
+            </div>
+            <div class="fields">
+              <label for="instaField">Instagram</label>
+              <input
+                type="text"
+                id="instaField"
+                placeholder="Enter Here"
+                class="form_input"
+              />
+            </div>
+            <div class="fields">
+              <label for="linkedinField">LinkedIn</label>
+              <input
+                type="text"
+                id="linkedinField"
+                placeholder="Enter Here"
+                class="form_input"
+              />
+            </div>
           </div>
+          <!-- </div> -->
         </div>
+        <!-- ----- -->
+        <!-- third coloumn -->
+        <div class="third_col" id="ab">
+          <h3>Professional Information</h3>
 
-        <div class="form-group mt-2" id="sk">
-          <label for="">Your-Skills & Expertise</label>
-          <textarea
-            placeholder="Enter Here"
-            class="form-control skField"
-            rows="1"
-          ></textarea>
-          <div class="container text-center mt-2" id="skAddButton">
-            <button
-              onclick="addNewSKField()"
-              class="btn btn-outline-info btn-sm"
-            >
-              Add More Skills
-            </button>
+          <div class="div_fields">
+            <div class="fields">
+              <label for="objectiveField">About Your-Self</label>
+              <textarea
+                id="objectiveField"
+                placeholder="Enter Here"
+                class="form_input weField"
+              ></textarea>
+            </div>
+
+            <div class="fields" id="we">
+              <label for="">Work Experience</label>
+              <textarea
+                placeholder="Enter Here"
+                class="form_input weField"
+              ></textarea>
+              <!-- new textarea -->
+              <div class="add_button" id="weAddButton">
+                <button onclick="addNewWEField()" class="btns" id="btn1">
+                  Add More Experience
+                </button>
+              </div>
+            </div>
+
+            <div class="fields" id="aq">
+              <label for="">Academic Qualification</label>
+              <textarea
+                placeholder="Enter Here"
+                class="form_input aqField"
+              ></textarea>
+              <div class="add_button" id="aqAddButton">
+                <button onclick="addNewAQField()" class="btns" id="btn2">
+                  Add More Qualification
+                </button>
+              </div>
+            </div>
+
+            <div class="fields" id="sk">
+              <label for="">Your-Skills & Expertise</label>
+              <textarea
+                placeholder="Enter Here"
+                class="form_input skField"
+                rows="1"
+              ></textarea>
+              <div class="add_button" id="skAddButton">
+                <button onclick="addNewSKField()" class="btns" id="btn3">
+                  Add More Skills
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="direction_button">
+          <button id="bb_btn" class="back_button">Back</button>
+          <button id="nb_btn" class="next_button">Next</button>
+          <button onclick="generateCV()" class="btn_gen" id="bt_gen">
+            Generate CV
+          </button>
+        </div>
+        <!-- </div> -->
       </div>
-      <!-- ----- -->
-      <!-- fourth column -->
-      <div class="fourth_col">
-        <button onclick="generateCV()" class="btn btn-success btn-lg mt-0">
-          Generate CV
-        </button>
-      </div>
-      <div class="direction_button">
-        <button class="back_button">Back</button>
-        <button class="next_button">Next</button>
-      </div>
-      <footer class="mt-auto text-white-50 text-center">
+
+      <!-- footer of this project -->
+      <footer class="ab_footer">
         <p>
           Resume template for
-          <a href="https://getbootstrap.com/" class="text-white">Students</a>,
-          by <a href="https://twitter.com/mdo" class="text-white">@PBL Team</a>.
+          <a href="https://getbootstrap.com/" class="s_text">Students</a>, by
+          <a href="https://twitter.com/mdo" class="p_text">@PBL Team</a>.
         </p>
       </footer>
     </div>
