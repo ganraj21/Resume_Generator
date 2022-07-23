@@ -95,10 +95,11 @@ input[type="file"] {
   align-items: center;
   align-content: center;
   justify-content: center;
-  color: #0099ef;
+  background-color: #0099ef;
+  color: white;
   border-color: #0099ef;
 }
 .supp:hover {
-  background-color: #0099ef;
+  background-color: #05a3ff;
   color: white;
 }
