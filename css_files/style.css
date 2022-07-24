@@ -11,7 +11,6 @@
   display: flex;
 }
 .logo {
-  height: 33px;
   margin-left: 15px;
   display: flex;
   font-family: "Poppins", sans-serif;
@@ -21,12 +20,11 @@
 .hamburger {
   display: none;
 }
-.side_narbar {
+.menu {
   display: flex;
-  align-items: center;
-  margin-right: 10px;
+  margin-right: 15px;
 }
-.nav_link {
+.menuItem {
   display: flex;
   margin-left: 27px;
   color: black;
@@ -103,21 +101,61 @@
 @media (max-width: 480px) {
   .logo {
     font-size: 30px;
+    margin-top: 37px;
   }
-  .nav_link {
-    display: none;
-    /* display: block;
-  cursor: pointer; */
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgb(255, 255, 255);
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+
+  .menuItem {
+    margin-left: 0px;
+    height: 50px;
+    display: flex;
+    color: white;
+    margin-bottom: 12px;
+    background-color: #2aacea;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   .n_cp {
     width: 100%;
     display: flex;
-    font-size: 20px;
-    justify-content: space-between;
+    font-size: 21px;
     align-items: center;
+    justify-content: space-between;
   }
   .hamburger {
+    margin-right: 10px;
     display: flex;
+    height: 28px;
+    align-items: flex-end;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .showMenu {
+    margin-right: 0px;
+    height: 300px;
+    height: 300px;
+    display: flex;
+    transform: translateY(0);
+    flex-direction: column;
+  }
+  .closeIcon {
+    display: none;
   }
   .container {
     height: inherit;

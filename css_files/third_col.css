@@ -21,15 +21,21 @@
   margin-bottom: 10px;
   align-content: center;
 }
-#btn1 {
-  background-color: #ffba00;
+
+#btn1,
+#btn2,
+#btn3 {
+  color: #0099ef;
+  font-weight: 500;
+  background-color: white;
 }
-#btn2 {
-  background-color: #ff3434;
+
+#weAddButton,
+#aqAddButton,
+#skAddButton {
+  border: 1px solid #0099ef;
 }
-/* #btn3 {
-  background-color: #ff3434;
-} */
+
 .btns {
   display: flex;
   padding: 9px;

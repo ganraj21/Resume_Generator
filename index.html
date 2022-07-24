@@ -30,12 +30,13 @@
       <div class="n_cp">
         <h3 class="logo">Resume</h3>
         <i class="hamburger fas fa-solid fa-bars" id="menus"></i>
+        <!-- <i class="closeIcon fas fa-solid fa-xmark"></i> -->
       </div>
 
-      <nav class="side_narbar">
-        <a class="nav_link active" aria-current="page" href="#">Home</a>
-        <a class="nav_link" href="#">Features</a>
-        <a class="nav_link" href="#">Contact</a>
+      <nav class="menu">
+        <a class="menuItem active" aria-current="page" href="#">Home</a>
+        <a class="menuItem" href="#">Features</a>
+        <a class="menuItem" href="#">Contact</a>
       </nav>
     </div>
     <!-- front_page  -->
@@ -169,10 +170,12 @@
                 class="form_input weField"
               ></textarea>
               <!-- new textarea -->
-              <div class="add_button" id="weAddButton">
-                <button onclick="addNewWEField()" class="btns" id="btn1">
-                  Add More Experience
-                </button>
+              <div
+                onclick="addNewWEField()"
+                class="add_button"
+                id="weAddButton"
+              >
+                <button class="btns" id="btn1">Add More Experience</button>
               </div>
             </div>
 
@@ -182,10 +185,12 @@
                 placeholder="Enter Here"
                 class="form_input aqField"
               ></textarea>
-              <div class="add_button" id="aqAddButton">
-                <button onclick="addNewAQField()" class="btns" id="btn2">
-                  Add More Qualification
-                </button>
+              <div
+                onclick="addNewAQField()"
+                class="add_button"
+                id="aqAddButton"
+              >
+                <button class="btns" id="btn2">Add More Qualification</button>
               </div>
             </div>
 
@@ -196,10 +201,12 @@
                 class="form_input skField"
                 rows="1"
               ></textarea>
-              <div class="add_button" id="skAddButton">
-                <button onclick="addNewSKField()" class="btns" id="btn3">
-                  Add More Skills
-                </button>
+              <div
+                onclick="addNewSKField()"
+                class="add_button"
+                id="skAddButton"
+              >
+                <button class="btns" id="btn3">Add More Skills</button>
               </div>
             </div>
           </div>
