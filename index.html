@@ -23,9 +23,11 @@
     <link rel="stylesheet" href="./css_files/second_col.css" />
     <link rel="stylesheet" href="./css_files/third_col.css" />
     <link rel="stylesheet" href="./css_files/style.css" />
+    <link rel="stylesheet" href="./css_files/resume_template.css" />
   </head>
   <body>
     <!-- html code started here -->
+    <!-- navigation start from here -->
     <div class="nav_container">
       <div class="n_cp">
         <h3 class="logo">Resume</h3>
@@ -57,6 +59,7 @@
       </main>
     </div>
     <!-- -------------------|-< -->
+    <!-- resume generating form -->
     <div class="container_01" id="cv-form">
       <!-- 1,2,3 column wrapper div --->
       <!-- <div class="wrapper"> -->
@@ -232,115 +235,116 @@
     </div>
     <!-- ----- -->
 
-    <!-- cv-template -->
+    <!-- resume-template -->
     <div class="container" id="cv-template">
       <!-- <h1>This is template</h1> -->
       <div class="row" id="row21">
-        <div class="col-md-4 py-5 text-center background">
-          <!-- THis is first column -->
-
-          <div class="container">
+        <div class="base_container">
+          <!-- THis is first column grenrated resume-->
+          <div class="inner_base_container">
             <img
-              src="./images.jpg"
+              src="./profile_img.jpg"
               alt="Default Image"
               class="img-fluid myimg"
               id="imgTemplate"
             />
 
-            <p id="nameT1">Ganesh Bhausaheb Ghadge</p>
+            <p id="nameT1">Rohit Sharama</p>
             <p>Web-Developer</p>
             <p id="contactT">+918010844174, +919890510849</p>
             <p id="addressT">
               725 ganraj nivas Behind Jayshree garden jalochi, Baramati, Pune
             </p>
-            <hr />
 
-            <p>
-              <a href="https://www.facebook.com" id="fbT" target="_blank"
-                >FaceBook</a
-              >
-            </p>
-            <p>
-              <a href="https://www.Instagram.com" id="instaT" target="_blank"
-                >Instagram</a
-              >
-            </p>
-            <p>
-              <a href="https://www.linkedin.com" id="linkedT" target="_blank"
-                >LinkedIn</a
-              >
-            </p>
-            <hr />
-            <div id=" text-center">
+            <div class="social_links">
+              <h5>Social media</h5>
+              <p>
+                <a href="https://www.facebook.com" id="fbT" target="_blank"
+                  >FaceBook</a
+                >
+              </p>
+              <p>
+                <a href="https://www.Instagram.com" id="instaT" target="_blank"
+                  >Instagram</a
+                >
+              </p>
+              <p>
+                <a href="https://www.linkedin.com" id="linkedT" target="_blank"
+                  >LinkedIn</a
+                >
+              </p>
+            </div>
+            <div class="skills">
               <h6>My Skills & Expertise</h6>
-              <ul class="text-center" id="my_skills">
+              <ol class="order_skl" id="my_skills">
                 <li>Competitive Programming</li>
-              </ul>
+              </ol>
             </div>
           </div>
         </div>
 
-        <div class="col-md-8 py-5 background_01">
+        <div class="info_container">
           <!-- This is second column -->
           <h1 id="nameT2" class="text-center" style="font-weight: 800">
             Ganesh Bhauseheb Ghadge
           </h1>
 
           <!-- Objective Card -->
-
-          <div class="card mt-4">
-            <div class="card-header">
-              <h3>About Me</h3>
+          <div class="card_container">
+            <div class="card mt-4">
+              <div class="card-header">
+                <h3>About Me</h3>
+              </div>
+              <div class="card-body">
+                <p id="objectiveT">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Corporis hic ullam in illum maxime quasi sit nostrum aut,
+                  tempore ex! Reiciendis tempore fugit accusantium ea neque,
+                  molestias aut maxime pariatur.
+                </p>
+              </div>
             </div>
-            <div class="card-body">
-              <p id="objectiveT">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Corporis hic ullam in illum maxime quasi sit nostrum aut,
-                tempore ex! Reiciendis tempore fugit accusantium ea neque,
-                molestias aut maxime pariatur.
-              </p>
+            <div class="card mt-4">
+              <div class="card-header">
+                <h3>Work Experience</h3>
+              </div>
+              <div class="card-body">
+                <ul id="weT">
+                  <li>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consequuntur, ratione.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consequuntur, ratione.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consequuntur, ratione.
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="card mt-4">
-            <div class="card-header">
-              <h3>Work Experience</h3>
-            </div>
-            <div class="card-body">
-              <ul id="weT">
-                <li>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Consequuntur, ratione.
-                </li>
-                <li>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Consequuntur, ratione.
-                </li>
-                <li>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Consequuntur, ratione.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="card mt-4">
-            <div class="card-header">
-              <h3>Academic Qualification</h3>
-            </div>
-            <div class="card-body">
-              <ul id="aqT">
-                <li>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Consequuntur, ratione.
-                </li>
-                <li>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Consequuntur, ratione.
-                </li>
-                <li>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Consequuntur, ratione.
-                </li>
-              </ul>
+            <div class="card mt-4">
+              <div class="card-header">
+                <h3>Academic Qualification</h3>
+              </div>
+              <div class="card-body">
+                <ul id="aqT">
+                  <li>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consequuntur, ratione.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consequuntur, ratione.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consequuntur, ratione.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
