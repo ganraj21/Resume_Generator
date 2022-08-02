@@ -43,13 +43,19 @@
   flex-direction: column;
   margin: 12px;
   width: 90%;
+  align-items: center;
 }
 .fields {
+  margin-top: 12px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
-
+.name_field {
+  display: flex;
+  justify-content: center;
+}
 label {
   display: flex;
   height: 30px;
@@ -66,7 +72,6 @@ label {
 }
 input {
   display: flex;
-  box-sizing: border-box;
   height: 35px;
   border-radius: 6px;
   border: 1px solid rgb(255, 255, 255);
@@ -75,8 +80,29 @@ input {
   border-radius: 3px;
   background-color: #e5e5e5;
   height: 35px;
+  width: 200px;
   border: 1px;
+  margin-left: 12px;
 }
+.address_input,
+.email_input,
+.phone_input,
+.facebook_input,
+.insta_input,
+.linked_input,
+.Qualification_input,
+.experience_input,
+.about_input,
+.Skills_input,
+.input_title,
+.input_company {
+  display: block;
+  margin-left: 9px;
+  width: 100%;
+  background-color: #e5e5e5;
+  border: 1px solid rgb(255, 255, 255);
+}
+
 input[type="file"] {
   opacity: 0; /* make transparent */
   z-index: -1; /* move under anything else */
@@ -88,6 +114,7 @@ input[type="file"] {
   align-items: center;
   justify-content: center;
 }
+
 .supp {
   height: 35px;
   display: flex;

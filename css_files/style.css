@@ -73,8 +73,10 @@
   display: flex;
   width: 80%;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  align-content: center;
+  font-size: 18px;
+  /* margin-left: 20px; */
 }
 .row {
   display: flex;
@@ -95,6 +97,9 @@
 }
 
 @media (max-width: 480px) {
+  body {
+    margin: 0px;
+  }
   .nav_container {
     height: 65px;
   }

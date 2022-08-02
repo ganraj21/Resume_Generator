@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Kanit:wght@400;500;600;800;900&family=Poppins:wght@200;300;400;500;600&display=swap");
+
 body {
   background-color: white;
   margin: 0;
@@ -13,10 +14,13 @@ html {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 .container {
   margin-top: 45px;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -26,15 +30,16 @@ html {
 }
 
 .main_div1 {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
-  align-content: flex-start;
+  align-content: flex-start; */
   width: 70%;
+  margin-left: 20px;
 }
-h1 {
+.main_div1 h1 {
   font-size: 45px;
   color: #0099ef;
   margin-bottom: 1px;

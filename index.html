@@ -12,12 +12,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    /> -->
     <link rel="stylesheet" href="./css_files/front_page.css" />
     <link rel="stylesheet" href="./css_files/resume_templete_images.css" />
     <link rel="stylesheet" href="./css_files/first_col.css" />
@@ -25,7 +19,7 @@
     <link rel="stylesheet" href="./css_files/third_col.css" />
     <link rel="stylesheet" href="./css_files/style.css" />
     <link rel="stylesheet" href="./css_files/resume_template.css" />
-    <link rel="stylesheet" href="./resume/assets/css/styles.css" />
+    <!-- <link rel="stylesheet" href="./resume/assets/css/styles.css" /> -->
   </head>
   <body>
     <!-- html code started here -->
@@ -61,26 +55,41 @@
       </main>
     </div>
     <!-- resume templete selection  -->
-    <section class="resume_t_selection" id="Resume_img">
-      <h1>Select your best resume from following</h1>
-      <div class="resume_images_div">
+
+    <div class="slideshow-container" id="Resume_img">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
         <img
-          class="resume_imges"
+          class="res_img"
           src="./resume_templete_images/resume_01.png"
-          alt="resume-templete-1"
+          style="width: 100%"
         />
-        <img
-          class="resume_imges"
-          src="./resume_templete_images/resume_02.png"
-          alt="resume-templete-2"
-        />
-        <img
-          class="resume_imges"
-          src="./resume_templete_images/resume_03.jpg"
-          alt="resume-templete-3"
-        />
+        <div class="text">Caption Text</div>
       </div>
-    </section>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img
+          class="res_img"
+          src="./resume_templete_images/resume_02.png"
+          style="width: 100%"
+        />
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img
+          class="res_img"
+          src="./resume_templete_images/resume_03.jpg"
+          style="width: 100%"
+        />
+        <div class="text">Caption Three</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
     <!-- -------------------|-< -->
     <!-- resume generating form -->
     <div class="container_01" id="cv-form">
@@ -92,48 +101,51 @@
           <h3>Personal Information</h3>
 
           <div class="div_fields">
-            <div class="fields">
-              <label for="nameField">Your Name</label>
+            <div class="name_field">
               <input
                 type="text"
                 id="nameField"
-                placeholder="Full Name"
+                placeholder="First name"
+                class="form_input"
+              />
+              <input
+                type="text"
+                id="nameField"
+                placeholder="last name"
                 class="form_input"
               />
             </div>
 
             <div class="fields">
-              <label for="contactField">Phone No</label>
               <input
                 type="text"
                 id="contactField"
-                placeholder="Phone"
-                class="form_input"
+                placeholder="Phone No"
+                class="phone_input"
+              />
+            </div>
+            <div class="fields">
+              <input
+                type="email"
+                id="contactField"
+                placeholder="Email"
+                class="email_input"
               />
             </div>
 
             <div class="fields">
-              <label for="addressField">Address</label>
               <textarea
                 id="addressField"
                 placeholder="Address"
-                class="form_input"
+                class="address_input"
                 rows="5"
               ></textarea>
             </div>
             <div class="photo_field">
-              <label class="supp"
-                >Upload Image
-                <input
-                  type="file"
-                  accept="image/*;capture=camera"
-                  id="imgField"
-                  class="form_input"
-                />
-              </label>
-              <!-- <label class="supp" for="nameField"
-                >Select Your Profile Photo</label
-              > -->
+              <i
+                class="fas fa-duotone fa-cloud-arrow-up"
+                style="color: #ebbe38"
+              ></i>
             </div>
           </div>
         </div>
@@ -145,30 +157,27 @@
           <!-- <div class="updiv"> -->
           <div class="div_fields">
             <div class="fields">
-              <label for="fbField">Facebook</label>
               <input
                 type="text"
                 id="fbField"
                 placeholder="https://www.facebook.com"
-                class="form_input"
+                class="facebook_input"
               />
             </div>
             <div class="fields">
-              <label for="instaField">Instagram</label>
               <input
                 type="text"
                 id="instaField"
                 placeholder="https://www.instagram.com"
-                class="form_input"
+                class="insta_input"
               />
             </div>
             <div class="fields">
-              <label for="linkedinField">LinkedIn</label>
               <input
                 type="text"
                 id="linkedinField"
                 placeholder="https://www.linkedin.com"
-                class="form_input"
+                class="linked_input"
               />
             </div>
           </div>
@@ -181,19 +190,41 @@
 
           <div class="div_fields">
             <div class="fields">
-              <label for="objectiveField">About Your-Self</label>
               <textarea
                 id="objectiveField"
-                placeholder="Enter Here"
-                class="form_input weField"
+                placeholder="About Your-Self"
+                class="about_input weField"
               ></textarea>
             </div>
 
             <div class="fields" id="we">
-              <label for="">Work Experience</label>
+              <input type="text" class="input_title" placeholder="Title" />
+              <input
+                type="text"
+                class="input_company"
+                placeholder="Company name"
+              />
+              <div class="dates">
+                <input
+                  type="date"
+                  name=""
+                  id=""
+                  class="s_date"
+                  placeholder="MM/DD/YYYY"
+                  onblur="(this.type='text')"
+                />
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="e_date"
+                  placeholder="MM/DD/YYYY"
+                  onblur="(this.type='text')"
+                />
+              </div>
               <textarea
-                placeholder="Enter Here"
-                class="form_input weField"
+                placeholder="Description"
+                class="experience_input weField"
               ></textarea>
               <!-- new textarea -->
               <div
@@ -206,11 +237,29 @@
             </div>
 
             <div class="fields" id="aq">
-              <label for="">Academic Qualification</label>
-              <textarea
-                placeholder="Enter Here"
-                class="form_input aqField"
-              ></textarea>
+              <input type="text" class="input_title" placeholder="Title" />
+              <input
+                placeholder="Academic Qualification"
+                class="Qualification_input aqField"
+              ></input>
+              <div class="dates">
+                <input
+                  type="date"
+                  name=""
+                  id=""
+                  class="s_date"
+                  placeholder="MM/DD/YYYY"
+                  onblur="(this.type='text')"
+                />
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="e_date"
+                  placeholder="MM/DD/YYYY"
+                  onblur="(this.type='text')"
+                />
+              </div>
               <div
                 onclick="addNewAQField()"
                 class="add_button"
@@ -221,12 +270,10 @@
             </div>
 
             <div class="fields" id="sk">
-              <label for="">Your-Skills & Expertise</label>
-              <textarea
-                placeholder="Enter Here"
-                class="form_input skField"
-                rows="1"
-              ></textarea>
+              <input
+                placeholder="Your-Skills & Expertise"
+                class="Skills_input skField"
+              ></input>
               <div
                 onclick="addNewSKField()"
                 class="add_button"
@@ -390,7 +437,7 @@
       crossorigin="anonymous"
     ></script> -->
     <script src="./script.js"></script>
-
+    <script src="./front.js"></script>
     <!-- second resume templete  -->
   </body>
 </html>
