@@ -39,11 +39,14 @@
   color: #0099ef;
 }
 .div_fields {
+  background-color: blueviolet;
   display: flex;
   flex-direction: column;
-  margin: 12px;
-  width: 90%;
+  padding: 10px 0px 10px 0px;
+  width: 100%;
   align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 .fields {
   margin-top: 12px;
@@ -53,6 +56,7 @@
   align-items: center;
 }
 .name_field {
+  width: 90%;
   display: flex;
   justify-content: center;
 }
@@ -80,9 +84,10 @@ input {
   border-radius: 3px;
   background-color: #e5e5e5;
   height: 35px;
+  width: 90%;
   width: 200px;
   border: 1px;
-  margin-left: 12px;
+  /* margin-left: 12px; */
 }
 .address_input,
 .email_input,
