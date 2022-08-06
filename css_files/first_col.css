@@ -42,8 +42,7 @@
   background-color: blueviolet;
   display: flex;
   flex-direction: column;
-  padding: 10px 0px 10px 0px;
-  width: 100%;
+  padding: 25px;
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -56,9 +55,41 @@
   align-items: center;
 }
 .name_field {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
+}
+.input_01 {
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+}
+.input_01 input {
+  margin: 6px;
+  height: 36px;
+  width: 155px;
+  padding-top: 3px;
+  border: none;
+  background-color: rgb(222, 222, 222);
+  padding-left: 11px;
+  border-radius: 4px;
+}
+.input_02 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.input_02 input {
+  height: 36px;
+  width: 327px;
+  padding-left: 9px;
+  padding-top: 3px;
+  margin: 9px;
+  border: none;
+  background-color: rgb(222, 222, 222);
+  border-radius: 4px;
 }
 label {
   display: flex;
