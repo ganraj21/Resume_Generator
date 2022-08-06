@@ -81,7 +81,8 @@
   flex-wrap: wrap;
   align-content: space-around;
 }
-.input_02 input {
+.input_02 input,
+textarea {
   height: 36px;
   width: 327px;
   padding-left: 9px;
