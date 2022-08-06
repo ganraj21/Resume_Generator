@@ -6,24 +6,9 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  height: 100vh;
+  height: 100%;
 }
-.wrapper {
-  display: flex;
-  height: 100vh;
-  align-content: center;
-  align-items: flex-end;
-  justify-content: center;
-  flex-direction: column;
-}
-.updiv {
-  height: 100vh;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-content: center;
-}
+
 .first_col {
   width: 100%;
   display: flex;
