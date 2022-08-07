@@ -227,52 +227,50 @@
               >
                 <button class="btns" id="btn1">Add More Experience</button>
               </div>
-            </div>
-
-            <div class="input_02" id="aq">
-              <input type="text" class="input_title" placeholder="Title" />
-              <input
-                placeholder="Academic Qualification"
-                class="Qualification_input aqField"
-              ></input>
-              <div class="input_02">
+              <div class="input_02" id="aq">
+                <input type="text" class="input_title" placeholder="Title" />
                 <input
-                  type="date"
-                  name=""
-                  id=""
-                  class="s_date"
-                  placeholder="MM/DD/YYYY"
-                  onblur="(this.type='text')"
-                />
+                  placeholder="Academic Qualification"
+                  class="Qualification_input aqField"
+                ></input>
+                <div class="input_02">
+                  <input
+                    type="date"
+                    name=""
+                    id=""
+                    class="s_date"
+                    placeholder="MM/DD/YYYY"
+                    onblur="(this.type='text')"
+                  />
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="e_date"
+                    placeholder="MM/DD/YYYY"
+                    onblur="(this.type='text')"
+                  />
+                </div>
+                <div
+                  onclick="addNewAQField()"
+                  class="add_button"
+                  id="aqAddButton"
+                >
+                  <button class="btns" id="btn2">Add More Qualification</button>
+                </div>
+              </div>
+              <div class="input_02" id="sk">
                 <input
-                  type="text"
-                  name=""
-                  id=""
-                  class="e_date"
-                  placeholder="MM/DD/YYYY"
-                  onblur="(this.type='text')"
-                />
-              </div>
-              <div
-                onclick="addNewAQField()"
-                class="add_button"
-                id="aqAddButton"
-              >
-                <button class="btns" id="btn2">Add More Qualification</button>
-              </div>
-            </div>
-
-            <div class="input_02" id="sk">
-              <input
-                placeholder="Your-Skills & Expertise"
-                class="Skills_input skField"
-              ></input>
-              <div
-                onclick="addNewSKField()"
-                class="add_button"
-                id="skAddButton"
-              >
-                <button class="btns" id="btn3">Add More Skills</button>
+                  placeholder="Your-Skills & Expertise"
+                  class="Skills_input skField"
+                ></input>
+                <div
+                  onclick="addNewSKField()"
+                  class="add_button"
+                  id="skAddButton"
+                >
+                  <button class="btns" id="btn3">Add More Skills</button>
+                </div>
               </div>
             </div>
           </div>

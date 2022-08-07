@@ -19,8 +19,8 @@ html {
 }
 
 .container {
-  margin-top: 45px;
   width: 90%;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

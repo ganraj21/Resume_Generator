@@ -13,7 +13,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-content: center;
 }
 .first_col h3 {
@@ -45,37 +44,41 @@
   justify-content: center;
 }
 .input_01 {
+  width: 100%;
   margin: 2px;
   display: flex;
-  justify-content: center;
 }
 .input_01 input {
   margin: 6px;
+  /* margin-left: 3px; */
   height: 36px;
-  width: 155px;
+  width: 50%;
   padding-top: 3px;
   border: none;
   background-color: rgb(222, 222, 222);
   padding-left: 11px;
   border-radius: 4px;
+  resize: vertical;
 }
 .input_02 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  flex-wrap: wrap;
+  width: 96%;
+  /* flex-wrap: wrap; */
   align-content: space-around;
 }
 .input_02 input,
 textarea {
-  height: 36px;
-  width: 327px;
-  padding-left: 9px;
+  /* height: 36px; */
+  width: 100%;
+  /* padding-left: 9px; */
   padding-top: 3px;
   margin: 9px;
   border: none;
   background-color: rgb(222, 222, 222);
   border-radius: 4px;
+  resize: vertical;
 }
 label {
   display: flex;
