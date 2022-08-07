@@ -1,7 +1,6 @@
 .four_col {
   display: none;
   flex-direction: column;
-  align-items: center;
   justify-content: flex-end;
   align-content: center;
 }
