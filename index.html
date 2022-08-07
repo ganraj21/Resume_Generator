@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css_files/first_col.css" />
     <link rel="stylesheet" href="./css_files/second_col.css" />
     <link rel="stylesheet" href="./css_files/third_col.css" />
+    <link rel="stylesheet" href="./css_files/four_col.css">
     <link rel="stylesheet" href="./css_files/style.css" />
     <link rel="stylesheet" href="./css_files/resume_template.css" />
     <!-- <link rel="stylesheet" href="./resume/assets/css/styles.css" /> -->
@@ -177,46 +178,48 @@
           <!-- </div> -->
         <!-- ----- -->
         <!-- third coloumn -->
-        <div class="third_col" id="ab">
+        <div class="third_col" id="thc_div">
           <h3>Professional Information</h3>
 
           <div class="div_fields">
             <div class="input_02">
+              <label for="">About</label>
               <textarea
                 id="objectiveField"
                 placeholder="About Your-Self"
                 class=" weField"
+                rows="5"
               ></textarea>
             </div>
 
             <div class="input_02" id="we">
+              <label for="">Experience</label>
               <input type="text" class="input_title" placeholder="Title" />
               <input
                 type="text"
                 class="input_company"
                 placeholder="Company name"
               />
-              <div class="input_02">
+              <div class="input_01">
                 <input
                   type="date"
                   name=""
-                  id=""
-                  class="s_date"
+                  class="dateadd"
                   placeholder="MM/DD/YYYY"
-                  onblur="(this.type='text')"
+                  
                 />
                 <input
-                  type="text"
+                  type="date"
                   name=""
-                  id=""
-                  class="e_date"
+                  class="dateadd"
                   placeholder="MM/DD/YYYY"
-                  onblur="(this.type='text')"
+                  
                 />
               </div>
               <textarea
                 placeholder="Description"
                 class=" weField"
+                rows="5"
               ></textarea>
             </div>
               <!-- new textarea -->
@@ -227,54 +230,63 @@
               >
                 <button class="btns" id="btn1">Add More Experience</button>
               </div>
-              <div class="input_02" id="aq">
-                <input type="text" class="input_title" placeholder="Title" />
-                <input
-                  placeholder="Academic Qualification"
-                  class="Qualification_input aqField"
-                ></input>
-                <div class="input_02">
-                  <input
-                    type="date"
-                    name=""
-                    id=""
-                    class="s_date"
-                    placeholder="MM/DD/YYYY"
-                    onblur="(this.type='text')"
-                  />
-                  <input
-                    type="text"
-                    name=""
-                    id=""
-                    class="e_date"
-                    placeholder="MM/DD/YYYY"
-                    onblur="(this.type='text')"
-                  />
-                </div>
-                <div
-                  onclick="addNewAQField()"
-                  class="add_button"
-                  id="aqAddButton"
-                >
-                  <button class="btns" id="btn2">Add More Qualification</button>
-                </div>
-              </div>
-              <div class="input_02" id="sk">
-                <input
-                  placeholder="Your-Skills & Expertise"
-                  class="Skills_input skField"
-                ></input>
-                <div
-                  onclick="addNewSKField()"
-                  class="add_button"
-                  id="skAddButton"
-                >
-                  <button class="btns" id="btn3">Add More Skills</button>
-                </div>
-              </div>
+            </div>
+          </div>
+
+          <!-- fourth column -->
+        <div class="four_col" id="f_col">
+          <div class="div_fields">
+          <div class="input_02" id="aq">
+            <label for="">Education</label>
+            <input type="text" class="input_title" placeholder="Title" />
+            <input
+              placeholder="Academic Qualification"
+              class="Qualification_input aqField"
+            ></input>
+            <div class="input_01">
+              <input
+                type="date"
+                name=""
+                id=""
+                class="s_date"
+                placeholder="MM/DD/YYYY"
+                onblur="(this.type='text')"
+              />
+              <input
+                type="text"
+                name=""
+                id=""
+                class="e_date"
+                placeholder="MM/DD/YYYY"
+                onblur="(this.type='text')"
+              />
+            </div>
+            <div
+              onclick="addNewAQField()"
+              class="add_button"
+              id="aqAddButton"
+            >
+              <button class="btns" id="btn2">Add More Qualification</button>
+            </div>
+          </div>
+          <div class="input_02" id="sk">
+            <label for="">Skills</label>
+            <input
+              placeholder="Your-Skills & Expertise"
+              class="Skills_input skField"
+            ></input>
+            <div
+              onclick="addNewSKField()"
+              class="add_button"
+              id="skAddButton"
+            >
+              <button class="btns" id="btn3">Add More Skills</button>
             </div>
           </div>
         </div>
+        </div>
+        </div>
+        
 
         <div class="direction_button">
           <button id="bb_btn" class="back_button">Back</button>

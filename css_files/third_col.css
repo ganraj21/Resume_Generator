@@ -13,6 +13,12 @@
   color: #0099ef;
 }
 
+label {
+  width: 100%;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
 .add_button {
   display: flex;
   align-items: center;
@@ -21,7 +27,7 @@
   width: 160px;
   align-content: center;
 }
-.dates {
+.dateadd {
   display: inherit;
 }
 .s_date,
@@ -37,12 +43,6 @@
   color: #0099ef;
   font-weight: 500;
   background-color: white;
-}
-
-#weAddButton,
-#aqAddButton,
-#skAddButton {
-  border: 1px solid #0099ef;
 }
 
 .btns {

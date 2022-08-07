@@ -32,13 +32,21 @@ backFun = () => {
   if (cnt == 1) {
     document.getElementById('fc_div').style.display = 'flex'
     document.getElementById('sc_div').style.display = 'none'
+    document.getElementById('thc_div').style.display = 'none'
+    document.getElementById('f_col').style.display = 'none'
     document.getElementById('bb_btn').disabled = true
     document.getElementById('nb_btn').disabled = false
     document.getElementById('nb_btn').style.display = 'flex'
     document.getElementById('bt_gen').style.display = 'none'
   } else if (cnt == 2) {
     document.getElementById('sc_div').style.display = 'flex'
-    document.getElementById('ab').style.display = 'none'
+    document.getElementById('thc_div').style.display = 'none'
+    document.getElementById('f_col').style.display = 'none'
+    document.getElementById('nb_btn').style.display = 'flex'
+    document.getElementById('bt_gen').style.display = 'none'
+  } else if (cnt == 3) {
+    document.getElementById('f_col').style.display = 'none'
+    document.getElementById('thc_div').style.display = 'flex'
     document.getElementById('nb_btn').style.display = 'flex'
     document.getElementById('bt_gen').style.display = 'none'
   }
@@ -47,6 +55,7 @@ backFun = () => {
 // -----------|-<
 // for-ward button
 document.getElementById('nb_btn').disabled = false
+
 nextFun = () => {
   if (cnt == 1) {
     document.getElementById('fc_div').style.display = 'none'
@@ -55,7 +64,13 @@ nextFun = () => {
     document.getElementById('nb_btn').style.display = 'flex'
   } else if (cnt == 2) {
     document.getElementById('sc_div').style.display = 'none'
-    document.getElementById('ab').style.display = 'flex'
+    document.getElementById('thc_div').style.display = 'flex'
+    document.getElementById('f_col').style.display = 'none'
+    document.getElementById('nb_btn').style.display = 'flex'
+    document.getElementById('bt_gen').style.display = 'none'
+  } else if (cnt == 3) {
+    document.getElementById('thc_div').style.display = 'none'
+    document.getElementById('f_col').style.display = 'flex'
     document.getElementById('nb_btn').style.display = 'none'
     document.getElementById('bt_gen').style.display = 'flex'
   }
