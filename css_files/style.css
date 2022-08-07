@@ -60,12 +60,14 @@
   align-items: center;
   width: 100%;
   justify-content: center;
-  background-color: white;
+  background-color: #707070;
+  color: black;
 }
+
 .s_text,
 .p_text {
   text-decoration: none;
-  color: rgb(0, 153, 255);
+  color: white;
 }
 
 .lead {
@@ -75,14 +77,6 @@
   justify-content: flex-start;
   align-content: center;
   font-size: 18px;
-}
-.row {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
 }
 
 .direction_button {
@@ -169,16 +163,7 @@
   .closeIcon {
     display: none;
   }
-  .container {
-    height: inherit;
-    flex-direction: column;
-    margin-top: 30px;
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+
   .main_div1 {
     display: flex;
     flex-direction: column;
@@ -200,5 +185,8 @@
     align-items: center;
     justify-content: center;
     align-content: center;
+  }
+  .ab_footer p {
+    font-size: 15px;
   }
 }
