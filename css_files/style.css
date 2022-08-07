@@ -2,9 +2,8 @@
   display: flex;
   padding: 9px;
   height: 55px;
-  background-color: white;
   align-items: center;
-  justify-content: center;
+  box-shadow: -5px 0px 5px black;
 }
 .n_cp {
   width: 100%;
@@ -108,9 +107,6 @@
   body {
     margin: 0px;
   }
-  .nav_container {
-    height: 65px;
-  }
   .logo {
     font-size: 30px;
   }
@@ -192,17 +188,13 @@
   .main_div1 h1 {
     font-size: 35px;
     margin-bottom: 10px;
+    text-transform: capitalize;
   }
 
   .btn_gs {
-    /* width: 98px;
-    height: 35px; */
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
   }
-  /* .form_input {
-    width: 340px;
-  } */
 }
