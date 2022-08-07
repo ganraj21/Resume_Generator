@@ -31,8 +31,10 @@ html {
 
 .main_div1 h1 {
   font-size: 45px;
-  color: #0099ef;
   margin-bottom: 1px;
+}
+.main_div1 h1 span {
+  color: red;
 }
 .lead {
   display: flex;
