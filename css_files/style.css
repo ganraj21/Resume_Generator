@@ -70,12 +70,11 @@
 
 .lead {
   display: flex;
-  width: 80%;
+  width: 90%;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: center;
   font-size: 18px;
-  /* margin-left: 20px; */
 }
 .row {
   display: flex;
