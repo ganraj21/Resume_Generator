@@ -153,6 +153,11 @@
     justify-content: flex-start;
     cursor: pointer;
   }
+
+  .slideshow-container {
+    justify-content: center;
+    cursor: pointer;
+  }
   .showMenu {
     margin-right: 0px;
     height: 300px;
