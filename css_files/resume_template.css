@@ -29,6 +29,7 @@
   background-color: #020d1e;
   color: white;
   font-size: 12px;
+  width: 30%;
 }
 .full_name {
   font-size: 18px;
@@ -66,8 +67,8 @@
 /* ------------------- right_resume ------------------*/
 .right_resume {
   display: flex;
-  height: 600px;
-  width: 60%;
+  width: 70%;
+  padding: 25px;
   flex-direction: column;
   background-color: #b88242;
 }
@@ -78,6 +79,31 @@
   margin-bottom: 1px;
   align-content: center;
   justify-content: center;
+}
+
+.card_container {
+}
+.card_header h2 {
+  font-size: 27px;
+  margin-bottom: 3px;
+}
+.card_body {
+  display: flex;
+  flex-direction: column;
+}
+.subtitle,
+.description {
+  margin-left: 22px;
+}
+.exp_main {
+  display: flex;
+  justify-content: space-between;
+}
+.your_position {
+  font-size: 18px;
+}
+.time_period {
+  font-size: 15px;
 }
 #addressT {
   margin-left: 6px;
