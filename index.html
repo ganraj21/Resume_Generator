@@ -107,29 +107,27 @@
             <div class="input_01">
               <input
                 type="text"
-                id="nameField"
+                id="nameField_first"
                 placeholder="First name"
-               
               />
               <input
                 type="text"
-                id="nameField"
+                id="nameField_last"
                 placeholder="last name"
-              
               />
             </div>
 
             <div class="input_02">
               <input
                 type="text"
-                id="contactField"
+                id="contactField-phone"
                 placeholder="Phone No"
                 
               />
 
               <input
                 type="email"
-                id="contactField"
+                id="contactField-email"
                 placeholder="Email"
                 
               />
@@ -165,7 +163,7 @@
               />
             <input
             type="text"
-            id="fbField"
+            id="codeChefField"
             placeholder="https://www.codechef.com"
             class="codechef_input"
           />
@@ -177,9 +175,9 @@
           />
               <input
                 type="text"
-                id="fbField"
-                placeholder="https://www.facebook.com"
-                class="facebook_input"
+                id="githubField"
+                placeholder="https://www.github.com"
+                class="github_input"
               />
               <input
                 type="text"
@@ -200,7 +198,7 @@
             <div class="input_02">
               <label for="">About</label>
               <textarea
-                id="objectiveField"
+                id="your-about-info"
                 placeholder="About Your-Self"
                 class=" weField"
                 rows="5"
@@ -251,6 +249,14 @@
           <!-- fourth column -->
         <section class="four_col" id="f_col">
           <div class="div_fields">
+            <div class="input_02">
+              <label for="">Profession</label>
+              <input
+              placeholder="Your Profession"
+              class="Qualification_input"
+              id="profession_name"
+            ></input>
+            </div>
           <div class="input_02" id="aq">
             <label for="">Education</label>
             <input type="text" class="input_title" placeholder="Title" />
@@ -288,18 +294,19 @@
             <label for="">Skills</label>
             <input
               placeholder="Your-Skills & Expertise"
-              class="Skills_input skField"
+              class="Skills_input"
+              id="your-skills"
             ></input>
             <div
               onclick="addNewSKField()"
-              class="add_button"
+              class="add_button skField"
               id="skAddButton"
             >
               <button class="btns" id="btn3">Add More Skills</button>
             </div>
           </div>
-        </div>
-        </div>
+         </div>
+        </section>
         <div class="direction_button">
           <button id="bb_btn" class="back_button">Back</button>
           <button id="nb_btn" class="next_button">Next</button>
@@ -308,10 +315,6 @@
           </button>
         </div>
         </div>
-        
-
-        
-      </div>
           
 
     <!-- ----- -->
@@ -325,23 +328,26 @@
             <div class="home__container section bd-grid">
               <div class="home__data bd-grid">
                 <img src="./img/perfil.jpg" alt="" class="home__img" />
-                <h1 class="home__title">SMITH <b>MATTHEW</b></h1>
-                <h3 class="home_profession">Web developer</h3>
+                <div class="home__title">
+                <h1  id="first_name">SMITH </h1>
+                <h1  id="last_name"><b >MATTHEW</b></h1>
+              </div>
+                <h3 class="home_profession" id="home-profession">Web developer</h3>
 
                 <div>
                   <a download="" class="home__button-movil">Download</a>
                 </div>
               </div>
               <div class="home_address bd-grid">
-                <span class="home__information">
-                  <i class="bx bx-map home_icon"></i>Av. Boliver #123 Lima -
-                  Peru
+                <span class="home__information" >
+                  <i class="bx bx-map home_icon"></i><span  id="your-address-here" > Av. Boliver #123 Lima -
+                  Peru</span>
+                </span>
+                <span class="home__information" >
+                  <i class="bx bx-envelope home_icon"></i><span id="your-email-id"> user@email.com </span>
                 </span>
                 <span class="home__information">
-                  <i class="bx bx-envelope home_icon"></i>user@email.com
-                </span>
-                <span class="home__information">
-                  <i class="bx bx-phone home_icon"></i>999-888-777
+                  <i class="bx bx-phone home_icon"></i> <span  id="your-phone-no"> 999-888-777 </span>
                 </span>
               </div>
             </div>
@@ -371,22 +377,25 @@
                 href="https://www.linkedin.com"
                 target="_blank"
                 class="social__link social__icon"
+                id="link-of-linkedin"
               >
-                <i class="bx bxl-linkedin-square"></i>@smithmat
+                <i class="bx bxl-linkedin-square"></i> @linkedin
               </a>
               <a
-                href="https://www.facebook.com/"
+                href="https://www.codechef.com/"
                 target="_blank"
                 class="social__link social__icon"
+                id="link-of-codechef"
               >
-                <i class="bx bxl-facebook"></i>@smithmat
+                <i class="bx bxl-codechef"></i>@CodeChef
               </a>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.github.com/"
                 target="_blank"
                 class="social__link social__icon"
+                id="link-of-github"
               >
-                <i class="bx bxl-instagram"></i>@smithmat
+                <i class="bx bxl-github"></i>@GitHub
               </a>
             </div>
           </section>
@@ -471,7 +480,7 @@
           <!--========== PROFILE ==========-->
           <section class="profile section" id="profile">
             <h2 class="section-title">Profile</h2>
-            <p class="profile__description">
+            <p class="profile__description" id="your-profile-description">
               I am a person, responsible with their work during working hours.
               Finish various technical and higher studies at larger
               univarsities. I have several years of experience and achivements

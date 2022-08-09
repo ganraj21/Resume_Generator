@@ -313,7 +313,11 @@ img {
   margin-bottom: var(--mb-1);
 }
 .home__title {
+  display: inline-flex;
   font-size: var(--h1-font-size);
+}
+#last_name {
+  margin-left: 6px;
 }
 .home__profession {
   font-size: var(--normal-font-size);

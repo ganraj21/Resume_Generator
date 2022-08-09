@@ -114,13 +114,13 @@ function addNewAQField() {
   aqOb.insertBefore(newNode, aqAddButtonOb)
 }
 
-function addNewSKField() {
-  let newNode = document.createElement('textarea')
+const addNewSKField = () => {
+  let newNode = document.createElement('input')
   newNode.classList.add('form-control')
   newNode.classList.add('skField')
   newNode.classList.add('mt-2')
   newNode.setAttribute('rows', 2)
-  newNode.setAttribute('placeholder', 'Enter Here')
+  newNode.setAttribute('placeholder', 'Your-Skills & Expertise')
 
   let skOb = document.getElementById('sk')
   let skAddButtonOb = document.getElementById('skAddButton')
@@ -132,11 +132,52 @@ function addNewSKField() {
 function generateCV() {
   //   console.log('Generating cv')
   document.getElementById('bd-con').style.display = 'flex'
-  let nameField = document.getElementById('nameField').value
 
-  let nameT1 = document.getElementById('nameT1')
+  // setting your name here --
+  let nameField_first = document.getElementById('nameField_first').value
+  let nameField_last = document.getElementById('nameField_last').value
+  document.getElementById('last_name').innerHTML = nameField_last
+  document.getElementById('first_name').innerHTML = nameField_first
+  //  --|
 
-  nameT1.innerHTML = nameField
+  // setting your profession --
+  document.getElementById(
+    'home-profession',
+  ).innerHTML = document.getElementById('profession_name').value
+  // --|
+  let address = document.getElementById('addressField').value
+  document.getElementById('your-address-here').innerHTML = address
+
+  let email = document.getElementById('contactField-email').value
+  document.getElementById('your-email-id').innerHTML = email
+
+  let phone = document.getElementById('contactField-phone').value
+  document.getElementById('your-phone-no').innerHTML = phone
+
+  // social media --
+  document.getElementById('link-of-linkedin').href = document.getElementById(
+    'linkedinField',
+  ).value
+
+  document.getElementById('link-of-codechef').href = document.getElementById(
+    'codeChefField',
+  ).value
+
+  document.getElementById('link-of-github').href = document.getElementById(
+    'githubField',
+  ).value
+  // --|
+
+  // your skills here --
+  let skills = document.getElementById('contactField-phone').value
+  document.getElementById('your-phone-no').innerHTML = skills
+
+  // setting your about section --
+  document.getElementById(
+    'your-profile-description',
+  ).innerHTML = document.getElementById('your-about-info').value
+  // --|
+
   //   direct
   document.getElementById('nameT2').innerHTML = nameField
 
