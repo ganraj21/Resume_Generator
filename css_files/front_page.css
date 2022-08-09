@@ -20,11 +20,11 @@ html {
 
 .container {
   width: 90%;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-content: center;
   align-items: center;
   position: relative;
