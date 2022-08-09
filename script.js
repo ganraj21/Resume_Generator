@@ -49,6 +49,7 @@ backFun = () => {
     document.getElementById('thc_div').style.display = 'flex'
     document.getElementById('nb_btn').style.display = 'flex'
     document.getElementById('bt_gen').style.display = 'none'
+    document.getElementById('bd-con').style.display = 'none'
   }
   cnt--
 }
@@ -130,7 +131,7 @@ function addNewSKField() {
 // generating cv
 function generateCV() {
   //   console.log('Generating cv')
-
+  document.getElementById('bd-con').style.display = 'flex'
   let nameField = document.getElementById('nameField').value
 
   let nameT1 = document.getElementById('nameT1')

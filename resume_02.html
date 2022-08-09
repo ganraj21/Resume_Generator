@@ -2,321 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume Generator</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
+    <!--========== BOX ICONS ==========-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
-    <link rel="stylesheet" href="./css_files/front_page.css" />
-    <link rel="stylesheet" href="./css_files/resume_templete_images.css" />
-    <link rel="stylesheet" href="./css_files/first_col.css" />
-    <link rel="stylesheet" href="./css_files/second_col.css" />
-    <link rel="stylesheet" href="./css_files/third_col.css" />
-    <link rel="stylesheet" href="./css_files/four_col.css">
-    <link rel="stylesheet" href="./css_files/style.css" />
+
+    <!--========== CSS ==========-->
     <link rel="stylesheet" href="./css_files/resume_02.css" />
-    <!-- <link rel="stylesheet" href="./resume/assets/css/styles.css" /> -->
+
+    <title>Responsive resume cv</title>
   </head>
-  <style>
-    .n_cp img{
-      height: 50px;
-      width: 60px;
-    }
-  </style>
   <body>
-    <!-- html code started here -->
-    <!-- navigation start from here -->
-    <div class="nav_container">
-      <div class="n_cp">
-        <img src="./logo.png"></img>
-        <i class="hamburger fas fa-solid fa-bars" id="menus"></i>
-        <!-- <i class="closeIcon fas fa-solid fa-xmark"></i> -->
-      </div>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Smith</a>
 
-      <nav class="menu">
-        <a class="menuItem active" aria-current="page" href="#">Home</a>
-        <a class="menuItem" href="#">Features</a>
-        <a class="menuItem" href="#">Contact</a>
-        <a class="menuItem" href="#">Login</a>
-        <a class="menuItem" href="#">SignUp</a>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home nav__icon"> </i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#profile" class="nav__link">
+                <i class="bx bx-user nav__icon"> </i>Profile
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bx-book nav__icon"> </i>Education
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-receipt nav__icon"> </i>Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bx-briefcase-alt nav__icon"> </i>Experience
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#certificates" class="nav__link">
+                <i class="bx bx-award nav__icon"> </i>Certificate
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#references" class="nav__link">
+                <i class="bx bx-link-external nav__icon"> </i>References
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
       </nav>
-    </div>
-    <!-- front_page  -->
-    <section class="front_page">
-      <main class="container">
-        <div class="main_div1">
-          <h1>
-            Create a <span>professional</span> resume</h1>
-          <p class="lead">
-            Select examples of
-            effective resume summaries. Use them as inspiration when writing
-            your own resume summary. For free
-          </p>
-          <a href="#Resume_img" class="btn_gs">Get Started</a>
-        </div>
-        <div class="img_div">
-          <img class="first_img" src="./first.png" alt="" />
-        </div>
-      </main>
-    </section>
+    </header>
 
-
-    <!-- resume templete selection  -->
-    <section class="slideshow-container" id="Resume_img">
-      <div class="mySlides">
-        <img
-          class="res_img"
-          src="./resume_templete_images/resume_01.png"
-        />
-
-      </div>
-
-      <div class="mySlides">
-        <img
-          class="res_img"
-          src="./resume_templete_images/resume_02.png"
-        />
-
-      </div>
-
-      <div class="mySlides">
-        <img
-          class="res_img"
-          src="./resume_templete_images/resume_03.jpg"
-        />
-
-      </div>
-    </section>
-       <!-- -------------------|-< -->
-       <!-- resume generating form -->
-      <div class="container_01" id="cv-form">
-        <!-- first column -->
-        <section class="first_col" id="fc_div">
-          <h3>Personal Information</h3>
-
-          <div class="div_fields">
-            <div class="input_01">
-              <input
-                type="text"
-                id="nameField"
-                placeholder="First name"
-               
-              />
-              <input
-                type="text"
-                id="nameField"
-                placeholder="last name"
-              
-              />
-            </div>
-
-            <div class="input_02">
-              <input
-                type="text"
-                id="contactField"
-                placeholder="Phone No"
-                
-              />
-
-              <input
-                type="email"
-                id="contactField"
-                placeholder="Email"
-                
-              />
-
-              <textarea
-                id="addressField"
-                placeholder="Address"
-                rows="5"
-              ></textarea>
-            </div>
-            <div class="photo_field">
-              <i
-                class="fas fa-duotone fa-cloud-arrow-up"
-                style="color: #ebbe38"
-              ></i>
-            </div>
-          </div>
-        </section>
-
-        <!-- ----- -->
-        <!-- second coloum -->
-        <section class="second_col" id="sc_div">
-          <h2>Important Links</h2>
-          <!-- <div class="updiv"> -->
-            <div class="div_fields">
-          <div class="input_02">
-           
-            <input
-                type="text"
-                id="linkedinField"
-                placeholder="https://www.linkedin.com"
-                class="linked_input"
-              />
-            <input
-            type="text"
-            id="fbField"
-            placeholder="https://www.codechef.com"
-            class="codechef_input"
-          />
-          <input
-            type="text"
-            id="fbField"
-            placeholder="https://www.leetcode.com"
-            class="leetcode_input"
-          />
-              <input
-                type="text"
-                id="fbField"
-                placeholder="https://www.facebook.com"
-                class="facebook_input"
-              />
-              <input
-                type="text"
-                id="instaField"
-                placeholder="https://www.instagram.com"
-                class="insta_input"
-              />
-            </div>
-          </div>
-        </section>
-          <!-- </div> -->
-        <!-- ----- -->
-        <!-- third coloumn -->
-        <section class="third_col" id="thc_div">
-          <h3>Professional Information</h3>
-
-          <div class="div_fields">
-            <div class="input_02">
-              <label for="">About</label>
-              <textarea
-                id="objectiveField"
-                placeholder="About Your-Self"
-                class=" weField"
-                rows="5"
-              ></textarea>
-            </div>
-
-            <div class="input_02" id="we">
-              <label for="">Experience</label>
-              <input type="text" class="input_title" placeholder="Title" />
-              <input
-                type="text"
-                class="input_company"
-                placeholder="Company name"
-              />
-              <div class="input_01">
-                <input
-                  type="date"
-                  name=""
-                  class="dateadd"
-                  placeholder="MM/DD/YYYY"
-                  
-                />
-                <input
-                  type="date"
-                  name=""
-                  class="dateadd"
-                  placeholder="MM/DD/YYYY"
-                  
-                />
-              </div>
-              <textarea
-                placeholder="Description"
-                class=" weField"
-                rows="5"
-              ></textarea>
-            </div>
-              <!-- new textarea -->
-              <div
-                onclick="addNewWEField()"
-                class="add_button"
-                id="weAddButton"
-              >
-                <button class="btns" id="btn1">Add More Experience</button>
-              </div>
-            </div>
-          </section>
-
-          <!-- fourth column -->
-        <section class="four_col" id="f_col">
-          <div class="div_fields">
-          <div class="input_02" id="aq">
-            <label for="">Education</label>
-            <input type="text" class="input_title" placeholder="Title" />
-            <input
-              placeholder="Academic Qualification"
-              class="Qualification_input aqField"
-            ></input>
-            <div class="input_01">
-              <input
-                type="date"
-                name=""
-                id=""
-                class="s_date"
-                placeholder="MM/DD/YYYY"
-                onblur="(this.type='text')"
-              />
-              <input
-                type="text"
-                name=""
-                id=""
-                class="e_date"
-                placeholder="MM/DD/YYYY"
-                onblur="(this.type='text')"
-              />
-            </div>
-            <div
-              onclick="addNewAQField()"
-              class="add_button"
-              id="aqAddButton"
-            >
-              <button class="btns" id="btn2">Add More Qualification</button>
-            </div>
-          </div>
-          <div class="input_02" id="sk">
-            <label for="">Skills</label>
-            <input
-              placeholder="Your-Skills & Expertise"
-              class="Skills_input skField"
-            ></input>
-            <div
-              onclick="addNewSKField()"
-              class="add_button"
-              id="skAddButton"
-            >
-              <button class="btns" id="btn3">Add More Skills</button>
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="direction_button">
-          <button id="bb_btn" class="back_button">Back</button>
-          <button id="nb_btn" class="next_button">Next</button>
-          <button onclick="generateCV()" class="btn_gen" id="bt_gen">
-            Generate CV
-          </button>
-        </div>
-        </div>
-        
-
-        
-      </div>
-          
-
-    <!-- ----- -->
-    <!-- resume_template 01  -->
-    <main class="l-main bd-container" id="bd-con">
+    <main class="l-main bd-container">
       <!-- All elements within this div, is generated in PDF -->
       <div class="resume" id="area-cv">
         <div class="resume__left">
@@ -649,32 +399,15 @@
       </div>
     </main>
 
-
-
-
-    <!-- footer of this project -->
-    <footer class="ab_footer">
-      <p>
-        Resume template for
-       <a href="https://getbootstrap.com/" class="s_text">Students</a>, by
-       <a href="https://twitter.com/mdo" class="p_text">@PBL Team</a>.
-      </p>
-    </footer>
     <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrolltop" id="scroll-top">
       <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
     </a>
 
     <!--========== HTML2PDF ==========-->
-    <script src="./resume/assets/js/html2pdf.bundle.min.js"></script>
+    <script src="./js/html2pdf.bundle.min.js"></script>
 
     <!--========== MAIN JS ==========-->
-    <script src="./resume/assets/js/main.js"></script>
-
-    
-
-    <script src="./script.js"></script>
-    <script src="./front.js"></script>
-    <!-- second resume templete  -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
