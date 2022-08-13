@@ -23,6 +23,23 @@ menuItems.forEach(function (menuItem) {
 })
 
 hamburger.addEventListener('click', toggleMenu)
+
+// Resume Selection --->
+
+const r_img_01 = document.getElementById('r_img_01')
+const r_img_02 = document.getElementById('r_img_02')
+const r_img_03 = document.getElementById('r_img_03')
+
+document.getElementById('cv-form').style.display = 'none'
+const resume_select_function = () => {
+  document.getElementById('cv-form').style.display = 'flex'
+  location.href = '#cv-form'
+}
+
+r_img_01.addEventListener('click', resume_select_function)
+// r_img_02.addEventListener('click')
+// r_img_03.addEventListener('click')
+
 // back button ---->
 var cnt = 1
 // first back button is disable only enable when click first next button
@@ -129,7 +146,7 @@ const addNewSKField = () => {
 }
 
 // generating cv
-function generateCV() {
+const generateCV = () => {
   //   console.log('Generating cv')
   document.getElementById('bd-con').style.display = 'flex'
 
@@ -177,6 +194,19 @@ function generateCV() {
     'your-profile-description',
   ).innerHTML = document.getElementById('your-about-info').value
   // --|
+
+  // Experience --->
+  document.getElementById(
+    ' your_experience_title',
+  ).innerHTML = document.getElementById('your_input_company').value
+
+  let your_company_description = document.getElementById(
+    'your_company_description',
+  ).value
+  document.getElementById(
+    'your_profile_experience_description',
+  ).innerHTML = your_company_description
+  // ---|
 
   //   direct
   document.getElementById('nameT2').innerHTML = nameField
@@ -286,4 +316,23 @@ function printCV() {
       pdf.save('test.pdf')
     },
   })
+}
+
+function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader()
+
+    reader.onload = function (e) {
+      $('.image-upload-wrap').hide()
+
+      $('.file-upload-image').attr('src', e.target.result)
+      $('.file-upload-content').show()
+
+      $('.image-title').html(input.files[0].name)
+    }
+
+    reader.readAsDataURL(input.files[0])
+  } else {
+    removeUpload()
+  }
 }

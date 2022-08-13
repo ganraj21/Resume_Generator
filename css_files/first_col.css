@@ -10,10 +10,11 @@
 }
 
 .first_col {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .first_col h3 {
   display: flex;

@@ -77,6 +77,8 @@
         <img
           class="res_img"
           src="./resume_templete_images/resume_01.png"
+          id="r_img_01"
+          href = '#cv-form'
         />
 
       </div>
@@ -85,6 +87,7 @@
         <img
           class="res_img"
           src="./resume_templete_images/resume_02.png"
+          id="r_img_02"
         />
 
       </div>
@@ -93,6 +96,7 @@
         <img
           class="res_img"
           src="./resume_templete_images/resume_03.jpg"
+          id="r_img_03"
         />
 
       </div>
@@ -139,11 +143,21 @@
                 rows="5"
               ></textarea>
             </div>
-            <div class="photo_field">
+            <!-- <div class="photo_field">
               <i
                 class="fas fa-duotone fa-cloud-arrow-up"
                 style="color: #ebbe38"
               ></i>
+            </div> -->
+            <div class="file-upload">
+              <button class="file-upload-btn" type="file">Add Image</button>
+            
+              <div class="image-upload-wrap">
+                <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                <div class="drag-text">
+                  <h3>Drag and drop a file or select add Image</h3>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -213,6 +227,7 @@
                 type="text"
                 class="input_company"
                 placeholder="Company name"
+                id="your_input_company"
               />
               <div class="input_01">
                 <input
@@ -234,6 +249,7 @@
                 placeholder="Description"
                 class=" weField"
                 rows="5"
+                id="your_company_description"
               ></textarea>
             </div>
               <!-- new textarea -->
@@ -328,7 +344,7 @@
           <section class="home" id="home">
             <div class="home__container section bd-grid">
               <div class="home__data bd-grid">
-                <img src="./img/perfil.jpg" alt="" class="home__img" />
+                <img src="./resume/assets/img/perfil.jpg" alt="" class="home__img" />
                 <div class="home__title">
                 <h1  id="first_name">SMITH </h1>
                 <h1  id="last_name"><b >MATTHEW</b></h1>
@@ -500,11 +516,11 @@
                 </div>
 
                 <div class="experience__data bd-grid">
-                  <h3 class="experience__title">MASTER OF DESIGN</h3>
-                  <span class="experience__company"
+                  <h3 class="experience__title" id="your_experience_title">MASTER OF DESIGN</h3>
+                  <span class="experience__company" 
                     >From 2013 to 2015 | Tech Soft</span
                   >
-                  <p class="experience__description">
+                  <p class="experience__description" id="your_profile_experience_description">
                     Work in this company dedicating the best responsibility in
                     the area that corresponds, delivering the best results for
                     the company and improving productivity.
