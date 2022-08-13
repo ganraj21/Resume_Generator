@@ -58,11 +58,12 @@ label {
   padding: 7px;
   border: 1px;
   width: 100px;
+  font-weight: 500;
   border-radius: 6px;
   align-items: center;
   justify-content: center;
   align-content: center;
-  background-color: #018201;
+  background-color: rgb(2, 164, 2);
 }
 .back_button {
   display: flex;
