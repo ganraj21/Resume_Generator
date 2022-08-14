@@ -25,20 +25,24 @@ menuItems.forEach(function (menuItem) {
 hamburger.addEventListener('click', toggleMenu)
 
 // Resume Selection --->
-
 const r_img_01 = document.getElementById('r_img_01')
 const r_img_02 = document.getElementById('r_img_02')
 const r_img_03 = document.getElementById('r_img_03')
 
 document.getElementById('cv-form').style.display = 'none'
-const resume_select_function = () => {
+
+// here you select your first resume -->
+const resume_select_function_01 = () => {
   document.getElementById('cv-form').style.display = 'flex'
   location.href = '#cv-form'
 }
-
-r_img_01.addEventListener('click', resume_select_function)
-// r_img_02.addEventListener('click')
-// r_img_03.addEventListener('click')
+// here you select your second resume -->
+const resume_select_function_02 = () => {}
+// here you select your Third resume -->
+const resume_select_function_03 = () => {}
+r_img_01.addEventListener('click', resume_select_function_01)
+r_img_02.addEventListener('click', resume_select_function_02)
+r_img_03.addEventListener('click', resume_select_function_03)
 
 // back button ---->
 var cnt = 1
@@ -95,11 +99,11 @@ nextFun = () => {
 }
 
 // events for button back , next
-const back = document.getElementById('bb_btn')
-const next = document.getElementById('nb_btn')
+// const back = document.getElementById('bb_btn')
+// const next = document.getElementById('nb_btn')
 
-back.addEventListener('click', backFun)
-next.addEventListener('click', nextFun)
+// back.addEventListener('click', backFun)
+// next.addEventListener('click', nextFun)
 // ----------|-<
 
 function addNewWEField() {
@@ -144,19 +148,21 @@ const addNewSKField = () => {
   skOb.insertBefore(newNode, skAddButtonOb)
 }
 
-// generating cv
-const generateCV = () => {
-  //   console.log('Generating cv')
+// Compiling information in Resume --->
+const generate_resume = () => {
+  //   console.log('Generating resume')
+  location.href = '#area-cv'
+
   document.getElementById('bd-con').style.display = 'flex'
 
-  // setting your name here --
+  // setting your name here -->
   let nameField_first = document.getElementById('nameField_first').value
   let nameField_last = document.getElementById('nameField_last').value
   document.getElementById('last_name').innerHTML = nameField_last
   document.getElementById('first_name').innerHTML = nameField_first
   //  --|
 
-  // setting your profession --
+  // setting your profession -->
   document.getElementById(
     'home-profession',
   ).innerHTML = document.getElementById('profession_name').value
@@ -188,16 +194,16 @@ const generateCV = () => {
   let skills = document.getElementById('contactField-phone').value
   document.getElementById('your-phone-no').innerHTML = skills
 
+  // Experience --->
+  document.getElementById(
+    ' your_experience_title',
+  ).innerHTML = document.getElementById('your_input_company').value
+
   // setting your about section --
   document.getElementById(
     'your-profile-description',
   ).innerHTML = document.getElementById('your-about-info').value
   // --|
-
-  // Experience --->
-  document.getElementById(
-    ' your_experience_title',
-  ).innerHTML = document.getElementById('your_input_company').value
 
   let your_company_description = document.getElementById(
     'your_company_description',
@@ -270,6 +276,18 @@ const generateCV = () => {
   document.getElementById('cv-form').style.display = 'none'
   document.getElementById('cv-template').style.display = 'block'
 }
+
+const spin = () => {
+  let div = document.querySelector('button--loading')
+  div.classList.toggle('visible')
+}
+const spinner = () => {
+  setTimeout(spin, 3000)
+  generate_resume()
+}
+
+const resume_generate_button = document.getElementById('bt_gen')
+resume_generate_button.addEventListener('click', spinner)
 
 // print cv
 function printCV() {

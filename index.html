@@ -104,7 +104,7 @@
        <!-- -------------------|-< -->
        <!-- resume generating form -->
       <div class="container_01" id="cv-form">
-        <!-- first column -->
+          <!-- first column -->
         <section class="first_col" id="fc_div">
           <h3>Personal Information</h3>
 
@@ -160,9 +160,8 @@
             
           </div>
         </section>
-
-        <!-- ----- -->
-        <!-- second coloum -->
+          <!-- ----- -->
+          <!-- second coloum -->
         <section class="second_col" id="sc_div">
           <h2>Important Links</h2>
           <!-- <div class="updiv"> -->
@@ -202,9 +201,8 @@
             </div>
           </div>
         </section>
-          <!-- </div> -->
-        <!-- ----- -->
-        <!-- third coloumn -->
+          <!-- ----- -->
+          <!-- third coloumn -->
         <section class="third_col" id="thc_div">
           <h3>Professional Information</h3>
 
@@ -261,7 +259,7 @@
               </div>
             </div>
           </section>
-
+          <!-- ----- -->
           <!-- fourth column -->
         <section class="four_col" id="f_col">
           <div class="div_fields">
@@ -324,17 +322,17 @@
          </div>
         </section>
         <div class="direction_button">
-          <button id="bb_btn" class="back_button"><i class="fas fa-solid fa-angle-left angle0"></i> Previous</button>
-          <button id="nb_btn" class="next_button" onclick="check()">Next <i class="fas fa-solid fa-angle-right angle1"></i></button>
-          <button onclick="generateCV()" class="btn_gen" id="bt_gen">
-            Generate resume
+          <button id="bb_btn" class="back_button" onclick="backFun()"><i class="fas fa-solid fa-angle-left angle0"></i> Previous</button>
+          <button id="nb_btn" class="next_button" onclick="nextFun()">Next <i class="fas fa-solid fa-angle-right angle1"></i></button>
+          <button onclick="this.classList.toggle('button--loading')" class="btn_gen button--loading" id="bt_gen">
+            <span class="btn_gen_text">Generate</span>
           </button>
         </div>
         </div>
           
-
+        <!-- onclick="generateCV()" -->
     <!-- ----- -->
-    <!-- resume_template 01  -->
+    <!-- First resume template 01  -->
     <main class="l-main bd-container" id="bd-con">
       <!-- All elements within this div, is generated in PDF -->
       <div class="resume" id="area-cv">
@@ -675,7 +673,7 @@
         </div>
       </div>
     </main>
-
+    <!-- second resume templete 02 -->
 
 
 
@@ -698,10 +696,8 @@
     <!--========== MAIN JS ==========-->
     <script src="./resume/assets/js/main.js"></script>
 
-    
-    <!-- <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+
     <script src="./script.js"></script>
     <script src="./front.js"></script>
-    <!-- second resume templete  -->
   </body>
 </html>

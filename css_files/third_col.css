@@ -56,6 +56,7 @@ label {
 }
 .btn_gen {
   display: none;
+  position: relative;
   padding: 7px;
   border: 1px;
   width: 100px;
@@ -64,7 +65,11 @@ label {
   align-items: center;
   justify-content: center;
   align-content: center;
-  background-color: rgb(2, 164, 2);
+  background: #007a63;
+}
+.btn_gen_text {
+  transition: all 0.2s;
+  color: white;
 }
 .back_button,
 .next_button {
@@ -91,6 +96,33 @@ label {
 .back_button:hover {
   color: rgb(194, 3, 3);
 }
+.btn_gen:hover {
+}
+
+.btn_gen_text:hover,
 .next_button:hover {
   color: rgb(2, 164, 2);
+}
+.button--loading .btn_gen_text {
+  visibility: hidden;
+  opacity: 0;
+}
+.button--loading::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border: 4px solid transparent;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: button--loading-spinner 1s ease infinite;
+}
+
+@keyframes button--loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }
