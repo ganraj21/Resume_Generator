@@ -130,11 +130,6 @@ input {
   border: 1px solid rgb(255, 255, 255);
 }
 
-input[type="file"] {
-  opacity: 0; /* make transparent */
-  z-index: -1; /* move under anything else */
-  position: absolute; /* don't let it take up space */
-}
 .photo_field {
   display: flex;
   margin: 18px 0px 6px 3px;

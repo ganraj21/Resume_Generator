@@ -72,8 +72,7 @@ backFun = () => {
 }
 // -----------|-<
 // for-ward button
-document.getElementById('nb_btn').disabled = false
-
+// document.getElementById('nb_btn').disabled = true
 nextFun = () => {
   if (cnt == 1) {
     document.getElementById('fc_div').style.display = 'none'
