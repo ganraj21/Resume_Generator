@@ -3,15 +3,7 @@ function check() {
   if (your_name != '') {
     document.getElementById('nb_btn').disabled = false
   } else {
-    // your_name.style.border = 'red'
     alert('your name field is empty')
-    document
-      .getElementById('nameField_first')
-      .addEventListener('click', function () {
-        if (your_name == '') {
-          document.getElementById('nb_btn').disabled = true
-        }
-      })
     console.log('you are clicked on next btn')
   }
 }
