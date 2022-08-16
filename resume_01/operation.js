@@ -227,23 +227,23 @@ const generate_resume = () => {
 //   clearInterval(spin)
 //   generate_resume()
 // }
-document.getElementById('area-cv').style.display = 'none'
+// document.getElementById('area-cv').style.display = 'none'
 
-const myInterval = setInterval(
-  (spin = () => {
-    document.getElementById('bt_gen').classList.toggle('visible')
-    console.log('You clicked')
-  }),
-  3000,
-)
+// const myInterval = setInterval(
+//   (spin = () => {
+//     document.getElementById('bt_gen').classList.toggle('visible')
+//     console.log('You clicked')
+//   }),
+//   3000,
+// )
 
 function load() {
-  document.getElementById('bt_gen').style.display = 'block'
-  setTimeout(stop(), 5000)
+  // document.getElementById('bt_gen').style.display = 'block'
+  setTimeout(stop, 3000)
   generate_resume()
   document.getElementById('area-cv').style.display = 'flex'
 }
 
 function stop() {
-  document.getElementById('bt_gen').style.display = 'none'
+  document.getElementById('bt_gen').classList.toggle('visible')
 }
