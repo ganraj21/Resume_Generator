@@ -1,0 +1,160 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 10% 0px 10% 0px;
+  /* height: inherit; */
+  flex-direction: column;
+  /* margin-top: 30px; */
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  height: auto;
+}
+.row {
+  display: flex;
+  width: 90%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+br {
+  color: white;
+}
+/* ------------------- left resume ---------------- */
+.left_resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #020d1e;
+  color: white;
+  font-size: 12px;
+  width: 30%;
+  height: 63rem;
+}
+.full_name {
+  font-size: 18px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.occupation {
+  font-size: 18px;
+  margin: 6px 0px 3px 0px;
+}
+.eca {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.social_links h4,
+.skills h4,
+.eca h4 {
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+.social_links a {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+.social_links {
+  display: flex;
+  flex-direction: column;
+}
+.skills {
+  color: white;
+}
+.order_skl li,
+.social_links li {
+  margin-top: 15px;
+}
+/* ------------------- right_resume ------------------*/
+.right_resume {
+  display: flex;
+  width: 70%;
+  height: 60rem;
+  padding: 25px;
+  flex-direction: column;
+  background-color: #b88242;
+}
+.right_resume h1 {
+  display: flex;
+  font-size: 45px;
+  color: #0099ef;
+  margin-bottom: 1px;
+  align-content: center;
+  justify-content: center;
+}
+
+.card_container {
+}
+.card_header h2 {
+  font-size: 27px;
+  margin-bottom: 3px;
+}
+.card_body {
+  display: flex;
+  flex-direction: column;
+}
+.subtitle,
+.description {
+  margin-left: 22px;
+}
+.exp_main {
+  display: flex;
+  justify-content: space-between;
+}
+.your_position {
+  font-size: 18px;
+}
+.time_period {
+  font-size: 15px;
+}
+
+#aqT li {
+  display: flex;
+  padding: 6px;
+  align-items: flex-start;
+  flex-direction: column;
+  align-content: center;
+}
+.education_l label {
+  padding: 3px;
+}
+#addressT {
+  margin-left: 6px;
+}
+.myimg {
+  margin-top: 50px;
+  border-radius: 50%;
+  width: 175px;
+}
+
+@media (max-width: 480px) {
+  .myimg {
+    width: 100px;
+    margin-top: 33px;
+  }
+  .skills h6 {
+    margin: 15px 0px 6px 0px;
+    color: white;
+  }
+  .order_skl {
+    font-size: 10px;
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+  }
+  li {
+    margin-bottom: 6px;
+  }
+}

@@ -81,24 +81,6 @@
   margin-bottom: 15px;
 }
 
-.direction_button {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  padding: 21px;
-  width: 80%;
-  bottom: 0;
-}
-
-.first_col,
-.second_col,
-.third_col,
-.four_col {
-  width: 100%;
-  height: 100vh;
-}
 @media (max-width: 480px) {
   body {
     margin: 0px;
