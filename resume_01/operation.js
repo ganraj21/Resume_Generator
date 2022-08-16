@@ -2,7 +2,6 @@
 var cnt = 1
 // first back button is disable only enable when click first next button
 document.getElementById('bb_btn').disabled = true
-
 backFun = () => {
   if (cnt == 1) {
     document.getElementById('fc_div').style.display = 'flex'
@@ -223,18 +222,28 @@ const generate_resume = () => {
   document.getElementById('cv-template').style.display = 'block'
 }
 
-const spin = () => {
-  document.querySelector('button--loading').classList.toggle('visible')
-  console.log('You clicked')
-}
 // const spinner = () => {
 //   setInterval(spin, 3000)
 //   clearInterval(spin)
 //   generate_resume()
 // }
-const myInterval = setInterval(spin, 3000)
-function myStopFunction() {
-  clearInterval(myInterval)
+document.getElementById('area-cv').style.display = 'none'
+
+const myInterval = setInterval(
+  (spin = () => {
+    document.getElementById('bt_gen').classList.toggle('visible')
+    console.log('You clicked')
+  }),
+  3000,
+)
+
+function load() {
+  document.getElementById('bt_gen').style.display = 'block'
+  setTimeout(stop(), 5000)
+  generate_resume()
+  document.getElementById('area-cv').style.display = 'flex'
 }
-// const resume_generate_button = document.getElementById('bt_gen')
-// resume_generate_button.addEventListener('click', spinner)
+
+function stop() {
+  document.getElementById('bt_gen').style.display = 'none'
+}

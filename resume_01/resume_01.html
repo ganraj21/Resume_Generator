@@ -170,6 +170,7 @@
         <!-- ----- -->
         <!-- fourth column -->
       <section class="four_col" id="f_col">
+        <h3>Professional Information</h3>
         <div class="div_fields">
           <div class="input_02">
             <label for="">Profession</label>
@@ -232,8 +233,9 @@
       <div class="direction_button">
         <button id="bb_btn" class="back_button" onclick="backFun()"><i class="fas fa-solid fa-angle-left angle0"></i> Previous</button>
         <button id="nb_btn" class="next_button" onclick="nextFun()">Next <i class="fas fa-solid fa-angle-right angle1"></i></button>
-        <button onclick="myStopFunction()"  class="btn_gen button--loading" id="bt_gen">
-          <span class="btn_gen_text">Generate</span>
+        <div id="loader" style="display:none"></div>
+        <button onclick="load()"  class="btn_gen button--loading" id="bt_gen">
+          <span class="btn_gen_text" id="generate_btn">Generate</span>
         </button>
       </div>
       </div>
