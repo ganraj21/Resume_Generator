@@ -272,14 +272,8 @@ label {
 .next_button:hover {
   color: rgb(2, 164, 2);
 }
-.btn_gen_text {
-  display: none;
-}
-.button--loading .btn_gen_text {
-  visibility: hidden;
-  opacity: 0;
-}
-.button--loading::after {
+
+/* .button--loading::after {
   content: "";
   position: absolute;
   width: 21px;
@@ -297,7 +291,7 @@ label {
   to {
     transform: rotate(1turn);
   }
-}
+} */
 /* Third column end here ---||--- */
 
 .four_col {

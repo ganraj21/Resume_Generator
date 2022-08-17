@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Form</title>
+  </head>
+  <body>
+    
+    <!-- -------------------|-< -->
+       <!-- resume generating form -->
+       <div class="container_01" id="cv-form">
+        <!-- first column -->
+      <section class="first_col" id="fc_div">
+        <h3>Personal Information</h3>
+
+        <div class="div_fields">
+          <div class="input_01">
+            <input
+              type="text"
+              id="nameField_first"
+              placeholder="First name"
+              required
+            />
+            <input
+              type="text"
+              id="nameField_last"
+              placeholder="last name"
+              required
+            />
+          </div>
+
+          <div class="input_02">
+            <input
+              type="text"
+              id="contactField-phone"
+              placeholder="Phone No"
+              
+            />
+
+            <input
+              type="email"
+              id="contactField-email"
+              placeholder="Email"
+              
+            />
+
+            <textarea
+              id="addressField"
+              placeholder="Address"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <div class="file-upload">
+            <button class="file-upload-btn" type="file">Add Image</button>
+          
+            <div class="image-upload-wrap">
+              <input class="file-upload-input" type='file'/>
+              <div class="drag-text">
+                <h3>Drag and drop a file or select add Image</h3>
+              </div>
+            </div>
+          </div>
+          <!-- <button>  <input type="file" name="pic" accept="image/*"> Add Image</button> -->
+          
+        </div>
+      </section>
+        <!-- ----- -->
+        <!-- second coloum -->
+      <section class="second_col" id="sc_div">
+        <h2>Important Links</h2>
+        <!-- <div class="updiv"> -->
+          <div class="div_fields">
+        <div class="input_02">
+         
+          <input
+              type="text"
+              id="linkedinField"
+              placeholder="https://www.linkedin.com"
+              class="linked_input"
+            />
+          <input
+          type="text"
+          id="codeChefField"
+          placeholder="https://www.codechef.com"
+          class="codechef_input"
+        />
+        <input
+          type="text"
+          id="fbField"
+          placeholder="https://www.leetcode.com"
+          class="leetcode_input"
+        />
+            <input
+              type="text"
+              id="githubField"
+              placeholder="https://www.github.com"
+              class="github_input"
+            />
+            <input
+              type="text"
+              id="instaField"
+              placeholder="https://www.instagram.com"
+              class="insta_input"
+            />
+          </div>
+        </div>
+      </section>
+        <!-- ----- -->
+        <!-- third coloumn -->
+      <section class="third_col" id="thc_div">
+        <h3>Professional Information</h3>
+
+        <div class="div_fields">
+          <div class="input_02">
+            <label for="">About</label>
+            <textarea
+              id="your-about-info"
+              placeholder="About Your-Self"
+              class=" weField"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <div class="input_02" id="we">
+            <label for="">Experience</label>
+            <input type="text" class="input_title" placeholder="Title" />
+            <input
+              type="text"
+              class="input_company"
+              placeholder="Company name"
+              id="your_input_company"
+            />
+            <div class="input_01">
+              <input
+                type="date"
+                name=""
+                class="dateadd"
+                placeholder="MM/DD/YYYY"
+                
+              />
+              <input
+                type="date"
+                name=""
+                class="dateadd"
+                placeholder="MM/DD/YYYY"
+                
+              />
+            </div>
+            <textarea
+              placeholder="Description"
+              class=" weField"
+              rows="5"
+              id="your_company_description"
+            ></textarea>
+          </div>
+            <!-- new textarea -->
+            <div
+              onclick="addNewWEField()"
+              class="add_button"
+              id="weAddButton"
+            >
+              <button class="btns" id="btn1">Add More Experience</button>
+            </div>
+          </div>
+      </section>
+        <!-- ----- -->
+        <!-- fourth column -->
+      <section class="four_col" id="f_col">
+        <h3>Professional Information</h3>
+        <div class="div_fields">
+          <div class="input_02">
+            <label for="">Profession</label>
+            <input
+            placeholder="Your Profession"
+            class="Qualification_input"
+            id="profession_name"
+          ></input>
+          </div>
+        <div class="input_02" id="aq">
+          <label for="">Education</label>
+          <input type="text" class="input_title" placeholder="Title" />
+          <input
+            placeholder="Academic Qualification"
+            class="Qualification_input aqField"
+          ></input>
+          <div class="input_01">
+            <input
+              type="date"
+              name=""
+              id=""
+              class="s_date"
+              placeholder="MM/DD/YYYY"
+              onblur="(this.type='text')"
+            />
+            <input
+              type="text"
+              name=""
+              id=""
+              class="e_date"
+              placeholder="MM/DD/YYYY"
+              onblur="(this.type='text')"
+            />
+          </div>
+          <div
+            onclick="addNewAQField()"
+            class="add_button"
+            id="aqAddButton"
+          >
+            <button class="btns" id="btn2">Add More Qualification</button>
+          </div>
+        </div>
+        <div class="input_02" id="sk">
+          <label for="">Skills</label>
+          <input
+            placeholder="Your-Skills & Expertise"
+            class="Skills_input"
+            id="your-skills"
+          ></input>
+          <div
+            onclick="addNewSKField()"
+            class="add_button skField"
+            id="skAddButton"
+          >
+            <button class="btns" id="btn3">Add More Skills</button>
+          </div>
+        </div>
+       </div>
+      </section>
+      <div class="direction_button">
+        <button id="bb_btn" class="back_button" onclick="backFun()"><i class="fas fa-solid fa-angle-left angle0"></i> Previous</button>
+        <button id="nb_btn" class="next_button" onclick="nextFun()">Next <i class="fas fa-solid fa-angle-right angle1"></i></button>
+        <button class="btn_gen button--loading" id="bt_gen">
+          <span class="btn_gen_text" id="generate_btn">Generate</span>
+        </button>
+      </div>
+      </div>
+      <!-- onclick="generateCV()" -->
+  <!-- ----- -->
+  <script src="./form.js"></script>
+  </body>
+</html>

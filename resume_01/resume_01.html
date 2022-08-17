@@ -6,557 +6,339 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume Template One</title>
     <link rel="stylesheet" href="./resume_01.css" />
-    <link rel="stylesheet" href="./compile.css">
+    <link rel="stylesheet" href="./compile.css" />
   </head>
   <body>
-
-    <!-- -------------------|-< -->
-       <!-- resume generating form -->
-       <div class="container_01" id="cv-form">
-        <!-- first column -->
-      <section class="first_col" id="fc_div">
-        <h3>Personal Information</h3>
-
-        <div class="div_fields">
-          <div class="input_01">
-            <input
-              type="text"
-              id="nameField_first"
-              placeholder="First name"
-              required
-            />
-            <input
-              type="text"
-              id="nameField_last"
-              placeholder="last name"
-              required
-            />
-          </div>
-
-          <div class="input_02">
-            <input
-              type="text"
-              id="contactField-phone"
-              placeholder="Phone No"
-              
-            />
-
-            <input
-              type="email"
-              id="contactField-email"
-              placeholder="Email"
-              
-            />
-
-            <textarea
-              id="addressField"
-              placeholder="Address"
-              rows="5"
-            ></textarea>
-          </div>
-
-          <div class="file-upload">
-            <button class="file-upload-btn" type="file">Add Image</button>
-          
-            <div class="image-upload-wrap">
-              <input class="file-upload-input" type='file'/>
-              <div class="drag-text">
-                <h3>Drag and drop a file or select add Image</h3>
-              </div>
-            </div>
-          </div>
-          <!-- <button>  <input type="file" name="pic" accept="image/*"> Add Image</button> -->
-          
-        </div>
-      </section>
-        <!-- ----- -->
-        <!-- second coloum -->
-      <section class="second_col" id="sc_div">
-        <h2>Important Links</h2>
-        <!-- <div class="updiv"> -->
-          <div class="div_fields">
-        <div class="input_02">
-         
-          <input
-              type="text"
-              id="linkedinField"
-              placeholder="https://www.linkedin.com"
-              class="linked_input"
-            />
-          <input
-          type="text"
-          id="codeChefField"
-          placeholder="https://www.codechef.com"
-          class="codechef_input"
-        />
-        <input
-          type="text"
-          id="fbField"
-          placeholder="https://www.leetcode.com"
-          class="leetcode_input"
-        />
-            <input
-              type="text"
-              id="githubField"
-              placeholder="https://www.github.com"
-              class="github_input"
-            />
-            <input
-              type="text"
-              id="instaField"
-              placeholder="https://www.instagram.com"
-              class="insta_input"
-            />
-          </div>
-        </div>
-      </section>
-        <!-- ----- -->
-        <!-- third coloumn -->
-      <section class="third_col" id="thc_div">
-        <h3>Professional Information</h3>
-
-        <div class="div_fields">
-          <div class="input_02">
-            <label for="">About</label>
-            <textarea
-              id="your-about-info"
-              placeholder="About Your-Self"
-              class=" weField"
-              rows="5"
-            ></textarea>
-          </div>
-
-          <div class="input_02" id="we">
-            <label for="">Experience</label>
-            <input type="text" class="input_title" placeholder="Title" />
-            <input
-              type="text"
-              class="input_company"
-              placeholder="Company name"
-              id="your_input_company"
-            />
-            <div class="input_01">
-              <input
-                type="date"
-                name=""
-                class="dateadd"
-                placeholder="MM/DD/YYYY"
-                
-              />
-              <input
-                type="date"
-                name=""
-                class="dateadd"
-                placeholder="MM/DD/YYYY"
-                
-              />
-            </div>
-            <textarea
-              placeholder="Description"
-              class=" weField"
-              rows="5"
-              id="your_company_description"
-            ></textarea>
-          </div>
-            <!-- new textarea -->
-            <div
-              onclick="addNewWEField()"
-              class="add_button"
-              id="weAddButton"
-            >
-              <button class="btns" id="btn1">Add More Experience</button>
-            </div>
-          </div>
-      </section>
-        <!-- ----- -->
-        <!-- fourth column -->
-      <section class="four_col" id="f_col">
-        <h3>Professional Information</h3>
-        <div class="div_fields">
-          <div class="input_02">
-            <label for="">Profession</label>
-            <input
-            placeholder="Your Profession"
-            class="Qualification_input"
-            id="profession_name"
-          ></input>
-          </div>
-        <div class="input_02" id="aq">
-          <label for="">Education</label>
-          <input type="text" class="input_title" placeholder="Title" />
-          <input
-            placeholder="Academic Qualification"
-            class="Qualification_input aqField"
-          ></input>
-          <div class="input_01">
-            <input
-              type="date"
-              name=""
-              id=""
-              class="s_date"
-              placeholder="MM/DD/YYYY"
-              onblur="(this.type='text')"
-            />
-            <input
-              type="text"
-              name=""
-              id=""
-              class="e_date"
-              placeholder="MM/DD/YYYY"
-              onblur="(this.type='text')"
-            />
-          </div>
-          <div
-            onclick="addNewAQField()"
-            class="add_button"
-            id="aqAddButton"
-          >
-            <button class="btns" id="btn2">Add More Qualification</button>
-          </div>
-        </div>
-        <div class="input_02" id="sk">
-          <label for="">Skills</label>
-          <input
-            placeholder="Your-Skills & Expertise"
-            class="Skills_input"
-            id="your-skills"
-          ></input>
-          <div
-            onclick="addNewSKField()"
-            class="add_button skField"
-            id="skAddButton"
-          >
-            <button class="btns" id="btn3">Add More Skills</button>
-          </div>
-        </div>
-       </div>
-      </section>
-      <div class="direction_button">
-        <button id="bb_btn" class="back_button" onclick="backFun()"><i class="fas fa-solid fa-angle-left angle0"></i> Previous</button>
-        <button id="nb_btn" class="next_button" onclick="nextFun()">Next <i class="fas fa-solid fa-angle-right angle1"></i></button>
-        <button onclick="load()"  class="btn_gen button--loading" id="bt_gen">
-          <span class="btn_gen_text" id="generate_btn">Generate</span>
-        </button>
-      </div>
-      </div>
-        
-      <!-- onclick="generateCV()" -->
-  <!-- ----- -->
-  <!-- First resume template 01  -->
-  <main class="l-main bd-container" id="bd-con">
-    <!-- All elements within this div, is generated in PDF -->
-    <div class="resume" id="area-cv">
-      <div class="resume__left">
-        <!--========== HOME ==========-->
-        <section class="home" id="home">
-          <div class="home__container section bd-grid">
-            <div class="home__data bd-grid">
-              <img src="./resume/assets/img/perfil.jpg" alt="" class="home__img" />
-              <div class="home__title">
-              <h1  id="first_name">SMITH </h1>
-              <h1  id="last_name"><b >MATTHEW</b></h1>
-            </div>
-              <h3 class="home_profession" id="home-profession">Web developer</h3>
-
-              <div>
-                <a download="" class="home__button-movil">Download</a>
-              </div>
-            </div>
-            <div class="home_address bd-grid">
-              <span class="home__information" >
-                <i class="bx bx-map home_icon"></i><span  id="your-address-here" > Av. Boliver #123 Lima -
-                Peru</span>
-              </span>
-              <span class="home__information" >
-                <i class="bx bx-envelope home_icon"></i><span id="your-email-id"> user@email.com </span>
-              </span>
-              <span class="home__information">
-                <i class="bx bx-phone home_icon"></i> <span  id="your-phone-no"> 999-888-777 </span>
-              </span>
-            </div>
-          </div>
-
-          <!-- Theme change button -->
-          <i
-            class="bx bx-moon change-theme"
-            title="Theme"
-            id="theme-button"
-          ></i>
-
-          <!-- Button to generate and download and download the pdf. Available for
-          desktop -->
-          <i
-            class="bx bx-download generate-pdf"
-            title="Generate PDF"
-            id="resume-button"
-          ></i>
-        </section>
-
-        <!--========== SOCIAL ==========-->
-        <section class="social section">
-          <h2 class="section-title">SOCIAL</h2>
-
-          <div class="social__container bd-grid">
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              class="social__link social__icon"
-              id="link-of-linkedin"
-            >
-              <i class="bx bxl-linkedin-square"></i> @linkedin
-            </a>
-            <a
-              href="https://www.codechef.com/"
-              target="_blank"
-              class="social__link social__icon"
-              id="link-of-codechef"
-            >
-              <i class="bx bxl-facebook"></i>@facebook
-            </a>
-            <a
-              href="https://www.github.com/"
-              target="_blank"
-              class="social__link social__icon"
-              id="link-of-github"
-            >
-              <i class="bx bxl-github"></i>@GitHub
-            </a>
-          </div>
-        </section>
-
-        <!--========== EDUCATION ==========-->
-        <section class="education section" id="education">
-          <h2 class="section-title">Education</h2>
-
-          <div class="education__container bd-grid">
-            <div class="education__content">
-              <div class="education__time">
-                <span class="education__rounder"> </span>
-                <span class="education__line"></span>
-              </div>
-
-              <div class="education__data bd-grid">
-                <h3 class="education__title">MASTER OF DESIGN</h3>
-                <span class="education__studies">University od Studies</span>
-                <span class="education__year">2010 - 2015</span>
-              </div>
-            </div>
-            <div class="education__content">
-              <div class="education__time">
-                <span class="education__rounder"> </span>
-                <span class="education__line"></span>
-              </div>
-
-              <div class="education__data bd-grid">
-                <h3 class="education__title">WEB DEVELOPER</h3>
-                <span class="education__studies">Institute Studies</span>
-                <span class="education__year">2016 - 2019</span>
-              </div>
-            </div>
-            <div class="education__content">
-              <div class="education__time">
-                <span class="education__rounder"> </span>
-                <!-- <span class="education__line"></span> -->
-              </div>
-
-              <div class="education__data bd-grid">
-                <h3 class="education__title">MASTER IN UI/UX</h3>
-                <span class="education__studies">Institute Studies</span>
-                <span class="education__year">2019 - 2021</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!--========== SKILLS  ==========-->
-        <section class="skills section" id="skills">
-          <h2 class="section-title">Skills</h2>
-
-          <div class="skills__content bd-grid">
-            <ul class="skills__data">
-              <li class="skills__name">
-                <span class="skills__circle"></span>HTML
-              </li>
-              <li class="skills__name">
-                <span class="skills__circle"></span>Css
-              </li>
-              <li class="skills__name">
-                <span class="skills__circle"></span>Sass
-              </li>
-              <li class="skills__name">
-                <span class="skills__circle"></span>JavaScript
-              </li>
-            </ul>
-            <ul class="skills__data">
-              <li class="skills__name">
-                <span class="skills__circle"></span>Angular
-              </li>
-              <li class="skills__name">
-                <span class="skills__circle"></span>Firebase
-              </li>
-              <li class="skills__name">
-                <span class="skills__circle"></span>React
-              </li>
-            </ul>
-          </div>
-        </section>
-        <!--========== INTERESTS ==========-->
-        <section class="interests section">
-          <h2 class="section-title">Interests</h2>
-
-          <div class="interests__container bd-grid">
-            <div class="interests__content">
-              <i class="bx bx-headphone interests__icon"></i>
-              <span class="interests__name">Music</span>
-            </div>
-            <div class="interests__content">
-              <i class="bx bxs-plane-alt interests__icon"></i>
-              <span class="interests__name">Travel</span>
-            </div>
-            <div class="interests__content">
-              <i class="bx bx-book interests__icon"></i>
-              <span class="interests__name">Read</span>
-            </div>
-            <div class="interests__content">
-              <i class="bx bx-dumbbell interests__icon"></i>
-              <span class="interests__name">Fitness</span>
-            </div>
-          </div>
-        </section>
-        <!--========== LANGUAGES ==========-->
-        <section class="languages section">
-          <h2 class="section-title">Languages</h2>
-
-          <div class="languages__container">
-            <ul class="languages__content bd-grid">
-              <li class="languages__name">
-                <span class="languages__circle"></span>Spanish
-              </li>
-              <li class="languages__name">
-                <span class="languages__circle"></span>English
-              </li>
-              <li class="languages__name">
-                <span class="languages__circle"></span>French
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
-
-      <div class="resume__right">
-        <!--========== EXPERIENCE ==========-->
-        <!--========== PROFILE ==========-->
-        <section class="profile section" id="profile">
-          <h2 class="section-title">Profile</h2>
-          <p class="profile__description" id="your-profile-description">
-            I am a person, responsible with their work during working hours.
-            Finish various technical and higher studies at larger
-            univarsities. I have several years of experience and achivements
-            in the labor field.
-          </p>
-        </section>
-
-        <section class="experience section" id="experience">
-          <h2 class="section-title">Experience</h2>
-
-          <div class="experience__container bd-grid">
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title" id="your_experience_title">MASTER OF DESIGN</h3>
-                <span class="experience__company" 
-                  >From 2013 to 2015 | Tech Soft</span
-                >
-                <p class="experience__description" id="your_profile_experience_description">
-                  Work in this company dedicating the best responsibility in
-                  the area that corresponds, delivering the best results for
-                  the company and improving productivity.
-                </p>
-              </div>
-            </div>
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">UI / UX DESIGN AREA</h3>
-                <span class="experience__company"
-                  >From 2017 to 2019 | Adobe Inc</span
-                >
-                <p class="experience__description">
-                  Work in this company dedicating the best responsibility in
-                  the area that corresponds, delivering the best results for
-                  the company and improving productivity.
-                </p>
-              </div>
-            </div>
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <!-- <span class="experience__line"></span> -->
-              </div>
-
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">
-                  MOBILE APPLICATION DEVELOPER
+    <!-- First resume template 01  -->
+    <main class="l-main bd-container" id="bd-con">
+      <!-- All elements within this div, is generated in PDF -->
+      <div class="resume" id="area-cv">
+        <div class="resume__left">
+          <!--========== HOME ==========-->
+          <section class="home" id="home">
+            <div class="home__container section bd-grid">
+              <div class="home__data bd-grid">
+                <img
+                  src="./resume/assets/img/perfil.jpg"
+                  alt=""
+                  class="home__img"
+                />
+                <div class="home__title">
+                  <h1 id="first_name">SMITH</h1>
+                  <h1 id="last_name"><b>MATTHEW</b></h1>
+                </div>
+                <h3 class="home_profession" id="home-profession">
+                  Web developer
                 </h3>
-                <span class="experience__company"
-                  >From 2019 to 2021 | App Tech</span
-                >
-                <p class="experience__description">
-                  Work in this company dedicating the best responsibility in
-                  the area that corresponds, delivering the best results for
-                  the company and improving productivity.
+
+                <div>
+                  <a download="" class="home__button-movil">Download</a>
+                </div>
+              </div>
+              <div class="home_address bd-grid">
+                <span class="home__information">
+                  <i class="bx bx-map home_icon"></i
+                  ><span id="your-address-here">
+                    Av. Boliver #123 Lima - Peru</span
+                  >
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-envelope home_icon"></i
+                  ><span id="your-email-id"> user@email.com </span>
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-phone home_icon"></i>
+                  <span id="your-phone-no"> 999-888-777 </span>
+                </span>
+              </div>
+            </div>
+
+            <!-- Theme change button -->
+            <i
+              class="bx bx-moon change-theme"
+              title="Theme"
+              id="theme-button"
+            ></i>
+
+            <!-- Button to generate and download and download the pdf. Available for
+          desktop -->
+            <i
+              class="bx bx-download generate-pdf"
+              title="Generate PDF"
+              id="resume-button"
+            ></i>
+          </section>
+
+          <!--========== SOCIAL ==========-->
+          <section class="social section">
+            <h2 class="section-title">SOCIAL</h2>
+
+            <div class="social__container bd-grid">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                class="social__link social__icon"
+                id="link-of-linkedin"
+              >
+                <i class="bx bxl-linkedin-square"></i> @linkedin
+              </a>
+              <a
+                href="https://www.codechef.com/"
+                target="_blank"
+                class="social__link social__icon"
+                id="link-of-codechef"
+              >
+                <i class="bx bxl-facebook"></i>@facebook
+              </a>
+              <a
+                href="https://www.github.com/"
+                target="_blank"
+                class="social__link social__icon"
+                id="link-of-github"
+              >
+                <i class="bx bxl-github"></i>@GitHub
+              </a>
+            </div>
+          </section>
+
+          <!--========== EDUCATION ==========-->
+          <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education__container bd-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"> </span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">MASTER OF DESIGN</h3>
+                  <span class="education__studies">University od Studies</span>
+                  <span class="education__year">2010 - 2015</span>
+                </div>
+              </div>
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"> </span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">WEB DEVELOPER</h3>
+                  <span class="education__studies">Institute Studies</span>
+                  <span class="education__year">2016 - 2019</span>
+                </div>
+              </div>
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"> </span>
+                  <!-- <span class="education__line"></span> -->
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">MASTER IN UI/UX</h3>
+                  <span class="education__studies">Institute Studies</span>
+                  <span class="education__year">2019 - 2021</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--========== SKILLS  ==========-->
+          <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__content bd-grid">
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span>HTML
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>Css
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>Sass
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>JavaScript
+                </li>
+              </ul>
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span>Angular
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>Firebase
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>React
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!--========== INTERESTS ==========-->
+          <section class="interests section">
+            <h2 class="section-title">Interests</h2>
+
+            <div class="interests__container bd-grid">
+              <div class="interests__content">
+                <i class="bx bx-headphone interests__icon"></i>
+                <span class="interests__name">Music</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bxs-plane-alt interests__icon"></i>
+                <span class="interests__name">Travel</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bx-book interests__icon"></i>
+                <span class="interests__name">Read</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bx-dumbbell interests__icon"></i>
+                <span class="interests__name">Fitness</span>
+              </div>
+            </div>
+          </section>
+          <!--========== LANGUAGES ==========-->
+          <section class="languages section">
+            <h2 class="section-title">Languages</h2>
+
+            <div class="languages__container">
+              <ul class="languages__content bd-grid">
+                <li class="languages__name">
+                  <span class="languages__circle"></span>Spanish
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span>English
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span>French
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div class="resume__right">
+          <!--========== EXPERIENCE ==========-->
+          <!--========== PROFILE ==========-->
+          <section class="profile section" id="profile">
+            <h2 class="section-title">Profile</h2>
+            <p class="profile__description" id="your-profile-description">
+              I am a person, responsible with their work during working hours.
+              Finish various technical and higher studies at larger
+              univarsities. I have several years of experience and achivements
+              in the labor field.
+            </p>
+          </section>
+
+          <section class="experience section" id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title" id="your_experience_title">
+                    MASTER OF DESIGN
+                  </h3>
+                  <span class="experience__company"
+                    >From 2013 to 2015 | Tech Soft</span
+                  >
+                  <p
+                    class="experience__description"
+                    id="your_profile_experience_description"
+                  >
+                    Work in this company dedicating the best responsibility in
+                    the area that corresponds, delivering the best results for
+                    the company and improving productivity.
+                  </p>
+                </div>
+              </div>
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">UI / UX DESIGN AREA</h3>
+                  <span class="experience__company"
+                    >From 2017 to 2019 | Adobe Inc</span
+                  >
+                  <p class="experience__description">
+                    Work in this company dedicating the best responsibility in
+                    the area that corresponds, delivering the best results for
+                    the company and improving productivity.
+                  </p>
+                </div>
+              </div>
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <!-- <span class="experience__line"></span> -->
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">
+                    MOBILE APPLICATION DEVELOPER
+                  </h3>
+                  <span class="experience__company"
+                    >From 2019 to 2021 | App Tech</span
+                  >
+                  <p class="experience__description">
+                    Work in this company dedicating the best responsibility in
+                    the area that corresponds, delivering the best results for
+                    the company and improving productivity.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--========== CERTIFICATES ==========-->
+          <section class="certificate section" id="certificates">
+            <h2 class="section-title">Certificates</h2>
+
+            <div class="certificate__container bd-grid">
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  Certified for compliance in the work area (2012)
+                </h3>
+                <p class="certificate__description">
+                  For meeting the expections of leading the team to work the
+                  specified tasks in the labor field.
+                </p>
+              </div>
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  Certificate of attendance on computer technology
+                </h3>
+                <p class="certificate__description">
+                  For meeting the expections of leading the team to work the
+                  specified tasks in the labor field.
+                </p>
+              </div>
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  Achievement medal for productivity excellence during the year
+                  (2019)
+                </h3>
+                <p class="certificate__description">
+                  For meeting the expections of leading the team to work the
+                  specified tasks in the labor field.
                 </p>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <!--========== CERTIFICATES ==========-->
-        <section class="certificate section" id="certificates">
-          <h2 class="section-title">Certificates</h2>
-
-          <div class="certificate__container bd-grid">
-            <div class="certificate__content">
-              <h3 class="certificate__title">
-                Certified for compliance in the work area (2012)
-              </h3>
-              <p class="certificate__description">
-                For meeting the expections of leading the team to work the
-                specified tasks in the labor field.
-              </p>
-            </div>
-            <div class="certificate__content">
-              <h3 class="certificate__title">
-                Certificate of attendance on computer technology
-              </h3>
-              <p class="certificate__description">
-                For meeting the expections of leading the team to work the
-                specified tasks in the labor field.
-              </p>
-            </div>
-            <div class="certificate__content">
-              <h3 class="certificate__title">
-                Achievement medal for productivity excellence during the year
-                (2019)
-              </h3>
-              <p class="certificate__description">
-                For meeting the expections of leading the team to work the
-                specified tasks in the labor field.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!--========== REFERENCES ==========-->
-        <!-- <section class="references section" id="references">
+          <!--========== REFERENCES ==========-->
+          <!-- <section class="references section" id="references">
           <h2 class="section__title">References</h2>
 
           <div class="references__container bd-grid">
@@ -578,18 +360,15 @@
             </div>
           </div>
         </section> -->
-
-
+        </div>
       </div>
-    </div>
-  </main>
-  <!-- second resume templete 02 -->
+    </main>
+    <!-- second resume templete 02 -->
     <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrolltop" id="scroll-top">
       <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
     </a>
 
-<script src="./operation.js"></script>
-
+    <script src="./operation.js"></script>
   </body>
 </html>
