@@ -84,6 +84,11 @@ if (localStorage.getItem('txtValue') == '1') {
 
     let your_home_address = document.getElementById('addressField').value
     localStorage.setItem('your_home_address', your_home_address)
+
+    let professional_profile_name = document.getElementById('profession_name')
+      .value
+    localStorage.setItem('professional_profile_name', professional_profile_name)
+
     window.location.href = './resume_01/resume_01.html'
   }
   //   generate btn -->
@@ -117,6 +122,19 @@ if (localStorage.getItem('txtValue') == '1') {
   document.getElementsByTagName('HEAD')[0].appendChild(link)
 }
 
+const addNewSKField = () => {
+  let newNode = document.createElement('input')
+  newNode.classList.add('form-control')
+  newNode.classList.add('skField')
+  newNode.classList.add('mt-2')
+  newNode.setAttribute('rows', 2)
+  newNode.setAttribute('placeholder', 'Your-Skills & Expertise')
+
+  let skOb = document.getElementById('sk')
+  let skAddButtonOb = document.getElementById('skAddButton')
+
+  skOb.insertBefore(newNode, skAddButtonOb)
+}
 function addNewWEField() {
   //   console.log('hey hii this is ganesh')
   let newNode = document.createElement('textarea')
@@ -143,4 +161,30 @@ function addNewAQField() {
   let aqAddButtonOb = document.getElementById('aqAddButton')
 
   aqOb.insertBefore(newNode, aqAddButtonOb)
+}
+
+// const spinner = () => {
+//   setInterval(spin, 3000)
+//   clearInterval(spin)
+//   generate_resume()
+// }
+// document.getElementById('area-cv').style.display = 'none'
+
+// const myInterval = setInterval(
+//   (spin = () => {
+//     document.getElementById('bt_gen').classList.toggle('visible')
+//     console.log('You clicked')
+//   }),
+//   3000,
+// )
+
+function load() {
+  // document.getElementById('bt_gen').style.display = 'block'
+  setTimeout(stop, 3000)
+  generate_resume()
+  document.getElementById('area-cv').style.display = 'flex'
+}
+
+function stop() {
+  document.getElementById('bt_gen').classList.toggle('visible')
 }

@@ -75,7 +75,7 @@ body.scale-cv {
 }
 /*========== Generate PDF button ==========*/
 .generate-pdf {
-  display: none;
+  display: flex;
   position: absolute;
   top: 2.2rem;
   left: 0;
@@ -211,7 +211,7 @@ img {
   width: calc(100% - 3rem);
   margin-left: var(--mb-3);
   margin-right: var(--mb-3);
-  display: none;
+  display: flex;
 }
 .bd-grid {
   display: grid;

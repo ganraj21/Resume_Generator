@@ -1,168 +1,132 @@
-const addNewSKField = () => {
-  let newNode = document.createElement('input')
-  newNode.classList.add('form-control')
-  newNode.classList.add('skField')
-  newNode.classList.add('mt-2')
-  newNode.setAttribute('rows', 2)
-  newNode.setAttribute('placeholder', 'Your-Skills & Expertise')
-
-  let skOb = document.getElementById('sk')
-  let skAddButtonOb = document.getElementById('skAddButton')
-
-  skOb.insertBefore(newNode, skAddButtonOb)
-}
-
 // Compiling information in Resume --->
-const generate_resume = () => {
-  //   console.log('Generating resume')
-  location.href = '#area-cv'
 
-  document.getElementById('bd-con').style.display = 'flex'
+//console.log('Generating resume')
+// location.href = '#area-cv'
 
-  // setting your name here -->
-  let nameField_first = document.getElementById('nameField_first').value
-  let nameField_last = document.getElementById('nameField_last').value
-  document.getElementById('last_name').innerHTML = nameField_last
-  document.getElementById('first_name').innerHTML = nameField_first
-  //  --|
+document.getElementById('bd-con').style.display = 'flex'
 
-  // setting your profession -->
-  document.getElementById(
-    'home-profession',
-  ).innerHTML = document.getElementById('profession_name').value
-  // --|
-  let address = document.getElementById('addressField').value
-  document.getElementById('your-address-here').innerHTML = address
+// setting your name here -->
+document.getElementById('last_name').innerHTML = localStorage.getItem(
+  'your_last_name',
+)
+document.getElementById('first_name').innerHTML = localStorage.getItem(
+  'your_first_name',
+)
+//  --|
 
-  let email = document.getElementById('contactField-email').value
-  document.getElementById('your-email-id').innerHTML = email
+// setting your profession -->
+document.getElementById('home-profession').innerHTML = localStorage.getItem(
+  'professional_profile_name',
+)
 
-  let phone = document.getElementById('contactField-phone').value
-  document.getElementById('your-phone-no').innerHTML = phone
+// --|
+document.getElementById('your-address-here').innerHTML = localStorage.getItem(
+  'your_home_address',
+)
 
-  // social media --
-  document.getElementById('link-of-linkedin').href = document.getElementById(
-    'linkedinField',
-  ).value
+document.getElementById('your-email-id').innerHTML = localStorage.getItem(
+  'your_email',
+)
+document.getElementById('your-phone-no').innerHTML = localStorage.getItem(
+  'your_phone_no',
+)
 
-  document.getElementById('link-of-codechef').href = document.getElementById(
-    'codeChefField',
-  ).value
+// social media --
+document.getElementById('link-of-linkedin').href = document.getElementById(
+  'linkedinField',
+).value
 
-  document.getElementById('link-of-github').href = document.getElementById(
-    'githubField',
-  ).value
-  // --|
+document.getElementById('link-of-codechef').href = document.getElementById(
+  'codeChefField',
+).value
 
-  // your skills here --
-  let skills = document.getElementById('contactField-phone').value
-  document.getElementById('your-phone-no').innerHTML = skills
+document.getElementById('link-of-github').href = document.getElementById(
+  'githubField',
+).value
+// --|
 
-  // Experience --->
-  document.getElementById(
-    ' your_experience_title',
-  ).innerHTML = document.getElementById('your_input_company').value
+// your skills here --
+let skills = document.getElementById('contactField-phone').value
+document.getElementById('your-phone-no').innerHTML = skills
 
-  // setting your about section --
-  document.getElementById(
-    'your-profile-description',
-  ).innerHTML = document.getElementById('your-about-info').value
-  // --|
+// Experience --->
+document.getElementById(
+  ' your_experience_title',
+).innerHTML = document.getElementById('your_input_company').value
 
-  let your_company_description = document.getElementById(
-    'your_company_description',
-  ).value
-  document.getElementById(
-    'your_profile_experience_description',
-  ).innerHTML = your_company_description
-  // ---|
+// setting your about section --
+document.getElementById(
+  'your-profile-description',
+).innerHTML = document.getElementById('your-about-info').value
+// --|
 
-  //   direct
-  document.getElementById('nameT2').innerHTML = nameField
+let your_company_description = document.getElementById(
+  'your_company_description',
+).value
+document.getElementById(
+  'your_profile_experience_description',
+).innerHTML = your_company_description
+// ---|
 
-  //   contact
-  document.getElementById('contactT').innerHTML = document.getElementById(
-    'contactField',
-  ).value
+//   direct
+document.getElementById('nameT2').innerHTML = nameField
 
-  //   address
-  document.getElementById('addressT').innerHTML = document.getElementById(
-    'addressField',
-  ).value
+//   contact
+document.getElementById('contactT').innerHTML = document.getElementById(
+  'contactField',
+).value
 
-  //   social media links
-  let fc = document.getElementById('fbField').value
-  let ic = document.getElementById('instaField').value
-  let li = document.getElementById('linkedinField').value
-  document.getElementById('fbT').href = fc
-  document.getElementById('instaT').href = ic
-  document.getElementById('linkedT').href = li
+//   address
+document.getElementById('addressT').innerHTML = document.getElementById(
+  'addressField',
+).value
 
-  // Your skills and experties
+//   social media links
+let fc = document.getElementById('fbField').value
+let ic = document.getElementById('instaField').value
+let li = document.getElementById('linkedinField').value
+document.getElementById('fbT').href = fc
+document.getElementById('instaT').href = ic
+document.getElementById('linkedT').href = li
 
-  var ski = document.getElementsByClassName('skField')
-  let str0 = ''
-  for (let k of ski) {
-    str0 += `<li>${k.value}</li>`
-  }
-  document.getElementById('my_skills').innerHTML = str0
+// Your skills and experties
 
-  //   about your-self
-  document.getElementById('objectiveT').innerHTML = document.getElementById(
-    'objectiveField',
-  ).value
-
-  //  we
-  let wes = document.getElementsByClassName('weField')
-  let str = ''
-  for (let e of wes) {
-    str += `<li>${e.value}</li>`
-  }
-  document.getElementById('weT').innerHTML = str
-
-  //   aq
-  let aqs = document.getElementsByClassName('aqField')
-  let str1 = ''
-  for (let e of aqs) {
-    str1 += `<li>${e.value}</li>`
-  }
-  document.getElementById('aqT').innerHTML = str1
-
-  //this code is for setting photo
-  //let file = document.getElementById('imgField').files[0]
-  //let reader = new FileReader()
-  //reader.readAsDataURL(file)
-
-  // reader.onloadend = function () {
-  //   document.getElementById('imgTemplate').src = reader.result
-  // }
-
-  document.getElementById('cv-form').style.display = 'none'
-  document.getElementById('cv-template').style.display = 'block'
+var ski = document.getElementsByClassName('skField')
+let str0 = ''
+for (let k of ski) {
+  str0 += `<li>${k.value}</li>`
 }
+document.getElementById('my_skills').innerHTML = str0
 
-// const spinner = () => {
-//   setInterval(spin, 3000)
-//   clearInterval(spin)
-//   generate_resume()
+//   about your-self
+document.getElementById('objectiveT').innerHTML = document.getElementById(
+  'objectiveField',
+).value
+
+//  we
+let wes = document.getElementsByClassName('weField')
+let str = ''
+for (let e of wes) {
+  str += `<li>${e.value}</li>`
+}
+document.getElementById('weT').innerHTML = str
+
+//   aq
+let aqs = document.getElementsByClassName('aqField')
+let str1 = ''
+for (let e of aqs) {
+  str1 += `<li>${e.value}</li>`
+}
+document.getElementById('aqT').innerHTML = str1
+
+//this code is for setting photo
+//let file = document.getElementById('imgField').files[0]
+//let reader = new FileReader()
+//reader.readAsDataURL(file)
+
+// reader.onloadend = function () {
+//   document.getElementById('imgTemplate').src = reader.result
 // }
-// document.getElementById('area-cv').style.display = 'none'
 
-// const myInterval = setInterval(
-//   (spin = () => {
-//     document.getElementById('bt_gen').classList.toggle('visible')
-//     console.log('You clicked')
-//   }),
-//   3000,
-// )
-
-function load() {
-  // document.getElementById('bt_gen').style.display = 'block'
-  setTimeout(stop, 3000)
-  generate_resume()
-  document.getElementById('area-cv').style.display = 'flex'
-}
-
-function stop() {
-  document.getElementById('bt_gen').classList.toggle('visible')
-}
+document.getElementById('cv-form').style.display = 'none'
+document.getElementById('cv-template').style.display = 'block'
