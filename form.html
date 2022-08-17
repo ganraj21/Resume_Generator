@@ -13,9 +13,8 @@
        <div class="container_01" id="cv-form">
         <!-- first column -->
       <section class="first_col" id="fc_div">
-        <h3>Personal Information</h3>
-
         <div class="div_fields">
+          <h3>Personal Information</h3>
           <div class="input_01">
             <input
               type="text"
@@ -70,35 +69,55 @@
         <!-- ----- -->
         <!-- second coloum -->
       <section class="second_col" id="sc_div">
-        <h2>Important Links</h2>
+        
         <!-- <div class="updiv"> -->
           <div class="div_fields">
+            <h2>Important Links</h2>
+            <ul>
+              <li>
+            <p>Click on buttons to add your social and important links. you can add max 5 links.</p></li>
+            <li>
+            <p>If you are not click on following button then your input for this field is not consider.</p></li>
+          </ul>
         <div class="input_02">
          
+          <div class="box_input">
+            <button id="linked_btn">LinkedIn</button>
           <input
               type="text"
               id="linkedinField"
               placeholder="https://www.linkedin.com"
               class="linked_input"
-            />
+          />
+        </div>
+        <div class="box_input">
+          <button id="codechef_btn">CodeChef</button>
           <input
-          type="text"
-          id="codeChefField"
-          placeholder="https://www.codechef.com"
-          class="codechef_input"
-        />
+             type="text"
+             id="codeChefField"
+             placeholder="https://www.codechef.com"
+             class="codechef_input"
+           />
+        </div>
+        <div class="box_input">
+          <button id="leetcode_btn">Leetcode</button>
         <input
           type="text"
           id="fbField"
           placeholder="https://www.leetcode.com"
           class="leetcode_input"
-        />
+        /></div>
+        <div class="box_input">
+          <button id="github_btn">GitHub</button>
             <input
               type="text"
               id="githubField"
               placeholder="https://www.github.com"
               class="github_input"
             />
+          </div>
+          <div class="box_input">
+          <button id="insta_btn">Instagram</button>
             <input
               type="text"
               id="instaField"
@@ -106,14 +125,14 @@
               class="insta_input"
             />
           </div>
+          </div>
         </div>
       </section>
         <!-- ----- -->
         <!-- third coloumn -->
       <section class="third_col" id="thc_div">
-        <h3>Professional Information</h3>
-
         <div class="div_fields">
+          <h3>Professional Information</h3>
           <div class="input_02">
             <label for="">About</label>
             <textarea
