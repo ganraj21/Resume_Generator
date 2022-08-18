@@ -215,6 +215,15 @@ bton_gen.addEventListener('click', generate_fun2)
   // Get HTML head element to append
   // link element to it
   document.getElementsByTagName('HEAD')[0].appendChild(link)
+
+
+  // --------|
+
+  const generate_fun3 = () => {
+    window.location.href = './resume_03/resume_03.html'
+  }
+  let bton_gen = document.getElementById('generate_btn')
+  bton_gen.addEventListener('click', generate_fun3)
 }
 
 const addNewSKField = () => {
