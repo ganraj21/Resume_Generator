@@ -3,11 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
 .container {
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 .user_name {
   text-align: center;
@@ -28,10 +36,18 @@ li {
   margin-right: 9px;
   text-decoration: none;
 }
+.qualification_title {
+  display: flex;
+  justify-content: space-between;
+}
 .achivement__list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   align-content: center;
+}
+label {
+  font-size: 27px;
+  font-weight: bold;
 }
