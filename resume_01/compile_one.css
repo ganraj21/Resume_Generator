@@ -125,7 +125,8 @@ body.scale-cv {
 }
 .scale-cv .education__container,
 .scale-cv .experience__container,
-.scale-cv .certificate__container {
+.scale-cv .certificate__container,
+.scale-cv .project__container {
   gap: 1rem;
 }
 
@@ -448,13 +449,20 @@ img {
   border-radius: 50%;
   margin-right: 0.75rem;
 }
-/*========== CERTIFICATES ==========*/
-.certificate__title {
+/*========== CERTIFICATES AND PROJECTS ==========*/
+.certificate__title,
+.project__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
 }
+.certificate__content,
+.project__content {
+  margin: 9px;
+  display: flex;
+  flex-direction: column;
+}
 /*========== REFERENCES ==========*/
-.references__content {
+/* .references__content {
   gap: 0.25rem;
 }
 .references__subtitle {
@@ -467,7 +475,7 @@ img {
 }
 .references__title {
   font-size: var(--h3-font-size);
-}
+} */
 /*========== INTERESTS ==========*/
 .interests__container {
   grid-template-columns: repeat(3, 1fr);
@@ -558,9 +566,9 @@ img {
   .home__button-movil {
     display: none;
   }
-  .references__container {
+  /* .references__container {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
   .languages__content {
     grid-template-columns: repeat(2, max-content);
     column-gap: 3.5rem;
