@@ -67,9 +67,8 @@ if (localStorage.getItem('txtValue') == '1') {
   document.getElementsByTagName('HEAD')[0].appendChild(link)
   // generate function --->
   const generate_fun = () => {
-    // location.href('./resume_01/resume_01.html')
 
-    // fetch('./resume_01/resume_01.html')
+    // first-col-->
     let your_first_name = document.getElementById('nameField_first').value
     localStorage.setItem('your_first_name', your_first_name)
 
@@ -85,10 +84,17 @@ if (localStorage.getItem('txtValue') == '1') {
     let your_home_address = document.getElementById('addressField').value
     localStorage.setItem('your_home_address', your_home_address)
 
-    let professional_profile_name = document.getElementById('profession_name')
-      .value
+    let professional_profile_name = document.getElementById('profession_name').value
     localStorage.setItem('professional_profile_name', professional_profile_name)
 
+    // about information -->
+    let profile_about_information = document.getElementById('your-about-info').value
+    localStorage.setItem('profile_about_information', profile_about_information)
+
+    // education --->
+    let academic_qualification_title = document.getElementById('Qualification_Title').value
+    localStorage.setItem('academic_qualification_title', academic_qualification_title)
+    
     window.location.href = './resume_01/resume_01.html'
   }
   //   generate btn -->
