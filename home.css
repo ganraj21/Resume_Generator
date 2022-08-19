@@ -11,8 +11,10 @@ html {
 }
 
 .front_page {
+  background-color: #01031b;
   height: 100%;
   display: flex;
+  color: white;
   flex-direction: column;
   align-content: center;
   align-items: center;
@@ -23,10 +25,10 @@ html {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-content: center;
   align-items: center;
   position: relative;
+  justify-content: flex-start;
 }
 .main_div1 {
   display: flex;
