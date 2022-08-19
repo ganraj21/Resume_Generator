@@ -82,7 +82,8 @@ html {
   top: 75%;
   right: 25%;
 }
-.middle {
+.middle,
+.middle_01 {
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
@@ -113,5 +114,12 @@ html {
   #r_img_05 .middle {
     top: 80%;
     left: 35%;
+  }
+  .middle {
+    top: 70%;
+    left: 50%;
+  }
+  .middle_01 {
+    top: 90%;
   }
 }
