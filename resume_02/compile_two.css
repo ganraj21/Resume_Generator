@@ -77,7 +77,7 @@ body.scale-cv {
 .generate-pdf {
   display: none;
   position: absolute;
-  top: 2.2rem;
+  top: 0.9rem;
   left: 0;
   font-size: 1.2rem;
   color: var(--text-color);
@@ -298,24 +298,34 @@ img {
 }
 
 .home__data {
+  background-color: blueviolet;
   gap: 0.5rem;
+  height: 128px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: -1.55rem;
+  margin-top: 1.2rem;
+  margin-left: -1.66rem;
+  justify-content: center;
+  align-content: center;
 }
 .home__img {
   width: 120px;
   height: 120px;
+  margin-right: 1.2rem;
   border-radius: 50%;
   justify-content: center;
   margin-bottom: var(--mb-1);
 }
 .home__title {
-  font-size: var(--h1-font-size);
+  font-size: 1.6rem;
+  /* font-size: var(--h1-font-size); */
 }
 .home__profession {
-  font-size: var(--normal-font-size);
+  font-size: 1.3rem;
+  /* font-size: var(--normal-font-size); */
   margin-bottom: var(--mb-1);
 }
 .home__address {
@@ -444,21 +454,6 @@ img {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
 }
-/*========== REFERENCES ==========*/
-.references__content {
-  gap: 0.25rem;
-}
-.references__subtitle {
-  color: var(--text-color-light);
-}
-
-.references__subtitle,
-.references__contact {
-  font-size: var(--smaller-font-size);
-}
-.references__title {
-  font-size: var(--h3-font-size);
-}
 /*========== INTERESTS ==========*/
 .interests__container {
   grid-template-columns: repeat(3, 1fr);
@@ -560,4 +555,14 @@ img {
     grid-template-columns: repeat(4, max-content);
     column-gap: 3.5rem;
   }
+}
+
+/* /////// ---------- Profile image -------------/////////// */
+.home__data_img {
+  background-color: blueviolet;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 2.7rem -1.55rem 0 -1.55rem;
 }
