@@ -99,7 +99,8 @@ html {
   opacity: 0.3;
 }
 
-.mySlides:hover .middle {
+.mySlides:hover .middle,
+.mySlides:hover .middle_01 {
   opacity: 1;
 }
 
@@ -121,5 +122,6 @@ html {
   }
   .middle_01 {
     top: 90%;
+    left: 50%;
   }
 }
