@@ -41,6 +41,23 @@ document.getElementById('education-title').innerHTML = localStorage.getItem(
   'academic_qualification_title',
 )
 
+document.getElementById('university_title').innerHTML = localStorage.getItem(
+  'university_qualification_title',
+)
+
+document.getElementById('education_time').innerHTML = localStorage.getItem(
+  'qualification_duration',
+)
+
+// experience section --->
+document.getElementById('your_experience_title').innerHTML = localStorage.getItem(
+  'experience_title',
+)
+
+document.getElementById('d_and_c').innerHTML = localStorage.getItem('company_title');
+document.getElementById('your_profile_experience_description').innerHTML = localStorage.getItem(
+  'experience_desc',
+)
 // social media --
 // document.getElementById('link-of-linkedin').href = document.getElementById(
 //   'linkedinField',

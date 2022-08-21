@@ -145,7 +145,7 @@
 
           <div class="input_02" id="we">
             <label for="">Experience</label>
-            <input type="text" class="input_title" placeholder="Title" />
+            <input type="text" class="input_title" id="exp_title" placeholder="Title" />
             <input
               type="text"
               class="input_company"
@@ -154,18 +154,18 @@
             />
             <div class="input_01">
               <input
-                type="date"
-                name=""
+                type="number"
+                name="start"
+                id="c_s_d"
                 class="dateadd"
-                placeholder="MM/DD/YYYY"
-                
+                placeholder="Start date eg. 2021"
               />
               <input
-                type="date"
-                name=""
+                type="number"
+                name="end"
+                id="c_e_d"
                 class="dateadd"
-                placeholder="MM/DD/YYYY"
-                
+                placeholder="End date eg. 2022"
               />
             </div>
             <textarea
@@ -181,7 +181,7 @@
               class="add_button"
               id="weAddButton"
             >
-              <button class="btns" id="btn1">Add More Experience</button>
+              <button class="btns" id="btn1">Add Experience</button>
             </div>
           </div>
       </section>
@@ -205,22 +205,23 @@
           <input
             placeholder="University Name"
             class="Qualification_input aqField"
+            id="University_Name"
           ></input>
           <div class="input_01">
             <input
-              type="date"
-              name=""
-              id=""
+              type="number"
+              name="start"
+              id="date_01"
               class="s_date"
-              placeholder="MM/DD/YYYY"
+              placeholder="Start year eg. 2021"
               onblur="(this.type='text')"
             />
             <input
               type="text"
-              name=""
-              id=""
+              name="end"
+              id="date_02"
               class="e_date"
-              placeholder="MM/DD/YYYY"
+              placeholder="End year eg. 2021"
               onblur="(this.type='text')"
             />
           </div>
@@ -229,7 +230,7 @@
             class="add_button"
             id="aqAddButton"
           >
-            <button class="btns" id="btn2">Add More Qualification</button>
+            <button class="btns" id="btn2">Add Qualification</button>
           </div>
         </div>
         <div class="input_02" id="sk">
@@ -244,10 +245,27 @@
             class="add_button skField"
             id="skAddButton"
           >
-            <button class="btns" id="btn3">Add More Skills</button>
+            <button class="btns" id="btn3">Add Skills</button>
           </div>
         </div>
        </div>
+      </section>
+
+        <!-- five column -->
+      <section class="five_col" id="ff_col">
+        <div class="div_fields">
+          <h3>Certificates And Projects</h3>
+          <div class="input_02">
+            <input type="text" name="" id="certificate_title" placeholder="Certificate Title">
+            <textarea name="" id="certificate_description" cols="30" rows="5" placeholder="Certificate Description"></textarea>
+            <button class="cpbtn" id="cert_btn">add Certificate</button>
+          </div>
+          <div class="input_02">
+            <input type="text" id="project_title" placeholder="Project Title">
+            <textarea name="" id="" cols="30" rows="5" placeholder="Project Description"></textarea>
+            <button class="cpbtn" id="proj_btn">add Project</button>
+          </div>
+          </div>
       </section>
       <div class="direction_button">
         <button id="bb_btn" class="back_button" onclick="backFun()"><i class="fas fa-solid fa-angle-left angle0"></i> Previous</button>

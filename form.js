@@ -45,6 +45,11 @@ nextFun = () => {
   } else if (cnt == 3) {
     document.getElementById('thc_div').style.display = 'none'
     document.getElementById('f_col').style.display = 'flex'
+    document.getElementById('nb_btn').style.display = 'flex'
+    document.getElementById('bt_gen').style.display = 'none'
+  }else if (cnt == 4){
+    document.getElementById('f_col').style.display = 'none'
+    document.getElementById('ff_col').style.display = 'flex'
     document.getElementById('nb_btn').style.display = 'none'
     document.getElementById('bt_gen').style.display = 'flex'
   }
@@ -135,6 +140,26 @@ document.getElementById('linked_btn').addEventListener('click',linkedin_x)
     // education --->
     let academic_qualification_title = document.getElementById('Qualification_Title').value
     localStorage.setItem('academic_qualification_title', academic_qualification_title)
+
+    let university_qualification_title = document.getElementById('University_Name').value
+    localStorage.setItem('university_qualification_title', university_qualification_title)
+
+    let qualification = document.getElementById('date_01').value
+    let duration = document.getElementById('date_02').value
+    let qualification_duration = qualification + " - " + duration
+    localStorage.setItem('qualification_duration', qualification_duration)
+
+     // experience --->
+     let experience_title = document.getElementById('exp_title').value
+     localStorage.setItem('experience_title', experience_title)
+ 
+
+     let company_title = " From " + document.getElementById('c_s_d').value + " to "  + document.getElementById('c_e_d').value + " | " + document.getElementById('your_input_company').value
+     localStorage.setItem('company_title', company_title)
+ 
+     let experience_desc = document.getElementById('your_company_description').value
+     localStorage.setItem('experience_desc', experience_desc)
+ 
 
     window.location.href = './resume_01/resume_01.html'
   }
