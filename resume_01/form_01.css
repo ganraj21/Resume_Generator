@@ -274,6 +274,7 @@ label {
   align-content: center;
   border-radius: 6px;
   border: 1px;
+  position: relative;
 }
 .angle0 {
   margin-right: 6px;
