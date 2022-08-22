@@ -1,4 +1,8 @@
-// back button ---->
+
+
+console.log(localStorage.getItem('txtValue'))
+if (localStorage.getItem('txtValue') == '1') {
+  // back button ---->
 var cnt = 1
 // first back button is disable only enable when click first next button
 document.getElementById('bb_btn').disabled = true
@@ -8,6 +12,7 @@ backFun = () => {
     document.getElementById('sc_div').style.display = 'none'
     document.getElementById('thc_div').style.display = 'none'
     document.getElementById('f_col').style.display = 'none'
+    document.getElementById('ff_col').style.display = 'none'
     document.getElementById('bb_btn').disabled = true
     document.getElementById('nb_btn').disabled = false
     document.getElementById('nb_btn').style.display = 'flex'
@@ -20,10 +25,11 @@ backFun = () => {
     document.getElementById('bt_gen').style.display = 'none'
   } else if (cnt == 3) {
     document.getElementById('f_col').style.display = 'none'
+    document.getElementById('ff_col').style.display = 'none'
     document.getElementById('thc_div').style.display = 'flex'
     document.getElementById('nb_btn').style.display = 'flex'
     document.getElementById('bt_gen').style.display = 'none'
-    document.getElementById('bd-con').style.display = 'none'
+    // document.getElementById('bd-con').style.display = 'none'
   }
   cnt--
 }
@@ -55,9 +61,6 @@ nextFun = () => {
   }
   cnt++
 }
-
-console.log(localStorage.getItem('txtValue'))
-if (localStorage.getItem('txtValue') == '1') {
   // Create new link Element
   var link = document.createElement('link')
   // set the attributes for link element
@@ -110,6 +113,46 @@ const linkedin_x = () =>{
   document.getElementById('linked_btn').style.display = "none"
 }
 document.getElementById('linked_btn').addEventListener('click',linkedin_x)
+
+document.getElementById('cp_01').style.display = "flex";
+document.getElementById('cp_02').style.display = "none";
+document.getElementById('cp_03').style.display = "none";
+const add_certificate_01 = () =>{
+}
+const add_certificate_02 = () =>{
+  document.getElementById('cp_01').style.display = "none";
+  document.getElementById('cp_02').style.display = "flex";
+  document.getElementById('cp_03').style.display = "none";
+  document.getElementById('cancel_01').addEventListener('click', function (){
+  document.getElementById('cp_02').style.display = "none";
+  document.getElementById('certificate_title_02').value = "";
+  document.getElementById('certificate_description_02').value = "";
+  document.getElementById('cp_01').style.display = "flex";
+  })
+  document.getElementById('back_01').addEventListener('click',function(){
+    document.getElementById('cp_01').style.display = "flex";
+  document.getElementById('cp_02').style.display = "none";
+  })
+}
+const add_certificate_03 = () =>{
+  document.getElementById('cp_02').style.display = "none";
+  document.getElementById('cp_03').style.display = "flex";
+  document.getElementById('cp_01').style.display = "none";
+  document.getElementById('cancel_02').addEventListener('click', function (){
+    document.getElementById('cp_03').style.display = "none";
+  document.getElementById('certificate_title_03').value = "";
+  document.getElementById('certificate_description_03').value = "";
+    document.getElementById('cp_02').style.display = "flex";
+    })
+
+    document.getElementById('back_02').addEventListener('click',function(){
+      document.getElementById('cp_02').style.display = "flex";
+      document.getElementById('cp_03').style.display = "none";
+    })
+}
+document.getElementById('cert_btn_01').addEventListener('click',add_certificate_02)
+document.getElementById('cert_btn_02').addEventListener('click',add_certificate_03)
+// document.getElementById('cert_btn_03').addEventListener('click',add_certificate_03)
 
   // generate function --->
   const generate_fun = () => {
