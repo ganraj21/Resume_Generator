@@ -146,8 +146,41 @@
 
 
           <div class="input_02" id="we">
-            <label for="">Experience</label>
-            <div class="back_c_container">
+            <label for="">Experience <span id="exp_num">i</span></label>
+            <div class="bcc" id="bcc_01">
+            <input type="text" class="input_title" id="exp_title" placeholder="Your position" />
+            <input
+              type="text"
+              class="input_company"
+              placeholder="Company name"
+              id="your_input_company"
+            />
+            <div class="input_01">
+              <input
+                type="number"
+                name="start"
+                id="c_s_d"
+                class="dateadd"
+                placeholder="Start year"
+              />
+              <input
+                type="number"
+                name="end"
+                id="c_e_d"
+                class="dateadd"
+                placeholder="End year"
+              />
+            </div>
+            <textarea
+              placeholder="Description"
+              class=" weField"
+              rows="5"
+              id="your_company_description"
+            ></textarea>
+            <button class="btns" id="btn1">Add Experience</button>
+          </div>
+          
+          <div class="bcc" id="bcc_02">
             <input type="text" class="input_title" id="exp_title" placeholder="Title" />
             <input
               type="text"
@@ -161,14 +194,14 @@
                 name="start"
                 id="c_s_d"
                 class="dateadd"
-                placeholder="Start date eg. 2021"
+                placeholder="Start year"
               />
               <input
                 type="number"
                 name="end"
                 id="c_e_d"
                 class="dateadd"
-                placeholder="End date eg. 2022"
+                placeholder="End year"
               />
             </div>
             <textarea
@@ -177,16 +210,45 @@
               rows="5"
               id="your_company_description"
             ></textarea>
+            <button class="btns" id="btn2">Add Experience</button>
           </div>
+          
+          <div class="bcc" id="bcc_03">
+            <input type="text" class="input_title" id="exp_title" placeholder="Title" />
+            <input
+              type="text"
+              class="input_company"
+              placeholder="Company name"
+              id="your_input_company"
+            />
+            <div class="input_01">
+              <input
+                type="number"
+                name="start"
+                id="c_s_d"
+                class="dateadd"
+                placeholder="Start year"
+              />
+              <input
+                type="number"
+                name="end"
+                id="c_e_d"
+                class="dateadd"
+                placeholder="End year"
+              />
+            </div>
+            <textarea
+              placeholder="Description"
+              class=" weField"
+              rows="5"
+              id="your_company_description"
+            ></textarea>
+            <button class="btns" id="btn3">Add Experience</button>
+          </div>
+          
         </div>
             <!-- new textarea -->
-            <div
-              onclick="addNewWEField()"
-              class="add_button"
-              id="weAddButton"
-            >
-              <button class="btns" id="btn1">Add Experience</button>
-            </div>
+              
           </div>
       </section>
         <!-- ----- -->

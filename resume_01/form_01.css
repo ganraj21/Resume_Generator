@@ -291,9 +291,8 @@ label {
 .next_button:hover {
   color: rgb(2, 164, 2);
 }
-.back_c_container {
+.bcc {
   margin-top: 9px;
-  background-color: #001616;
   padding: 10px 0px 0px 0px;
   border-radius: 6px;
   box-shadow: inset -2px -1px 9px 0px #313131;
