@@ -117,13 +117,15 @@ if (localStorage.getItem('txtValue') == '1') {
     document.getElementById('cp_01').style.display = 'none'
     document.getElementById('cp_02').style.display = 'flex'
     document.getElementById('cp_03').style.display = 'none'
-    document.getElementById('cancel_01').addEventListener('click', function () {
-      document.getElementById('cp_02').style.display = 'none'
-      document.getElementById('certificate_title_02').value = ''
-      document.getElementById('certificate_description_02').value = ''
-      document.getElementById('cp_01').style.display = 'flex'
-    })
-    document.getElementById('back_01').addEventListener('click', function () {
+    document
+      .getElementById('cancel_001')
+      .addEventListener('click', function () {
+        document.getElementById('cp_02').style.display = 'none'
+        document.getElementById('certificate_title_02').value = ''
+        document.getElementById('certificate_description_02').value = ''
+        document.getElementById('cp_01').style.display = 'flex'
+      })
+    document.getElementById('back_001').addEventListener('click', function () {
       document.getElementById('cp_01').style.display = 'flex'
       document.getElementById('cp_02').style.display = 'none'
     })
@@ -132,14 +134,16 @@ if (localStorage.getItem('txtValue') == '1') {
     document.getElementById('cp_02').style.display = 'none'
     document.getElementById('cp_03').style.display = 'flex'
     document.getElementById('cp_01').style.display = 'none'
-    document.getElementById('cancel_02').addEventListener('click', function () {
-      document.getElementById('cp_03').style.display = 'none'
-      document.getElementById('certificate_title_03').value = ''
-      document.getElementById('certificate_description_03').value = ''
-      document.getElementById('cp_02').style.display = 'flex'
-    })
+    document
+      .getElementById('cancel_002')
+      .addEventListener('click', function () {
+        document.getElementById('cp_03').style.display = 'none'
+        document.getElementById('certificate_title_03').value = ''
+        document.getElementById('certificate_description_03').value = ''
+        document.getElementById('cp_02').style.display = 'flex'
+      })
 
-    document.getElementById('back_02').addEventListener('click', function () {
+    document.getElementById('back_002').addEventListener('click', function () {
       document.getElementById('cp_02').style.display = 'flex'
       document.getElementById('cp_03').style.display = 'none'
     })
