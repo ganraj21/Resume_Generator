@@ -100,31 +100,31 @@ function readURL(input) {
 // Your resume selection -->
 // one --->
 const image_one_click_event = () => {
-  let img = document.getElementById('r_img_01')
+  let img = document.getElementById('r_img_btn_01')
   console.log('you clicked on image one ')
   localStorage.setItem('txtValue', (img.value = '1'))
 }
 document
-  .getElementById('r_img_01')
+  .getElementById('r_img_btn_01')
   .addEventListener('click', image_one_click_event)
 // ---|
 // two --->
 const image_two_click_event = () => {
-  let img = document.getElementById('r_img_02')
+  let img = document.getElementById('r_img_btn_02')
   console.log('you clicked on image Two ')
   localStorage.setItem('txtValue', (img.value = '2'))
 }
 document
-  .getElementById('r_img_02')
+  .getElementById('r_img_btn_02')
   .addEventListener('click', image_two_click_event)
 // ---|
 // three --->
 const image_three_click_event = () => {
-  let img = document.getElementById('r_img_03')
+  let img = document.getElementById('r_img_btn_03')
   console.log('you clicked on image Three ')
   localStorage.setItem('txtValue', (img.value = '3'))
 }
 document
-  .getElementById('r_img_03')
+  .getElementById('r_img_btn_03')
   .addEventListener('click', image_three_click_event)
 // ---|

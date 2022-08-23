@@ -52,4 +52,8 @@ h1 {
   font-weight: 600;
   font-size: 16px;
   border: none;
+  cursor: pointer;
+}
+.cl_h:hover {
+  outline: 1px solid white;
 }
