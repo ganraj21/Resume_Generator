@@ -293,10 +293,15 @@ label {
   color: rgb(2, 164, 2);
 }
 .bcc {
+  display: flex;
   margin-top: 9px;
   padding: 10px 0px 0px 0px;
   border-radius: 6px;
   box-shadow: inset -2px -1px 9px 0px #313131;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 /* .button--loading::after {
