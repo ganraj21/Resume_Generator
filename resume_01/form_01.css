@@ -23,10 +23,10 @@
 .first_col h3 {
   display: flex;
   align-items: center;
-  text-align: center;
+  font-size: 33px;
+  color: #0099ef;
+  align-content: center;
   justify-content: center;
-  font-size: 36px;
-  color: #ffffff;
   margin-bottom: 1.1rem;
 }
 .div_fields {
@@ -357,6 +357,7 @@ label {
   font-size: 36px;
   margin-bottom: 27px;
   color: #0099ef;
+  text-align: center;
 }
 .cpbtn {
   background-color: #1b56ca;
@@ -535,7 +536,7 @@ button {
 
 @media screen and (max-width: 420px) {
   .first_col h3 {
-    font-size: 29px;
+    font-size: 33px;
   }
 }
 

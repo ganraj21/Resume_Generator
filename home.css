@@ -48,9 +48,17 @@ html {
 .main_div1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  align-content: center;
+  text-align: center;
+  justify-content: center;
+  align-content: flex-start;
+  width: fit-content;
+  margin-bottom: 15px;
+  /* box-shadow: inset 2px 2px 10px 7px #173643; */
+  box-shadow: inset 0px 0px 20px 0px #395460;
+  /* background-color: #132f3b; */
+  padding: 20px 10px 30px 10px;
+  border-radius: 6px;
 }
 .main_div1 h1 {
   justify-content: center;
