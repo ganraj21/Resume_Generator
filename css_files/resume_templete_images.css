@@ -6,6 +6,18 @@ h1 {
 .mySlides {
   margin-top: 15px;
 }
+.mySlides_info {
+  color: white;
+  text-align: center;
+  margin: 20px;
+  font-size: 32px;
+  line-height: 34px;
+  font-weight: 700;
+  max-width: 100%;
+}
+.mySlides_info h3 {
+  font-size: 32px;
+}
 .res_img {
   vertical-align: middle;
   height: 350px;

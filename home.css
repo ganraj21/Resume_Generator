@@ -33,7 +33,6 @@ html {
 }
 .container {
   width: 90%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -59,11 +58,13 @@ html {
   /* background-color: #132f3b; */
   padding: 20px 10px 30px 10px;
   border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgb(255 255 255 / 30%);
+  font-weight: 700;
 }
 .main_div1 h1 {
   justify-content: center;
-  font-size: 55px;
+  font-size: 32px;
+  line-height: 34px;
   display: flex;
   margin-bottom: 1px;
   flex-wrap: wrap;
@@ -72,21 +73,24 @@ html {
 }
 .main_div1 h1 span {
   margin-left: 9px;
-  color: red;
+  color: hwb(193deg 0% 0%);
+}
+.main_div1 img {
+  margin-top: 25px;
+  height: 300px;
 }
 .lead {
   display: flex;
-  width: 70%;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-content: center;
-  font-size: 18px;
+  font-size: 19px;
   margin-bottom: 15px;
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
+  line-height: 24px;
+  color: black;
 }
 .btn_gs {
-  width: 120px;
-  height: 35px;
   display: flex;
   text-decoration: none;
   background-color: rgb(2 137 255);

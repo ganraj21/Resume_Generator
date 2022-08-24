@@ -160,7 +160,7 @@
     margin-bottom: 15px;
   }
   .main_div1 h1 {
-    font-size: 35px;
+    font-size: 32px;
     margin-bottom: 10px;
     text-transform: capitalize;
   }
@@ -170,6 +170,9 @@
     align-items: center;
     justify-content: center;
     align-content: center;
+    line-height: 22px;
+    font-size: 18px;
+    padding: 14px 24px;
   }
   .ab_footer p {
     font-size: 15px;
