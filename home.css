@@ -40,7 +40,7 @@ html {
   position: relative;
   justify-content: center;
   text-align: center;
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
   background-color: (0, 0, 0, 0.6);
   padding: 20px;
 }
