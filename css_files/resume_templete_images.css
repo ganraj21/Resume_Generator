@@ -7,16 +7,26 @@ h1 {
   margin-top: 15px;
 }
 .mySlides_info {
+  background-color: #12123d;
   color: white;
   text-align: center;
-  margin: 20px;
+  margin: 15px;
   font-size: 32px;
   line-height: 34px;
+  padding: 6px;
   font-weight: 700;
+  border-radius: 3px;
   max-width: 100%;
+  box-shadow: inset -2px 0px 20px 5px #1a1a3f;
 }
 .mySlides_info h3 {
   font-size: 32px;
+  margin-bottom: 22px;
+}
+.mySlides_info p {
+  font-size: 19px;
+  line-height: 24px;
+  padding: 6px;
 }
 .res_img {
   vertical-align: middle;

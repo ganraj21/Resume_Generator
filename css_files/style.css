@@ -118,7 +118,6 @@
   .n_cp {
     width: 100%;
     display: flex;
-    font-size: 21px;
     align-items: center;
     justify-content: space-between;
     align-content: center;
@@ -126,11 +125,11 @@
   .hamburger {
     margin-right: 10px;
     display: flex;
-    /* height: 28px; */
     align-items: center;
     align-content: stretch;
     justify-content: flex-start;
     cursor: pointer;
+    color: black;
   }
 
   .slideshow-container {
