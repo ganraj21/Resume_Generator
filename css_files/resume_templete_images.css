@@ -26,7 +26,7 @@ h1 {
 .mySlides_info p {
   font-size: 19px;
   line-height: 24px;
-  padding: 6px;
+  padding: 10px;
 }
 .res_img {
   vertical-align: middle;
@@ -70,7 +70,7 @@ h1 {
   box-shadow: inset 0px 1px 1px 0px #1a1a3f;
   background-color: #13133b;
   outline: 1px solid rgb(9 27 64);
-  color: #04aa6d;
+  color: #00d748;
   font-weight: 600;
   font-size: 16px;
   border: none;

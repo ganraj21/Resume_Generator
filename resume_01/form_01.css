@@ -197,7 +197,8 @@ textarea {
 .third_col {
   display: none;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   align-content: center;
   width: 100%;
 }
@@ -383,7 +384,6 @@ label {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  padding: 21px;
   width: 100%;
   bottom: 0;
 }
