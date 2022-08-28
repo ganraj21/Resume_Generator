@@ -369,7 +369,7 @@ label {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  height: 90px;
+  /* height: 90px; */
   width: 100%;
   bottom: 0;
 }
@@ -662,6 +662,137 @@ label {
 
     background: #d9d9d9;
     border-radius: 6px;
+  }
+  .second_col h2 {
+    position: absolute;
+    width: 270px;
+    height: 42px;
+    left: 60px;
+    top: 41px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+
+    color: #ce4a11;
+  }
+  #f_li {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 24px;
+    top: 131px;
+
+    background: #bf5d03;
+  }
+  #f_text {
+    position: absolute;
+    width: 302px;
+    height: 66px;
+    left: 50px;
+    top: 123px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;
+  }
+  #s_li {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 24px;
+    top: 213px;
+
+    background: #bf5d03;
+  }
+  #s_text {
+    position: absolute;
+    width: 303px;
+    height: 66px;
+    left: 50px;
+    top: 205px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;
+  }
+  #linked_btn,
+  #linkedinField {
+    box-sizing: border-box;
+    position: absolute;
+    width: 302px;
+    height: 48px;
+    left: 50px;
+    top: 311px;
+    background: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  #codechef_btn,
+  #codeChefField {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 302px;
+    height: 48px;
+    left: 50px;
+    top: 388px;
+
+    background: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  #leetcode_btn,
+  #fbField {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 302px;
+    height: 48px;
+    left: 50px;
+    top: 465px;
+
+    background: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  #github_btn,
+  #githubField {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 302px;
+    height: 48px;
+    left: 50px;
+    top: 542px;
+
+    background: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  #insta_btn,
+  #instaField {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 302px;
+    height: 48px;
+    left: 50px;
+    top: 619px;
+
+    background: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
   }
   .back_button {
     position: absolute;
