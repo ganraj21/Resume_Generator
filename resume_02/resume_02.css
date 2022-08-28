@@ -14,6 +14,7 @@
 }
 
 .first_col {
+  /* padding: 10px 20px 10px 5px; */
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -161,6 +162,9 @@ input {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+}
+.second_col .div_fields {
+  padding: 25px 25px 25px 5px;
 }
 .second_col h2 {
   display: flex;
