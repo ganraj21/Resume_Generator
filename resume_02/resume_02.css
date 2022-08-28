@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap");
 * {
   margin: 0;
   font-family: "Poppins", "sans-serif";
@@ -32,6 +32,7 @@
   background-color: white;
   display: flex;
   height: 100%;
+  width: 100%;
   flex-direction: column;
   padding: 25px 25px 25px 25px;
   align-items: center;
@@ -499,18 +500,187 @@ label {
 
 @media (max-width: 480px) {
   .first_col h3 {
-    font-size: 30px;
+    position: absolute;
+    width: 372px;
+    height: 51px;
+    left: 9px;
+    top: 41px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+
+    color: #ce4a11;
   }
-  .input_01 {
-    width: 100%;
+  .Your_photo {
+    box-sizing: border-box;
+    position: absolute;
+    width: 354px;
+    height: 50px;
+    left: 19px;
+    top: 672px;
+    background: #ce4a11;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
   }
-  .back_button .next_button {
-    height: 35px;
+  .Your_photo span {
+    width: 191px;
+    height: 25px;
+    left: 100px;
+    top: 684px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    color: #ffffff;
+  }
+  #fn {
+    position: absolute;
+    width: 90px;
+    height: 21px;
+    left: 23px;
+    top: 104px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.6676px;
+    line-height: 21px;
+
+    color: #000000;
+  }
+
+  #nameField_first {
+    position: absolute;
+    width: 354px;
+    height: 50px;
+    left: 19px;
+    top: 132px;
+
+    background: #d9d9d9;
+    border-radius: 6px;
+  }
+  #ln {
+    position: absolute;
+    width: 89px;
+    height: 21px;
+    left: 23px;
+    top: 213px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.6676px;
+    line-height: 21px;
+
+    color: #000000;
+  }
+  #nameField_last {
+    position: absolute;
+    width: 354px;
+    height: 50px;
+    left: 18px;
+    top: 242px;
+
+    background: #d9d9d9;
+    border-radius: 6px;
+  }
+  #pn {
+    position: absolute;
+    width: 83px;
+    height: 21px;
+    left: 23px;
+    top: 324px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.6676px;
+    line-height: 21px;
+
+    color: #000000;
+  }
+  #contactField-phone {
+    position: absolute;
+    width: 354px;
+    height: 50px;
+    left: 18px;
+    top: 351px;
+
+    background: #d9d9d9;
+    border-radius: 6px;
+  }
+  #en {
+    position: absolute;
+    width: 46px;
+    height: 21px;
+    left: 23px;
+    top: 437px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.6676px;
+    line-height: 21px;
+
+    color: #000000;
+  }
+  #contactField-email {
+    position: absolute;
+    width: 354px;
+    height: 50px;
+    left: 19px;
+    top: 465px;
+
+    background: #d9d9d9;
+    border-radius: 6px;
+  }
+  #ya {
+    position: absolute;
+    width: 72px;
+    height: 21px;
+    left: 23px;
+    top: 545px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.6676px;
+    line-height: 21px;
+
+    color: #000000;
+  }
+  #addressField {
+    position: absolute;
+    width: 354px;
+    height: 50px;
+    left: 18px;
+    top: 575px;
+
+    background: #d9d9d9;
+    border-radius: 6px;
   }
   .back_button {
-    margin-left: 30px;
+    position: absolute;
+    width: 151px;
+    height: 44px;
+    left: 18px;
+    top: 769px;
+
+    background: #d9d9d9;
+    border-radius: 3px;
   }
   .next_button {
-    margin-right: 30px;
+    position: absolute;
+    width: 151px;
+    height: 44px;
+    left: 222px;
+    top: 769px;
+
+    background: #d9d9d9;
+    border-radius: 3px;
   }
 }
