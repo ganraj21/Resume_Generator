@@ -311,6 +311,42 @@ label {
 }
 /* Forth column end here ---||--- */
 
+.five_col {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.five_col h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  margin-bottom: 27px;
+  color: #0099ef;
+  text-align: center;
+}
+.cpbtn {
+  background-color: #1b56ca;
+  color: white;
+  border: 1px;
+  border-radius: 3px;
+}
+.btns span {
+  background: white;
+  height: 36px;
+  width: 31px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+/* Fifth column end here ----||---- */
+
 .direction_button {
   display: flex;
   flex-wrap: wrap;
