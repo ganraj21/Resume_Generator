@@ -92,6 +92,7 @@ html {
   text-align: center;
 }
 .btn_gs {
+  width: 165px;
   display: flex;
   text-decoration: none;
   background-color: rgb(2 137 255);
@@ -100,6 +101,7 @@ html {
   justify-content: center;
   align-items: center;
   align-content: center;
+  height: 43px;
   border-radius: 3px;
 }
 
