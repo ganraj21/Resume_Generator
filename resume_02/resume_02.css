@@ -35,7 +35,7 @@
   height: 100%;
   width: 100%;
   flex-direction: column;
-  padding: 25px 25px 25px 25px;
+  /* padding: 25px 25px 25px 25px; */
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -69,10 +69,11 @@
   resize: vertical;
 }
 .input_02 {
+  margin-top: 25px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 96%;
+  width: 90%;
   align-content: space-around;
 }
 .input_02 input,
@@ -375,7 +376,8 @@ label {
   align-content: center;
   /* height: 90px; */
   width: 100%;
-  bottom: 0;
+  /* bottom: 0; */
+  margin-top: 20px;
 }
 
 .first_col,
@@ -502,7 +504,7 @@ label {
   transition: all 0.2s ease;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .first_col h3 {
     position: absolute;
     width: 372px;
@@ -518,13 +520,28 @@ label {
 
     color: #ce4a11;
   }
-  .Your_photo {
-    box-sizing: border-box;
-    position: absolute;
+
+  label {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.6676px;
+    line-height: 21px;
+    color: #000000;
+  }
+  input {
+    background: #d9d9d9;
+    border-radius: 6px;
     width: 354px;
     height: 50px;
-    left: 19px;
-    top: 672px;
+  }
+  .Your_photo {
+    box-sizing: border-box;
+    /* position: absolute; */
+    width: 354px;
+    height: 50px;
+    /* left: 19px;
+    top: 672px; */
     background: #ce4a11;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 6px;
@@ -532,8 +549,8 @@ label {
   .Your_photo span {
     width: 191px;
     height: 25px;
-    left: 100px;
-    top: 684px;
+    /* left: 100px;
+    top: 684px; */
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
@@ -541,21 +558,30 @@ label {
     line-height: 25px;
     color: #ffffff;
   }
-  #fn {
-    position: absolute;
-    width: 90px;
-    height: 21px;
-    left: 23px;
-    top: 104px;
+  .back_button {
+    /* position: absolute; */
+    width: 151px;
+    height: 44px;
+    /* left: 18px;
+    top: 769px; */
 
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17.6676px;
-    line-height: 21px;
-
-    color: #000000;
+    background: #d9d9d9;
+    border-radius: 3px;
   }
+  .next_button {
+    /* position: absolute; */
+    width: 151px;
+    height: 44px;
+    /* left: 222px;
+    top: 769px; */
+
+    background: #d9d9d9;
+    border-radius: 3px;
+  }
+} /*
+  
+ 
+  
 
   #nameField_first {
     position: absolute;
@@ -818,4 +844,4 @@ label {
     background: #d9d9d9;
     border-radius: 3px;
   }
-}
+} */
