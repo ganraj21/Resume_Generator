@@ -69,6 +69,7 @@
   resize: vertical;
 }
 .input_02 {
+  position: absolute;
   margin-top: -100px;
   display: flex;
   align-items: center;
