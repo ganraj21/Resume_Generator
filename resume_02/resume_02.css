@@ -378,8 +378,9 @@ label {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  /* height: 90px; */
+  height: 90px;
   width: 100%;
+  position: absolute;
   bottom: 0;
 }
 
@@ -806,21 +807,21 @@ label {
     border-radius: 3px;
   }
   .back_button {
-    position: absolute;
-    width: 151px;
+    /* position: absolute; */
+    width: 39%;
     height: 44px;
     left: 12px;
-    top: 769px;
+    /* top: 769px; */
 
     background: #d9d9d9;
     border-radius: 3px;
   }
   .next_button {
-    position: absolute;
-    width: 151px;
+    /* position: absolute; */
+    width: 39%;
     height: 44px;
     left: 210px;
-    top: 769px;
+    /* top: 769px; */
 
     background: #d9d9d9;
     border-radius: 3px;
