@@ -69,6 +69,7 @@
   resize: vertical;
 }
 .input_02 {
+  margin-top: -100px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -209,9 +210,9 @@ button {
 }
 
 label {
-  margin-left: 45px;
+  margin-left: 5px;
   color: #000000;
-  width: 100%;
+  width: 90%;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
