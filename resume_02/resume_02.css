@@ -544,7 +544,7 @@ label {
     border-radius: 6px;
   }
   .Your_photo span {
-    width: 191px;
+    /* width: 191px; */
     height: 25px;
     left: 100px;
     top: 684px;
