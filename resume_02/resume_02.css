@@ -906,13 +906,11 @@ label {
   }
   .btns {
     box-sizing: border-box;
-
     position: absolute;
     width: 354px;
     height: 50px;
     left: 12px;
     top: 689px;
-
     background: #ce4a11;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 6px;
@@ -923,7 +921,6 @@ label {
     height: 25px;
     left: 107px;
     top: 701px;
-
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
