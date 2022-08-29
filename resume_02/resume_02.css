@@ -381,7 +381,8 @@ label {
   height: 90px;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
+  top: 769px;
 }
 
 .first_col,
