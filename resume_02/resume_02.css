@@ -819,15 +819,15 @@ label {
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 3px;
   }
-  button span{
+  button span {
     margin: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     font-size: 15px;
-}
   }
+
   .back_button {
     /* position: absolute; */
     width: 39%;
