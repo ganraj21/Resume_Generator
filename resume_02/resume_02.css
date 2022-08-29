@@ -76,6 +76,7 @@
   flex-direction: column;
   width: 100%;
   align-content: space-around;
+  top: 230px;
 }
 .input_02 input,
 textarea {
