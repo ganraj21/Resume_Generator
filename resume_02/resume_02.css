@@ -240,13 +240,7 @@ label {
   width: 100%;
   background-color: #e5e5e5;
 }
-#btn1,
-#btn2,
-#btn3 {
-  color: #0099ef;
-  font-weight: 500;
-  background-color: white;
-}
+
 .btns {
   display: flex;
   padding: 9px;
@@ -818,6 +812,125 @@ label {
     background: #d9d9d9;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 3px;
+  }
+  .third_col h3 {
+    position: absolute;
+    width: 288px;
+    height: 42px;
+    left: 51px;
+    top: 39px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+
+    color: #ce4a11;
+  }
+  #your-about-info {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 354px;
+    height: 127px;
+    left: 18px;
+    top: 138px;
+
+    background: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  #exp_title {
+    position: absolute;
+    width: 354px;
+    height: 50px;
+    left: 17px;
+    top: 322px;
+
+    background: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+  }
+  #your_input_company {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 354px;
+    height: 50px;
+    left: 18px;
+    top: 395px;
+
+    background: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+  }
+  #c_s_d {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 171px;
+    height: 48px;
+    left: 17px;
+    top: 468px;
+
+    background: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  #c_e_d {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 166px;
+    height: 48px;
+    left: 205px;
+    top: 468px;
+
+    background: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  #your_company_description {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 354px;
+    height: 127px;
+    left: 17px;
+    top: 539px;
+
+    background: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  .btns {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 354px;
+    height: 50px;
+    left: 12px;
+    top: 689px;
+
+    background: #ce4a11;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+  }
+  .btns span {
+    position: absolute;
+    width: 163px;
+    height: 25px;
+    left: 107px;
+    top: 701px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+
+    color: #ffffff;
   }
   button span {
     margin: 6px;
