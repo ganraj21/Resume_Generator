@@ -69,11 +69,10 @@
   resize: vertical;
 }
 .input_02 {
-  margin-top: 25px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 90%;
+  width: 96%;
   align-content: space-around;
 }
 .input_02 input,
@@ -376,8 +375,7 @@ label {
   align-content: center;
   /* height: 90px; */
   width: 100%;
-  /* bottom: 0; */
-  margin-top: 20px;
+  bottom: 0;
 }
 
 .first_col,
@@ -505,6 +503,10 @@ label {
 }
 
 @media (max-width: 420px) {
+  input {
+    width: 90%;
+    left: 12px;
+  }
   .first_col h3 {
     position: absolute;
     width: 372px;
@@ -520,28 +522,13 @@ label {
 
     color: #ce4a11;
   }
-
-  label {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17.6676px;
-    line-height: 21px;
-    color: #000000;
-  }
-  input {
-    background: #d9d9d9;
-    border-radius: 6px;
-    width: 354px;
-    height: 50px;
-  }
   .Your_photo {
     box-sizing: border-box;
-    /* position: absolute; */
-    width: 354px;
+    position: absolute;
+    width: 90%;
     height: 50px;
-    /* left: 19px;
-    top: 672px; */
+    left: 12px;
+    top: 672px;
     background: #ce4a11;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 6px;
@@ -549,8 +536,8 @@ label {
   .Your_photo span {
     width: 191px;
     height: 25px;
-    /* left: 100px;
-    top: 684px; */
+    left: 100px;
+    top: 684px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
@@ -558,38 +545,28 @@ label {
     line-height: 25px;
     color: #ffffff;
   }
-  .back_button {
-    /* position: absolute; */
-    width: 151px;
-    height: 44px;
-    /* left: 18px;
-    top: 769px; */
+  #fn {
+    position: absolute;
+    width: 90px;
+    height: 21px;
+    left: 23px;
+    top: 104px;
 
-    background: #d9d9d9;
-    border-radius: 3px;
-  }
-  .next_button {
-    /* position: absolute; */
-    width: 151px;
-    height: 44px;
-    /* left: 222px;
-    top: 769px; */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.6676px;
+    line-height: 21px;
 
-    background: #d9d9d9;
-    border-radius: 3px;
+    color: #000000;
   }
-} /*
-  
- 
-  
 
   #nameField_first {
     position: absolute;
-    width: 354px;
+    width: 90%;
     height: 50px;
-    left: 19px;
+    left: 12px;
     top: 132px;
-
     background: #d9d9d9;
     border-radius: 6px;
   }
@@ -610,9 +587,9 @@ label {
   }
   #nameField_last {
     position: absolute;
-    width: 354px;
+    width: 90%;
     height: 50px;
-    left: 18px;
+    left: 12px;
     top: 242px;
 
     background: #d9d9d9;
@@ -635,11 +612,10 @@ label {
   }
   #contactField-phone {
     position: absolute;
-    width: 354px;
+    width: 90%;
     height: 50px;
-    left: 18px;
+    left: 12px;
     top: 351px;
-
     background: #d9d9d9;
     border-radius: 6px;
   }
@@ -660,9 +636,9 @@ label {
   }
   #contactField-email {
     position: absolute;
-    width: 354px;
+    width: 90%;
     height: 50px;
-    left: 19px;
+    left: 12px;
     top: 465px;
 
     background: #d9d9d9;
@@ -685,9 +661,9 @@ label {
   }
   #addressField {
     position: absolute;
-    width: 354px;
+    width: 90%;
     height: 50px;
-    left: 18px;
+    left: 12px;
     top: 575px;
 
     background: #d9d9d9;
@@ -828,7 +804,7 @@ label {
     position: absolute;
     width: 151px;
     height: 44px;
-    left: 18px;
+    left: 12px;
     top: 769px;
 
     background: #d9d9d9;
@@ -838,10 +814,10 @@ label {
     position: absolute;
     width: 151px;
     height: 44px;
-    left: 222px;
+    left: 210px;
     top: 769px;
 
     background: #d9d9d9;
     border-radius: 3px;
   }
-} */
+}
