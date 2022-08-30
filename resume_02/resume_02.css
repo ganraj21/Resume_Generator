@@ -937,6 +937,38 @@ label {
     align-content: center;
     font-size: 15px;
   }
+  .input_0 {
+  }
+  #alable {
+    position: absolute;
+    width: 53px;
+    height: 21px;
+    left: 18px;
+    top: 104px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.6676px;
+    line-height: 21px;
+
+    color: #000000;
+  }
+  #elable {
+    position: absolute;
+    width: 96px;
+    height: 21px;
+    left: 18px;
+    top: 288px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.6676px;
+    line-height: 21px;
+
+    color: #000000;
+  }
 
   .back_button {
     /* position: absolute; */
