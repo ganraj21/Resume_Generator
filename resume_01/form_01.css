@@ -3,6 +3,7 @@
   margin: 0;
   font-family: "Poppins", "sans-serif";
 }
+
 .container_01 {
   flex-direction: column;
   background-color: #010a1b;
@@ -34,10 +35,10 @@
   display: flex;
   height: 550px;
   flex-direction: column;
-  padding: 0px 25px 0px 25px;
   align-items: center;
   justify-content: flex-start;
   align-content: center;
+  width: 100%;
   /* display: flex;
   flex-direction: column;
   padding: 0px 25px 0px 25px;
@@ -62,6 +63,9 @@
   gap: 10px;
   margin: 2px;
   display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 310px;
 }
 /* .input_01 input {
   margin: 6px;
@@ -77,7 +81,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   padding: 20px 0px 20px 0px;
   align-content: space-around;
 }
@@ -112,9 +116,9 @@ textarea {
   border: none;
   background: transparent;
   font-size: 21px;
+  width: 90%;
   font-weight: 600;
   padding: 20px 0px 20px 0px;
-  width: 100%;
   border-bottom: 2px solid #8566aa;
   outline: none;
   color: blueviolet;
@@ -175,7 +179,14 @@ textarea {
   color: white;
 }
 /* first column end here ---||---  */
-
+.imp_text {
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
+  position: absolute;
+  top: 90px;
+  color: white;
+}
 .second_col {
   display: none;
   width: 100%;
@@ -184,6 +195,8 @@ textarea {
   align-content: center;
 }
 .second_col h2 {
+  position: absolute;
+  top: 30px;
   display: flex;
   align-items: center;
   font-size: 33px;
@@ -209,15 +222,21 @@ textarea {
   justify-content: center;
   font-size: 36px;
   margin-bottom: 27px;
+  position: absolute;
   color: #0099ef;
+  top: 30px;
 }
-
-label {
-  color: #ffffff;
+.input_0 {
+  position: absolute;
+  top: 100px;
+}
+.input_00 {
   width: 100%;
-  font-size: 27px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
+  position: absolute;
+  top: 250px;
+}
+label {
+  display: none;
 }
 .add_button {
   display: flex;
@@ -275,7 +294,6 @@ label {
   align-content: center;
   border-radius: 6px;
   border: 1px;
-  position: relative;
 }
 .angle0 {
   margin-right: 6px;
@@ -385,7 +403,8 @@ label {
   align-items: center;
   align-content: center;
   width: 100%;
-  bottom: 0;
+  position: absolute;
+  top: 720px;
 }
 
 .first_col,
@@ -526,22 +545,35 @@ p {
   align-content: center;
 }
 button {
+  border: none;
+  background: #002be2;
+  top: 550px;
   margin: 9px;
+  color: white;
+  outline: none;
   width: 180px;
   font-size: 15px;
   height: 39px;
   align-items: center;
 }
+
+::placeholder {
+  padding-top: 20px;
+}
 /* responsive code ---> */
 
 @media screen and (max-width: 420px) {
   .first_col h3 {
+    position: absolute;
+    top: 40px;
     font-size: 33px;
   }
 }
 
 @media screen and (max-width: 370px) {
   .first_col h3 {
-    font-size: 25px;
+    position: absolute;
+    top: 40px;
+    font-size: 27px;
   }
 }

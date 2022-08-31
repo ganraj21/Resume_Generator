@@ -120,7 +120,7 @@ input {
   width: 200px;
   border: 1px;
 }
-.address_input,
+/* .address_input,
 .email_input,
 .phone_input,
 .facebook_input,
@@ -137,7 +137,7 @@ input {
   width: 100%;
   background-color: #e5e5e5;
   border: 1px solid rgb(255, 255, 255);
-}
+} */
 
 .photo_field {
   display: flex;
@@ -690,7 +690,7 @@ label {
     height: 66px;
     left: 50px;
     top: 123px;
-
+    list-style: none;
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
@@ -714,7 +714,7 @@ label {
     height: 66px;
     left: 50px;
     top: 205px;
-
+    list-style: none;
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
@@ -830,58 +830,43 @@ label {
   }
   #your-about-info {
     box-sizing: border-box;
-
-    position: absolute;
     width: 354px;
     height: 127px;
-    left: 18px;
-    top: 138px;
-
     background: #d9d9d9;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 3px;
   }
   #exp_title {
-    position: absolute;
-    width: 354px;
+    width: 90%;
     height: 50px;
-    left: 17px;
+    /* left: 17px; */
     top: 322px;
-
     background: #d9d9d9;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 6px;
   }
   #your_input_company {
     box-sizing: border-box;
-
-    position: absolute;
-    width: 354px;
+    width: 90%;
     height: 50px;
     left: 18px;
     top: 395px;
-
     background: #d9d9d9;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 6px;
   }
   #c_s_d {
     box-sizing: border-box;
-
-    position: absolute;
     width: 171px;
     height: 48px;
     left: 17px;
     top: 468px;
-
     background: #d9d9d9;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 3px;
   }
   #c_e_d {
     box-sizing: border-box;
-
-    position: absolute;
     width: 166px;
     height: 48px;
     left: 205px;
@@ -893,20 +878,14 @@ label {
   }
   #your_company_description {
     box-sizing: border-box;
-
-    position: absolute;
-    width: 354px;
+    width: 90%;
     height: 127px;
-    left: 17px;
-    top: 539px;
-
     background: #d9d9d9;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 3px;
   }
   .btns {
     box-sizing: border-box;
-    position: absolute;
     width: 354px;
     height: 50px;
     left: 12px;
@@ -938,38 +917,59 @@ label {
     font-size: 15px;
   }
   .input_0 {
+    display: flex;
+    top: 99px;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .input_00 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    top: 280px;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    left: 0px;
+    flex-direction: column;
+  }
+  .input_ {
+    display: flex;
   }
   #alable {
-    position: absolute;
     width: 53px;
     height: 21px;
-    left: 18px;
-    top: 104px;
-
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
     font-size: 17.6676px;
     line-height: 21px;
-
     color: #000000;
   }
-  #elable {
-    position: absolute;
-    width: 96px;
+  .input_00 #elable {
+    width: 100%;
     height: 21px;
-    left: 18px;
-    top: 288px;
-
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
     font-size: 17.6676px;
     line-height: 21px;
-
     color: #000000;
   }
 
+  .bcc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    top: 280px;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
   .back_button {
     /* position: absolute; */
     width: 39%;
