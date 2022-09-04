@@ -924,7 +924,6 @@ label {
     top: 99px;
     position: absolute;
     left: 10px;
-    width: 100%;
     flex-direction: column;
   }
   .input_00 {
