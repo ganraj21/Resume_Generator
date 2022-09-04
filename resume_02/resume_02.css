@@ -375,7 +375,6 @@ label {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  height: 90px;
   width: 100%;
   position: absolute;
   bottom: 0px;
@@ -844,6 +843,7 @@ label {
     background: #d9d9d9;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 6px;
+    margin-bottom: 18px;
   }
   #your_input_company {
     box-sizing: border-box;
@@ -854,6 +854,7 @@ label {
     background: #d9d9d9;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 6px;
+    margin-bottom: 18px;
   }
   #c_s_d {
     box-sizing: border-box;
@@ -885,6 +886,10 @@ label {
     border-radius: 3px;
   }
   .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
     box-sizing: border-box;
     width: 354px;
     height: 50px;
@@ -898,15 +903,13 @@ label {
     position: absolute;
     width: 163px;
     height: 25px;
-    left: 107px;
-    top: 701px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 21px;
     line-height: 25px;
-
     color: #ffffff;
+    background: transparent;
   }
   button span {
     margin: 6px;
@@ -920,16 +923,16 @@ label {
     display: flex;
     top: 99px;
     position: absolute;
-    left: 0px;
+    left: 10px;
     width: 100%;
     flex-direction: column;
   }
   .input_00 {
+    top: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
-    top: 280px;
     position: absolute;
     width: 100%;
     height: 400px;
@@ -938,6 +941,10 @@ label {
   }
   .input_ {
     display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
   }
   #alable {
     width: 53px;
@@ -950,7 +957,6 @@ label {
     color: #000000;
   }
   .input_00 #elable {
-    width: 100%;
     height: 21px;
     font-family: "Inter";
     font-style: normal;
@@ -968,7 +974,7 @@ label {
     top: 280px;
     flex-direction: column;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 12px;
   }
   .back_button {
     /* position: absolute; */
