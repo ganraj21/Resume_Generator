@@ -256,6 +256,9 @@ label {
   width: 160px;
   align-content: center;
 }
+.cancle_btn {
+  display: flex;
+}
 .dateadd {
   display: inherit;
 }
