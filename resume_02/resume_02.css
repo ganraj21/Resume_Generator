@@ -801,8 +801,6 @@ label {
   #insta_btn,
   #instaField {
     box-sizing: border-box;
-
-    /* position: absolute; */
     width: 90%;
     height: 48px;
     left: 12px;
