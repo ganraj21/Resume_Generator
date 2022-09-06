@@ -333,6 +333,33 @@ label {
   font-size: 36px;
   margin-bottom: 27px;
   color: #0099ef;
+  position: absolute;
+  top: 15px;
+}
+.plabel {
+  position: absolute;
+  /* top: 25px; */
+  top: -39px;
+}
+.elable {
+  position: absolute;
+  top: -50px;
+}
+.slabel {
+  position: absolute;
+  top: 550px;
+}
+.input_profec {
+  position: absolute;
+  top: 130px;
+  box-sizing: border-box;
+  background: #d9d9d9;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.input_educ {
+  position: absolute;
+  top: 250px;
+  width: 100%;
 }
 /* Forth column end here ---||--- */
 
