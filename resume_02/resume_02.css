@@ -262,16 +262,20 @@ label {
   transition: all 0.2s;
   color: white;
 }
-.back_button,
-.next_button {
+.back_button {
   display: flex;
-  width: 80px;
-  height: 30px;
   font-weight: 500;
   align-items: center;
   justify-content: center;
   align-content: center;
-  border-radius: 6px;
+  border: 1px;
+}
+.next_button {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   border: 1px;
 }
 .angle0 {
@@ -455,9 +459,21 @@ label {
   align-items: center;
   justify-content: center;
   font-size: 36px;
+  top: 21px;
+  position: absolute;
   margin-bottom: 27px;
-  color: #0099ef;
+  color: #ce4a11;
   text-align: center;
+}
+.input_cert {
+  display: flex;
+  width: 100%;
+  top: 150px;
+  position: absolute;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 .cpbtn {
   background-color: #1b56ca;
@@ -475,7 +491,67 @@ label {
   align-content: center;
   align-items: center;
 }
-
+.input_proj {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 450px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.ld_des {
+  width: 90%;
+  padding-top: 3px;
+  margin: 9px;
+  height: 100px;
+  border: none;
+  background-color: rgb(222, 222, 222);
+  border-radius: 4px;
+  resize: vertical;
+}
+.cp_class {
+  width: 90%;
+  padding-top: 3px;
+  height: 45px;
+  margin: 9px;
+  border: none;
+  background-color: rgb(222, 222, 222);
+  border-radius: 4px;
+  resize: vertical;
+}
+.cpbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+  width: 354px;
+  height: 50px;
+  outline: none;
+  /* left: 12px; */
+  top: 220px;
+  border: none;
+  position: absolute;
+  background: #ce4a11;
+  border-radius: 6px;
+}
+.cpbtn span {
+  position: absolute;
+  /* width: 163px; */
+  height: 25px;
+  font-family: "Inter";
+  font-style: normal;
+  width: 90%;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  background: transparent;
+}
 /* Fifth column end here ----||---- */
 
 .direction_button {
@@ -1120,22 +1196,16 @@ label {
     margin-top: 12px;
   }
   .back_button {
-    /* position: absolute; */
     width: 39%;
     height: 44px;
     left: 12px;
-    /* top: 769px; */
-
     background: #d9d9d9;
     border-radius: 3px;
   }
   .next_button {
-    /* position: absolute; */
     width: 39%;
     height: 44px;
     left: 210px;
-    /* top: 769px; */
-
     background: #d9d9d9;
     border-radius: 3px;
   }

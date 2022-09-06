@@ -27,6 +27,12 @@ backFun = () => {
     document.getElementById('bt_gen').style.display = 'none'
     // document.getElementById('bd-con').style.display = 'none'
   }
+  else if (cnt == 4) {
+    document.getElementById('f_col').style.display = 'flex'
+    document.getElementById('ff_col').style.display = 'none'
+    document.getElementById('nb_btn').style.display = 'none'
+    document.getElementById('bt_gen').style.display = 'flex'
+  }
   cnt--
 }
 // -----------|-<
@@ -54,6 +60,7 @@ nextFun = () => {
     document.getElementById('ff_col').style.display = 'flex'
     document.getElementById('nb_btn').style.display = 'none'
     document.getElementById('bt_gen').style.display = 'flex'
+    console.log("your nxt btn is display non")
   }
   cnt++
 }
