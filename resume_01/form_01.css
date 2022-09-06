@@ -43,7 +43,7 @@ body {
   height: 550px;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   align-content: center;
   width: 100%;
   /* display: flex;
@@ -592,9 +592,8 @@ button {
 }
 @media screen and (max-width: 420px) {
   .first_col h3 {
-    position: absolute;
-    top: 40px;
     font-size: 33px;
+    text-align: center;
   }
   .first_col {
     width: 350px;
@@ -603,8 +602,7 @@ button {
 
 @media screen and (max-width: 370px) {
   .first_col h3 {
-    position: absolute;
-    top: 40px;
+    text-align: center;
     font-size: 27px;
   }
   .first_col {
