@@ -233,13 +233,6 @@ label {
 .dateadd {
   display: inherit;
 }
-.s_date,
-.e_date {
-  display: block;
-  margin-left: 9px;
-  width: 100%;
-  background-color: #e5e5e5;
-}
 
 .btns {
   display: flex;
@@ -346,20 +339,86 @@ label {
   top: -50px;
 }
 .slabel {
-  position: absolute;
-  top: 550px;
 }
 .input_profec {
   position: absolute;
   top: 130px;
-  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.Qualification_input {
   background: #d9d9d9;
+  height: 50px;
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
+.s_date {
+  box-sizing: border-box;
+  width: 45%;
+  height: 48px;
+  position: absolute;
+  top: 145px;
+  background: #d9d9d9;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+.e_date {
+  box-sizing: border-box;
+  width: 45%;
+  height: 48px;
+  left: 205px;
+  top: 145px;
+  position: absolute;
+  background: #d9d9d9;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+.qbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+  width: 354px;
+  height: 50px;
+  outline: none;
+  /* left: 12px; */
+  top: 205px;
+  border: none;
+  position: absolute;
+  background: #ce4a11;
+  border-radius: 6px;
+}
 .input_educ {
+  display: flex;
   position: absolute;
   top: 250px;
   width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.input_skl {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 550px;
+  position: absolute;
+  align-content: center;
+}
+.Skills_input {
+  box-sizing: border-box;
+  width: 90%;
+  height: 48px;
+  position: absolute;
+  background: #d9d9d9;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
 }
 /* Forth column end here ---||--- */
 
@@ -930,14 +989,17 @@ label {
   }
   .btns span {
     position: absolute;
-    width: 163px;
+    /* width: 163px; */
     height: 25px;
     font-family: "Inter";
     font-style: normal;
+    width: 90%;
     font-weight: 700;
     font-size: 21px;
     line-height: 25px;
     color: #ffffff;
+    display: flex;
+    text-align: center;
     background: transparent;
   }
   button span {
