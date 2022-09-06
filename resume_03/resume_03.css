@@ -189,6 +189,7 @@ input {
 }
 
 label {
+  display: none;
   color: #ffffff;
   width: 100%;
   font-size: 27px;

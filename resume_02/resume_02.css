@@ -1209,4 +1209,11 @@ label {
     background: #d9d9d9;
     border-radius: 3px;
   }
+  #bt_gen {
+    width: 39%;
+    height: 44px;
+    left: 12px;
+    background: #d9d9d9;
+    border-radius: 3px;
+  }
 }

@@ -4,20 +4,27 @@
   font-family: "Poppins", "sans-serif";
 }
 
+body {
+  background-image: url(./resume_01_img.jpg);
+  background-size: cover;
+}
 .container_01 {
   flex-direction: column;
-  background-color: #010a1b;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
-  height: 100%;
+  height: 100vh;
 }
 
 .first_col {
+  width: 550px;
   display: flex;
+  height: 650px;
   flex-direction: column;
   align-content: center;
+  background-color: rgb(43 43 43 / 37%);
+  box-shadow: 0px 0px 6px black;
   align-items: center;
   justify-content: center;
 }
@@ -190,7 +197,7 @@ textarea {
 .second_col {
   display: none;
   width: 100%;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   align-content: center;
 }
@@ -415,18 +422,18 @@ label {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  width: 100%;
+  width: 50%;
   position: absolute;
   top: 720px;
 }
-
+/* 
 .first_col,
 .second_col,
 .third_col,
 .four_col {
   width: 100%;
   height: 100vh;
-}
+} */
 
 .file-upload {
   /* background-color: #ffffff; */
@@ -574,12 +581,23 @@ button {
   padding-top: 20px;
 }
 /* responsive code ---> */
-
+@media screen and (max-width: 480px) {
+  .first_col {
+    width: 380px;
+  }
+  .direction_button {
+    width: 100%;
+    top: 770px;
+  }
+}
 @media screen and (max-width: 420px) {
   .first_col h3 {
     position: absolute;
     top: 40px;
     font-size: 33px;
+  }
+  .first_col {
+    width: 350px;
   }
 }
 
@@ -588,5 +606,8 @@ button {
     position: absolute;
     top: 40px;
     font-size: 27px;
+  }
+  .first_col {
+    width: 320px;
   }
 }
