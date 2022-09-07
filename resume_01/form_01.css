@@ -9,6 +9,7 @@ body {
   background-size: cover;
   width: 100%;
   height: auto;
+  background-repeat: no-repeat;
 }
 .container_01 {
   flex-direction: column;
@@ -26,7 +27,7 @@ body {
 .first_col {
   width: 550px;
   display: flex;
-  height: 650px;
+  height: 767px;
   flex-direction: column;
   align-content: center;
   background-color: rgb(43 43 43 / 37%);
@@ -46,9 +47,9 @@ body {
   margin-bottom: 1.1rem;
 }
 .div_fields {
-  /* background-color: blueviolet; */
+  background-color: #4c3660;
   display: flex;
-  height: 550px;
+  height: 782px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -213,17 +214,17 @@ textarea {
 /* first column end here ---||---  */
 .imp_text {
   display: flex;
-  margin-left: 20px;
   flex-direction: column;
-  position: absolute;
-  top: 90px;
+  width: 430px;
   color: white;
+  margin-top: -380px;
 }
 .second_col {
   display: none;
-  width: 100%;
-  align-items: center;
+  width: 550px;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   align-content: center;
 }
 .second_col h2 {
@@ -451,9 +452,8 @@ label {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  width: 50%;
-  position: absolute;
-  top: 770px;
+  width: 100%;
+  margin-top: 10px;
 }
 /* 
 .first_col,
@@ -610,12 +610,7 @@ button {
   padding-top: 20px;
 }
 /* responsive code ---> */
-@media screen and (min-width: 1120px) {
-  .first_col {
-    width: 310px;
-    height: 500px;
-  }
-}
+
 @media screen and (max-width: 480px) {
   .first_col {
     width: 380px;
@@ -632,6 +627,10 @@ button {
   }
   .first_col {
     width: 350px;
+  }
+  .div_fields {
+    height: 100vh;
+    padding: 10px;
   }
 }
 
