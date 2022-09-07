@@ -117,7 +117,7 @@ label {
 }
 input {
   display: flex;
-  height: 35px;
+  height: 42px;
   border-radius: 6px;
   border: 1px solid rgb(255, 255, 255);
 }
