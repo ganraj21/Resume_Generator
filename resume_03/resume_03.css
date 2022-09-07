@@ -494,3 +494,27 @@ label {
   border: 0;
   transition: all 0.2s ease;
 }
+
+@media screen and (max-width: 480px) {
+  .first_col {
+    width: 90%;
+  }
+  .first_col h3 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .direction_button {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .first_col {
+    width: 85%;
+  }
+  .first_col h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+}

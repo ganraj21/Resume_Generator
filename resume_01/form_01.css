@@ -610,6 +610,12 @@ button {
   padding-top: 20px;
 }
 /* responsive code ---> */
+@media screen and (min-width: 1120px) {
+  .first_col {
+    width: 310px;
+    height: 500px;
+  }
+}
 @media screen and (max-width: 480px) {
   .first_col {
     width: 380px;
