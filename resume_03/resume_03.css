@@ -499,12 +499,15 @@ label {
   .first_col {
     width: 90%;
   }
+  .div_fields {
+    height: 790px;
+  }
   .first_col h3 {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   .direction_button {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 
