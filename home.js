@@ -3,19 +3,23 @@
 const menu = document.querySelector('.menu')
 const menuItems = document.querySelectorAll('.menuItem')
 const hamburger = document.querySelector('.hamburger')
-const closeIcon = document.querySelector('.closeIcon')
-const menuIcon = document.querySelector('.menuIcon')
+// const closeIcon = document.querySelector('.closeIcon')
+// const menuIcon = document.querySelector('.menuIcon')
 
-function toggleMenu() {
+const toggleMenu = () =>{
   if (menu.classList.contains('showMenu')) {
     menu.classList.remove('showMenu')
-    closeIcon.style.display = 'none'
-    menuIcon.style.display = 'block'
+    // closeIcon.style.display = 'none'
+    document.getElementById('menus').style.display = "flex";
+    document.getElementById('cross').style.display = "none";
+    // menuIcon.style.display = 'block'
     menuItems.style.color = 'white'
   } else {
+    document.getElementById('cross').style.display = "flex";
+    document.getElementById('menus').style.display = "none";
     menu.classList.add('showMenu')
-    closeIcon.style.display = 'block'
-    menuIcon.style.display = 'none'
+    // closeIcon.style.display = 'block'
+    // menuIcon.style.display = 'none'
   }
 }
 menuItems.forEach(function (menuItem) {
