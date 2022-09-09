@@ -124,7 +124,6 @@
     align-content: center;
   }
   .hamburger {
-    margin-right: 10px;
     display: flex;
     align-items: center;
     align-content: stretch;
