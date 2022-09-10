@@ -3,8 +3,7 @@
 const menu = document.querySelector('.menu')
 const menuItems = document.querySelectorAll('.menuItem')
 const hamburger = document.querySelector('.hamburger')
-// const closeIcon = document.querySelector('.closeIcon')
-// const menuIcon = document.querySelector('.menuIcon')
+const closeIcon = document.querySelector('.cros_ic')
 
 const toggleMenu = () =>{
   if (menu.classList.contains('showMenu')) {
@@ -27,7 +26,12 @@ menuItems.forEach(function (menuItem) {
 })
 
 hamburger.addEventListener('click', toggleMenu)
-
+closeIcon.addEventListener('click',()=>{
+  menu.classList.remove('showMenu')
+  document.getElementById('menus').style.display = "flex";
+  document.getElementById('cross').style.display = "none";
+  console.log("clicked on canceled")
+})
 // events for button back , next
 // const back = document.getElementById('bb_btn')
 // const next = document.getElementById('nb_btn')

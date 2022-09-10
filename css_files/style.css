@@ -131,14 +131,14 @@
     cursor: pointer;
     color: black;
     height: 35px;
-    font-size: 24px;
+    font-size: 33px;
     width: 35px;
   }
   .cros_ic {
     display: none;
     color: black;
     height: 35px;
-    font-size: 24px;
+    font-size: 33px;
     width: 35px;
   }
   .slideshow-container {
@@ -147,11 +147,10 @@
   }
   .showMenu {
     margin-right: 0px;
-    /* height: 300px; */
     background: #031d28;
     height: 500px;
     display: flex;
-    transform: translateY(70px);
+    transform: translate(0px, 70px);
     flex-direction: column;
     /* z-index: 10;*/
   }
