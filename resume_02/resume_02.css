@@ -14,7 +14,6 @@
 }
 
 .first_col {
-  /* padding: 10px 20px 10px 5px; */
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -35,7 +34,6 @@
   height: 100%;
   width: 100%;
   flex-direction: column;
-  /* padding: 25px 25px 25px 25px; */
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -120,24 +118,6 @@ input {
   width: 200px;
   border: 1px;
 }
-/* .address_input,
-.email_input,
-.phone_input,
-.facebook_input,
-.insta_input,
-.linked_input,
-.Qualification_input,
-.experience_input,
-.about_input,
-.Skills_input,
-.input_title,
-.input_company {
-  display: block;
-  margin-left: 9px;
-  width: 100%;
-  background-color: #e5e5e5;
-  border: 1px solid rgb(255, 255, 255);
-} */
 
 .photo_field {
   display: flex;
@@ -240,7 +220,6 @@ label {
   border: 1px;
   font-weight: 530;
   align-content: center;
-  /* height: 150px; */
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -321,27 +300,6 @@ label {
 .next_button:hover {
   color: rgb(2, 164, 2);
 }
-
-/* .button--loading::after {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  border: 4px solid transparent;
-  border-top-color: #ffffff;
-  border-radius: 50%;
-  animation: button--loading-spinner 1s ease infinite;
-}
-
-@keyframes button--loading-spinner {
-  from {
-    transform: rotate(0turn);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-} */
-/* Third column end here ---||--- */
 
 .four_col {
   display: none;
@@ -585,7 +543,7 @@ label {
   display: flex;
   background-color: white;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   align-content: center;
   width: 100%;
@@ -640,57 +598,6 @@ label {
   transition: all 0.2s ease;
 }
 
-.file-upload-content {
-  display: none;
-  text-align: center;
-}
-
-.file-upload-input {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  outline: none;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.image-upload-wrap {
-  margin-top: 20px;
-  border: 4px dashed #1fb264;
-  position: relative;
-}
-
-.image-dropping,
-.image-upload-wrap:hover {
-  background-color: #1fb264;
-  border: 4px dashed #ffffff;
-}
-
-.image-title-wrap {
-  padding: 0 15px 15px 15px;
-  color: #222;
-}
-
-.drag-text {
-  text-align: center;
-}
-
-.drag-text h3 {
-  font-weight: 100;
-  text-transform: uppercase;
-  color: #15824b;
-  padding: 60px 0;
-}
-
-.file-upload-image {
-  max-height: 200px;
-  max-width: 200px;
-  margin: auto;
-  padding: 20px;
-}
-
 .remove-image {
   width: 200px;
   margin: 0;
@@ -706,18 +613,6 @@ label {
   font-weight: 700;
 }
 
-.remove-image:hover {
-  background: #c13b2a;
-  color: #ffffff;
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-
-.remove-image:active {
-  border: 0;
-  transition: all 0.2s ease;
-}
-
 @media (max-width: 420px) {
   input {
     width: 90%;
@@ -727,15 +622,12 @@ label {
     position: absolute;
     width: 372px;
     height: 51px;
-    /* left: 9px; */
     top: 41px;
-
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
     line-height: 42px;
-
     color: #ce4a11;
   }
   .Your_photo {
@@ -761,132 +653,6 @@ label {
     line-height: 25px;
     color: #ffffff;
   }
-  /* #fn {
-    position: absolute;
-    width: 90px;
-    height: 21px;
-    left: 23px;
-    top: 104px;
-
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17.6676px;
-    line-height: 21px;
-
-    color: #000000;
-  }
-
-  #nameField_first {
-    position: absolute;
-    width: 90%;
-    height: 50px;
-    left: 12px;
-    top: 132px;
-    background: #d9d9d9;
-    border-radius: 6px;
-  }
-  #ln {
-    position: absolute;
-    width: 89px;
-    height: 21px;
-    left: 23px;
-    top: 213px;
-
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17.6676px;
-    line-height: 21px;
-
-    color: #000000;
-  }
-  #nameField_last {
-    position: absolute;
-    width: 90%;
-    height: 50px;
-    left: 12px;
-    top: 242px;
-
-    background: #d9d9d9;
-    border-radius: 6px;
-  }
-  #pn {
-    position: absolute;
-    width: 83px;
-    height: 21px;
-    left: 23px;
-    top: 324px;
-
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17.6676px;
-    line-height: 21px;
-
-    color: #000000;
-  }
-  #contactField-phone {
-    position: absolute;
-    width: 90%;
-    height: 50px;
-    left: 12px;
-    top: 351px;
-    background: #d9d9d9;
-    border-radius: 6px;
-  }
-  #en {
-    position: absolute;
-    width: 46px;
-    height: 21px;
-    left: 23px;
-    top: 437px;
-
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17.6676px;
-    line-height: 21px;
-
-    color: #000000;
-  }
-  #contactField-email {
-    position: absolute;
-    width: 90%;
-    height: 50px;
-    left: 12px;
-    top: 465px;
-
-    background: #d9d9d9;
-    border-radius: 6px;
-  }
-  #ya {
-    position: absolute;
-    width: 72px;
-    height: 21px;
-    left: 23px;
-    top: 545px;
-
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17.6676px;
-    line-height: 21px;
-
-    color: #000000;
-  }
-  #addressField {
-    position: absolute;
-    width: 90%;
-    height: 50px;
-    left: 12px;
-    top: 575px;
-
-    background: #d9d9d9;
-    border-radius: 6px;
-  }
-  
-  */
 
   #f_li {
     position: absolute;
@@ -973,8 +739,6 @@ label {
   #codechef_btn,
   #codeChefField {
     box-sizing: border-box;
-
-    /* position: absolute; */
     width: 90%;
     height: 48px;
     left: 12px;
@@ -987,8 +751,6 @@ label {
   #leetcode_btn,
   #fbField {
     box-sizing: border-box;
-
-    /* position: absolute; */
     width: 90%;
     height: 48px;
     left: 12px;
@@ -1237,11 +999,4 @@ label {
     background: #d9d9d9;
     border-radius: 3px;
   }
-  /* #bt_gen {
-    width: 39%;
-    height: 44px;
-    left: 12px;
-    background: #d9d9d9;
-    border-radius: 3px;
-  } */
 }
