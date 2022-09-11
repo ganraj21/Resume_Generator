@@ -436,6 +436,21 @@ label {
   display: grid;
   box-shadow: 0 8px 5px -5px rgb(0 0 0 / 20%);
 }
+.input_cert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.input_proj {
+  margin-top: 21px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
 .loader {
   pointer-events: none;
   width: 25px;
