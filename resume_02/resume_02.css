@@ -260,7 +260,35 @@ label {
 }
 .btn_gen_text {
   transition: all 0.2s;
-  color: white;
+  font-size: 18px;
+  color: #fff;
+  background: #29ca8e;
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  place-content: center;
+  display: grid;
+  box-shadow: 0 8px 5px -5px rgb(0 0 0 / 20%);
+}
+.loader {
+  pointer-events: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #fff;
+  animation: an1 1s ease-in-out infinite;
+}
+
+@keyframes an1 {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
 }
 .back_button {
   display: flex;
@@ -290,7 +318,6 @@ label {
 .back_button:hover {
   color: rgb(194, 3, 3);
 }
-.btn_gen_text:hover,
 .next_button:hover {
   color: rgb(2, 164, 2);
 }
@@ -860,6 +887,7 @@ label {
   }
   
   */
+
   #f_li {
     position: absolute;
     width: 10px;
@@ -1209,11 +1237,11 @@ label {
     background: #d9d9d9;
     border-radius: 3px;
   }
-  #bt_gen {
+  /* #bt_gen {
     width: 39%;
     height: 44px;
     left: 12px;
     background: #d9d9d9;
     border-radius: 3px;
-  }
+  } */
 }

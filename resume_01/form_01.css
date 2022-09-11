@@ -372,28 +372,6 @@ label {
   align-items: center;
   align-content: center;
 }
-
-/* .button--loading::after {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  border: 4px solid transparent;
-  border-top-color: #ffffff;
-  border-radius: 50%;
-  animation: button--loading-spinner 1s ease infinite;
-}
-
-@keyframes button--loading-spinner {
-  from {
-    transform: rotate(0turn);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-} */
-/* Third column end here ---||--- */
-
 .four_col {
   display: none;
   justify-content: flex-start;
@@ -444,7 +422,38 @@ label {
   align-content: center;
   align-items: center;
 }
+.btn_gen_text {
+  transition: all 0.2s;
+  font-size: 18px;
+  color: #fff;
+  background: #29ca8e;
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  place-content: center;
+  display: grid;
+  box-shadow: 0 8px 5px -5px rgb(0 0 0 / 20%);
+}
+.loader {
+  pointer-events: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #fff;
+  animation: an1 1s ease-in-out infinite;
+}
 
+@keyframes an1 {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
 /* Fifth column end here ----||---- */
 .direction_button {
   display: flex;
@@ -454,16 +463,9 @@ label {
   align-content: center;
   width: 100%;
   margin-top: 10px;
-}
-/* 
-.first_col,
-.second_col,
-.third_col,
-.four_col {
-  width: 100%;
-  height: 100vh;
-} */
 
+  position: absolute;
+}
 .file-upload {
   /* background-color: #ffffff; */
   margin: 0 auto;

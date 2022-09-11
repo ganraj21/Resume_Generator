@@ -60,11 +60,16 @@ nextFun = () => {
     document.getElementById('f_col').style.display = 'none'
     document.getElementById('ff_col').style.display = 'flex'
     document.getElementById('nb_btns').style.display = 'hidden'
-    document.getElementById('bt_gen').style.display = 'flex'
+    document.getElementById('bt_gen').style.display = 'grid'
     console.log("your nxt btn is display non")
   }
   cnt++
 }
+
+
+// generate_button = document.querySelector(".btn_gen_text");
+
+
 
 console.log(localStorage.getItem('txtValue'))
 if (localStorage.getItem('txtValue') == '1') {
@@ -210,7 +215,14 @@ if (localStorage.getItem('txtValue') == '1') {
   document.getElementById('btn2').addEventListener('click', add_experience_03)
 
   // -----------------------------xxx-----------------------
-
+  document.getElementById('bt_gen').addEventListener('click',()=>{
+    document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
+    setTimeout(()=>{
+      document.getElementById('bt_gen').innerHTML  = "Resume Generated"
+      generate_fun();
+    console.log("YOU clicked on generate btn")
+    },2000);
+  })
   // generate function --->
   const generate_fun = () => {
     // first-col-->
@@ -278,19 +290,14 @@ if (localStorage.getItem('txtValue') == '1') {
     localStorage.setItem('experience_desc', experience_desc)
 
     window.location.href = './resume_01/resume_01.html'
-  }
-  //   generate btn -->
-  let bton_gen = document.getElementById('generate_btn')
-  bton_gen.addEventListener('click', generate_fun)
+    }
 } else if (localStorage.getItem('txtValue') == '2') {
   // Create new link Element
   var link = document.createElement('link')
   // set the attributes for link element
   link.rel = 'stylesheet'
-
   link.type = 'text/css'
-
-  link.href = './resume_02/resume_02.css'
+  link.href = './resume_02/resume_02.css';
 
   // Get HTML head element to append
   // link element to it
@@ -425,12 +432,20 @@ if (localStorage.getItem('txtValue') == '1') {
   document.getElementById('btn1').addEventListener('click', add_experience_02)
   document.getElementById('btn2').addEventListener('click', add_experience_03)
 
+  document.getElementById('bt_gen').addEventListener('click',()=>{
+    document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
+    setTimeout(()=>{
+      document.getElementById('bt_gen').innerHTML  = "Resume Generated"
+      generate_fun2();
+    console.log("YOU clicked on generate btn")
+    },2000);
+  })
   // -------|
   const generate_fun2 = () => {
     window.location.href = './resume_02/resume_02.html'
   }
-  let bton_gen = document.getElementById('generate_btn')
-  bton_gen.addEventListener('click', generate_fun2)
+  // let bton_gen = document.getElementById('generate_btn')
+  // bton_gen.addEventListener('click', generate_fun2)
 } else {
   // Create new link Element
   var link = document.createElement('link')
@@ -540,7 +555,14 @@ if (localStorage.getItem('txtValue') == '1') {
   document.getElementById('btn2').addEventListener('click', add_experience_03)
 
   // --------|
-
+  document.getElementById('bt_gen').addEventListener('click',()=>{
+    document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
+    setTimeout(()=>{
+      document.getElementById('bt_gen').innerHTML  = "Resume Generated"
+      generate_fun3();
+    console.log("YOU clicked on generate btn")
+    },2000);
+  })
   const generate_fun3 = () => {
     window.location.href = './resume_03/resume_03.html'
   }
