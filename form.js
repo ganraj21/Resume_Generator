@@ -44,22 +44,19 @@ nextFun = () => {
     document.getElementById('fc_div').style.display = 'none'
     document.getElementById('sc_div').style.display = 'flex'
     document.getElementById('bb_btn').disabled = false
-    document.getElementById('nb_btns').style.display = 'flex'
+    document.getElementById('nb_btns').style.display = 'grid'
   } else if (cnt == 2) {
     document.getElementById('sc_div').style.display = 'none'
     document.getElementById('thc_div').style.display = 'flex'
-    document.getElementById('f_col').style.display = 'none'
     document.getElementById('nb_btns').style.display = 'flex'
-    // document.getElementById('bt_gen').style.display = 'none'
   } else if (cnt == 3) {
     document.getElementById('thc_div').style.display = 'none'
     document.getElementById('f_col').style.display = 'flex'
-    document.getElementById('nb_btns').style.display = 'flex'
-    // document.getElementById('bt_gen').style.display = 'none'
+    document.getElementById('nb_btns').style.display = 'none'
   } else if (cnt == 4) {
     document.getElementById('f_col').style.display = 'none'
     document.getElementById('ff_col').style.display = 'flex'
-    document.getElementById('nb_btns').style.display = 'hidden'
+    document.getElementById('nb_btns').style.display = 'none'
     document.getElementById('bt_gen').style.display = 'grid'
     console.log("your nxt btn is display non")
   }

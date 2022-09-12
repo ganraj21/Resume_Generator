@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume Form</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    
     <!-- -------------------|-< -->
-       <!-- resume generating form -->
-       <div class="container_01" id="cv-form">
-        <!-- first column -->
+    <!-- resume generating form -->
+    <div class="container_01" id="cv-form">
+      <!-- first column -->
       <section class="first_col" id="fc_div">
         <div class="div_fields">
           <h3>Personal Information</h3>
@@ -32,19 +37,9 @@
               required
             />
             <label for="" id="pn">Phone No</label>
-            <input
-              type="text"
-              id="contactField-phone"
-              placeholder="Phone No"
-              
-            />
+            <input type="text" id="contactField-phone" placeholder="Phone No" />
             <label for="" id="en">Email</label>
-            <input
-              type="email"
-              id="contactField-email"
-              placeholder="Email"
-              
-            />
+            <input type="email" id="contactField-email" placeholder="Email" />
             <label for="" id="ya">Address</label>
             <textarea
               id="addressField"
@@ -54,82 +49,96 @@
           </div>
 
           <button class="Your_photo"><span> Upload Your Photo</span></button>
- 
+
           <div class="direction_button" id="db_01">
-            <button id="bb_btn" class="back_button" onclick="backFun()"><span><i class="fas fa-solid fa-angle-left"></i> </span> Previous</button>
-            <button id="nb_btns" class="next_button" onclick="nextFun()">Next <span><i class="fas fa-solid fa-angle-right"></i> </span></button>
+            <button id="bb_btn" class="back_button" onclick="backFun()">
+              <span><i class="fas fa-solid fa-angle-left"></i> </span> Previous
+            </button>
+            <button id="nb_btns" class="next_button" onclick="nextFun()">
+              Next <span><i class="fas fa-solid fa-angle-right"></i> </span>
+            </button>
           </div>
         </div>
       </section>
-        <!-- ----- -->
-        <!-- second coloum -->
+      <!-- ----- -->
+      <!-- second coloum -->
       <section class="second_col" id="sc_div">
         <!-- <div class="updiv"> -->
-          <div class="div_fields">
-            <h2>Important Links</h2>
-            <div class="imp_text">
-              <p id="f_li">
-            <li id="f_text">Click on buttons to add your social and important links. you can add max 5 links.</li></p>
+        <div class="div_fields">
+          <h2>Important Links</h2>
+          <div class="imp_text">
+            <p id="f_li">
+              <li id="f_text">
+                Click on buttons to add your social and important links. you can
+                add max 5 links.
+              </li>
+            </p>
             <p id="s_li">
-            <li id="s_text">If you are not click on following button then your input for this field is not consider.</li></p>
+              <li id="s_text">
+                If you are not click on following button then your input for
+                this field is not consider.
+              </li>
+            </p>
           </div>
-        <div class="input_01">
-         
-          <div class="box_input">
-            <button id="linked_btn">LinkedIn</button>
-          <input
-              type="text"
-              id="linkedinField"
-              placeholder="https://www.linkedin.com"
-              class="linked_input"
-          />
-        </div>
-        <div class="box_input">
-          <button id="codechef_btn">CodeChef</button>
-          <input
-             type="text"
-             id="codeChefField"
-             placeholder="https://www.codechef.com"
-             class="codechef_input"
-           />
-        </div>
-        <div class="box_input">
-          <button id="leetcode_btn">Leetcode</button>
-        <input
-          type="text"
-          id="fbField"
-          placeholder="https://www.leetcode.com"
-          class="leetcode_input"
-        /></div>
-        <div class="box_input">
-          <button id="github_btn">GitHub</button>
-            <input
-              type="text"
-              id="githubField"
-              placeholder="https://www.github.com"
-              class="github_input"
-            />
+          <div class="input_01">
+            <div class="box_input">
+              <button id="linked_btn">LinkedIn</button>
+              <input
+                type="text"
+                id="linkedinField"
+                placeholder="https://www.linkedin.com"
+                class="linked_input"
+              />
+            </div>
+            <div class="box_input">
+              <button id="codechef_btn">CodeChef</button>
+              <input
+                type="text"
+                id="codeChefField"
+                placeholder="https://www.codechef.com"
+                class="codechef_input"
+              />
+            </div>
+            <div class="box_input">
+              <button id="leetcode_btn">Leetcode</button>
+              <input
+                type="text"
+                id="fbField"
+                placeholder="https://www.leetcode.com"
+                class="leetcode_input"
+              />
+            </div>
+            <div class="box_input">
+              <button id="github_btn">GitHub</button>
+              <input
+                type="text"
+                id="githubField"
+                placeholder="https://www.github.com"
+                class="github_input"
+              />
+            </div>
+            <div class="box_input">
+              <button id="insta_btn">Instagram</button>
+              <input
+                type="text"
+                id="instaField"
+                placeholder="https://www.instagram.com"
+                class="insta_input"
+              />
+            </div>
           </div>
-          <div class="box_input">
-          <button id="insta_btn">Instagram</button>
-            <input
-              type="text"
-              id="instaField"
-              placeholder="https://www.instagram.com"
-              class="insta_input"
-            />
+          <div class="direction_button" id="db_02">
+            <button id="bb_btn" class="back_button" onclick="backFun()">
+              <span><i class="fas fa-solid fa-angle-left"></i> </span> Previous
+            </button>
+            <button id="nb_btns" class="next_button" onclick="nextFun()">
+              Next <span><i class="fas fa-solid fa-angle-right"></i> </span>
+            </button>
           </div>
         </div>
-        <div class="direction_button" id="db_02">
-          <button id="bb_btn" class="back_button" onclick="backFun()"><span><i class="fas fa-solid fa-angle-left"></i> </span> Previous</button>
-          <button id="nb_btns" class="next_button" onclick="nextFun()">Next <span><i class="fas fa-solid fa-angle-right"></i> </span></button>
-        </div>
-
-      </div>
-        
       </section>
-        <!-- ----- -->
-        <!-- third coloumn -->
+      <!-- ----- -->
+      <!-- third coloumn -->
       <section class="third_col" id="thc_div">
         <div class="div_fields">
           <h3>Professional Info</h3>
@@ -138,245 +147,357 @@
             <textarea
               id="your-about-info"
               placeholder="About Your-Self"
-              class=" weField"
+              class="weField"
               rows="5"
             ></textarea>
           </div>
-         <div class="input_00" id="we">
-          <label for="" id="elable">Experience</label>
-          <div class="bcc" id="bcc_01">
-            <input type="text" class="input_title" id="exp_title" placeholder="Your position 1" />
-            <input
-              type="text"
-              class="input_company"
-              placeholder="Company name 1"
-              id="your_input_company"
-            />
-            <div class="input_">
+          <div class="input_00" id="we">
+            <label for="" id="elable">Experience</label>
+            <div class="bcc" id="bcc_01">
               <input
-                type="number"
-                name="start"
-                id="c_s_d"
-                class="dateadd_1"
-                placeholder="Start year"
+                type="text"
+                class="input_title"
+                id="exp_title"
+                placeholder="Your position 1"
               />
               <input
-                type="number"
-                name="end"
-                id="c_e_d"
-                class="dateadd_2"
-                placeholder="End year"
+                type="text"
+                class="input_company"
+                placeholder="Company name 1"
+                id="your_input_company"
               />
+              <div class="input_">
+                <input
+                  type="number"
+                  name="start"
+                  id="c_s_d"
+                  class="dateadd_1"
+                  placeholder="Start year"
+                />
+                <input
+                  type="number"
+                  name="end"
+                  id="c_e_d"
+                  class="dateadd_2"
+                  placeholder="End year"
+                />
+              </div>
+              <textarea
+                placeholder="Description"
+                class="weField"
+                rows="5"
+                id="your_company_description"
+              ></textarea>
+              <div class="btns">
+                <button class="btn" id="btn1">
+                  <span>Add Experience</span>
+                </button>
+              </div>
             </div>
-            <textarea
-              placeholder="Description"
-              class=" weField"
-              rows="5"
-              id="your_company_description"
-            ></textarea>
-            <div class="btns"><button class="btn" id="btn1"><span>Add Experience</span> </button></div>
-          </div>
-          
-          <div class="bcc" id="bcc_02">
-            <input type="text" class="input_title" id="exp_title_02" placeholder="Your position 2" />
-            <input
-              type="text"
-              class="input_company"
-              placeholder="Company name 2"
-              id="your_input_company_02"
-            />
-            <div class="input_">
+
+            <div class="bcc" id="bcc_02">
               <input
-                type="number"
-                name="start"
-                id="c_s_d_02"
-                class="dateadd_1"
-                placeholder="Start year"
+                type="text"
+                class="input_title"
+                id="exp_title_02"
+                placeholder="Your position 2"
               />
               <input
-                type="number"
-                name="end"
-                id="c_e_d_02"
-                class="dateadd_2"
-                placeholder="End year"
+                type="text"
+                class="input_company"
+                placeholder="Company name 2"
+                id="your_input_company_02"
               />
+              <div class="input_">
+                <input
+                  type="number"
+                  name="start"
+                  id="c_s_d_02"
+                  class="dateadd_1"
+                  placeholder="Start year"
+                />
+                <input
+                  type="number"
+                  name="end"
+                  id="c_e_d_02"
+                  class="dateadd_2"
+                  placeholder="End year"
+                />
+              </div>
+              <textarea
+                placeholder="Description"
+                class="weField"
+                rows="5"
+                id="your_company_description_02"
+              ></textarea>
+              <div class="btns">
+                <div id="back_01" class="back_can_btn">
+                  <div class="bbtn">
+                    <i class="fas fa-solid fa-angle-left"></i>
+                  </div>
+                  <button class="btn" id="btn2">
+                    <span> Add Experience </span>
+                  </button>
+                  <div
+                    class="cancle_btn"
+                    id="cancel_01"
+                    title="cancel this certificate"
+                  >
+                    X
+                  </div>
+                </div>
+              </div>
             </div>
-            <textarea
-              placeholder="Description"
-              class=" weField"
-              rows="5"
-              id="your_company_description_02"
-            ></textarea>
-            <div class="btns">
-               <button class="btn" id="btn2"><span> Add Experience </span></button>
-              <div id="back_01" class="back_can_btn">
-              <div class="bbtn"><i class="fas fa-solid fa-angle-left"></i></div>
-              <div class="cancle_btn" id="cancel_01" title="cancel this certificate"> X </div>
+
+            <div class="bcc" id="bcc_03">
+              <input
+                type="text"
+                class="input_title"
+                id="exp_title_03"
+                placeholder="Your position 3"
+              />
+              <input
+                type="text"
+                class="input_company"
+                placeholder="Company name 3"
+                id="your_input_company_03"
+              />
+              <div class="input_">
+                <input
+                  type="number"
+                  name="start"
+                  id="c_s_d_03"
+                  class="dateadd_1"
+                  placeholder="Start year"
+                />
+                <input
+                  type="number"
+                  name="end"
+                  id="c_e_d_03"
+                  class="dateadd_2"
+                  placeholder="End year"
+                />
+              </div>
+              <textarea
+                placeholder="Description"
+                class="weField"
+                rows="5"
+                id="your_company_description_03"
+              ></textarea>
+              <div class="btns">
+                <button class="btn" id="btn3">
+                  <span> Add Experience </span>
+                </button>
+                <div id="back_02" class="back_can_btn">
+                  <div class="bbtn">
+                    <i class="fas fa-solid fa-angle-left"></i>
+                  </div>
+                  <div
+                    class="cancle_btn"
+                    id="cancel_02"
+                    title="cancel this certificate"
+                  >
+                    X
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="bcc" id="bcc_03">
-            <input type="text" class="input_title" id="exp_title_03" placeholder="Your position 3" />
-            <input
-              type="text"
-              class="input_company"
-              placeholder="Company name 3"
-              id="your_input_company_03"
-            />
-            <div class="input_">
-              <input
-                type="number"
-                name="start"
-                id="c_s_d_03"
-                class="dateadd_1"
-                placeholder="Start year"
-              />
-              <input
-                type="number"
-                name="end"
-                id="c_e_d_03"
-                class="dateadd_2"
-                placeholder="End year"
-              />
-            </div>
-            <textarea
-              placeholder="Description"
-              class=" weField"
-              rows="5"
-              id="your_company_description_03"
-            ></textarea>
-            <div class="btns">
-            <button class="btn" id="btn3"><span> Add Experience </span></button>
-            <div id="back_02" class="back_can_btn">
-              <div class="bbtn"><i class="fas fa-solid fa-angle-left"></i></div>
-              <div class="cancle_btn" id="cancel_02" title="cancel this certificate"> X </div>
-            </div>
+          <div class="direction_button" id="db_03">
+            <button id="bb_btn" class="back_button" onclick="backFun()">
+              <span><i class="fas fa-solid fa-angle-left"></i> </span> Previous
+            </button>
+            <button id="nb_btns" class="next_button" onclick="nextFun()">
+              Next <span><i class="fas fa-solid fa-angle-right"></i> </span>
+            </button>
           </div>
-          </div>
-         </div>
-
-        <div class="direction_button" id="db_03">
-          <button id="bb_btn" class="back_button" onclick="backFun()"><span><i class="fas fa-solid fa-angle-left"></i> </span> Previous</button>
-          <button id="nb_btns" class="next_button" onclick="nextFun()">Next <span><i class="fas fa-solid fa-angle-right"></i> </span></button>
         </div>
-      </div>
       </section>
-        <!-- ----- -->
-        <!-- fourth column -->
+      <!-- ----- -->
+      <!-- fourth column -->
       <section class="four_col" id="f_col">
-      
         <div class="div_fields">
           <h3>Professional Info</h3>
           <div class="input_profec">
             <label for="" class="plabel">Profession</label>
             <input
-            placeholder="Your Profession"
-            class="Qualification_input"
-            id="profession_name"
-          ></input>
-          </div>
-        <div class="input_educ" id="aq">
-          <label for="" class="elable">Education</label>
-          <input type="text" class="input_title" id="Qualification_Title" placeholder="Academic Qualification Title" />
-          <input
-            placeholder="University Name"
-            class="Qualification_input aqField"
-            id="University_Name"
-          ></input>
-          <div class="input_">
-            <input
-              type="number"
-              name="start"
-              id="date_01"
-              class="s_date"
-              placeholder="Start year"
-              onblur="(this.type='text')"
+              placeholder="Your Profession"
+              class="Qualification_input"
+              id="profession_name"
             />
+          </div>
+          <div class="input_educ" id="aq">
+            <label for="" class="elable">Education</label>
             <input
               type="text"
-              name="end"
-              id="date_02"
-              class="e_date"
-              placeholder="End year"
-              onblur="(this.type='text')"
+              class="input_title"
+              id="Qualification_Title"
+              placeholder="Academic Qualification Title"
             />
+            <input
+              placeholder="University Name"
+              class="Qualification_input aqField"
+              id="University_Name"
+            />
+            <div class="input_">
+              <input
+                type="number"
+                name="start"
+                id="date_01"
+                class="s_date"
+                placeholder="Start year"
+                onblur="(this.type='text')"
+              />
+              <input
+                type="text"
+                name="end"
+                id="date_02"
+                class="e_date"
+                placeholder="End year"
+                onblur="(this.type='text')"
+              />
+            </div>
+            <div onclick="addNewAQField()" class="btns" id="aqAddButton">
+              <button class="qbtn" id="btn2">
+                <span> Add Qualification </span>
+              </button>
+            </div>
           </div>
-          <div
-            onclick="addNewAQField()"
-            class="btns"
-            id="aqAddButton"
-          >
-            <button class="qbtn" id="btn2"> <span> Add Qualification </span></button>
+          <div class="input_skl" id="sk">
+            <label for="" class="slabel">Skills</label>
+            <input
+              placeholder="Your-Skills & Expertise"
+              class="Skills_input"
+              id="your-skills"
+            />
+            <div class="btns">
+              <button class="sbtn" id="btn3"><span> Add Skills </span></button>
+            </div>
           </div>
         </div>
-        <div class="input_skl" id="sk">
-          <label for="" class="slabel">Skills</label>
-          <input
-            placeholder="Your-Skills & Expertise"
-            class="Skills_input"
-            id="your-skills"
-          ></input>
-          <div class="btns">
-            <button class="sbtn" id="btn3"><span> Add Skills </span></button>
-          </div>
+        <div class="direction_button" id="db_04">
+          <button id="bb_btn" class="back_button" onclick="backFun()">
+            <span><i class="fas fa-solid fa-angle-left"></i> </span> Previous
+          </button>
+          <button id="nb_btns" class="next_button" onclick="nextFun()">
+            Next <span><i class="fas fa-solid fa-angle-right"></i> </span>
+          </button>
         </div>
-       </div>
-       <div class="direction_button" id="db_04">
-        <button id="bb_btn" class="back_button" onclick="backFun()"><span><i class="fas fa-solid fa-angle-left"></i> </span> Previous</button>
-        <button id="nb_btns" class="next_button" onclick="nextFun()">Next <span><i class="fas fa-solid fa-angle-right"></i> </span></button>
-      </div>
       </section>
 
-        <!-- five column -->
+      <!-- five column -->
       <section class="five_col" id="ff_col">
         <div class="div_fields">
           <h3>Certificates And Projects</h3>
           <div class="input_cert" id="cp_01">
             <label for="" class="clabel">Certificates</label>
-            <input type="text" class="cp_class" name="" id="certificate_title_01" placeholder="Certificate Title 1">
-            <textarea name="" id="certificate_description_01" cols="30" rows="5" placeholder="Certificate Description 1" class="ld_des"></textarea>
-            <button class="cpbtn" id="cert_btn_01"><span> add Certificate </span></button>
+            <input
+              type="text"
+              class="cp_class"
+              name=""
+              id="certificate_title_01"
+              placeholder="Certificate Title 1"
+            />
+            <textarea
+              name=""
+              id="certificate_description_01"
+              cols="30"
+              rows="5"
+              placeholder="Certificate Description 1"
+              class="ld_des"
+            ></textarea>
+            <div class="btns">
+              <button class="cpbtn" id="cert_btn_01">
+                <span> add Certificate </span>
+              </button>
+            </div>
           </div>
           <div class="input_cert" id="cp_02">
-            <input type="text" class="cp_class" name="" id="certificate_title_02" placeholder="Certificate Title 2">
-            <textarea name="" id="certificate_description_02" cols="30" rows="5" placeholder="Certificate Description 2" class="ld_des"></textarea>
+            <input
+              type="text"
+              class="cp_class"
+              name=""
+              id="certificate_title_02"
+              placeholder="Certificate Title 2"
+            />
+            <textarea
+              name=""
+              id="certificate_description_02"
+              cols="30"
+              rows="5"
+              placeholder="Certificate Description 2"
+              class="ld_des"
+            ></textarea>
             <div class="btns">
-              <span  id="cancel_001" title="cancel this certificate"> X </span>
-            <button class="cpbtn" id="cert_btn_02">add Certificate</button>
-            <span id="back_001" title="previous"><i class="fas fa-solid fa-angle-left"></i></span>
-
-          </div>
+              <span id="cancel_001" title="cancel this certificate"> X </span>
+              <button class="cpbtn" id="cert_btn_02">add Certificate</button>
+              <span id="back_001" title="previous"
+                ><i class="fas fa-solid fa-angle-left"></i
+              ></span>
+            </div>
           </div>
           <div class="input_cert" id="cp_03">
-            <input type="text" class="cp_class" name="" id="certificate_title_03" placeholder="Certificate Title 3">
-            <textarea name="" id="certificate_description_03" cols="30" rows="5" placeholder="Certificate Description 3" class="ld_des"></textarea>
+            <input
+              type="text"
+              class="cp_class"
+              name=""
+              id="certificate_title_03"
+              placeholder="Certificate Title 3"
+            />
+            <textarea
+              name=""
+              id="certificate_description_03"
+              cols="30"
+              rows="5"
+              placeholder="Certificate Description 3"
+              class="ld_des"
+            ></textarea>
             <div class="btns">
-              <span  id="cancel_002" title="cancel this certificate"> X </span>
-            <button class="cpbtn" id="cert_btn_02">add Certificate</button>
-            <span id="back_002"><i class="fas fa-solid fa-angle-left"></i></span>
-          </div>
+              <span id="cancel_002" title="cancel this certificate"> X </span>
+              <button class="cpbtn" id="cert_btn_02">add Certificate</button>
+              <span id="back_002"
+                ><i class="fas fa-solid fa-angle-left"></i
+              ></span>
+            </div>
           </div>
           <div class="input_proj">
             <label for="" class="pplabel">Projects</label>
-            <input type="text" class="cp_class" id="project_title" placeholder="Project Title">
-            <textarea name="" id="" cols="30" rows="5" placeholder="Project Description" class="ld_des"></textarea>
-            <button class="cpbtn" id="proj_btn"><span> add Project </span></button>
+            <input
+              type="text"
+              class="cp_class"
+              id="project_title"
+              placeholder="Project Title"
+            />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="5"
+              placeholder="Project Description"
+              class="ld_des"
+            ></textarea>
+            <button class="cpbtn" id="proj_btn">
+              <span> add Project </span>
+            </button>
           </div>
-          </div>
-          <div class="direction_button" id="db_05">
-            <button id="bb_btn" class="back_button" onclick="backFun()"><span><i class="fas fa-solid fa-angle-left"></i> </span> Previous</button>
-            <button id="nb_btns" class="next_button" onclick="nextFun()">Next <span><i class="fas fa-solid fa-angle-right"></i> </span></button>
+        </div>
+        <div class="direction_button" id="db_05">
+          <button id="bb_btn" class="back_button" onclick="backFun()">
+            <span><i class="fas fa-solid fa-angle-left"></i> </span> Previous
+          </button>
+          <button id="nb_btns" class="next_button" onclick="nextFun()">
+            Next <span><i class="fas fa-solid fa-angle-right"></i> </span>
+          </button>
 
-            <button class="btn_gen_text" id="bt_gen" onclick="fun_bt()">Generate Resume</button>
-           
-            
-          </div>
+          <button class="btn_gen_text" id="bt_gen" onclick="fun_bt()">
+            Generate Resume
+          </button>
+        </div>
       </section>
-      
-      </div>
-      <!-- onclick="generateCV()" -->
-  <!-- ----- -->
-  <script src="./form.js"></script>
+    </div>
+    <!-- onclick="generateCV()" -->
+    <!-- ----- -->
+    <script src="./form.js"></script>
   </body>
 </html>
