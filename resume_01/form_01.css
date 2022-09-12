@@ -51,7 +51,7 @@ body {
   align-items: center;
   justify-content: center;
   align-content: center;
-  box-shadow: 0px 0px 7px #0e0e0e;
+  box-shadow: 0px 0px 3px #000000;
   width: 100%;
   border-radius: 6px;
 }
@@ -64,7 +64,7 @@ body {
   justify-content: center;
   width: 200px;
   position: absolute;
-  top: 559px;
+  top: 549px;
   align-content: center;
   background: transparent;
   border: 1px solid yellow;
@@ -73,6 +73,9 @@ body {
   box-shadow: inset 300px 0 0 0 yellow;
   color: black;
   font-weight: 600;
+}
+#addressField {
+  height: 90px;
 }
 .fields {
   margin-top: 12px;
@@ -125,7 +128,9 @@ textarea {
   height: 45px;
   margin: 9px;
   border: none;
-  background-color: rgb(222, 222, 222);
+  color: #fff;
+  background-color: rgb(45 16 77);
+  box-shadow: 0px 0px 3px black;
   border-radius: 4px;
   resize: vertical;
   text-align: center;
@@ -154,7 +159,11 @@ textarea {
   color: white;
 }
 #db_01 {
-  top: 668px;
+  top: 654px;
+}
+::placeholder {
+  color: rgb(249, 247, 246);
+  font-size: 15px;
 }
 /* first column end here ---||---  */
 .imp_text {
@@ -519,7 +528,7 @@ button {
     top: 695px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 420px) {
   .first_col h3 {
     font-size: 33px;
     text-align: center;
