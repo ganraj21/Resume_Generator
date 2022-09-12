@@ -51,16 +51,12 @@ body {
   display: flex;
   height: 782px;
   flex-direction: column;
+  padding: 20px;
   align-items: center;
   justify-content: center;
   align-content: center;
   width: 100%;
-  /* display: flex;
-  flex-direction: column;
-  padding: 0px 25px 0px 25px;
-  align-items: center;
-  justify-content: center;
-  align-content: center; */
+  border-radius: 6px;
 }
 .Your_photo {
   height: 50px;
@@ -100,16 +96,6 @@ body {
   position: absolute;
   top: 310px;
 }
-/* .input_01 input {
-  margin: 6px;
-  height: 36px;
-  width: 50%;
-  padding-top: 3px;
-  border: none;
-  background-color: rgb(222, 222, 222);
-  border-radius: 4px;
-  resize: vertical;
-}*/
 .input_02 {
   display: flex;
   align-items: center;
@@ -118,23 +104,16 @@ body {
   padding: 20px 0px 20px 0px;
   align-content: space-around;
 }
-/*.input_02 input,
-textarea {
-  width: 100%;
-  padding-top: 3px;
-  margin: 9px;
-  border: none;
-  background-color: rgb(222, 222, 222);
-  border-radius: 4px;
-  resize: vertical;
-} */
+
 label {
   display: flex;
   height: 30px;
+  width: 100%;
   margin-left: 3px;
   font-weight: 500;
   align-items: flex-end;
   font-family: "Poppins", sans-serif;
+  color: #fff;
 }
 ::-webkit-input-placeholder {
   font-family: "Poppins", sans-serif;
@@ -156,38 +135,7 @@ textarea {
   outline: none;
   color: white;
   overflow: hidden;
-  /* display: flex;
-  height: 35px;
-  border-radius: 6px;
-  border: 1px solid rgb(255, 255, 255); */
 }
-/* .form_input {
-  border-radius: 3px;
-  background-color: #e5e5e5;
-  height: 35px;
-  width: 90%;
-  width: 200px;
-  border: 1px;
-} */
-/* .address_input,
-.email_input,
-.phone_input,
-.facebook_input,
-.insta_input,
-.linked_input,
-.Qualification_input,
-.experience_input,
-.about_input,
-.Skills_input,
-.input_title,
-.input_company {
-  display: block;
-  margin-left: 9px;
-  width: 100%;
-  background-color: #e5e5e5;
-  border: 1px solid rgb(255, 255, 255);
-} */
-
 .photo_field {
   display: flex;
   margin: 18px 0px 6px 3px;
@@ -210,6 +158,9 @@ textarea {
 .supp:hover {
   background-color: #05a3ff;
   color: white;
+}
+#db_01 {
+  top: 695px;
 }
 /* first column end here ---||---  */
 .imp_text {
@@ -238,17 +189,18 @@ textarea {
   justify-content: center;
   margin-bottom: 0.9rem;
 }
+#db_02 {
+  top: 770px;
+}
 /* Second column end here ---||--- */
 
 .third_col {
   display: none;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   align-content: center;
-  width: 550px;
+  width: 100%;
   height: 700px;
-  background: burlywood;
 }
 
 .third_col h3 {
@@ -268,6 +220,7 @@ textarea {
   display: flex;
   position: absolute;
   top: 180px;
+  width: 90%;
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -275,7 +228,8 @@ textarea {
 }
 .input_00 {
   position: absolute;
-  top: 250px;
+  top: 300px;
+  width: 90%;
   display: flex;
   align-content: center;
   flex-direction: column;
@@ -298,6 +252,14 @@ label {
 .dateadd {
   display: inherit;
 }
+#db_03 {
+  top: 770px;
+}
+.input_ {
+  width: 90%;
+  display: flex;
+  gap: 6px;
+}
 
 #btn1,
 #btn2,
@@ -305,6 +267,7 @@ label {
   color: #ffffff;
   font-weight: 500;
   background-color: #1b56ca;
+  margin-top: 15px;
 }
 .btns {
   display: flex;
@@ -384,8 +347,44 @@ label {
   align-items: center;
   justify-content: center;
   font-size: 36px;
-  margin-bottom: 27px;
+  position: absolute;
   color: #0099ef;
+  top: 26px;
+}
+.four_col label {
+  display: flex;
+}
+#db_04 {
+  top: 780px;
+}
+.input_profec {
+  display: flex;
+  width: 450px;
+  position: absolute;
+  top: 100px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input_educ {
+  width: 450px;
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.input_skl {
+  width: 450px;
+  display: flex;
+  top: 582px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 /* Forth column end here ---||--- */
 
@@ -413,13 +412,9 @@ label {
   border-radius: 3px;
 }
 .btns span {
-  background: white;
   height: 36px;
   width: 31px;
   text-align: center;
-  justify-content: center;
-  display: flex;
-  align-content: center;
   align-items: center;
 }
 .btn_gen_text {
@@ -451,6 +446,9 @@ label {
   justify-content: center;
   align-items: center;
 }
+#db_05 {
+  top: 770px;
+}
 .loader {
   pointer-events: none;
   width: 25px;
@@ -477,125 +475,9 @@ label {
   align-items: center;
   align-content: center;
   width: 100%;
-  margin-top: 10px;
-
   position: absolute;
 }
-.file-upload {
-  /* background-color: #ffffff; */
-  margin: 0 auto;
-  display: flex;
-  padding: 10px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-}
 
-.file-upload-btn {
-  width: 100%;
-  margin: 0;
-  color: #fff;
-  background: #1fb264;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  border-bottom: 4px solid #15824b;
-  transition: all 0.2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.file-upload-btn:hover {
-  background: #1aa059;
-  color: #ffffff;
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-
-.file-upload-btn:active {
-  border: 0;
-  transition: all 0.2s ease;
-}
-
-.file-upload-content {
-  display: none;
-  text-align: center;
-}
-
-.file-upload-input {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  outline: none;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.image-upload-wrap {
-  margin-top: 20px;
-  border: 4px dashed #1fb264;
-  position: relative;
-}
-
-.image-dropping,
-.image-upload-wrap:hover {
-  background-color: #1fb264;
-  border: 4px dashed #ffffff;
-}
-
-.image-title-wrap {
-  padding: 0 15px 15px 15px;
-  color: #222;
-}
-
-.drag-text {
-  text-align: center;
-}
-
-.drag-text h3 {
-  font-weight: 100;
-  text-transform: uppercase;
-  color: #15824b;
-  padding: 60px 0;
-}
-
-.file-upload-image {
-  max-height: 200px;
-  max-width: 200px;
-  margin: auto;
-  padding: 20px;
-}
-
-.remove-image {
-  width: 200px;
-  margin: 0;
-  color: #fff;
-  background: #cd4535;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  border-bottom: 4px solid #b02818;
-  transition: all 0.2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.remove-image:hover {
-  background: #c13b2a;
-  color: #ffffff;
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-
-.remove-image:active {
-  border: 0;
-  transition: all 0.2s ease;
-}
 ul {
   color: white;
 }
@@ -634,7 +516,7 @@ button {
   }
   .direction_button {
     width: 100%;
-    top: 770px;
+    top: 695px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -647,7 +529,12 @@ button {
   }
   .div_fields {
     height: 100vh;
-    padding: 10px;
+    padding: 0px;
+  }
+  .input_profec,
+  .input_educ,
+  .input_skl {
+    width: 90%;
   }
 }
 

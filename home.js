@@ -32,13 +32,6 @@ closeIcon.addEventListener('click',()=>{
   document.getElementById('cross').style.display = "none";
   console.log("clicked on canceled")
 })
-// events for button back , next
-// const back = document.getElementById('bb_btn')
-// const next = document.getElementById('nb_btn')
-
-// back.addEventListener('click', backFun)
-// next.addEventListener('click', nextFun)
-// ----------|-<
 
 // print cv
 function printCV() {
