@@ -92,13 +92,14 @@
     position: absolute;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 72px;
+    right: 70px;
+    left: -72px;
     bottom: 0;
     z-index: 99;
     list-style: none;
     padding-top: 4rem;
+    background: #031d28;
   }
 
   .menuItem {
@@ -148,11 +149,12 @@
   .showMenu {
     margin-right: 0px;
     background: #031d28;
-    height: 500px;
     display: flex;
-    transform: translate(0px, 70px);
+    transform: translateX(70px);
     flex-direction: column;
-    /* z-index: 10;*/
+    top: 72px;
+    right: 70px;
+    left: -72px;
   }
   .closeIcon {
     display: none;
