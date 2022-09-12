@@ -43,6 +43,8 @@ body {
   font-size: 33px;
   color: #ffee00;
   align-content: center;
+  top: 49px;
+  position: absolute;
   justify-content: center;
   margin-bottom: 1.1rem;
 }
@@ -66,6 +68,8 @@ body {
   align-items: center;
   justify-content: center;
   width: 200px;
+  position: absolute;
+  top: 545px;
   align-content: center;
   background: transparent;
   border: 1px solid yellow;
@@ -88,19 +92,20 @@ body {
   justify-content: center;
 }
 .input_01 {
-  width: 100%;
-  gap: 10px;
+  gap: 12px;
   margin: 2px;
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 310px;
+  top: 345px;
 }
 .input_02 {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 90%;
+  position: absolute;
+  top: 127px;
   padding: 20px 0px 20px 0px;
   align-content: space-around;
 }
@@ -160,7 +165,7 @@ textarea {
   color: white;
 }
 #db_01 {
-  top: 695px;
+  top: 629px;
 }
 /* first column end here ---||---  */
 .imp_text {
@@ -190,7 +195,7 @@ textarea {
   margin-bottom: 0.9rem;
 }
 #db_02 {
-  top: 770px;
+  top: 738px;
 }
 /* Second column end here ---||--- */
 
@@ -390,11 +395,10 @@ label {
 
 .five_col {
   display: none;
-  flex-direction: column;
   justify-content: center;
   align-content: center;
-  width: 100%;
-  height: 100vh;
+  width: 60%;
+  padding: 20px;
 }
 .five_col h3 {
   display: flex;
@@ -403,11 +407,14 @@ label {
   font-size: 36px;
   margin-bottom: 27px;
   color: #0099ef;
+  position: absolute;
   text-align: center;
+  top: 58px;
 }
 .cpbtn {
   background-color: #1b56ca;
   color: white;
+  margin-top: 20px;
   border: 1px;
   border-radius: 3px;
 }
@@ -432,11 +439,13 @@ label {
   box-shadow: 0 8px 5px -5px rgb(0 0 0 / 20%);
 }
 .input_cert {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  position: absolute;
   align-items: center;
+  top: 159px;
+  width: 458px;
 }
 .input_proj {
   margin-top: 21px;
@@ -444,10 +453,12 @@ label {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  position: absolute;
+  top: 410px;
   align-items: center;
 }
 #db_05 {
-  top: 770px;
+  top: 674px;
 }
 .loader {
   pointer-events: none;
@@ -474,7 +485,7 @@ label {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  width: 100%;
+  width: 50%;
   position: absolute;
 }
 
