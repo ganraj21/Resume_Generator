@@ -5,7 +5,6 @@
 }
 .container_01 {
   flex-direction: column;
-  background-color: #010a1b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,12 +20,16 @@
   justify-content: center;
 }
 .first_col h3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 36px;
-  color: #0099ef;
-  margin-bottom: 1.1rem;
+  position: absolute;
+  width: 372px;
+  height: 51px;
+  top: 41px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+  color: #ce4a11;
 }
 .div_fields {
   background-color: white;
@@ -72,13 +75,35 @@
 }
 .input_02 {
   position: absolute;
-  margin-top: -100px;
+  /* margin-top: -100px; */
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
   align-content: space-around;
-  top: 230px;
+  top: 130px;
+  width: 458px;
+}
+.Your_photo {
+  box-sizing: border-box;
+  position: absolute;
+  width: 420px;
+  height: 50px;
+  top: 656px;
+  background: #ce4a11;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+.Your_photo span {
+  height: 25px;
+  left: 100px;
+  top: 682px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #ffffff;
 }
 .input_02 input,
 textarea {
@@ -143,7 +168,13 @@ input {
   color: white;
 }
 /* first column end here ---||---  */
-
+.imp_text {
+  display: flex;
+  height: 100px;
+  top: 10px;
+  width: 100%;
+  position: absolute;
+}
 .second_col {
   display: none;
   width: 100%;
@@ -171,7 +202,7 @@ input {
   margin-top: 10px;
 }
 button {
-  width: 50%;
+  width: 150px;
   height: 36px;
   margin: 9px;
 }
@@ -617,6 +648,16 @@ label {
   input {
     width: 90%;
     left: 12px;
+  }
+  .input_02 {
+    position: absolute;
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    align-content: space-around;
+    top: 230px;
   }
   .first_col h3 {
     position: absolute;

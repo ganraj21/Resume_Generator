@@ -75,22 +75,27 @@
             <div class="home__container section bd-grid">
               <div class="home__data bd-grid">
                 <!-- <img src="./img/perfil.jpg" alt="" class="home__img" /> -->
-                <h1 class="home__title">SMITH <b>MATTHEW</b></h1>
-                <h3 class="home_profession">Web developer</h3>
+                <h1 class="home__title">
+                  <h1 id="first_name">SMITH</h1>
+                  <h1 id="last_name"><b>MATTHEW</b></h1>
+                </h1>
+                <h3 class="home_profession" id="home-profession">
+                  Web developer
+                </h3>
 
                 <div>
                   <a download="" class="home__button-movil">Download</a>
                 </div>
               </div>
               <div class="home_address bd-grid">
-                <span class="home__information">
+                <span class="home__information" id="your-address-here">
                   <i class="bx bx-map home_icon"></i>Av. Boliver #123 Lima -
                   Peru
                 </span>
-                <span class="home__information">
+                <span class="home__information" id="your-email-id">
                   <i class="bx bx-envelope home_icon"></i>user@email.com
                 </span>
-                <span class="home__information">
+                <span class="home__information" id="your-phone-no">
                   <i class="bx bx-phone home_icon"></i>999-888-777
                 </span>
                 <span class="home__information">
@@ -118,22 +123,25 @@
                 href="https://www.linkedin.com"
                 target="_blank"
                 class="social__link social__icon"
+                id="link-of-linkedin"
               >
                 <i class="bx bxl-linkedin-square"></i>@smithmat
               </a>
               <a
-                href="https://www.facebook.com/"
+                href="https://www.Codechef.com/"
                 target="_blank"
                 class="social__link social__icon"
+                id="link-of-codechef"
               >
                 <i class="bx bxl-facebook"></i>@smithmat
               </a>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.github.com/"
                 target="_blank"
                 class="social__link social__icon"
+                id="link-of-github"
               >
-                <i class="bx bxl-instagram"></i>@smithmat
+                <i class="bx bxl-github"></i>@smithmat
               </a>
             </div>
           </section>
@@ -224,9 +232,15 @@
                 </div>
 
                 <div class="education__data bd-grid">
-                  <h3 class="education__title">MASTER OF DESIGN</h3>
-                  <span class="education__studies">University od Studies</span>
-                  <span class="education__year">2010 - 2015</span>
+                  <h3 class="education__title" id="education-title">
+                    MASTER OF DESIGN
+                  </h3>
+                  <span class="education__studies" id="university_title"
+                    >University od Studies</span
+                  >
+                  <span class="education__year" id="education_time"
+                    >2010 - 2015</span
+                  >
                 </div>
               </div>
               <div class="education__content">
@@ -270,7 +284,7 @@
 
           <section class="profile section" id="profile">
             <h2 class="section-title">Profile</h2>
-            <p class="profile__description">
+            <p class="profile__description" id="your-profile-description">
               I am a person, responsible with their work during working hours.
               Finish various technical and higher studies at larger
               univarsities. I have several years of experience and achivements
@@ -289,11 +303,16 @@
                 </div>
 
                 <div class="experience__data bd-grid">
-                  <h3 class="experience__title">MASTER OF DESIGN</h3>
-                  <span class="experience__company"
+                  <h3 class="experience__title" id="your_experience_title">
+                    MASTER OF DESIGN
+                  </h3>
+                  <span class="experience__company" id="d_and_c"
                     >From 2013 to 2015 | Tech Soft</span
                   >
-                  <p class="experience__description">
+                  <p
+                    class="experience__description"
+                    id="your_profile_experience_description"
+                  >
                     Work in this company dedicating the best responsibility in
                     the area that corresponds, delivering the best results for
                     the company and improving productivity.
@@ -414,5 +433,6 @@
 
     <!--========== MAIN JS ==========-->
     <script src="./js/main.js"></script>
+    <script src="./operation_02.js"></script>
   </body>
 </html>

@@ -442,6 +442,70 @@ if (localStorage.getItem('txtValue') == '1') {
   })
   // -------|
   const generate_fun2 = () => {
+    // first-col-->
+    let your_first_name = document.getElementById('nameField_first').value
+    localStorage.setItem('your_first_name', your_first_name)
+
+    let your_last_name = document.getElementById('nameField_last').value
+    localStorage.setItem('your_last_name', your_last_name)
+
+    let your_phone_no = document.getElementById('contactField-phone').value
+    localStorage.setItem('your_phone_no', your_phone_no)
+
+    let your_email = document.getElementById('contactField-email').value
+    localStorage.setItem('your_email', your_email)
+
+    let your_home_address = document.getElementById('addressField').value
+    localStorage.setItem('your_home_address', your_home_address)
+
+    let professional_profile_name = document.getElementById('profession_name')
+      .value
+    localStorage.setItem('professional_profile_name', professional_profile_name)
+
+    // about information -->
+    let profile_about_information = document.getElementById('your-about-info')
+      .value
+    localStorage.setItem('profile_about_information', profile_about_information)
+
+    // education --->
+    let academic_qualification_title = document.getElementById(
+      'Qualification_Title',
+    ).value
+    localStorage.setItem(
+      'academic_qualification_title',
+      academic_qualification_title,
+    )
+
+    let university_qualification_title = document.getElementById(
+      'University_Name',
+    ).value
+    localStorage.setItem(
+      'university_qualification_title',
+      university_qualification_title,
+    )
+
+    let qualification = document.getElementById('date_01').value
+    let duration = document.getElementById('date_02').value
+    let qualification_duration = qualification + ' - ' + duration
+    localStorage.setItem('qualification_duration', qualification_duration)
+
+    // experience --->
+    let experience_title = document.getElementById('exp_title').value
+    localStorage.setItem('experience_title', experience_title)
+
+    let company_title =
+      ' From ' +
+      document.getElementById('c_s_d').value +
+      ' to ' +
+      document.getElementById('c_e_d').value +
+      ' | ' +
+      document.getElementById('your_input_company').value
+    localStorage.setItem('company_title', company_title)
+
+    let experience_desc = document.getElementById('your_company_description')
+      .value
+    localStorage.setItem('experience_desc', experience_desc)
+
     window.location.href = './resume_02/resume_02.html'
   }
   // let bton_gen = document.getElementById('generate_btn')
