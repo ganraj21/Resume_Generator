@@ -5,11 +5,10 @@
 }
 
 body {
-  background-image: url(./resume_01_img.jpg);
-  background-size: cover;
   width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
+  height: 100vh;
+  background: burlywood;
+  position: absolute;
 }
 .container_01 {
   flex-direction: column;
@@ -51,9 +50,9 @@ body {
   align-items: center;
   justify-content: center;
   align-content: center;
-  box-shadow: 0px 0px 3px #000000;
   width: 100%;
-  border-radius: 6px;
+  border: 0.5px solid black;
+  border-radius: 10px;
   position: absolute;
 }
 .Your_photo {
