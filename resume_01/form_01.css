@@ -54,6 +54,7 @@ body {
   box-shadow: 0px 0px 3px #000000;
   width: 100%;
   border-radius: 6px;
+  position: absolute;
 }
 .Your_photo {
   height: 50px;
@@ -690,7 +691,7 @@ button {
     width: 350px;
   }
   .div_fields {
-    height: 100vh;
+    height: 100%;
     padding: 0px;
   }
   .second_col {
