@@ -91,15 +91,17 @@
   .menu {
     position: absolute;
     transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
+    transition: 0.9s;
     top: 72px;
     right: 70px;
+    display: flex;
     left: -72px;
     bottom: 0;
     z-index: 99;
     list-style: none;
     padding-top: 4rem;
     background: #031d28;
+    flex-direction: column;
   }
 
   .menuItem {
@@ -151,6 +153,7 @@
     background: #031d28;
     display: flex;
     transform: translateX(70px);
+    transition: 0.9s;
     flex-direction: column;
     top: 72px;
     right: 70px;

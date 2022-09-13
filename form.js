@@ -279,7 +279,10 @@ if (localStorage.getItem('txtValue') == '1') {
     localStorage.setItem('experience_desc', experience_desc)
 
     window.location.href = './resume_01/resume_01.html'
+
     }
+
+    
 } else if (localStorage.getItem('txtValue') == '2') {
   // Create new link Element
   var link = document.createElement('link')
