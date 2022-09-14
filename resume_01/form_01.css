@@ -385,7 +385,7 @@ label {
   color: rgb(2, 164, 2);
 }
 .bcc {
-  /* display: flex; */
+  display: flex;
   padding: 15px 0px 15px 0px;
   border-radius: 6px;
   flex-direction: column;
@@ -497,6 +497,12 @@ label {
   text-align: center;
   align-items: center;
 }
+.back_btn_cert,
+.cnacel_btn_cert {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
 .btn_gen_text {
   transition: all 0.2s;
   font-size: 18px;
@@ -589,6 +595,9 @@ button {
   align-items: center;
 }
 
+.input_cert label {
+  display: flex;
+}
 /* responsive code ---> */
 
 @media screen and (max-width: 480px) {

@@ -159,10 +159,10 @@ if (localStorage.getItem('txtValue') == '1') {
 
   // ----------------------xxx-----------------------
 
-  document.getElementById('bcc_01').style.display = 'flex'
+  // document.getElementById('bcc_01').style.display = 'flex'
   document.getElementById('bcc_02').style.display = 'none'
   document.getElementById('bcc_03').style.display = 'none'
-  
+
   const add_experience_02 = () => {
     document.getElementById('bcc_01').style.display = 'none'
     document.getElementById('bcc_02').style.display = 'flex'
@@ -202,6 +202,28 @@ if (localStorage.getItem('txtValue') == '1') {
 
   document.getElementById('btn_ex_01').addEventListener('click', add_experience_02);
   document.getElementById('btn_ex_02').addEventListener('click', add_experience_03);
+
+   // -----------------------------xxx-----------------------
+
+   document.getElementById('prj_01').style.display = 'flex'
+   document.getElementById('prj_02').style.display = 'none'
+   document.getElementById('prj_03').style.display = 'none'
+const addProjects_02 =() =>{
+  document.getElementById('prj_01').style.display = 'flex'
+  document.getElementById('prj_02').style.display = 'none'
+  document.getElementById('prj_03').style.display = 'none'
+  console.log("you clicked on btn 2")
+}
+
+const addProjects_03 =() =>{
+  document.getElementById('prj_01').style.display = 'flex'
+  document.getElementById('prj_02').style.display = 'none'
+  document.getElementById('prj_03').style.display = 'none'
+}
+
+
+   document.getElementById('proj_btn_01').addEventListener('click',addProjects_02)
+   document.getElementById('proj_btn_02').addEventListener('click',addProjects_03)
 
   // -----------------------------xxx-----------------------
 
