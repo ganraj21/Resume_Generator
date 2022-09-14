@@ -560,6 +560,42 @@ const addEducation_03 = () =>{
   // Get HTML head element to append
   // link element to it
   document.getElementsByTagName('HEAD')[0].appendChild(link)
+  document.getElementById('linkedinField').style.display = 'none'
+  document.getElementById('codeChefField').style.display = 'none'
+  document.getElementById('fbField').style.display = 'none'
+  document.getElementById('githubField').style.display = 'none'
+  document.getElementById('instaField').style.display = 'none'
+
+  const codechef_x = () => {
+    document.getElementById('codeChefField').style.display = 'flex'
+    document.getElementById('codechef_btn').style.display = 'none'
+  }
+  document.getElementById('codechef_btn').addEventListener('click', codechef_x)
+
+  const leetcode_x = () => {
+    document.getElementById('fbField').style.display = 'flex'
+    document.getElementById('leetcode_btn').style.display = 'none'
+  }
+  document.getElementById('leetcode_btn').addEventListener('click', leetcode_x)
+
+  const github_x = () => {
+    document.getElementById('githubField').style.display = 'flex'
+    document.getElementById('github_btn').style.display = 'none'
+  }
+  document.getElementById('github_btn').addEventListener('click', github_x)
+
+  const insta_x = () => {
+    document.getElementById('instaField').style.display = 'flex'
+    document.getElementById('insta_btn').style.display = 'none'
+  }
+  document.getElementById('insta_btn').addEventListener('click', insta_x)
+
+  const linkedin_x = () => {
+    document.getElementById('linkedinField').style.display = 'flex'
+    document.getElementById('linked_btn').style.display = 'none'
+  }
+  document.getElementById('linked_btn').addEventListener('click', linkedin_x)
+
   // ----------------------------xxx-------------------
 
   // ---------------------xxx-------------------
