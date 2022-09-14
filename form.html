@@ -189,7 +189,7 @@
                 id="your_company_description"
               ></textarea>
               <div class="btns">
-                <button class="btn" id="btn1">
+                <button class="btn" id="btn_ex_01">
                   <span>Add Experience</span>
                 </button>
               </div>
@@ -235,7 +235,7 @@
                   <div class="bbtn">
                     <i class="fas fa-solid fa-angle-left"></i>
                   </div>
-                  <button class="btn" id="btn2">
+                  <button class="btn" id="btn_ex_02">
                     <span> Add Experience </span>
                   </button>
                   <div
@@ -285,13 +285,13 @@
                 id="your_company_description_03"
               ></textarea>
               <div class="btns">
-                <button class="btn" id="btn3">
-                  <span> Add Experience </span>
-                </button>
                 <div id="back_02" class="back_can_btn">
                   <div class="bbtn">
                     <i class="fas fa-solid fa-angle-left"></i>
                   </div>
+                  <button class="btn" id="btn_ex_03">
+                    <span> Add Experience </span>
+                  </button>
                   <div
                     class="cancle_btn"
                     id="cancel_02"
@@ -327,24 +327,24 @@
               id="profession_name"
             />
           </div>
-          <div class="input_educ" id="aq">
+          <div class="input_educ" id="aq_01">
             <label for="" class="elable">Education</label>
             <input
               type="text"
               class="input_title"
-              id="Qualification_Title"
-              placeholder="Academic Qualification Title"
+              id="Qualification_Title_01"
+              placeholder="Academic Qualification Title 1"
             />
             <input
-              placeholder="University Name"
+              placeholder="University Name 1"
               class="Qualification_input aqField"
-              id="University_Name"
+              id="University_Name_01"
             />
             <div class="input_">
               <input
                 type="number"
                 name="start"
-                id="date_01"
+                id="date_01_01"
                 class="s_date"
                 placeholder="Start year"
                 onblur="(this.type='text')"
@@ -352,14 +352,90 @@
               <input
                 type="text"
                 name="end"
-                id="date_02"
+                id="date_02_01"
                 class="e_date"
                 placeholder="End year"
                 onblur="(this.type='text')"
               />
             </div>
             <div onclick="addNewAQField()" class="btns" id="aqAddButton">
-              <button class="qbtn" id="btn2">
+              <button class="qbtn" id="btn_educ_01">
+                <span> Add Qualification </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="input_educ" id="aq_02">
+            <label for="" class="elable">Education</label>
+            <input
+              type="text"
+              class="input_title"
+              id="Qualification_Title_02"
+              placeholder="Academic Qualification Title 2"
+            />
+            <input
+              placeholder="University Name 2"
+              class="Qualification_input aqField"
+              id="University_Name_02"
+            />
+            <div class="input_">
+              <input
+                type="number"
+                name="start"
+                id="date_01_02"
+                class="s_date"
+                placeholder="Start year"
+                onblur="(this.type='text')"
+              />
+              <input
+                type="text"
+                name="end"
+                id="date_02_02"
+                class="e_date"
+                placeholder="End year"
+                onblur="(this.type='text')"
+              />
+            </div>
+            <div onclick="addNewAQField()" class="btns" id="aqAddButton">
+              <button class="qbtn" id="btn_educ_02">
+                <span> Add Qualification </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="input_educ" id="aq_03">
+            <label for="" class="elable">Education</label>
+            <input
+              type="text"
+              class="input_title"
+              id="Qualification_Title_03"
+              placeholder="Academic Qualification Title 3"
+            />
+            <input
+              placeholder="University Name 3"
+              class="Qualification_input aqField"
+              id="University_Name_03"
+            />
+            <div class="input_">
+              <input
+                type="number"
+                name="start"
+                id="date_01_03"
+                class="s_date"
+                placeholder="Start year"
+                onblur="(this.type='text')"
+              />
+              <input
+                type="text"
+                name="end"
+                id="date_02_03"
+                class="e_date"
+                placeholder="End year"
+                onblur="(this.type='text')"
+              />
+            </div>
+            <div onclick="addNewAQField()" class="btns" id="aqAddButton">
+              <button class="qbtn" id="btn_educ_03">
                 <span> Add Qualification </span>
               </button>
             </div>
@@ -372,7 +448,9 @@
               id="your-skills"
             />
             <div class="btns">
-              <button class="sbtn" id="btn3"><span> Add Skills </span></button>
+              <button class="sbtn" id="btn_sk">
+                <span> Add Skills </span>
+              </button>
             </div>
           </div>
         </div>

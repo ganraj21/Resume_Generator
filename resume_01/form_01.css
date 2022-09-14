@@ -298,6 +298,12 @@ label {
 .cancle_btn {
   display: flex;
 }
+.back_can_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
 .dateadd {
   display: inherit;
 }
@@ -379,7 +385,7 @@ label {
   color: rgb(2, 164, 2);
 }
 .bcc {
-  display: flex;
+  /* display: flex; */
   padding: 15px 0px 15px 0px;
   border-radius: 6px;
   flex-direction: column;
@@ -622,6 +628,17 @@ button {
   }
   .third_col h3 {
     top: 22px;
+  }
+  .cancle_btn,
+  .bbtn {
+    width: 30px;
+    height: 45px;
+    color: #fff;
+    background: #2f0953;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
   }
   .input_00 {
     width: 378px;

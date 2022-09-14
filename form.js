@@ -162,11 +162,12 @@ if (localStorage.getItem('txtValue') == '1') {
   document.getElementById('bcc_01').style.display = 'flex'
   document.getElementById('bcc_02').style.display = 'none'
   document.getElementById('bcc_03').style.display = 'none'
+  
   const add_experience_02 = () => {
     document.getElementById('bcc_01').style.display = 'none'
     document.getElementById('bcc_02').style.display = 'flex'
     document.getElementById('bcc_03').style.display = 'none'
-    document.getElementById('cancel_01').addEventListener('click', function () {
+    document.getElementById('cancel_01').addEventListener('click', () => {
       document.getElementById('bcc_01').style.display = 'flex'
       document.getElementById('bcc_02').style.display = 'none'
       document.getElementById('exp_title_02').value = ''
@@ -175,7 +176,7 @@ if (localStorage.getItem('txtValue') == '1') {
       document.getElementById('c_e_d_02').value = ''
       document.getElementById('your_company_description_02').value = ''
     })
-    document.getElementById('back_01').addEventListener('click', function () {
+    document.getElementById('back_01').addEventListener('click', () => {
       document.getElementById('bcc_01').style.display = 'flex'
       document.getElementById('bcc_02').style.display = 'none'
     })
@@ -184,7 +185,7 @@ if (localStorage.getItem('txtValue') == '1') {
     document.getElementById('bcc_01').style.display = 'none'
     document.getElementById('bcc_02').style.display = 'none'
     document.getElementById('bcc_03').style.display = 'flex'
-    document.getElementById('cancel_02').addEventListener('click', function () {
+    document.getElementById('cancel_02').addEventListener('click', ()=> {
       document.getElementById('bcc_02').style.display = 'flex'
       document.getElementById('bcc_03').style.display = 'none'
       document.getElementById('exp_title_03').value = ''
@@ -193,15 +194,37 @@ if (localStorage.getItem('txtValue') == '1') {
       document.getElementById('c_e_d_03').value = ''
       document.getElementById('your_company_description_03').value = ''
     })
-
-    document.getElementById('back_02').addEventListener('click', function () {
+    document.getElementById('back_02').addEventListener('click', ()=> {
       document.getElementById('bcc_02').style.display = 'flex'
       document.getElementById('bcc_03').style.display = 'none'
     })
   }
 
-  document.getElementById('btn1').addEventListener('click', add_experience_02)
-  document.getElementById('btn2').addEventListener('click', add_experience_03)
+  document.getElementById('btn_ex_01').addEventListener('click', add_experience_02);
+  document.getElementById('btn_ex_02').addEventListener('click', add_experience_03);
+
+  // -----------------------------xxx-----------------------
+
+  document.getElementById('aq_01').style.display = 'flex'
+  document.getElementById('aq_02').style.display = 'none'
+  document.getElementById('aq_03').style.display = 'none'
+const addEducation_02 = () =>{
+  document.getElementById('aq_01').style.display = 'none'
+  document.getElementById('aq_02').style.display = 'flex'
+  document.getElementById('aq_03').style.display = 'none'
+}
+
+const addEducation_03 = () =>{
+  document.getElementById('aq_01').style.display = 'none'
+  document.getElementById('aq_02').style.display = 'none'
+  document.getElementById('aq_03').style.display = 'flex'
+}
+
+  document.getElementById('btn_educ_01').addEventListener('click',addEducation_02)
+  document.getElementById('btn_educ_02').addEventListener('click',addEducation_03)
+
+
+
 
   // -----------------------------xxx-----------------------
   document.getElementById('bt_gen').addEventListener('click',()=>{
