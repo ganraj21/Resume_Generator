@@ -62,7 +62,7 @@
   font-weight: 600;
   background: azure;
   top: 55px;
-  position: relative;
+  position: absolute;
   border-radius: 3px;
 }
 .name_field {
@@ -118,7 +118,7 @@
   flex-direction: column;
   top: 39px;
   width: 96%;
-  position: relative;
+  position: absolute;
   align-content: space-around;
 }
 .input_02 input,
@@ -418,7 +418,7 @@ label {
   padding: 21px;
   width: 80%;
   bottom: 0;
-  position: relative;
+  position: absolute;
 
   top: 61px;
 }
@@ -587,18 +587,18 @@ label {
     width: 382px;
   }
   .input_02 {
-    width: 89%;
-    top: 53px;
+    width: 80%;
+    top: 134px;
   }
   .Your_photo {
-    top: 68px;
+    top: 677px;
   }
   .div_fields {
     height: 100%;
     padding: 0px;
   }
   #db_01 {
-    top: 72px;
+    top: 732px;
   }
   .second_col {
     width: 355px;
