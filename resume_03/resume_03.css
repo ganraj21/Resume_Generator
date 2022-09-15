@@ -28,7 +28,10 @@
   justify-content: center;
   font-size: 36px;
   color: #ffffff;
+  position: absolute;
+  top: 41px;
   margin-bottom: 1.1rem;
+  text-align: center;
 }
 .div_fields {
   background-color: blueviolet;
@@ -56,9 +59,10 @@
   height: 45px;
   font-size: 15px;
   border: 2px solid cornsilk;
-  /* background: transparent; */
   font-weight: 600;
   background: azure;
+  top: 55px;
+  position: relative;
   border-radius: 3px;
 }
 .name_field {
@@ -112,7 +116,9 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  top: 39px;
   width: 96%;
+  position: relative;
   align-content: space-around;
 }
 .input_02 input,
@@ -413,7 +419,8 @@ label {
   width: 80%;
   bottom: 0;
   position: relative;
-  top: 15px;
+
+  top: 61px;
 }
 
 .file-upload {
@@ -542,6 +549,13 @@ label {
   .four_col {
     width: 380px;
   }
+  .first_col h3 {
+    width: 80%;
+    top: 35px;
+  }
+  .input_02 {
+    top: 57px;
+  }
   .second_col {
     width: 380px;
     height: 786px;
@@ -555,13 +569,83 @@ label {
     height: 790px;
   }
   .direction_button {
-    margin-bottom: 20px;
+    top: 48px;
   }
 }
+@media screen and (max-width: 420px) {
+  .input_02 input,
+  textarea,
+  input {
+    width: 95%;
+  }
+  .first_col h3 {
+    font-size: 33px;
+    top: 22px;
+    text-align: center;
+  }
+  .first_col {
+    width: 382px;
+  }
+  .input_02 {
+    width: 89%;
+    top: 53px;
+  }
+  .Your_photo {
+    top: 68px;
+  }
+  .div_fields {
+    height: 100%;
+    padding: 0px;
+  }
+  #db_01 {
+    top: 72px;
+  }
+  .second_col {
+    width: 355px;
+  }
+  .imp_text {
+    width: 322px;
+  }
+  .box_input input {
+    width: 316px;
+  }
+  .input_profec,
+  .input_educ,
+  .input_skl {
+    width: 90%;
+  }
 
+  .third_col {
+    width: 355px;
+  }
+  .third_col h3 {
+    top: 22px;
+  }
+  .input_00 {
+    width: 321px;
+    top: 230px;
+  }
+  .input_0 {
+    width: 329px;
+    top: 78px;
+  }
+  .input_ {
+    width: 95%;
+  }
+  #db_03 {
+    top: 682px;
+  }
+  .five_col {
+    width: 355px;
+  }
+  .input_cert,
+  .input_proj {
+    width: 328px;
+  }
+}
 @media screen and (max-width: 370px) {
   .first_col {
-    width: 85%;
+    width: 338px;
   }
   .first_col h3 {
     font-size: 1.6rem;
