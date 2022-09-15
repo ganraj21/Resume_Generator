@@ -385,7 +385,7 @@ label {
   color: rgb(2, 164, 2);
 }
 .bcc {
-  display: flex;
+  /* display: flex; */
   padding: 15px 0px 15px 0px;
   border-radius: 6px;
   flex-direction: column;
@@ -734,7 +734,8 @@ button {
     width: 90%;
   }
 
-  .third_col {
+  .third_col,
+  .four_col {
     width: 355px;
   }
   .third_col h3 {

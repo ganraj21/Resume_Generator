@@ -159,7 +159,7 @@ if (localStorage.getItem('txtValue') == '1') {
 
   // ----------------------xxx-----------------------
 
-  // document.getElementById('bcc_01').style.display = 'flex'
+  document.getElementById('bcc_01').style.display = 'flex'
   document.getElementById('bcc_02').style.display = 'none'
   document.getElementById('bcc_03').style.display = 'none'
 
@@ -202,6 +202,7 @@ if (localStorage.getItem('txtValue') == '1') {
 
   document.getElementById('btn_ex_01').addEventListener('click', add_experience_02);
   document.getElementById('btn_ex_02').addEventListener('click', add_experience_03);
+  
 
    // -----------------------------xxx-----------------------
 
@@ -459,15 +460,14 @@ const addEducation_03 = () =>{
       document.getElementById('c_e_d_03').value = ''
       document.getElementById('your_company_description_03').value = ''
     })
-
     document.getElementById('back_02').addEventListener('click', function () {
       document.getElementById('bcc_02').style.display = 'flex'
       document.getElementById('bcc_03').style.display = 'none'
     })
   }
 
-  document.getElementById('btn1').addEventListener('click', add_experience_02)
-  document.getElementById('btn2').addEventListener('click', add_experience_03)
+  document.getElementById('btn_ex_01').addEventListener('click', add_experience_02)
+  document.getElementById('btn_ex_02').addEventListener('click', add_experience_03)
 
   document.getElementById('bt_gen').addEventListener('click',()=>{
     document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
