@@ -596,9 +596,26 @@ const addEducation_03 = () =>{
   }
   document.getElementById('linked_btn').addEventListener('click', linkedin_x)
 
-  // ----------------------------xxx-------------------
+  // ----------------------------xxx-------------------educations->
+  document.getElementById('aq_01').style.display = 'flex'
+  document.getElementById('aq_02').style.display = 'none'
+  document.getElementById('aq_03').style.display = 'none'
+const addEducation_02 = () =>{
+  document.getElementById('aq_01').style.display = 'none'
+  document.getElementById('aq_02').style.display = 'flex'
+  document.getElementById('aq_03').style.display = 'none'
+}
 
-  // ---------------------xxx-------------------
+const addEducation_03 = () =>{
+  document.getElementById('aq_01').style.display = 'none'
+  document.getElementById('aq_02').style.display = 'none'
+  document.getElementById('aq_03').style.display = 'flex'
+}
+
+  document.getElementById('btn_educ_01').addEventListener('click',addEducation_02)
+  document.getElementById('btn_educ_02').addEventListener('click',addEducation_03)
+  // --------|
+  // ---------------------xxx------------------- certificates_and_projects->
   document.getElementById('cp_01').style.display = 'flex'
   document.getElementById('cp_02').style.display = 'none'
   document.getElementById('cp_03').style.display = 'none'
@@ -644,9 +661,8 @@ const addEducation_03 = () =>{
   document
     .getElementById('cert_btn_02')
     .addEventListener('click', add_certificate_03)
-
-  // ----------------------xxx-----------------------
-
+  // --------|
+  // ----------------------xxx----------------------- experience->
   document.getElementById('bcc_01').style.display = 'flex'
   document.getElementById('bcc_02').style.display = 'none'
   document.getElementById('bcc_03').style.display = 'none'
@@ -690,7 +706,7 @@ const addEducation_03 = () =>{
 
   document.getElementById('btn1').addEventListener('click', add_experience_02)
   document.getElementById('btn2').addEventListener('click', add_experience_03)
-
+  // ----------------------xxx-----------------------
   // --------|
   document.getElementById('bt_gen').addEventListener('click',()=>{
     document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
@@ -707,64 +723,7 @@ const addEducation_03 = () =>{
   bton_gen.addEventListener('click', generate_fun3)
 }
 
-const addNewSKField = () => {
-  let newNode = document.createElement('input')
-  newNode.classList.add('form-control')
-  newNode.classList.add('skField')
-  newNode.classList.add('mt-2')
-  newNode.setAttribute('rows', 2)
-  newNode.setAttribute('placeholder', 'Your-Skills & Expertise')
-
-  let skOb = document.getElementById('sk')
-  let skAddButtonOb = document.getElementById('skAddButton')
-
-  skOb.insertBefore(newNode, skAddButtonOb)
-}
-function addNewWEField() {
-  //   console.log('hey hii this is ganesh')
-  let newNode = document.createElement('textarea')
-  newNode.classList.add('form-control')
-  newNode.classList.add('weField')
-  newNode.classList.add('mt-2')
-  //   newNode.setAttribute('rows', 3)
-  newNode.setAttribute('placeholder', 'Enter Here')
-
-  let weOb = document.getElementById('we')
-  let weAddButtonOb = document.getElementById('weAddButton')
-
-  weOb.insertBefore(newNode, weAddButtonOb)
-}
-
-function addNewAQField() {
-  let newNode = document.createElement('textarea')
-  newNode.classList.add('form-control')
-  newNode.classList.add('aqField')
-  newNode.classList.add('mt-2')
-  newNode.setAttribute('placeholder', 'Enter Here')
-
-  let aqOb = document.getElementById('aq')
-  let aqAddButtonOb = document.getElementById('aqAddButton')
-
-  aqOb.insertBefore(newNode, aqAddButtonOb)
-}
-
-// const spinner = () => {
-//   setInterval(spin, 3000)
-//   clearInterval(spin)
-//   generate_resume()
-// }
-// document.getElementById('area-cv').style.display = 'none'
-
-// const myInterval = setInterval(
-//   (spin = () => {
-//     document.getElementById('bt_gen').classList.toggle('visible')
-//     console.log('You clicked')
-//   }),
-//   3000,
-// )
-
 function load() {
-  // document.getElementById('bt_gen').style.display = 'block'
   setTimeout(stop, 3000)
   generate_resume()
   document.getElementById('area-cv').style.display = 'flex'
