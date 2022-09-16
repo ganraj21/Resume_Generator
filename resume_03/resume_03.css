@@ -258,9 +258,10 @@ label {
   align-content: center;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .input_ {
-  width: 418px;
+  width: 438px;
   display: flex;
   gap: 6px;
 }
@@ -268,7 +269,7 @@ label {
   display: flex;
   width: 450px;
   position: absolute;
-  top: 90px;
+  top: 141px;
   align-content: center;
   justify-content: center;
   align-items: center;
@@ -283,13 +284,13 @@ label {
   padding: 10px 0px 15px 0px;
   align-items: center;
   align-content: center;
-  position: relative;
-  top: -16px;
+  position: absolute;
+  top: 239px;
 }
 .input_skl {
   width: 450px;
   display: flex;
-  top: 573px;
+  top: 532px;
   position: absolute;
   flex-direction: column;
   justify-content: center;
@@ -298,11 +299,10 @@ label {
 }
 label {
   color: #ffffff;
-  width: 100%;
+  width: 90%;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  margin-left: 61px;
 }
 .bcc {
   display: flex;
@@ -324,19 +324,20 @@ label {
 .dateadd {
   display: inherit;
 }
-.s_date,
-.e_date {
-  display: block;
-  margin-left: 9px;
-  width: 100%;
-  background-color: #e5e5e5;
-}
+
 #btn1,
 #btn2,
 #btn3 {
   color: #0099ef;
   font-weight: 500;
   background-color: white;
+}
+.qbtn,
+.sbtn {
+  width: 210px;
+  font-size: 16px;
+  height: 45px;
+  margin-top: 10px;
 }
 .btns {
   display: flex;
@@ -428,10 +429,12 @@ label {
 
 .four_col {
   display: none;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   align-content: center;
-  align-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 550px;
 }
 .four_col h3 {
   display: flex;
@@ -439,7 +442,7 @@ label {
   justify-content: center;
   font-size: 36px;
   margin-bottom: 27px;
-  top: 26px;
+  top: 65px;
   position: absolute;
   color: #0099ef;
 }
@@ -477,11 +480,9 @@ label {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  padding: 21px;
-  bottom: 0;
   position: absolute;
   width: 401px;
-  top: 681px;
+  top: 752px;
 }
 
 .file-upload {
@@ -609,28 +610,32 @@ label {
   .third_col,
   .four_col,
   .five_col {
-    width: 478px;
+    width: 460px;
   }
   .input_02 {
     width: 431px;
   }
   #db_01 {
-    top: 699px;
+    top: 750px;
   }
   label {
-    margin-left: 61px;
+    margin-left: 15px;
+  }
+  #db_02 {
+    top: 749px;
   }
 }
 @media screen and (max-width: 480px) {
   label {
-    margin-left: 20px;
+    margin-left: 2px;
   }
   .input_02 input,
   textarea,
   input {
-    width: 90%;
+    width: 354px;
   }
   .first_col,
+  .third_col,
   .four_col {
     width: 380px;
   }
@@ -660,8 +665,33 @@ label {
     height: 790px;
   }
   .direction_button {
-    top: 695px;
+    top: 749px;
     width: 331px;
+  }
+  .four_col h3 {
+    font-size: 41px;
+    top: 60px;
+  }
+  .input_0,
+  .input_00 {
+    width: 390px;
+  }
+  .input_profec,
+  .input_educ,
+  .input_skl {
+    width: 394px;
+  }
+  .input_profec {
+    top: 145px;
+  }
+  .input_educ {
+    top: 244px;
+  }
+  .input_skl {
+    top: 551px;
+  }
+  .input_ {
+    width: 377px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -678,6 +708,9 @@ label {
     top: 37px;
     text-align: center;
   }
+  label {
+    margin-left: -15px;
+  }
   .first_col {
     width: 382px;
   }
@@ -692,7 +725,7 @@ label {
     padding: 0px;
   }
   #db_01 {
-    top: 705px;
+    top: 752px;
     width: 300px;
     padding: 0px;
   }
@@ -713,31 +746,44 @@ label {
   .box_input input {
     width: 316px;
   }
+  .four_col h3 {
+    font-size: 36px;
+    top: 50px;
+    width: 60px;
+    text-align: center;
+    line-height: 47px;
+  }
   .input_profec,
   .input_educ,
   .input_skl {
-    width: 90%;
-  }
-
-  .third_col {
-    width: 355px;
-  }
-  .third_col h3 {
-    top: 22px;
-  }
-  .input_00 {
-    width: 321px;
-    top: 230px;
-  }
-  .input_0 {
-    width: 329px;
-    top: 78px;
+    width: 318px;
   }
   .input_ {
-    width: 95%;
+    width: 306px;
+  }
+  .third_col {
+    width: 371px;
+  }
+  .third_col h3 {
+    top: 65px;
+    width: 130px;
+    text-align: center;
+    line-height: 41px;
+  }
+  .input_00 {
+    width: 301px;
+    top: 301px;
+  }
+  .input_0 {
+    width: 301px;
+    top: 149px;
+  }
+  .btns {
+    margin-top: 6px;
   }
   #db_03 {
-    top: 682px;
+    top: 759px;
+    width: 280px;
   }
   .five_col {
     width: 355px;
@@ -764,6 +810,9 @@ label {
   .input_02 {
     width: 284px;
   }
+  .direction_button {
+    width: 275px;
+  }
   #db_01 {
     width: 270px;
   }
@@ -776,5 +825,20 @@ label {
   }
   #db_02 {
     width: 263px;
+  }
+  .input_0,
+  .input_00 {
+    width: 283px;
+  }
+  .btns {
+    margin-top: 6px;
+  }
+  .input_profec,
+  .input_educ,
+  .input_skl {
+    width: 290px;
+  }
+  .input_ {
+    width: 295px;
   }
 }
