@@ -15,7 +15,7 @@ body {
   justify-content: center;
   align-content: center;
   height: 100vh;
-  background-color: #25252a;
+  background: rgba(0, 0, 0, 0.8);
 }
 .first_col,
 .second_col,
@@ -28,12 +28,13 @@ body {
   align-items: center;
   justify-content: center;
   width: 550px;
-  background-color: blueviolet;
+  background-color: #08031f;
   height: 784px;
   position: absolute;
   border-radius: 6px;
   box-shadow: 0px 0px 5px #414141;
   top: 29px;
+  padding: 10px 0px 10px 0px;
 }
 
 .first_col h3 {
@@ -41,7 +42,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 36px;
-  color: #ffffff;
+  color: #00e7d6;
   position: absolute;
   top: 38px;
   margin-bottom: 1.1rem;
@@ -94,15 +95,16 @@ body {
 }
 .box_input button {
   border: none;
-  background-color: rgb(45 16 77);
+  background-color: #fdd835;
   box-shadow: 0px 0px 3px black;
   top: 533px;
   margin: 9px;
-  color: white;
+  /* color: white; */
   outline: none;
   width: 232px;
   font-size: 15px;
   height: 48px;
+  font-weight: 600;
   align-items: center;
 }
 .box_input input {
@@ -112,7 +114,7 @@ body {
   margin: 9px;
   border: none;
   color: #fff;
-  background-color: rgb(45 16 77);
+  /* background-color: rgb(45 16 77); */
   box-shadow: 0px 0px 3px black;
   border-radius: 4px;
   resize: vertical;
@@ -145,11 +147,16 @@ input {
   margin: 9px;
   border: none;
   color: #fff;
-  background-color: rgb(45 16 77);
-  box-shadow: 0px 0px 3px black;
+  /* background-color: rgb(45 16 77); */
+  box-shadow: 0px 0px 3px white;
   border-radius: 4px;
   resize: vertical;
+  background: transparent;
   text-align: center;
+}
+::placeholder {
+  color: rgb(87, 87, 87);
+  font-size: 16px;
 }
 label {
   display: flex;
@@ -209,7 +216,7 @@ label {
   display: flex;
   align-items: center;
   font-size: 45px;
-  color: #0099ef;
+  color: #fdd835;
   top: 28px;
   position: absolute;
   align-content: center;
@@ -238,7 +245,7 @@ label {
   justify-content: center;
   font-size: 36px;
   margin-bottom: 27px;
-  color: #0099ef;
+  color: #00e7d6;
   position: absolute;
   top: 24px;
 }
@@ -419,7 +426,7 @@ label {
   margin-bottom: 27px;
   top: 29px;
   position: absolute;
-  color: #0099ef;
+  color: #00e7d6;
 }
 /* Forth column end here ---||--- */
 
@@ -432,7 +439,7 @@ label {
   justify-content: center;
   font-size: 36px;
   margin-bottom: 27px;
-  color: #0099ef;
+  color: #00e7d6;
   position: absolute;
   text-align: center;
   top: 26px;
