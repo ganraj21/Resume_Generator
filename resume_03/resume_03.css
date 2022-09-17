@@ -485,10 +485,12 @@ label {
   align-items: center;
   align-content: center;
   position: absolute;
-  width: 543px;
-  top: 718px;
+  width: 431px;
+  top: 685px;
 }
-
+.btn_gen_text {
+  margin-top: 15px;
+}
 .file-upload {
   /* background-color: #ffffff; */
   margin: 0 auto;
@@ -669,12 +671,20 @@ label {
   }
   #db_01 {
     top: 750px;
+    width: 472px;
   }
   label {
     margin-left: 15px;
   }
   #db_02 {
     top: 749px;
+    width: 461px;
+  }
+  #db_03 {
+    width: 465px;
+  }
+  #db_04 {
+    width: 460px;
   }
   #db_05 {
     width: 462px;
@@ -703,6 +713,9 @@ label {
     width: 80%;
     top: 35px;
   }
+  #db_01 {
+    width: 391px;
+  }
   .input_02 {
     top: 114px;
     width: 368px;
@@ -721,12 +734,18 @@ label {
   .imp_text {
     width: 326px;
   }
+  #db_02 {
+    width: 386px;
+  }
   .div_fields {
     height: 790px;
   }
   .direction_button {
     top: 749px;
     width: 331px;
+  }
+  #db_03 {
+    width: 392px;
   }
   .four_col h3 {
     font-size: 41px;
@@ -741,6 +760,7 @@ label {
   .input_skl {
     width: 394px;
   }
+
   .input_profec {
     top: 145px;
   }
@@ -749,6 +769,9 @@ label {
   }
   .input_skl {
     top: 551px;
+  }
+  #db_04 {
+    width: 393px;
   }
   .input_ {
     width: 377px;
@@ -788,7 +811,7 @@ label {
     margin-left: -15px;
   }
   .first_col {
-    width: 382px;
+    width: 373px;
   }
   .input_02 {
     width: 310px;
@@ -797,10 +820,12 @@ label {
   .Your_photo {
     top: 678px;
   }
-
+  .div_fields {
+    padding: 0px;
+  }
   #db_01 {
     top: 752px;
-    width: 300px;
+    width: 333px;
     padding: 0px;
   }
   .second_col {
@@ -814,9 +839,11 @@ label {
     width: 271px;
     top: 114px;
   }
-  .direction_button {
-    width: 297px;
+
+  #db_02 {
+    width: 333px;
   }
+
   .box_input input {
     width: 316px;
   }
@@ -856,8 +883,11 @@ label {
     margin-top: 6px;
   }
   #db_03 {
-    top: 759px;
+    top: 749px;
     width: 280px;
+  }
+  #db_04 {
+    width: 342px;
   }
   .five_col {
     width: 355px;
@@ -868,6 +898,12 @@ label {
   }
   #db_05 {
     width: 319px;
+  }
+  .first_col,
+  .third_col,
+  .four_col,
+  .five_col {
+    width: 370px;
   }
 }
 @media screen and (max-width: 370px) {
@@ -891,7 +927,7 @@ label {
     width: 275px;
   }
   #db_01 {
-    width: 270px;
+    width: 326px;
   }
   .second_col h2 {
     font-size: 32px;
