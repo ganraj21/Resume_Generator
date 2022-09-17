@@ -704,8 +704,8 @@ const addEducation_03 = () =>{
     })
   }
 
-  document.getElementById('btn1').addEventListener('click', add_experience_02)
-  document.getElementById('btn2').addEventListener('click', add_experience_03)
+  // document.getElementById('btn1').addEventListener('click', add_experience_02)
+  // document.getElementById('btn2').addEventListener('click', add_experience_03)
   // ----------------------xxx-----------------------
   // --------|
   document.getElementById('bt_gen').addEventListener('click',()=>{
@@ -714,7 +714,7 @@ const addEducation_03 = () =>{
       document.getElementById('bt_gen').innerHTML  = "Resume Generated"
       generate_fun3();
     console.log("YOU clicked on generate btn")
-    },2000);
+    },3000);
   })
   const generate_fun3 = () => {
     window.location.href = './resume_03/resume_03.html'
