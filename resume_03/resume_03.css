@@ -3,6 +3,9 @@
   margin: 0;
   font-family: "Poppins", "sans-serif";
 }
+body {
+  height: 100vh;
+}
 .container_01 {
   flex-direction: column;
   background-color: #25252a;
@@ -10,7 +13,7 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   width: 100%;
 }
@@ -27,7 +30,7 @@
   width: 550px;
   background-color: blueviolet;
   height: 784px;
-  padding-top: 24px;
+  border-radius: 6px;
 }
 
 .first_col h3 {
@@ -49,7 +52,7 @@
   justify-content: center;
   align-content: center;
   width: 487px;
-  top: 10px;
+  top: 29px;
   position: absolute;
   border-radius: 6px;
 }
@@ -672,7 +675,7 @@ label {
   .input_02 input,
   textarea,
   input {
-    width: 354px;
+    width: 338px;
   }
   .first_col,
   .third_col,
@@ -882,7 +885,7 @@ label {
   .third_col,
   .four_col,
   .five_col {
-    width: 370px;
+    width: 344px;
   }
 }
 @media screen and (max-width: 370px) {
@@ -900,7 +903,7 @@ label {
     width: 180px;
   }
   .input_02 {
-    width: 284px;
+    width: 306px;
   }
   .direction_button {
     width: 275px;
