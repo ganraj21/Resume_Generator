@@ -77,7 +77,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 325px;
+  top: 305px;
 }
 .box_input button {
   border: none;
@@ -203,7 +203,7 @@ label {
   align-items: center;
   font-size: 45px;
   color: #0099ef;
-  top: 51px;
+  top: 28px;
   position: absolute;
   align-content: center;
   justify-content: center;
@@ -213,7 +213,7 @@ label {
   width: 370px;
   font-size: 18px;
   position: absolute;
-  top: 138px;
+  top: 118px;
   color: #fff;
 }
 .box_input input {
@@ -239,12 +239,12 @@ label {
   margin-bottom: 27px;
   color: #0099ef;
   position: absolute;
-  top: 54px;
+  top: 24px;
 }
 .input_0 {
   display: flex;
   position: absolute;
-  top: 122px;
+  top: 95px;
   width: 458px;
   flex-direction: column;
   justify-content: center;
@@ -253,7 +253,7 @@ label {
 }
 .input_00 {
   position: absolute;
-  top: 282px;
+  top: 258px;
   width: 458px;
   display: flex;
   align-content: center;
@@ -270,7 +270,7 @@ label {
   display: flex;
   width: 450px;
   position: absolute;
-  top: 141px;
+  top: 99px;
   align-content: center;
   justify-content: center;
   align-items: center;
@@ -286,12 +286,12 @@ label {
   align-items: center;
   align-content: center;
   position: absolute;
-  top: 239px;
+  top: 200px;
 }
 .input_skl {
   width: 450px;
   display: flex;
-  top: 532px;
+  top: 512px;
   position: absolute;
   flex-direction: column;
   justify-content: center;
@@ -349,6 +349,7 @@ label {
   align-content: center;
   font-weight: 530;
   height: 56px;
+  margin-top: 6px;
 }
 .btn {
   width: 207px;
@@ -443,7 +444,7 @@ label {
   justify-content: center;
   font-size: 36px;
   margin-bottom: 27px;
-  top: 65px;
+  top: 29px;
   position: absolute;
   color: #0099ef;
 }
@@ -467,7 +468,7 @@ label {
   color: #0099ef;
   position: absolute;
   text-align: center;
-  top: 52px;
+  top: 26px;
   width: 264px;
 }
 .cpbtn {
@@ -486,8 +487,12 @@ label {
   align-items: center;
   align-content: center;
   position: absolute;
-  width: 431px;
-  top: 723px;
+  width: 533px;
+  top: 737px;
+}
+#db_05 {
+  width: 451px;
+  top: 680px;
 }
 .btn_gen_text {
   margin-top: 15px;
@@ -616,7 +621,7 @@ label {
   align-content: center;
   position: absolute;
   align-items: center;
-  top: 180px;
+  top: 156px;
 }
 .input_proj {
   margin-top: 21px;
@@ -625,7 +630,7 @@ label {
   align-content: center;
   justify-content: center;
   position: absolute;
-  top: 402px;
+  top: 374px;
   align-items: center;
 }
 .btn_gen_text {
@@ -681,8 +686,8 @@ label {
     margin-left: 15px;
   }
   #db_02 {
-    top: 749px;
-    width: 461px;
+    top: 719px;
+    width: 476px;
   }
   #db_03 {
     width: 465px;
@@ -753,11 +758,12 @@ label {
     width: 331px;
   }
   #db_03 {
-    width: 392px;
+    width: 415px;
+    top: 729px;
   }
   .four_col h3 {
     font-size: 41px;
-    top: 60px;
+    top: 31px;
   }
   .input_0,
   .input_00 {
@@ -770,16 +776,16 @@ label {
   }
 
   .input_profec {
-    top: 145px;
+    top: 115px;
   }
   .input_educ {
-    top: 244px;
+    top: 213px;
   }
   .input_skl {
-    top: 551px;
+    top: 523px;
   }
   #db_04 {
-    width: 393px;
+    width: 414px;
   }
   .input_ {
     width: 377px;
@@ -788,16 +794,16 @@ label {
     width: 253px;
   }
   .input_cert {
-    top: 179px;
+    top: 157px;
   }
   .input_proj {
-    top: 390px;
+    top: 382px;
   }
   .btn_gen_text {
-    margin-top: 10px;
+    margin-top: 16px;
   }
   #db_05 {
-    top: 696px;
+    top: 688px;
     width: 391px;
   }
 }
@@ -830,6 +836,7 @@ label {
   }
   .div_fields {
     padding: 0px;
+    width: 355px;
   }
   #db_01 {
     top: 728px;
@@ -840,25 +847,27 @@ label {
     width: 372px;
   }
   .second_col h2 {
-    top: 45px;
+    top: 21px;
     font-size: 35px;
   }
   .imp_text {
-    width: 271px;
-    top: 114px;
+    width: 260px;
+    top: 85px;
   }
 
   #db_02 {
     width: 333px;
   }
-
+  .input_01 {
+    top: 311px;
+  }
   .box_input input {
     width: 316px;
   }
   .four_col h3 {
     font-size: 36px;
-    top: 50px;
-    width: 60px;
+    top: 21px;
+    width: 230px;
     text-align: center;
     line-height: 47px;
   }
@@ -874,25 +883,25 @@ label {
     width: 371px;
   }
   .third_col h3 {
-    top: 65px;
-    width: 130px;
+    top: 28px;
+    width: 236px;
     text-align: center;
     line-height: 41px;
   }
   .input_00 {
     width: 301px;
-    top: 301px;
+    top: 275px;
   }
   .input_0 {
     width: 301px;
-    top: 149px;
+    top: 121px;
   }
   .btns {
     margin-top: 6px;
   }
   #db_03 {
-    top: 749px;
-    width: 333px;
+    top: 722px;
+    width: 352px;
   }
   #db_04 {
     width: 342px;
@@ -939,13 +948,17 @@ label {
   }
   .second_col h2 {
     font-size: 32px;
+    top: 27px;
   }
   .imp_text {
     width: 242px;
-    top: 104px;
+    top: 85px;
+  }
+  .input_01 {
+    top: 317px;
   }
   #db_02 {
-    width: 263px;
+    width: 326px;
   }
   .input_0,
   .input_00 {
