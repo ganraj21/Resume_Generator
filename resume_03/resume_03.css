@@ -14,14 +14,21 @@
   position: absolute;
   width: 100%;
 }
-
+.first_col,
+.second_col,
+.third_col,
+.four_col,
+.five_col {
+  background-color: blueviolet;
+  height: 784px;
+  padding-top: 24px;
+}
 .first_col {
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   width: 550px;
 }
 .first_col h3 {
@@ -36,7 +43,6 @@
   text-align: center;
 }
 .div_fields {
-  background-color: blueviolet;
   display: flex;
   flex-direction: column;
   padding: 10px 25px 0px 25px;
@@ -44,7 +50,7 @@
   justify-content: center;
   align-content: center;
   width: 487px;
-  height: 780px;
+  top: 10px;
   position: absolute;
   border-radius: 6px;
 }
@@ -197,7 +203,6 @@ label {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  height: 100vh;
   width: 550px;
 }
 .second_col h2 {
@@ -229,7 +234,6 @@ label {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  height: 100vh;
   width: 550px;
 }
 
@@ -437,7 +441,6 @@ label {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  height: 100vh;
   width: 550px;
 }
 .four_col h3 {
@@ -459,7 +462,6 @@ label {
   align-content: center;
   width: 550px;
   align-items: center;
-  height: 100vh;
 }
 .five_col h3 {
   display: flex;
