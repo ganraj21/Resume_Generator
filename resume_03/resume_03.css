@@ -19,18 +19,17 @@
 .third_col,
 .four_col,
 .five_col {
-  background-color: blueviolet;
-  height: 784px;
-  padding-top: 24px;
-}
-.first_col {
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
   justify-content: center;
   width: 550px;
+  background-color: blueviolet;
+  height: 784px;
+  padding-top: 24px;
 }
+
 .first_col h3 {
   display: flex;
   align-items: center;
@@ -199,11 +198,6 @@ label {
 
 .second_col {
   display: none;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  width: 550px;
 }
 .second_col h2 {
   display: flex;
@@ -230,11 +224,6 @@ label {
 
 .third_col {
   display: none;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  width: 550px;
 }
 
 .third_col h3 {
@@ -414,34 +403,8 @@ label {
   color: rgb(2, 164, 2);
 }
 
-/* .button--loading::after {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  border: 4px solid transparent;
-  border-top-color: #ffffff;
-  border-radius: 50%;
-  animation: button--loading-spinner 1s ease infinite;
-}
-
-@keyframes button--loading-spinner {
-  from {
-    transform: rotate(0turn);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-} */
-/* Third column end here ---||--- */
-
 .four_col {
   display: none;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  width: 550px;
 }
 .four_col h3 {
   display: flex;
@@ -457,11 +420,6 @@ label {
 
 .five_col {
   display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 550px;
-  align-items: center;
 }
 .five_col h3 {
   display: flex;
