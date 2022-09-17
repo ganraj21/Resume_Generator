@@ -29,7 +29,7 @@
   font-size: 36px;
   color: #ffffff;
   position: absolute;
-  top: 61px;
+  top: 38px;
   margin-bottom: 1.1rem;
   text-align: center;
 }
@@ -41,8 +41,9 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  width: 90%;
+  width: 487px;
   height: 780px;
+  position: absolute;
   border-radius: 6px;
 }
 .fields {
@@ -61,7 +62,7 @@
   border: 2px solid cornsilk;
   font-weight: 600;
   background: azure;
-  top: 669px;
+  top: 639px;
   position: absolute;
   border-radius: 3px;
 }
@@ -118,7 +119,7 @@
   flex-direction: column;
   position: absolute;
   width: 481px;
-  top: 117px;
+  top: 84px;
   padding: 20px 0px 20px 0px;
   align-content: space-around;
 }
@@ -486,7 +487,7 @@ label {
   align-content: center;
   position: absolute;
   width: 431px;
-  top: 685px;
+  top: 723px;
 }
 .btn_gen_text {
   margin-top: 15px;
@@ -669,8 +670,11 @@ label {
   .input_02 {
     width: 431px;
   }
+  .div_fields {
+    width: 426px;
+  }
   #db_01 {
-    top: 750px;
+    top: 721px;
     width: 472px;
   }
   label {
@@ -711,17 +715,21 @@ label {
   }
   .first_col h3 {
     width: 80%;
-    top: 35px;
+    top: 14px;
   }
   #db_01 {
     width: 391px;
+    top: 735px;
+  }
+  .div_fields {
+    width: 367px;
   }
   .input_02 {
-    top: 114px;
+    top: 109px;
     width: 368px;
   }
   .Your_photo {
-    top: 667px;
+    top: 659px;
   }
   .second_col {
     width: 380px;
@@ -804,7 +812,7 @@ label {
   }
   .first_col h3 {
     font-size: 33px;
-    top: 37px;
+    top: 17px;
     text-align: center;
   }
   label {
@@ -815,16 +823,16 @@ label {
   }
   .input_02 {
     width: 310px;
-    top: 121px;
+    top: 98px;
   }
   .Your_photo {
-    top: 678px;
+    top: 654px;
   }
   .div_fields {
     padding: 0px;
   }
   #db_01 {
-    top: 752px;
+    top: 728px;
     width: 333px;
     padding: 0px;
   }
@@ -884,7 +892,7 @@ label {
   }
   #db_03 {
     top: 749px;
-    width: 280px;
+    width: 333px;
   }
   #db_04 {
     width: 342px;
