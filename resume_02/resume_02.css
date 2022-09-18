@@ -132,7 +132,6 @@ input {
 }
 .input_02 input,
 textarea {
-  width: 90%;
   padding-top: 3px;
   height: 45px;
   margin: 9px;
@@ -248,22 +247,27 @@ button {
   position: absolute;
   top: 45px;
 }
-
+#your-about-info,
+#your_company_description {
+  height: 100px;
+}
 .third_col h3 {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 36px;
   margin-bottom: 27px;
+  top: 34px;
+  position: absolute;
   color: #0099ef;
 }
 
 label {
   margin-left: 5px;
   color: #000000;
-  /* width: 100%; */
   font-size: 18px;
   top: -35px;
+  /* width: 420px; */
   left: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
