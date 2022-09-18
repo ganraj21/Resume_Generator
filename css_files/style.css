@@ -16,6 +16,9 @@
   font-size: 39px;
   font-weight: 600;
 }
+i {
+  display: none;
+}
 .hamburger {
   display: none;
 }
@@ -106,18 +109,20 @@
 
   .menuItem {
     margin-left: 0px;
+    width: 248px;
     height: 50px;
     display: flex;
     color: white;
     margin-bottom: 12px;
-    background-color: #546e7a;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    background-color: #17171787;
     margin-bottom: 25px;
     font-family: sans-serif;
     font-weight: 600;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 3px;
   }
   .n_cp {
     width: 100%;
@@ -125,6 +130,10 @@
     align-items: center;
     justify-content: space-between;
     align-content: center;
+  }
+  .login_btn {
+    display: flex;
+    margin-left: 10px;
   }
   .hamburger {
     display: flex;
@@ -150,7 +159,7 @@
   }
   .showMenu {
     margin-right: 0px;
-    background: #031d28;
+    background: #7732a5;
     display: flex;
     transform: translateX(70px);
     transition: 0.9s;
@@ -158,6 +167,7 @@
     top: 72px;
     right: 70px;
     left: -72px;
+    align-items: center;
   }
   .closeIcon {
     display: none;

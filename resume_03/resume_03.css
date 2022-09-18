@@ -15,7 +15,9 @@ body {
   justify-content: center;
   align-content: center;
   height: 100vh;
+  position: absolute;
   background: rgba(0, 0, 0, 0.8);
+  width: 100%;
 }
 .first_col,
 .second_col,
