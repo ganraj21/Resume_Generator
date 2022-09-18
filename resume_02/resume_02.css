@@ -41,6 +41,12 @@ body {
   line-height: 42px;
   color: #ce4a11;
 }
+#addressField {
+  height: 90px;
+}
+#db_01 {
+  top: 725px;
+}
 .div_fields {
   background-color: white;
   display: flex;
@@ -106,7 +112,7 @@ input {
   flex-direction: column;
   /* width: 100%; */
   align-content: space-around;
-  top: 130px;
+  top: 112px;
   width: 458px;
 }
 .Your_photo {
@@ -639,7 +645,8 @@ label {
   width: 100%;
   position: absolute;
   bottom: 0px;
-  top: 649px;
+  top: 674px;
+  height: 60px;
 }
 
 .file-upload {
@@ -733,12 +740,13 @@ label {
   }
   #db_04 {
     width: 460px;
+    top: 688px;
   }
   .five_col h3 {
     font-size: 30px;
   }
   #db_05 {
-    top: 647px;
+    top: 675px;
   }
   .btn_gen_text {
     margin-top: 15px;
@@ -760,12 +768,17 @@ label {
   }
   .input_02 {
     top: 106px;
-    width: 366px;
+    width: 380px;
   }
   .Your_photo {
-    width: 333px;
+    top: 633px;
     height: 50px;
-    top: 603px;
+    width: 380px;
+  }
+  #db_01 {
+    top: 702px;
+    width: 420px;
+    justify-content: space-around;
   }
   .second_col {
     width: 380px;
@@ -861,7 +874,7 @@ label {
     top: 326px;
   }
   #db_05 {
-    top: 611px;
+    top: 651px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -873,6 +886,16 @@ label {
   .first_col h3 {
     font-size: 33px;
     text-align: center;
+    width: 344px;
+  }
+  .Your_photo {
+    width: 312px;
+  }
+  #db_01 {
+    width: 346px;
+  }
+  .input_02 {
+    width: 325px;
   }
   .first_col {
     width: 350px;
@@ -945,6 +968,7 @@ label {
   .first_col h3 {
     text-align: center;
     font-size: 27px;
+    width: 327px;
   }
   .div_fields {
     padding: 0px;
@@ -956,6 +980,14 @@ label {
   .four_col,
   .five_col {
     width: 320px;
+  }
+  .Your_photo {
+    width: 292px;
+  }
+  #db_01 {
+    top: 700px;
+    width: 337px;
+    justify-content: center;
   }
   .input_00 {
     width: 289px;
@@ -995,7 +1027,7 @@ label {
     width: 340px;
   }
   #db_05 {
-    top: 611px;
+    top: 652px;
     width: 337px;
   }
 }
