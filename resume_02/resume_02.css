@@ -53,6 +53,19 @@ body {
   position: absolute;
   align-content: center;
 }
+.input_02 input,
+textarea,
+input {
+  width: 418px;
+  padding-top: 3px;
+  height: 45px;
+  margin: 9px;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  resize: vertical;
+  text-align: center;
+}
 .fields {
   margin-top: 12px;
   display: flex;
@@ -143,9 +156,10 @@ label {
 }
 input {
   display: flex;
-  height: 35px;
+  height: 45px;
   border-radius: 6px;
   border: 1px solid rgb(255, 255, 255);
+  background: #d9d9d9;
 }
 .form_input {
   border-radius: 3px;
@@ -247,8 +261,10 @@ button {
 label {
   margin-left: 5px;
   color: #000000;
-  width: 90%;
+  width: 100%;
   font-size: 18px;
+  top: -35px;
+  left: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
@@ -370,7 +386,7 @@ label {
   margin-bottom: 27px;
   color: #ce4a11;
   position: absolute;
-  top: 15px;
+  top: 27px;
 }
 .plabel {
   position: absolute;
@@ -379,7 +395,6 @@ label {
 }
 .elable {
   position: absolute;
-  top: -50px;
 }
 .slabel {
   position: absolute;
@@ -387,38 +402,31 @@ label {
 }
 .input_profec {
   position: absolute;
-  top: 130px;
+  top: 128px;
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: center;
-  align-content: center;
 }
 .Qualification_input {
   background: #d9d9d9;
-  height: 50px;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid rgb(255, 255, 255);
 }
-.s_date {
-  box-sizing: border-box;
-  width: 45%;
-  height: 48px;
-  position: absolute;
-  top: 145px;
-  background: #d9d9d9;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
+.s_date,
+.e_date {
+  width: 205px;
+  border: 1px solid rgb(255, 255, 255);
 }
 .e_date {
-  box-sizing: border-box;
-  width: 45%;
-  height: 48px;
   left: 205px;
-  top: 145px;
-  position: absolute;
-  background: #d9d9d9;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
+}
+.input_ {
+  width: 438px;
+  height: 68px;
+  gap: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 .qbtn {
   display: flex;
@@ -426,10 +434,9 @@ label {
   justify-content: center;
   align-content: center;
   box-sizing: border-box;
-  width: 354px;
+  width: 418px;
   height: 50px;
   outline: none;
-  /* left: 12px; */
   top: 205px;
   border: none;
   position: absolute;
@@ -439,33 +446,26 @@ label {
 .input_educ {
   display: flex;
   position: absolute;
-  top: 260px;
-  width: 100%;
+  top: 236px;
+  height: 286px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   align-content: center;
 }
 .input_skl {
   display: flex;
-  width: 100%;
+  width: 442px;
   flex-direction: column;
   align-items: center;
-  top: 545px;
-  height: 210px;
+  top: 499px;
+  height: 185px;
   position: absolute;
   align-content: center;
 }
 .Skills_input {
-  box-sizing: border-box;
-  width: 90%;
   height: 48px;
-  top: 55px;
-  left: 21px;
+  top: 44px;
   position: absolute;
-  background: #d9d9d9;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
 }
 .sbtn {
   display: flex;
@@ -473,7 +473,7 @@ label {
   justify-content: center;
   align-content: center;
   box-sizing: border-box;
-  width: 354px;
+  width: 418px;
   height: 50px;
   outline: none;
   /* left: 12px; */
@@ -524,9 +524,11 @@ label {
   border-radius: 3px;
 }
 .btns span {
-  background: white;
-  height: 36px;
-  width: 31px;
+  height: 45px;
+  width: 350px;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 600;
   text-align: center;
   justify-content: center;
   display: flex;
@@ -598,7 +600,6 @@ label {
 
 .direction_button {
   display: flex;
-  background-color: white;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -676,6 +677,7 @@ label {
   .four_col,
   .five_col {
     width: 460px;
+    top: 27px;
   }
   .input_02 {
     width: 431px;
@@ -790,11 +792,11 @@ label {
   }
   .input_profec {
     width: 407px;
-    top: 69px;
+    top: 123px;
   }
   .input_educ {
     width: 389px;
-    top: -17px;
+    top: 261px;
   }
   .input_skl {
     width: 389px;
