@@ -537,7 +537,8 @@ label {
   align-items: center;
 }
 #db_05 {
-  top: 674px;
+  top: 640px;
+  width: 451px;
 }
 .loader {
   pointer-events: none;

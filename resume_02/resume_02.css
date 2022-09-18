@@ -3,6 +3,12 @@
   margin: 0;
   font-family: "Poppins", "sans-serif";
 }
+body {
+  width: 100%;
+  height: 100vh;
+  background: burlywood;
+  position: absolute;
+}
 .container_01 {
   flex-direction: column;
   display: flex;
@@ -13,11 +19,15 @@
 }
 
 .first_col {
+  width: 550px;
   display: flex;
+  height: 767px;
   flex-direction: column;
   align-content: center;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 45px;
 }
 .first_col h3 {
   position: absolute;
@@ -35,10 +45,12 @@
   background-color: white;
   display: flex;
   height: 100%;
+  padding: 15px 25px 15px 25px;
   width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: absolute;
   align-content: center;
 }
 .fields {
@@ -177,10 +189,13 @@ input {
 }
 .second_col {
   display: none;
-  width: 100%;
+  height: 767px;
+  width: 550px;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  place-content: center;
+  align-items: center;
+  position: absolute;
+  top: 45px;
 }
 
 .second_col h2 {
@@ -188,6 +203,7 @@ input {
   align-items: center;
   font-size: 27px;
   color: #0099ef;
+  position: absolute;
   align-content: center;
   justify-content: center;
   margin-bottom: 0.9rem;
@@ -203,17 +219,20 @@ input {
 }
 button {
   width: 150px;
-  height: 36px;
+  height: 45px;
   margin: 9px;
 }
 /* Second column end here ---||--- */
 
 .third_col {
   display: none;
+  height: 767px;
+  width: 550px;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
+  place-content: center;
+  align-items: center;
+  position: absolute;
+  top: 45px;
 }
 
 .third_col h3 {
@@ -334,10 +353,14 @@ label {
 
 .four_col {
   display: none;
+  width: 550px;
+  height: 767px;
   flex-direction: column;
+  align-content: center;
+  align-items: center;
   justify-content: center;
-  align-content: center;
-  align-content: center;
+  position: absolute;
+  top: 45px;
 }
 .four_col h3 {
   display: flex;
@@ -464,11 +487,14 @@ label {
 
 .five_col {
   display: none;
+  width: 550px;
+  height: 767px;
   flex-direction: column;
-  justify-content: center;
   align-content: center;
-  width: 100%;
-  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 45px;
 }
 .five_col h3 {
   display: flex;
@@ -511,7 +537,7 @@ label {
   display: flex;
   width: 100%;
   position: absolute;
-  top: 450px;
+  top: 364px;
   flex-direction: column;
   align-content: center;
   justify-content: center;
@@ -580,15 +606,7 @@ label {
   width: 100%;
   position: absolute;
   bottom: 0px;
-  top: 769px;
-}
-
-.first_col,
-.second_col,
-.third_col,
-.four_col {
-  width: 100%;
-  height: 100vh;
+  top: 649px;
 }
 
 .file-upload {
@@ -643,401 +661,267 @@ label {
   text-transform: uppercase;
   font-weight: 700;
 }
-
-@media (max-width: 420px) {
-  input {
-    width: 90%;
-    left: 12px;
+.input_cert {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  align-items: center;
+  top: 77px;
+}
+@media screen and (max-width: 580px) {
+  .first_col,
+  .second_col,
+  .third_col,
+  .four_col,
+  .five_col {
+    width: 460px;
   }
   .input_02 {
-    position: absolute;
-    margin-top: -100px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    align-content: space-around;
-    top: 230px;
+    width: 431px;
   }
-  .first_col h3 {
-    position: absolute;
-    width: 372px;
-    height: 51px;
-    top: 41px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 42px;
-    color: #ce4a11;
+  .div_fields {
+    width: 426px;
+  }
+  #db_01 {
+    top: 721px;
+    width: 472px;
+  }
+  label {
+    margin-left: 15px;
+  }
+  #db_02 {
+    top: 719px;
+    width: 476px;
+  }
+  #db_03 {
+    width: 465px;
+  }
+  #db_04 {
+    width: 460px;
+  }
+  .five_col h3 {
+    font-size: 30px;
+  }
+  #db_05 {
+    top: 647px;
+  }
+  .btn_gen_text {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .input_02 input,
+  textarea,
+  input {
+    width: 338px;
+  }
+  .first_col,
+  .four_col {
+    width: 380px;
+  }
+  .div_fields {
+    padding: 0px;
+    width: 421px;
+  }
+  .input_02 {
+    top: 106px;
+    width: 366px;
   }
   .Your_photo {
-    box-sizing: border-box;
-    position: absolute;
-    width: 90%;
+    width: 333px;
     height: 50px;
-    left: 12px;
-    top: 672px;
-    background: #ce4a11;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 6px;
+    top: 603px;
   }
-  .Your_photo span {
-    /* width: 191px; */
-    height: 25px;
-    left: 100px;
-    top: 684px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 25px;
-    color: #ffffff;
-  }
-
-  #f_li {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    left: 24px;
-    top: 131px;
-
-    background: #bf5d03;
-  }
-  #f_text {
-    position: absolute;
-    width: 302px;
-    height: 66px;
-    left: 50px;
-    top: 123px;
-    list-style: none;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-
-    color: #000000;
-  }
-  #s_li {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    left: 24px;
-    top: 213px;
-
-    background: #bf5d03;
-  }
-  #s_text {
-    position: absolute;
-    width: 303px;
-    height: 66px;
-    left: 50px;
-    top: 205px;
-    list-style: none;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-
-    color: #000000;
-  }
-  .imp_text {
-    display: flex;
-    height: 100px;
-    top: 10px;
-    width: 100%;
-    position: absolute;
+  .second_col {
+    width: 380px;
   }
   .second_col h2 {
-    position: absolute;
-    width: 270px;
-    height: 42px;
-    left: 60px;
-    top: 41px;
-
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 42px;
-
-    color: #ce4a11;
+    top: 29px;
+    font-size: 37px;
   }
-  #linked_btn,
-  #linkedinField {
-    box-sizing: border-box;
-    /* position: absolute; */
-    width: 90%;
-    height: 48px;
-    left: 12px;
-    top: 311px;
-    background: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
+  .input_01 {
+    top: 325px;
   }
-  #codechef_btn,
-  #codeChefField {
-    box-sizing: border-box;
-    width: 90%;
-    height: 48px;
-    left: 12px;
-    top: 388px;
-
-    background: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
+  #db_02 {
+    top: 716px;
   }
-  #leetcode_btn,
-  #fbField {
-    box-sizing: border-box;
-    width: 90%;
-    height: 48px;
-    left: 12px;
-    top: 465px;
-
-    background: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
+  .imp_text {
+    width: 367px;
+    top: 95px;
   }
-  #github_btn,
-  #githubField {
-    box-sizing: border-box;
-
-    /* position: absolute; */
-    width: 90%;
-    height: 48px;
-    left: 12px;
-    top: 542px;
-
-    background: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
+  .direction_button {
+    top: 673px;
   }
-  #insta_btn,
-  #instaField {
-    box-sizing: border-box;
-    width: 90%;
-    height: 48px;
-    left: 12px;
-    top: 619px;
-
-    background: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
+  .third_col {
+    width: 382px;
   }
   .third_col h3 {
-    position: absolute;
-    width: 288px;
-    height: 42px;
-    left: 51px;
-    top: 25px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 42px;
-
-    color: #ce4a11;
+    top: 22px;
   }
-  #your-about-info {
-    box-sizing: border-box;
-    width: 90%;
-    height: 127px;
-    background: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-  }
-  .input_title {
-    width: 90%;
-    height: 50px;
-    /* left: 17px; */
-    top: 322px;
-    background: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 6px;
-    margin-bottom: 18px;
-  }
-  .input_company {
-    box-sizing: border-box;
-    width: 90%;
-    height: 50px;
-    left: 18px;
-    top: 395px;
-    background: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 6px;
-    margin-bottom: 18px;
-  }
-  .dateadd_1 {
-    box-sizing: border-box;
-    width: 171px;
-    height: 48px;
-    left: 17px;
-    top: 468px;
-    background: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-  }
-  .dateadd_2 {
-    box-sizing: border-box;
-    width: 166px;
-    height: 48px;
-    left: 205px;
-    top: 468px;
-    background: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-  }
-  .weField {
-    box-sizing: border-box;
-    width: 90%;
-    height: 127px;
-    background: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-  }
-  .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    box-sizing: border-box;
-    width: 354px;
-    height: 50px;
-    outline: none;
-    /* left: 12px; */
-    top: 380px;
-    border: none;
-    position: absolute;
-    background: #ce4a11;
-    border-radius: 6px;
-  }
-  .btns span {
-    position: absolute;
-    /* width: 163px; */
-    height: 25px;
-    font-family: "Inter";
-    font-style: normal;
-    width: 90%;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 25px;
-    color: #ffffff;
-    display: flex;
-    text-align: center;
-    background: transparent;
-  }
-  button span {
-    margin: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    font-size: 15px;
-  }
-  .back_can_btn {
-    display: flex;
-    width: 100%;
-    position: absolute;
-    top: 460px;
-    height: 50px;
-    justify-content: space-around;
-    font-size: 21px;
-    align-items: center;
-    align-content: center;
-  }
+  .cancle_btn,
   .bbtn {
-    background: #25b429;
-    width: 30%;
-    text-align: center;
-    height: 48px;
-    align-items: center;
+    width: 30px;
+    height: 45px;
+    color: #fff;
+    background: #2f0953;
     display: flex;
     justify-content: center;
-    border-radius: 6px;
     align-content: center;
-  }
-  .cancle_btn {
-    background: #df2606;
-    height: 48px;
-    display: flex;
-    text-align: center;
-    width: 30%;
     align-items: center;
-    justify-content: center;
-    align-content: center;
-    border-radius: 6px;
-  }
-  .input_0 {
-    display: flex;
-    top: 82px;
-    position: absolute;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
   }
   .input_00 {
-    top: 250px;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    align-content: center;
-    position: absolute;
-    width: 100%;
-    /* height: 400px; */
-    left: 0px;
-    flex-direction: column;
+    width: 378px;
+    top: 249px;
+  }
+  .input_0 {
+    width: 378px;
+    top: 70px;
   }
   .input_ {
-    display: flex;
-    margin-bottom: 10px;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
+    width: 95%;
   }
-  #alable {
-    height: 21px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17.6676px;
-    line-height: 21px;
-    color: #000000;
-  }
-  .input_00 #elable {
-    height: 21px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    color: #000000;
+  #db_03 {
+    top: 699px;
   }
 
-  .bcc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 0px;
-    top: 280px;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 12px;
+  .four_col h3 {
+    top: 20px;
   }
-  .back_button {
-    width: 39%;
-    height: 44px;
-    left: 12px;
-    background: #d9d9d9;
-    border-radius: 3px;
+  .input_profec {
+    width: 407px;
+    top: 69px;
   }
-  .next_button {
-    width: 39%;
-    height: 44px;
-    left: 210px;
-    background: #d9d9d9;
-    border-radius: 3px;
+  .input_educ {
+    width: 389px;
+    top: -17px;
+  }
+  .input_skl {
+    width: 389px;
+    top: 527px;
+  }
+  #db_04 {
+    top: 703px;
+  }
+  .five_col {
+    width: 380px;
+  }
+  .five_col h3 {
+    top: 19px;
+    font-size: 29px;
+    display: none;
+  }
+  .input_cert {
+    width: 408px;
+    top: 28px;
+  }
+  .input_proj {
+    width: 408px;
+    top: 326px;
+  }
+  #db_05 {
+    top: 611px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .input_02 input,
+  textarea,
+  input {
+    width: 95%;
+  }
+  .first_col h3 {
+    font-size: 33px;
+    text-align: center;
+  }
+  .first_col {
+    width: 350px;
+  }
+  .div_fields {
+    height: 100%;
+    padding: 0px;
+    width: 372px;
+  }
+  .second_col {
+    width: 355px;
+  }
+  .imp_text {
+    width: 322px;
+  }
+  .box_input input {
+    width: 316px;
+  }
+  .input_profec,
+  .input_educ,
+  .input_skl {
+    width: 90%;
+  }
+
+  .third_col,
+  .four_col {
+    width: 355px;
+  }
+  .third_col h3 {
+    top: 22px;
+  }
+  .input_00 {
+    width: 321px;
+    top: 230px;
+  }
+  .input_0 {
+    width: 329px;
+    top: 78px;
+  }
+  .input_ {
+    width: 95%;
+  }
+  #db_03 {
+    top: 682px;
+  }
+  .five_col {
+    width: 355px;
+  }
+  .input_cert,
+  .input_proj {
+    width: 364px;
+  }
+  .cpbtn {
+    width: 327px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .first_col h3 {
+    text-align: center;
+    font-size: 27px;
+  }
+  .div_fields {
+    padding: 0px;
+    width: 337px;
+  }
+  .first_col,
+  .third_col,
+  .second_col,
+  .four_col,
+  .five_col {
+    width: 320px;
+  }
+  .input_00 {
+    width: 289px;
+    top: 249px;
+  }
+  .input_0 {
+    width: 296px;
+    top: 70px;
+  }
+  .input_cert,
+  .input_proj {
+    width: 320px;
+  }
+  .cpbtn {
+    width: 290px;
+  }
+  #db_05 {
+    top: 611px;
+    width: 337px;
   }
 }
