@@ -855,7 +855,9 @@ label {
     width: 344px;
     top: 30px;
   }
-
+  .input_01 {
+    top: 306px;
+  }
   #db_01 {
     width: 346px;
   }
@@ -872,7 +874,7 @@ label {
     width: 360px;
   }
   #db_02 {
-    top: 716px;
+    top: 709px;
     width: 360px;
   }
   .second_col {
