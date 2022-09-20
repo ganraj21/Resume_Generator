@@ -942,6 +942,9 @@ label {
   .input_proj {
     width: 364px;
   }
+  #db_05 {
+    width: 336px;
+  }
 }
 
 @media screen and (max-width: 370px) {
