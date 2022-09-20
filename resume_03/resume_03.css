@@ -113,6 +113,7 @@ body {
   height: 45px;
   margin: 9px;
   border: none;
+  outline: 1px solid;
   color: #fff;
   /* background-color: rgb(45 16 77); */
   box-shadow: 0px 0px 3px black;
@@ -216,7 +217,7 @@ label {
   display: flex;
   align-items: center;
   font-size: 45px;
-  color: #fdd835;
+  color: #00e7d6;
   top: 28px;
   position: absolute;
   align-content: center;
