@@ -469,14 +469,7 @@ const addEducation_03 = () =>{
   document.getElementById('btn_ex_01').addEventListener('click', add_experience_02)
   document.getElementById('btn_ex_02').addEventListener('click', add_experience_03)
 
-  document.getElementById('bt_gen').addEventListener('click',()=>{
-    document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
-    setTimeout(()=>{
-      document.getElementById('bt_gen').innerHTML  = "Resume Generated"
-      generate_fun2();
-    console.log("YOU clicked on generate btn")
-    },2000);
-  })
+  
   // -------|
   const generate_fun2 = () => {
     // first-col-->
@@ -545,6 +538,14 @@ const addEducation_03 = () =>{
 
     window.location.href = './resume_02/resume_02.html'
   }
+  document.getElementById('bt_gen').addEventListener('click',()=>{
+    document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
+    setTimeout(()=>{
+      document.getElementById('bt_gen').innerHTML  = "Resume Generated"
+      generate_fun2();
+    console.log("YOU clicked on generate btn")
+    },2000);
+  })
   // let bton_gen = document.getElementById('generate_btn')
   // bton_gen.addEventListener('click', generate_fun2)
 } else {
