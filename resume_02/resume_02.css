@@ -331,6 +331,7 @@ label {
   justify-content: center;
   align-content: center;
   border: 1px;
+  box-shadow: 0px 0px 3px black;
 }
 .next_button {
   display: flex;
@@ -339,6 +340,7 @@ label {
   justify-content: center;
   align-content: center;
   border: 1px;
+  box-shadow: 0px 0px 3px black;
 }
 .back_button span {
   margin-right: 10px;
