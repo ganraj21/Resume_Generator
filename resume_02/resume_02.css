@@ -18,28 +18,39 @@ body {
   height: 100%;
 }
 
-.first_col {
+.first_col,
+.second_col,
+.third_col,
+.four_col,
+.five_col {
   width: 550px;
   display: flex;
-  height: 767px;
+  height: 780px;
   flex-direction: column;
   align-content: center;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 45px;
+  top: 33px;
 }
-.first_col h3 {
-  position: absolute;
-  width: 372px;
-  height: 51px;
-  top: 41px;
+.first_col h3,
+.second_col h2,
+.third_col h3,
+.four_col h3,
+.five_col h3 {
+  text-align: center;
+  color: #ce4a11;
   font-family: "Inter";
   font-style: normal;
+  width: 372px;
+  position: absolute;
   font-weight: 700;
   font-size: 35px;
   line-height: 42px;
-  color: #ce4a11;
+}
+.first_col h3 {
+  height: 51px;
+  top: 47px;
 }
 #addressField {
   height: 90px;
@@ -89,28 +100,15 @@ input {
   margin: 2px;
   display: flex;
   flex-direction: column;
-  top: 310px;
-
+  top: 292px;
   position: absolute;
 }
-.input_01 input {
-  margin: 6px;
-  height: 36px;
-  width: 50%;
-  padding-top: 3px;
-  border: none;
-  background-color: rgb(222, 222, 222);
-  padding-left: 11px;
-  border-radius: 4px;
-  resize: vertical;
-}
+
 .input_02 {
   position: absolute;
-  /* margin-top: -100px; */
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* width: 100%; */
   align-content: space-around;
   top: 112px;
   width: 458px;
@@ -202,30 +200,19 @@ input {
 .imp_text {
   display: flex;
   height: 100px;
-  top: 10px;
-  width: 100%;
+  top: 114px;
+  font-size: 18px;
+  width: 410px;
+  gap: 9px;
   position: absolute;
+  flex-direction: column;
 }
 .second_col {
   display: none;
-  height: 767px;
-  width: 550px;
-  flex-direction: column;
-  place-content: center;
-  align-items: center;
-  position: absolute;
-  top: 45px;
 }
 
 .second_col h2 {
-  display: flex;
-  align-items: center;
-  font-size: 27px;
-  color: #0099ef;
-  position: absolute;
-  align-content: center;
-  justify-content: center;
-  margin-bottom: 0.9rem;
+  top: 38px;
 }
 .box_input {
   width: 100%;
@@ -236,6 +223,14 @@ input {
   align-items: center;
   margin-top: 10px;
 }
+.box_input button {
+  width: 221px;
+  height: 50px;
+  border: none;
+  color: #ce4a11;
+  font-weight: 600;
+  font-size: 15px;
+}
 button {
   width: 150px;
   height: 45px;
@@ -245,36 +240,20 @@ button {
 
 .third_col {
   display: none;
-  height: 767px;
-  width: 550px;
-  flex-direction: column;
-  place-content: center;
-  align-items: center;
-  position: absolute;
-  top: 45px;
 }
 #your-about-info,
 #your_company_description {
   height: 100px;
 }
 .third_col h3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 36px;
-  margin-bottom: 27px;
   top: 34px;
-  position: absolute;
-  color: #0099ef;
 }
 
 label {
-  margin-left: 5px;
   color: #000000;
   font-size: 18px;
   top: -35px;
-  /* width: 420px; */
-  left: 10px;
+  width: 418px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
@@ -361,6 +340,12 @@ label {
   align-content: center;
   border: 1px;
 }
+.back_button span {
+  margin-right: 10px;
+}
+.next_button span {
+  margin-left: 10px;
+}
 .angle0 {
   margin-right: 6px;
   font-size: 17px;
@@ -379,28 +364,12 @@ label {
 
 .four_col {
   display: none;
-  width: 550px;
-  height: 767px;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 45px;
 }
 .four_col h3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 36px;
-  margin-bottom: 27px;
-  color: #ce4a11;
-  position: absolute;
   top: 27px;
 }
 .plabel {
   position: absolute;
-  /* top: 25px; */
   top: -39px;
 }
 .elable {
@@ -459,28 +428,14 @@ label {
   align-items: center;
 }
 .bcc {
-  padding: 15px 0px 15px 0px;
+  padding: 1px 0px 15px 0px;
   border-radius: 6px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
-.qbtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  box-sizing: border-box;
-  width: 418px;
-  height: 50px;
-  outline: none;
-  top: 205px;
-  border: none;
-  position: absolute;
-  background: #ce4a11;
-  border-radius: 6px;
-}
+
 .input_educ {
   display: flex;
   position: absolute;
@@ -505,7 +460,9 @@ label {
   top: 44px;
   position: absolute;
 }
-.sbtn {
+.qbtn,
+.sbtn,
+.ebtn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -514,36 +471,30 @@ label {
   width: 418px;
   height: 50px;
   outline: none;
-  /* left: 12px; */
-  top: 110px;
   border: none;
   position: absolute;
   background: #ce4a11;
   border-radius: 6px;
 }
+.qbtn {
+  top: 205px;
+}
+.sbtn {
+  top: 110px;
+}
+.ebtn {
+  top: 364px;
+}
+#db_04 {
+  top: 716px;
+}
 /* Forth column end here ---||--- */
 
 .five_col {
   display: none;
-  width: 550px;
-  height: 767px;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 45px;
 }
 .five_col h3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 36px;
   top: 21px;
-  position: absolute;
-  margin-bottom: 27px;
-  color: #ce4a11;
-  text-align: center;
 }
 .input_cert {
   display: flex;
@@ -577,14 +528,13 @@ label {
   display: flex;
   width: 100%;
   position: absolute;
-  top: 364px;
+  top: 400px;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   align-items: center;
 }
 .ld_des {
-  width: 90%;
   padding-top: 3px;
   margin: 9px;
   height: 100px;
@@ -594,7 +544,6 @@ label {
   resize: vertical;
 }
 .cp_class {
-  width: 90%;
   padding-top: 3px;
   height: 45px;
   margin: 9px;
@@ -602,6 +551,10 @@ label {
   background-color: rgb(222, 222, 222);
   border-radius: 4px;
   resize: vertical;
+}
+.input_cert label,
+.input_proj label {
+  display: none;
 }
 .cpbtn {
   display: flex;
@@ -612,8 +565,7 @@ label {
   width: 354px;
   height: 50px;
   outline: none;
-  /* left: 12px; */
-  top: 220px;
+  top: 188px;
   border: none;
   position: absolute;
   background: #ce4a11;
@@ -621,7 +573,6 @@ label {
 }
 .cpbtn span {
   position: absolute;
-  /* width: 163px; */
   height: 25px;
   font-family: "Inter";
   font-style: normal;
@@ -634,19 +585,22 @@ label {
   text-align: center;
   background: transparent;
 }
+#db_05 {
+  top: 682px;
+}
 /* Fifth column end here ----||---- */
 
 .direction_button {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
   width: 100%;
   position: absolute;
   bottom: 0px;
-  top: 674px;
   height: 60px;
+  top: 730px;
 }
 
 .file-upload {
@@ -707,7 +661,7 @@ label {
   align-content: center;
   position: absolute;
   align-items: center;
-  top: 77px;
+  top: 127px;
 }
 @media screen and (max-width: 580px) {
   .first_col,
@@ -744,6 +698,7 @@ label {
   }
   .five_col h3 {
     font-size: 30px;
+    width: 356px;
   }
   #db_05 {
     top: 675px;
@@ -757,6 +712,9 @@ label {
   textarea,
   input {
     width: 377px;
+  }
+  label {
+    width: 391px;
   }
   .first_col,
   .four_col {
@@ -792,6 +750,7 @@ label {
   }
   #db_02 {
     top: 716px;
+    width: 420px;
   }
   .imp_text {
     width: 367px;
@@ -825,9 +784,12 @@ label {
     width: 378px;
     top: 70px;
   }
-
+  .input_ {
+    width: 399px;
+  }
   #db_03 {
     top: 699px;
+    width: 420px;
   }
 
   .four_col h3 {
@@ -850,8 +812,9 @@ label {
     top: 496px;
   }
   .sbtn,
-  .qbtn {
-    width: 323px;
+  .qbtn,
+  .ebtn {
+    width: 358px;
   }
   #db_04 {
     top: 671px;
@@ -883,19 +846,22 @@ label {
   input {
     width: 312px;
   }
+  label {
+    width: 324px;
+  }
   .first_col h3 {
     font-size: 33px;
     text-align: center;
     width: 344px;
+    top: 30px;
   }
-  .Your_photo {
-    width: 312px;
-  }
+
   #db_01 {
     width: 346px;
   }
   .input_02 {
     width: 325px;
+    top: 88px;
   }
   .first_col {
     width: 350px;
@@ -903,6 +869,10 @@ label {
   .div_fields {
     height: 100%;
     padding: 0px;
+    width: 360px;
+  }
+  #db_02 {
+    top: 716px;
     width: 360px;
   }
   .second_col {
@@ -935,9 +905,20 @@ label {
     width: 329px;
     top: 78px;
   }
+  .input_ input {
+    width: 140px;
+  }
+
   .sbtn,
-  .qbtn {
-    width: 312px;
+  .qbtn,
+  .ebtn,
+  .cpbtn,
+  .Your_photo {
+    width: 316px;
+  }
+
+  .Your_photo {
+    top: 623px;
   }
   .input_ {
     width: 321px;
@@ -948,9 +929,11 @@ label {
   }
   #db_03 {
     top: 682px;
+    width: 360px;
   }
   #db_04 {
-    width: 376px;
+    width: 358px;
+    top: 689px;
   }
   .five_col {
     width: 355px;
@@ -959,9 +942,6 @@ label {
   .input_proj {
     width: 364px;
   }
-  .cpbtn {
-    width: 327px;
-  }
 }
 
 @media screen and (max-width: 370px) {
@@ -969,6 +949,9 @@ label {
     text-align: center;
     font-size: 27px;
     width: 327px;
+  }
+  label {
+    width: 308px;
   }
   .div_fields {
     padding: 0px;
@@ -981,8 +964,11 @@ label {
   .five_col {
     width: 320px;
   }
-  .Your_photo {
-    width: 292px;
+  .second_col h2 {
+    width: 331px;
+  }
+  .third_col h3 {
+    width: 339px;
   }
   #db_01 {
     top: 700px;
@@ -1001,14 +987,15 @@ label {
   .input_proj {
     width: 320px;
   }
-  .cpbtn {
-    width: 290px;
-  }
+
   .four_col h3 {
     font-size: 32px;
   }
   .input_ {
     width: 262px;
+  }
+  .input_ input {
+    width: 130px;
   }
   .input_02 input,
   textarea,
@@ -1020,8 +1007,14 @@ label {
     width: 130px;
   }
   .sbtn,
-  .qbtn {
+  .qbtn,
+  .ebtn,
+  .cpbtn,
+  .Your_photo {
     width: 292px;
+  }
+  #db_03 {
+    width: 339px;
   }
   #db_04 {
     width: 340px;
