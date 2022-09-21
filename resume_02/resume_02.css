@@ -196,6 +196,25 @@ input {
   background-color: #05a3ff;
   color: white;
 }
+
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  display: flex;
+  position: absolute;
+  top: 542px;
+  width: 250px;
+  top: 628px;
+  margin-left: -1px;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+  outline: 1px solid #ffee00;
+}
 /* first column end here ---||---  */
 .imp_text {
   display: flex;
@@ -464,7 +483,8 @@ label {
 }
 .qbtn,
 .sbtn,
-.ebtn {
+.ebtn,
+.custom-file-upload {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -917,7 +937,7 @@ label {
   .qbtn,
   .ebtn,
   .cpbtn,
-  .Your_photo {
+  .custom-file-upload {
     width: 316px;
   }
 
