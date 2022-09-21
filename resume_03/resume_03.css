@@ -638,9 +638,6 @@ label {
     width: 391px;
     top: 735px;
   }
-  .div_fields {
-    width: 367px;
-  }
   .input_02 {
     top: 109px;
     width: 368px;
@@ -664,6 +661,7 @@ label {
   }
   .div_fields {
     height: 790px;
+    width: 367px;
   }
   .direction_button {
     top: 749px;
