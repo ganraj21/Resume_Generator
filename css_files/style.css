@@ -133,7 +133,7 @@ i {
   }
   .login_btn {
     display: flex;
-    margin-left: 10px;
+    margin-right: 10px;
   }
   .hamburger {
     display: flex;
