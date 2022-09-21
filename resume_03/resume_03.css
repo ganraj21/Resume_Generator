@@ -33,7 +33,7 @@ body {
   position: absolute;
   border-radius: 6px;
   box-shadow: 0px 0px 5px #414141;
-  top: 29px;
+  top: 24px;
   padding: 10px 0px 10px 0px;
 }
 
@@ -650,7 +650,7 @@ label {
   }
   .second_col {
     width: 380px;
-    top: 33px;
+    /* top: 33px; */
   }
   .second_col h2 {
     top: 37px;
