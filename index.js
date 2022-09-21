@@ -33,6 +33,12 @@ closeIcon.addEventListener('click',()=>{
   console.log("clicked on canceled")
 })
 
+const alt_fun = () =>{
+  alert("WE ARE WORKING ON THIS TEMPLATE");
+  console.log('WE ARE WORKING ON THIS TEMPLATE')
+}
+
+
 // print cv
 
 function readURL(input) {

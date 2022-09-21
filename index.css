@@ -124,17 +124,6 @@ html {
   top: 75%;
   right: 25%;
 }
-.middle,
-.middle_01 {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 75%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
 
 .mySlides:hover #r_img_04,
 .mySlides:hover #r_img_05 {
@@ -158,14 +147,7 @@ html {
     top: 80%;
     left: 35%;
   }
-  .middle {
-    top: 70%;
-    left: 50%;
-  }
-  .middle_01 {
-    top: 90%;
-    left: 50%;
-  }
+
   .main_div1 {
     height: 680px;
   }
