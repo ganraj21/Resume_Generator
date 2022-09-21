@@ -431,8 +431,8 @@ label {
   padding: 10px 0px 15px 0px;
   align-items: center;
   align-content: center;
-  position: relative;
-  top: -16px;
+  position: absolute;
+  top: 188px;
 }
 .input_skl {
   width: 450px;
@@ -458,7 +458,8 @@ label {
   color: #ffee00;
   position: absolute;
   text-align: center;
-  top: 52px;
+  top: 37px;
+  width: 249px;
 }
 .five_col label {
   display: flex;
@@ -506,7 +507,7 @@ label {
   align-content: center;
   position: absolute;
   align-items: center;
-  top: 130px;
+  top: 156px;
   width: 458px;
 }
 .input_proj {
@@ -516,11 +517,11 @@ label {
   align-content: center;
   justify-content: center;
   position: absolute;
-  top: 357px;
+  top: 374px;
   align-items: center;
 }
 #db_05 {
-  top: 640px;
+  top: 655px;
   width: 451px;
 }
 .loader {
@@ -550,6 +551,7 @@ label {
   align-content: center;
   position: absolute;
   flex-direction: row;
+  width: 450px;
 }
 
 ul {
@@ -609,17 +611,20 @@ button {
     width: 476px;
   }
   #db_03 {
-    width: 465px;
+    width: 460px;
   }
   #db_04 {
     width: 460px;
   }
   #db_05 {
     width: 462px;
-    top: 691px;
+    top: 652px;
   }
   .btn_gen_text {
     margin-top: 15px;
+  }
+  .five_col h3 {
+    top: 29px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -627,6 +632,9 @@ button {
   textarea,
   input {
     width: 338px;
+  }
+  label {
+    width: 90%;
   }
   .input_ {
     width: 374px;
@@ -709,33 +717,34 @@ button {
     top: 20px;
   }
   .input_profec {
-    width: 407px;
-    top: 69px;
+    width: 376px;
+    top: 101px;
   }
   .input_educ {
     width: 389px;
-    top: -17px;
+    top: 206px;
   }
   .input_skl {
-    width: 389px;
-    top: 527px;
+    width: 382px;
+    top: 518px;
   }
   #db_04 {
     top: 703px;
+    width: 382px;
   }
   .five_col h3 {
     top: 19px;
   }
   .input_cert {
-    width: 408px;
+    width: 379px;
     top: 123px;
   }
   .input_proj {
-    width: 408px;
+    width: 379px;
     top: 345px;
   }
   #db_05 {
-    top: 623px;
+    width: 380px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -761,7 +770,7 @@ button {
     width: 350px;
   }
   .input_ input {
-    width: 139px;
+    width: 140px;
   }
   .input_02 {
     top: 109px;
@@ -788,7 +797,9 @@ button {
   .input_skl {
     width: 90%;
   }
-
+  .four_col h3 {
+    top: 34px;
+  }
   .third_col,
   .four_col {
     width: 355px;
@@ -809,6 +820,9 @@ button {
   }
   #db_03 {
     top: 682px;
+  }
+  #db_04 {
+    width: 350px;
   }
   .five_col {
     width: 355px;
@@ -858,12 +872,21 @@ button {
   }
   #db_03 {
     width: 319px;
+    top: 710px;
   }
   .first_col h3 {
     width: 60%;
     top: 14px;
   }
+  #db_04 {
+    width: 318px;
+  }
 
+  .four_col h3,
+  .third_col h3 {
+    font-size: 31px;
+    top: 34px;
+  }
   .input_02 {
     top: 109px;
     width: 290px;
@@ -874,10 +897,13 @@ button {
   }
   .input_0 {
     width: 296px;
-    top: 70px;
+    top: 88px;
   }
   .input_cert,
   .input_proj {
     width: 300px;
+  }
+  #db_05 {
+    width: 322px;
   }
 }
