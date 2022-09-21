@@ -276,6 +276,29 @@ const addEducation_03 = () =>{
     let your_home_address = document.getElementById('addressField').value
     localStorage.setItem('your_home_address', your_home_address)
 
+//profile image ---->
+var imgData = document.getElementById('your_profile_image').src;
+// imgData = getBase64Image(bannerImage);
+// localStorage.setItem("imgData", imgData);
+localStorage.setItem("imgData", imgData);
+
+
+// function getBase64Image(img) {
+//   var canvas = document.createElement("canvas");
+//   canvas.width = img.width;
+//   canvas.height = img.height;
+
+//   var ctx = canvas.getContext("2d");
+//   // ctx.drawImage(img, 0, 0);
+
+//   var dataURL = canvas.toDataURL("image/png");
+
+//   return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+// }
+// let your_profile_image = document.getElementById('your_profile_image').value
+// localStorage.setItem('your_profile_image', your_profile_image)
+//-----|||
+
     let professional_profile_name = document.getElementById('profession_name')
       .value
     localStorage.setItem('professional_profile_name', professional_profile_name)
@@ -287,7 +310,7 @@ const addEducation_03 = () =>{
 
     // education --->
     let academic_qualification_title = document.getElementById(
-      'Qualification_Title',
+      'Qualification_Title_01',
     ).value
     localStorage.setItem(
       'academic_qualification_title',
@@ -295,15 +318,15 @@ const addEducation_03 = () =>{
     )
 
     let university_qualification_title = document.getElementById(
-      'University_Name',
+      'University_Name_01',
     ).value
     localStorage.setItem(
       'university_qualification_title',
       university_qualification_title,
     )
 
-    let qualification = document.getElementById('date_01').value
-    let duration = document.getElementById('date_02').value
+    let qualification = document.getElementById('date_01_01').value
+    let duration = document.getElementById('date_02_01').value
     let qualification_duration = qualification + ' - ' + duration
     localStorage.setItem('qualification_duration', qualification_duration)
 
@@ -468,7 +491,14 @@ const addEducation_03 = () =>{
 
   document.getElementById('btn_ex_01').addEventListener('click', add_experience_02)
   document.getElementById('btn_ex_02').addEventListener('click', add_experience_03)
-
+  document.getElementById('bt_gen').addEventListener('click',()=>{
+    document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
+    setTimeout(()=>{
+      document.getElementById('bt_gen').innerHTML  = "Resume Generated"
+      generate_fun2();
+    console.log("YOU clicked on generate btn")
+    },2000);
+  })
   
   // -------|
   const generate_fun2 = () => {
@@ -499,23 +529,23 @@ const addEducation_03 = () =>{
 
     // education --->
     let academic_qualification_title = document.getElementById(
-      'Qualification_Title',
+      'Qualification_Title_01',
     ).value
     localStorage.setItem(
-      'academic_qualification_title',
-      academic_qualification_title,
+      'Qualification_Title_01',
+      Qualification_Title_01,
     )
 
     let university_qualification_title = document.getElementById(
-      'University_Name',
+      'University_Name_01',
     ).value
     localStorage.setItem(
-      'university_qualification_title',
-      university_qualification_title,
+      'University_Name_01',
+      University_Name_01,
     )
 
-    let qualification = document.getElementById('date_01').value
-    let duration = document.getElementById('date_02').value
+    let qualification = document.getElementById('date_01_01').value
+    let duration = document.getElementById('date_02_01').value
     let qualification_duration = qualification + ' - ' + duration
     localStorage.setItem('qualification_duration', qualification_duration)
 
@@ -538,14 +568,7 @@ const addEducation_03 = () =>{
 
     window.location.href = './resume_02/resume_02.html'
   }
-  document.getElementById('bt_gen').addEventListener('click',()=>{
-    document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
-    setTimeout(()=>{
-      document.getElementById('bt_gen').innerHTML  = "Resume Generated"
-      generate_fun2();
-    console.log("YOU clicked on generate btn")
-    },2000);
-  })
+  
   // let bton_gen = document.getElementById('generate_btn')
   // bton_gen.addEventListener('click', generate_fun2)
 } else {

@@ -14,11 +14,17 @@ document.getElementById('first_name').innerHTML = localStorage.getItem(
   'your_first_name',
 )
 //  --|
-
+var dataImage = localStorage.getItem('imgData');
+var bannerImg = document.getElementById('home_profile_img');
+// bannerImg = document.getElementById('tableBanner');
+bannerImg.src = dataImage;
+// console.log(
+// .innerHTML = localStorage.getItem("imgData",)
+// )
 // setting your profession -->
-document.getElementById('home-profession').innerHTML = localStorage.getItem(
-  'professional_profile_name',
-)
+// document.getElementById('home-profession').innerHTML = localStorage.getItem(
+//   'professional_profile_name',
+// )
 
 // --|
 document.getElementById('your-address-here').innerHTML = localStorage.getItem(

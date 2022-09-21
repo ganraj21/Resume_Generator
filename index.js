@@ -12,7 +12,7 @@ const toggleMenu = () =>{
     document.getElementById('menus').style.display = "flex";
     document.getElementById('cross').style.display = "none";
     // menuIcon.style.display = 'block'
-    menuItems.style.color = 'white'
+    // menuItems.style.color = 'white'
   } else {
     document.getElementById('cross').style.display = "flex";
     document.getElementById('menus').style.display = "none";
@@ -32,6 +32,7 @@ closeIcon.addEventListener('click',()=>{
   document.getElementById('cross').style.display = "none";
   console.log("clicked on canceled")
 })
+
 
 const alt_fun = () =>{
   alert("WE ARE WORKING ON THIS TEMPLATE");
