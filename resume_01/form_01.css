@@ -207,7 +207,7 @@ input {
 }
 .imp_text {
   display: flex;
-  width: 430px;
+  width: 389px;
   color: white;
   top: 96px;
   position: absolute;
@@ -237,6 +237,7 @@ input {
 }
 #db_02 {
   top: 685px;
+  width: 450px;
 }
 /* Second column end here ---||--- */
 
@@ -306,9 +307,12 @@ label {
   top: 681px;
 }
 .input_ {
-  width: 418px;
+  width: 439px;
   display: flex;
   gap: 6px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 #btn1,
@@ -624,6 +628,12 @@ button {
   input {
     width: 338px;
   }
+  .input_ {
+    width: 374px;
+  }
+  .input_ input {
+    width: 180px;
+  }
   .div_fields {
     height: 790px;
     width: 367px;
@@ -655,9 +665,10 @@ button {
   }
   #db_02 {
     top: 716px;
+    width: 382px;
   }
   .imp_text {
-    width: 367px;
+    width: 315px;
     top: 95px;
   }
   .direction_button {
@@ -687,11 +698,12 @@ button {
     width: 378px;
     top: 70px;
   }
-  .input_ {
-    width: 95%;
+  .input_ input {
+    width: 154px;
   }
   #db_03 {
     top: 699px;
+    width: 385px;
   }
   .four_col h3 {
     top: 20px;
@@ -748,6 +760,9 @@ button {
     top: 721px;
     width: 350px;
   }
+  .input_ input {
+    width: 139px;
+  }
   .input_02 {
     top: 109px;
     width: 322px;
@@ -755,8 +770,15 @@ button {
   .second_col {
     width: 355px;
   }
+  .second_col h2 {
+    top: 29px;
+  }
   .imp_text {
     width: 322px;
+    top: 80px;
+  }
+  .imp_text li {
+    width: 90%;
   }
   .box_input input {
     width: 316px;
@@ -783,7 +805,7 @@ button {
     top: 78px;
   }
   .input_ {
-    width: 95%;
+    width: 350px;
   }
   #db_03 {
     top: 682px;
@@ -808,17 +830,40 @@ button {
   .five_col {
     width: 320px;
   }
+  #db_01 {
+    top: 721px;
+    width: 314px;
+  }
   .div_fields {
     width: 314px;
+  }
+  .imp_text {
+    width: 295px;
+  }
+  .input_01 {
+    top: 356px;
+  }
+  #db_02 {
+    top: 739px;
+    width: 315px;
+  }
+  .box_input input {
+    width: 282px;
+  }
+  .input_ {
+    width: 326px;
+  }
+  .input_ input {
+    width: 122px;
+  }
+  #db_03 {
+    width: 319px;
   }
   .first_col h3 {
     width: 60%;
     top: 14px;
   }
-  #db_01 {
-    top: 721px;
-    width: 314px;
-  }
+
   .input_02 {
     top: 109px;
     width: 290px;
