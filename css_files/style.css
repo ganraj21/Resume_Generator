@@ -29,9 +29,10 @@ i {
 .menuItem {
   display: flex;
   margin-left: 27px;
-  color: black;
+  color: #1a1a1a;
+  font-weight: 600;
   text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: sans-serif;
 }
 
 .row {
