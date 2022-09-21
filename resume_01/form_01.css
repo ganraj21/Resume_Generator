@@ -55,24 +55,27 @@ body {
   border-radius: 10px;
   position: absolute;
 }
-.Your_photo {
-  height: 50px;
-  padding: 15px 20px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  position: absolute;
-  top: 549px;
-  align-content: center;
-  background: transparent;
-  border: 1px solid yellow;
-}
-.Your_photo:hover {
+
+.custom-file-upload:hover {
   box-shadow: inset 300px 0 0 0 yellow;
   color: black;
   font-weight: 600;
+}
+
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  display: flex;
+  position: absolute;
+  top: 542px;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  outline: 1px solid #ffee00;
 }
 #addressField {
   height: 90px;
@@ -169,6 +172,7 @@ input {
   color: rgb(249, 247, 246);
   font-size: 15px;
 }
+
 /* first column end here ---||---  */
 .box_input button {
   border: none;
