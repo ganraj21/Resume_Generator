@@ -185,13 +185,6 @@ label {
   border: 1px;
 }
 
-.photo_field {
-  display: flex;
-  margin: 18px 0px 6px 3px;
-  align-items: center;
-  justify-content: center;
-}
-
 .supp {
   height: 35px;
   display: flex;
@@ -207,6 +200,23 @@ label {
 .supp:hover {
   background-color: #05a3ff;
   color: white;
+}
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  display: flex;
+  position: absolute;
+  width: 250px;
+  top: 660px;
+  margin-left: -1px;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+  outline: 1px solid #00e7d6;
 }
 /* first column end here ---||---  */
 
