@@ -94,18 +94,20 @@ body {
   top: 305px;
 }
 .box_input button {
-  border: none;
-  background-color: #fdd835;
-  box-shadow: 0px 0px 3px black;
   top: 533px;
   margin: 9px;
-  /* color: white; */
-  outline: none;
   width: 232px;
   font-size: 15px;
-  height: 48px;
   font-weight: 600;
+  height: 50px;
+  background: transparent;
+  text-align: center;
   align-items: center;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+  outline: 1px solid #00e7d6;
+  border: none;
 }
 .box_input input {
   width: 350px;
@@ -113,10 +115,8 @@ body {
   height: 45px;
   margin: 9px;
   border: none;
-  outline: 1px solid;
   color: #fff;
-  /* background-color: rgb(45 16 77); */
-  box-shadow: 0px 0px 3px black;
+  outline: 1px solid #00e7d6;
   border-radius: 4px;
   resize: vertical;
   text-align: center;
@@ -173,7 +173,7 @@ label {
   padding-left: 10px;
 }
 #your-about-info,
-#your_company_description {
+.weField {
   height: 95px;
 }
 .form_input {
@@ -352,12 +352,22 @@ label {
   font-weight: 500;
   background-color: white;
 }
+.ebtn,
 .qbtn,
-.sbtn {
+.sbtn,
+.cpbtn {
   width: 210px;
   font-size: 16px;
-  height: 45px;
   margin-top: 10px;
+  height: 50px;
+  background: transparent;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+  outline: 1px solid #00e7d6;
+  border: none;
 }
 .btns {
   display: flex;
@@ -456,12 +466,7 @@ label {
   top: 26px;
   width: 264px;
 }
-.cpbtn {
-  background-color: #1b56ca;
-  color: white;
-  border: 1px;
-  border-radius: 3px;
-}
+
 .loader {
   pointer-events: none;
   width: 25px;
@@ -489,7 +494,7 @@ label {
   align-content: center;
   position: absolute;
   width: 533px;
-  top: 727px;
+  top: 740px;
 }
 #db_05 {
   width: 451px;
@@ -559,23 +564,7 @@ label {
   display: grid;
   box-shadow: 0 8px 5px -5px rgb(0 0 0 / 20%);
 }
-.cpbtn {
-  color: white;
-  margin-top: 20px;
-  border: 1px solid #ffee00;
-  background-color: transparent;
-  border-radius: 3px;
-  border: none;
-  background: #002be2;
-  top: 550px;
-  margin: 9px;
-  color: white;
-  outline: none;
-  width: 180px;
-  font-size: 15px;
-  height: 45px;
-  align-items: center;
-}
+
 @media screen and (max-width: 580px) {
   .first_col,
   .second_col,

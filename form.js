@@ -55,26 +55,7 @@ nextFun = () => {
   cnt++
 }
 
-
-// generate_button = document.querySelector(".btn_gen_text");
-
-
-
-console.log(localStorage.getItem('txtValue'))
-if (localStorage.getItem('txtValue') == '1') {
-  // Create new link Element
-  var link = document.createElement('link')
-  // set the attributes for link element
-  link.rel = 'stylesheet'
-
-  link.type = 'text/css'
-
-  link.href = './resume_01/form_01.css'
-
-  // Get HTML head element to append
   // link element to it
-  document.getElementsByTagName('HEAD')[0].appendChild(link)
-
   document.getElementById('linkedinField').style.display = 'none'
   document.getElementById('codeChefField').style.display = 'none'
   document.getElementById('fbField').style.display = 'none'
@@ -110,124 +91,100 @@ if (localStorage.getItem('txtValue') == '1') {
     document.getElementById('linked_btn').style.display = 'none'
   }
   document.getElementById('linked_btn').addEventListener('click', linkedin_x)
-  // --------------------------------cert-----------------
-  document.getElementById('cp_01').style.display = 'flex'
-  document.getElementById('cp_02').style.display = 'none'
-  document.getElementById('cp_03').style.display = 'none'
+  // --------|
 
-  const add_certificate_02 = () => {
-    document.getElementById('cp_01').style.display = 'none'
-    document.getElementById('cp_02').style.display = 'flex'
-    document.getElementById('cp_03').style.display = 'none'
-    document
-      .getElementById('cancel_001')
-      .addEventListener('click', function () {
-        document.getElementById('cp_02').style.display = 'none'
-        document.getElementById('certificate_title_02').value = ''
-        document.getElementById('certificate_description_02').value = ''
-        document.getElementById('cp_01').style.display = 'flex'
-      })
-    document.getElementById('back_001').addEventListener('click', function () {
-      document.getElementById('cp_01').style.display = 'flex'
-      document.getElementById('cp_02').style.display = 'none'
-    })
-  }
-  const add_certificate_03 = () => {
-    document.getElementById('cp_02').style.display = 'none'
-    document.getElementById('cp_03').style.display = 'flex'
-    document.getElementById('cp_01').style.display = 'none'
-    document
-      .getElementById('cancel_002')
-      .addEventListener('click', function () {
-        document.getElementById('cp_03').style.display = 'none'
-        document.getElementById('certificate_title_03').value = ''
-        document.getElementById('certificate_description_03').value = ''
-        document.getElementById('cp_02').style.display = 'flex'
-      })
 
-    document.getElementById('back_002').addEventListener('click', function () {
-      document.getElementById('cp_02').style.display = 'flex'
-      document.getElementById('cp_03').style.display = 'none'
-    })
-  }
-  document
-    .getElementById('cert_btn_01')
-    .addEventListener('click', add_certificate_02)
-  document
-    .getElementById('cert_btn_02')
-    .addEventListener('click', add_certificate_03)
-
-  // ----------------------xxx-----------------------
-
+// generate_button = document.querySelector(".btn_gen_text");
+  // --------------------------------------------- experience->
   document.getElementById('bcc_01').style.display = 'flex'
   document.getElementById('bcc_02').style.display = 'none'
   document.getElementById('bcc_03').style.display = 'none'
-
-  const add_experience_02 = () => {
+  const add_exp_02 = () =>{
     document.getElementById('bcc_01').style.display = 'none'
     document.getElementById('bcc_02').style.display = 'flex'
     document.getElementById('bcc_03').style.display = 'none'
-    document.getElementById('cancel_01').addEventListener('click', () => {
-      document.getElementById('bcc_01').style.display = 'flex'
-      document.getElementById('bcc_02').style.display = 'none'
-      document.getElementById('exp_title_02').value = ''
-      document.getElementById('your_input_company_02').value = ''
-      document.getElementById('c_s_d_02').value = ''
-      document.getElementById('c_e_d_02').value = ''
-      document.getElementById('your_company_description_02').value = ''
-    })
-    document.getElementById('back_01').addEventListener('click', () => {
-      document.getElementById('bcc_01').style.display = 'flex'
-      document.getElementById('bcc_02').style.display = 'none'
-    })
   }
-  const add_experience_03 = () => {
+  const add_exp_03 = () =>{
     document.getElementById('bcc_01').style.display = 'none'
     document.getElementById('bcc_02').style.display = 'none'
     document.getElementById('bcc_03').style.display = 'flex'
-    document.getElementById('cancel_02').addEventListener('click', ()=> {
-      document.getElementById('bcc_02').style.display = 'flex'
-      document.getElementById('bcc_03').style.display = 'none'
-      document.getElementById('exp_title_03').value = ''
-      document.getElementById('your_input_company_03').value = ''
-      document.getElementById('c_s_d_03').value = ''
-      document.getElementById('c_e_d_03').value = ''
-      document.getElementById('your_company_description_03').value = ''
-    })
-    document.getElementById('back_02').addEventListener('click', ()=> {
-      document.getElementById('bcc_02').style.display = 'flex'
-      document.getElementById('bcc_03').style.display = 'none'
-    })
   }
+  document.getElementById('btn_ex_01').addEventListener('click',add_exp_02)
+  document.getElementById('btn_ex_02').addEventListener('click',add_exp_03)
+  // -------------------------------------xxx------------------------
+  // ------------------||
+ // ---------------------xxx------------------- certificates_and_projects->
+ document.getElementById('cp_01').style.display = 'flex'
+ document.getElementById('cp_02').style.display = 'none'
+ document.getElementById('cp_03').style.display = 'none'
 
-  document.getElementById('btn_ex_01').addEventListener('click', add_experience_02);
-  document.getElementById('btn_ex_02').addEventListener('click', add_experience_03);
-  
+ const add_certificate_02 = () => {
+   document.getElementById('cp_01').style.display = 'none'
+   document.getElementById('cp_02').style.display = 'flex'
+   document.getElementById('cp_03').style.display = 'none'
+   document
+     .getElementById('cancel_001')
+     .addEventListener('click', function () {
+       document.getElementById('cp_02').style.display = 'none'
+       document.getElementById('certificate_title_02').value = ''
+       document.getElementById('certificate_description_02').value = ''
+       document.getElementById('cp_01').style.display = 'flex'
+     })
+   document.getElementById('back_001').addEventListener('click', function () {
+     document.getElementById('cp_01').style.display = 'flex'
+     document.getElementById('cp_02').style.display = 'none'
+   })
+ }
+ const add_certificate_03 = () => {
+   document.getElementById('cp_02').style.display = 'none'
+   document.getElementById('cp_03').style.display = 'flex'
+   document.getElementById('cp_01').style.display = 'none'
+   document
+     .getElementById('cancel_002')
+     .addEventListener('click', function () {
+       document.getElementById('cp_03').style.display = 'none'
+       document.getElementById('certificate_title_03').value = ''
+       document.getElementById('certificate_description_03').value = ''
+       document.getElementById('cp_02').style.display = 'flex'
+     })
 
-   // -----------------------------xxx-----------------------
-
+   document.getElementById('back_002').addEventListener('click', function () {
+     document.getElementById('cp_02').style.display = 'flex'
+     document.getElementById('cp_03').style.display = 'none'
+   })
+ }
+ document
+   .getElementById('cert_btn_01')
+   .addEventListener('click', add_certificate_02)
+ document
+   .getElementById('cert_btn_02')
+   .addEventListener('click', add_certificate_03)
+// ------------------------
    document.getElementById('prj_01').style.display = 'flex'
    document.getElementById('prj_02').style.display = 'none'
    document.getElementById('prj_03').style.display = 'none'
-const addProjects_02 =() =>{
-  document.getElementById('prj_01').style.display = 'flex'
-  document.getElementById('prj_02').style.display = 'none'
-  document.getElementById('prj_03').style.display = 'none'
-  console.log("you clicked on btn 2")
-}
+   const add_proj_02 = () =>{
+     document.getElementById('prj_01').style.display = 'none'
+     document.getElementById('prj_02').style.display = 'flex'
+     document.getElementById('prj_03').style.display = 'none'
 
-const addProjects_03 =() =>{
-  document.getElementById('prj_01').style.display = 'flex'
-  document.getElementById('prj_02').style.display = 'none'
-  document.getElementById('prj_03').style.display = 'none'
-}
+   }
+   const add_proj_03 = () =>{
+     document.getElementById('prj_01').style.display = 'none'
+     document.getElementById('prj_02').style.display = 'none'
+     document.getElementById('prj_03').style.display = 'flex'
+     
+   }
+   document
+   .getElementById('proj_btn_01')
+   .addEventListener('click', add_proj_02)
+ document
+   .getElementById('proj_btn_02')
+   .addEventListener('click', add_proj_03)
 
+// -----------|-<
 
-   document.getElementById('proj_btn_01').addEventListener('click',addProjects_02)
-   document.getElementById('proj_btn_02').addEventListener('click',addProjects_03)
-
-  // -----------------------------xxx-----------------------
-
+  // ----------------------------xxx-------------------educations->
   document.getElementById('aq_01').style.display = 'flex'
   document.getElementById('aq_02').style.display = 'none'
   document.getElementById('aq_03').style.display = 'none'
@@ -236,7 +193,6 @@ const addEducation_02 = () =>{
   document.getElementById('aq_02').style.display = 'flex'
   document.getElementById('aq_03').style.display = 'none'
 }
-
 const addEducation_03 = () =>{
   document.getElementById('aq_01').style.display = 'none'
   document.getElementById('aq_02').style.display = 'none'
@@ -245,11 +201,17 @@ const addEducation_03 = () =>{
 
   document.getElementById('btn_educ_01').addEventListener('click',addEducation_02)
   document.getElementById('btn_educ_02').addEventListener('click',addEducation_03)
+  // --------|
 
-
-
-
+console.log(localStorage.getItem('txtValue'))
+if (localStorage.getItem('txtValue') == '1') {
+  var link = document.createElement('link')
+  link.rel = 'stylesheet'
+  link.type = 'text/css'
+  link.href = './resume_01/form_01.css'
+  document.getElementsByTagName('HEAD')[0].appendChild(link)
   // -----------------------------xxx-----------------------
+    // loading function ----------------------->>>
   document.getElementById('bt_gen').addEventListener('click',()=>{
     document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
     setTimeout(()=>{
@@ -353,144 +315,13 @@ localStorage.setItem("imgData", imgData);
 
     
 } else if (localStorage.getItem('txtValue') == '2') {
-  // Create new link Element
   var link = document.createElement('link')
-  // set the attributes for link element
   link.rel = 'stylesheet'
   link.type = 'text/css'
   link.href = './resume_02/resume_02.css';
-
-  // Get HTML head element to append
-  // link element to it
   document.getElementsByTagName('HEAD')[0].appendChild(link)
-
-  document.getElementById('linkedinField').style.display = 'none'
-  document.getElementById('codeChefField').style.display = 'none'
-  document.getElementById('fbField').style.display = 'none'
-  document.getElementById('githubField').style.display = 'none'
-  document.getElementById('instaField').style.display = 'none'
-
-  const codechef_x = () => {
-    document.getElementById('codeChefField').style.display = 'flex'
-    document.getElementById('codechef_btn').style.display = 'none'
-  }
-  document.getElementById('codechef_btn').addEventListener('click', codechef_x)
-
-  const leetcode_x = () => {
-    document.getElementById('fbField').style.display = 'flex'
-    document.getElementById('leetcode_btn').style.display = 'none'
-  }
-  document.getElementById('leetcode_btn').addEventListener('click', leetcode_x)
-
-  const github_x = () => {
-    document.getElementById('githubField').style.display = 'flex'
-    document.getElementById('github_btn').style.display = 'none'
-  }
-  document.getElementById('github_btn').addEventListener('click', github_x)
-
-  const insta_x = () => {
-    document.getElementById('instaField').style.display = 'flex'
-    document.getElementById('insta_btn').style.display = 'none'
-  }
-  document.getElementById('insta_btn').addEventListener('click', insta_x)
-
-  const linkedin_x = () => {
-    document.getElementById('linkedinField').style.display = 'flex'
-    document.getElementById('linked_btn').style.display = 'none'
-  }
-  document.getElementById('linked_btn').addEventListener('click', linkedin_x)
-
-  // ---------------------xxx-------------------
-  document.getElementById('cp_01').style.display = 'flex'
-  document.getElementById('cp_02').style.display = 'none'
-  document.getElementById('cp_03').style.display = 'none'
-
-  const add_certificate_02 = () => {
-    document.getElementById('cp_01').style.display = 'none'
-    document.getElementById('cp_02').style.display = 'flex'
-    document.getElementById('cp_03').style.display = 'none'
-    document
-      .getElementById('cancel_001')
-      .addEventListener('click', function () {
-        document.getElementById('cp_02').style.display = 'none'
-        document.getElementById('certificate_title_02').value = ''
-        document.getElementById('certificate_description_02').value = ''
-        document.getElementById('cp_01').style.display = 'flex'
-      })
-    document.getElementById('back_001').addEventListener('click', function () {
-      document.getElementById('cp_01').style.display = 'flex'
-      document.getElementById('cp_02').style.display = 'none'
-    })
-  }
-  const add_certificate_03 = () => {
-    document.getElementById('cp_02').style.display = 'none'
-    document.getElementById('cp_03').style.display = 'flex'
-    document.getElementById('cp_01').style.display = 'none'
-    document
-      .getElementById('cancel_002')
-      .addEventListener('click', function () {
-        document.getElementById('cp_03').style.display = 'none'
-        document.getElementById('certificate_title_03').value = ''
-        document.getElementById('certificate_description_03').value = ''
-        document.getElementById('cp_02').style.display = 'flex'
-      })
-
-    document.getElementById('back_002').addEventListener('click', function () {
-      document.getElementById('cp_02').style.display = 'flex'
-      document.getElementById('cp_03').style.display = 'none'
-    })
-  }
-  document
-    .getElementById('cert_btn_01')
-    .addEventListener('click', add_certificate_02)
-  document
-    .getElementById('cert_btn_02')
-    .addEventListener('click', add_certificate_03)
-
-  // ----------------------xxx-----------------------
-
-  document.getElementById('bcc_01').style.display = 'flex'
-  document.getElementById('bcc_02').style.display = 'none'
-  document.getElementById('bcc_03').style.display = 'none'
-  const add_experience_02 = () => {
-    document.getElementById('bcc_01').style.display = 'none'
-    document.getElementById('bcc_02').style.display = 'flex'
-    document.getElementById('bcc_03').style.display = 'none'
-    document.getElementById('cancel_01').addEventListener('click', function () {
-      document.getElementById('bcc_01').style.display = 'flex'
-      document.getElementById('bcc_02').style.display = 'none'
-      document.getElementById('exp_title_02').value = ''
-      document.getElementById('your_input_company_02').value = ''
-      document.getElementById('c_s_d_02').value = ''
-      document.getElementById('c_e_d_02').value = ''
-      document.getElementById('your_company_description_02').value = ''
-    })
-    document.getElementById('back_01').addEventListener('click', function () {
-      document.getElementById('bcc_01').style.display = 'flex'
-      document.getElementById('bcc_02').style.display = 'none'
-    })
-  }
-  const add_experience_03 = () => {
-    document.getElementById('bcc_01').style.display = 'none'
-    document.getElementById('bcc_02').style.display = 'none'
-    document.getElementById('bcc_03').style.display = 'flex'
-    document.getElementById('cancel_02').addEventListener('click', function () {
-      document.getElementById('bcc_02').style.display = 'flex'
-      document.getElementById('bcc_03').style.display = 'none'
-      document.getElementById('exp_title_03').value = ''
-      document.getElementById('your_input_company_03').value = ''
-      document.getElementById('c_s_d_03').value = ''
-      document.getElementById('c_e_d_03').value = ''
-      document.getElementById('your_company_description_03').value = ''
-    })
-    document.getElementById('back_02').addEventListener('click', function () {
-      document.getElementById('bcc_02').style.display = 'flex'
-      document.getElementById('bcc_03').style.display = 'none'
-    })
-  }
-
-  document.getElementById('btn_ex_01').addEventListener('click', add_experience_02)
-  document.getElementById('btn_ex_02').addEventListener('click', add_experience_03)
+  // -----------------------------xxx-----------------------
+  // loading function ----------------------->>>
   document.getElementById('bt_gen').addEventListener('click',()=>{
     document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
     setTimeout(()=>{
@@ -499,8 +330,7 @@ localStorage.setItem("imgData", imgData);
     console.log("YOU clicked on generate btn")
     },2000);
   })
-  
-  // -------|
+  // generate function --->
   const generate_fun2 = () => {
     // first-col-->
     let your_first_name = document.getElementById('nameField_first').value
@@ -568,170 +398,14 @@ localStorage.setItem("imgData", imgData);
 
     window.location.href = './resume_02/resume_02.html'
   }
-  
-  // let bton_gen = document.getElementById('generate_btn')
-  // bton_gen.addEventListener('click', generate_fun2)
 } else {
-  // Create new link Element
   var link = document.createElement('link')
-  // set the attributes for link element
   link.rel = 'stylesheet'
-
   link.type = 'text/css'
-
   link.href = './resume_03/resume_03.css'
-
-  // Get HTML head element to append
-  // link element to it
   document.getElementsByTagName('HEAD')[0].appendChild(link)
-  document.getElementById('linkedinField').style.display = 'none'
-  document.getElementById('codeChefField').style.display = 'none'
-  document.getElementById('fbField').style.display = 'none'
-  document.getElementById('githubField').style.display = 'none'
-  document.getElementById('instaField').style.display = 'none'
-
-  const codechef_x = () => {
-    document.getElementById('codeChefField').style.display = 'flex'
-    document.getElementById('codechef_btn').style.display = 'none'
-  }
-  document.getElementById('codechef_btn').addEventListener('click', codechef_x)
-
-  const leetcode_x = () => {
-    document.getElementById('fbField').style.display = 'flex'
-    document.getElementById('leetcode_btn').style.display = 'none'
-  }
-  document.getElementById('leetcode_btn').addEventListener('click', leetcode_x)
-
-  const github_x = () => {
-    document.getElementById('githubField').style.display = 'flex'
-    document.getElementById('github_btn').style.display = 'none'
-  }
-  document.getElementById('github_btn').addEventListener('click', github_x)
-
-  const insta_x = () => {
-    document.getElementById('instaField').style.display = 'flex'
-    document.getElementById('insta_btn').style.display = 'none'
-  }
-  document.getElementById('insta_btn').addEventListener('click', insta_x)
-
-  const linkedin_x = () => {
-    document.getElementById('linkedinField').style.display = 'flex'
-    document.getElementById('linked_btn').style.display = 'none'
-  }
-  document.getElementById('linked_btn').addEventListener('click', linkedin_x)
-
-  // ----------------------------xxx-------------------educations->
-  document.getElementById('aq_01').style.display = 'flex'
-  document.getElementById('aq_02').style.display = 'none'
-  document.getElementById('aq_03').style.display = 'none'
-const addEducation_02 = () =>{
-  document.getElementById('aq_01').style.display = 'none'
-  document.getElementById('aq_02').style.display = 'flex'
-  document.getElementById('aq_03').style.display = 'none'
-}
-
-const addEducation_03 = () =>{
-  document.getElementById('aq_01').style.display = 'none'
-  document.getElementById('aq_02').style.display = 'none'
-  document.getElementById('aq_03').style.display = 'flex'
-}
-
-  document.getElementById('btn_educ_01').addEventListener('click',addEducation_02)
-  document.getElementById('btn_educ_02').addEventListener('click',addEducation_03)
-  // --------|
-  // ---------------------xxx------------------- certificates_and_projects->
-  document.getElementById('cp_01').style.display = 'flex'
-  document.getElementById('cp_02').style.display = 'none'
-  document.getElementById('cp_03').style.display = 'none'
-
-  const add_certificate_02 = () => {
-    document.getElementById('cp_01').style.display = 'none'
-    document.getElementById('cp_02').style.display = 'flex'
-    document.getElementById('cp_03').style.display = 'none'
-    document
-      .getElementById('cancel_001')
-      .addEventListener('click', function () {
-        document.getElementById('cp_02').style.display = 'none'
-        document.getElementById('certificate_title_02').value = ''
-        document.getElementById('certificate_description_02').value = ''
-        document.getElementById('cp_01').style.display = 'flex'
-      })
-    document.getElementById('back_001').addEventListener('click', function () {
-      document.getElementById('cp_01').style.display = 'flex'
-      document.getElementById('cp_02').style.display = 'none'
-    })
-  }
-  const add_certificate_03 = () => {
-    document.getElementById('cp_02').style.display = 'none'
-    document.getElementById('cp_03').style.display = 'flex'
-    document.getElementById('cp_01').style.display = 'none'
-    document
-      .getElementById('cancel_002')
-      .addEventListener('click', function () {
-        document.getElementById('cp_03').style.display = 'none'
-        document.getElementById('certificate_title_03').value = ''
-        document.getElementById('certificate_description_03').value = ''
-        document.getElementById('cp_02').style.display = 'flex'
-      })
-
-    document.getElementById('back_002').addEventListener('click', function () {
-      document.getElementById('cp_02').style.display = 'flex'
-      document.getElementById('cp_03').style.display = 'none'
-    })
-  }
-  document
-    .getElementById('cert_btn_01')
-    .addEventListener('click', add_certificate_02)
-  document
-    .getElementById('cert_btn_02')
-    .addEventListener('click', add_certificate_03)
-  // --------|
-  // ----------------------xxx----------------------- experience->
-  document.getElementById('bcc_01').style.display = 'flex'
-  document.getElementById('bcc_02').style.display = 'none'
-  document.getElementById('bcc_03').style.display = 'none'
-  const add_experience_02 = () => {
-    document.getElementById('bcc_01').style.display = 'none'
-    document.getElementById('bcc_02').style.display = 'flex'
-    document.getElementById('bcc_03').style.display = 'none'
-    document.getElementById('cancel_01').addEventListener('click', function () {
-      document.getElementById('bcc_01').style.display = 'flex'
-      document.getElementById('bcc_02').style.display = 'none'
-      document.getElementById('exp_title_02').value = ''
-      document.getElementById('your_input_company_02').value = ''
-      document.getElementById('c_s_d_02').value = ''
-      document.getElementById('c_e_d_02').value = ''
-      document.getElementById('your_company_description_02').value = ''
-    })
-    document.getElementById('back_01').addEventListener('click', function () {
-      document.getElementById('bcc_01').style.display = 'flex'
-      document.getElementById('bcc_02').style.display = 'none'
-    })
-  }
-  const add_experience_03 = () => {
-    document.getElementById('bcc_01').style.display = 'none'
-    document.getElementById('bcc_02').style.display = 'none'
-    document.getElementById('bcc_03').style.display = 'flex'
-    document.getElementById('cancel_02').addEventListener('click', function () {
-      document.getElementById('bcc_02').style.display = 'flex'
-      document.getElementById('bcc_03').style.display = 'none'
-      document.getElementById('exp_title_03').value = ''
-      document.getElementById('your_input_company_03').value = ''
-      document.getElementById('c_s_d_03').value = ''
-      document.getElementById('c_e_d_03').value = ''
-      document.getElementById('your_company_description_03').value = ''
-    })
-
-    document.getElementById('back_02').addEventListener('click', function () {
-      document.getElementById('bcc_02').style.display = 'flex'
-      document.getElementById('bcc_03').style.display = 'none'
-    })
-  }
-
-  // document.getElementById('btn1').addEventListener('click', add_experience_02)
-  // document.getElementById('btn2').addEventListener('click', add_experience_03)
   // ----------------------xxx-----------------------
-  // --------|
+  // loading function ----------------------->>>
   document.getElementById('bt_gen').addEventListener('click',()=>{
     document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
     setTimeout(()=>{
@@ -740,19 +414,8 @@ const addEducation_03 = () =>{
     console.log("YOU clicked on generate btn")
     },3000);
   })
+    // generate function --->
   const generate_fun3 = () => {
     window.location.href = './resume_03/resume_03.html'
   }
-  let bton_gen = document.getElementById('generate_btn')
-  bton_gen.addEventListener('click', generate_fun3)
-}
-
-function load() {
-  setTimeout(stop, 3000)
-  generate_resume()
-  document.getElementById('area-cv').style.display = 'flex'
-}
-
-function stop() {
-  document.getElementById('bt_gen').classList.toggle('visible')
 }
