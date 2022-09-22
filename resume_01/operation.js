@@ -14,8 +14,8 @@ document.getElementById('first_name').innerHTML = localStorage.getItem(
   'your_first_name',
 )
 //  --|
-var dataImage = localStorage.getItem('imgData');
-var bannerImg = document.getElementById('home_profile_img');
+let dataImage = localStorage.getItem('imgData');
+document.getElementById('home_profile_img').src = dataImage;
 // bannerImg = document.getElementById('tableBanner');
 bannerImg.src = dataImage;
 // console.log(
