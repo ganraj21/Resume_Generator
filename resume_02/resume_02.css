@@ -699,9 +699,9 @@ label {
     top: 721px;
     width: 472px;
   }
-  label {
+  /* label {
     margin-left: 15px;
-  }
+  } */
   #db_02 {
     top: 719px;
     width: 476px;
@@ -733,6 +733,9 @@ label {
   label {
     width: 391px;
   }
+  .input_02 label {
+    margin-left: 15px;
+  }
   .first_col,
   .four_col {
     width: 380px;
@@ -745,8 +748,8 @@ label {
     top: 106px;
     width: 380px;
   }
-  .Your_photo {
-    top: 633px;
+  .custom-file-upload {
+    top: 645px;
     height: 50px;
     width: 380px;
   }
@@ -871,6 +874,9 @@ label {
     text-align: center;
     width: 344px;
     top: 30px;
+  }
+  .custom-file-upload {
+    top: 634px;
   }
   .input_01 {
     top: 306px;

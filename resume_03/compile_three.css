@@ -11,11 +11,13 @@ body {
 }
 .container {
   width: 80%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  position: absolute;
+  top: 20px;
 }
 .user_name {
   text-align: center;
@@ -36,6 +38,17 @@ li {
   margin-right: 9px;
   text-decoration: none;
 }
+.education,
+.Experience,
+.projects,
+.achivements,
+.experience_container,
+.technical-skills {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
 .qualification_title {
   display: flex;
   justify-content: space-between;
@@ -50,4 +63,16 @@ li {
 label {
   font-size: 27px;
   font-weight: bold;
+}
+
+@media screen and(max-width:580px) {
+  .container {
+    height: 780px;
+  }
+}
+@media screen and(max-width:480px) {
+}
+@media screen and(max-width:420px) {
+}
+@media screen and(max-width:370px) {
 }
