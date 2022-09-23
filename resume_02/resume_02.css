@@ -201,19 +201,14 @@ input[type="file"] {
   display: none;
 }
 .custom-file-upload {
+  top: 652px;
+}
+.upload_icon {
   display: flex;
-  position: absolute;
-  top: 542px;
-  width: 250px;
-  top: 628px;
-  margin-left: -1px;
-  height: 50px;
-  text-align: center;
   align-items: center;
   justify-content: center;
   align-content: center;
-  color: #fff;
-  outline: 1px solid #ffee00;
+  margin-right: 9px;
 }
 /* first column end here ---||---  */
 .imp_text {

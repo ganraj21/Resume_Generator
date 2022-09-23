@@ -80,6 +80,13 @@ body {
   position: absolute;
   border-radius: 3px;
 }
+.upload_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-right: 9px;
+}
 .name_field {
   width: 100%;
   display: flex;

@@ -1,6 +1,5 @@
 // back button ---->
 var cnt = 1
-// first back button is disable only enable when click first next button
 document.getElementById('bb_btn').disabled = true
 backFun = () => {
   if (cnt == 1) {
@@ -29,7 +28,6 @@ backFun = () => {
 }
 // -----------|-<
 // for-ward button
-// document.getElementById('nb_btn').disabled = true
 document.getElementById('bt_gen').style.display = 'none'
 nextFun = () => {
   if (cnt == 1) {
@@ -93,8 +91,6 @@ nextFun = () => {
   document.getElementById('linked_btn').addEventListener('click', linkedin_x)
   // --------|
 
-
-// generate_button = document.querySelector(".btn_gen_text");
   // --------------------------------------------- experience->
   document.getElementById('bcc_01').style.display = 'flex'
   document.getElementById('bcc_02').style.display = 'none'
@@ -112,7 +108,6 @@ nextFun = () => {
   document.getElementById('btn_ex_01').addEventListener('click',add_exp_02)
   document.getElementById('btn_ex_02').addEventListener('click',add_exp_03)
   // -------------------------------------xxx------------------------
-  // ------------------||
  // ---------------------xxx------------------- certificates_and_projects->
  document.getElementById('cp_01').style.display = 'flex'
  document.getElementById('cp_02').style.display = 'none'
@@ -245,21 +240,6 @@ var imgData = document.getElementById('your_profile_image').src;
 localStorage.setItem("imgData", imgData);
 
 
-// function getBase64Image(img) {
-//   var canvas = document.createElement("canvas");
-//   canvas.width = img.width;
-//   canvas.height = img.height;
-
-//   var ctx = canvas.getContext("2d");
-//   // ctx.drawImage(img, 0, 0);
-
-//   var dataURL = canvas.toDataURL("image/png");
-
-//   return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
-// }
-// let your_profile_image = document.getElementById('your_profile_image').value
-// localStorage.setItem('your_profile_image', your_profile_image)
-//-----|||
 
     let professional_profile_name = document.getElementById('profession_name')
       .value
@@ -311,7 +291,7 @@ localStorage.setItem("imgData", imgData);
 
     window.location.href = './resume_01/resume_01.html'
 
-    }
+  }
 
     
 } else if (localStorage.getItem('txtValue') == '2') {

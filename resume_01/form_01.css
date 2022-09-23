@@ -60,7 +60,11 @@ body {
   position: absolute;
   border-radius: 6px;
 }
-
+i {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+}
 .custom-file-upload:hover {
   box-shadow: inset 300px 0 0 0 yellow;
   color: black;
@@ -68,6 +72,9 @@ body {
 }
 
 input[type="file"] {
+  display: none;
+}
+#your_profile_image .uplaod_msg {
   display: none;
 }
 .custom-file-upload {
@@ -761,7 +768,10 @@ button {
   .first_col {
     width: 350px;
   }
-
+  .custom-file-upload {
+    width: 297px;
+    height: 138px;
+  }
   .div_fields {
     height: 100%;
     padding: 0px;
