@@ -321,11 +321,9 @@ img {
 }
 .home__title {
   font-size: 1.6rem;
-  /* font-size: var(--h1-font-size); */
 }
 .home__profession {
   font-size: 1.3rem;
-  /* font-size: var(--normal-font-size); */
   margin-bottom: var(--mb-1);
 }
 .home__address {
