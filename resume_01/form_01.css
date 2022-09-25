@@ -480,7 +480,6 @@ label {
 }
 .cpbtn {
   color: white;
-  margin-top: 20px;
   border: 1px solid #ffee00;
   background-color: transparent;
   border-radius: 3px;
@@ -489,12 +488,12 @@ label {
   color: black;
   background-color: #ffee00;
 }
-.btns span {
+/* .btns span {
   height: 36px;
   width: 31px;
   text-align: center;
   align-items: center;
-}
+} */
 .back_btn_cert,
 .cnacel_btn_cert {
   display: flex;
