@@ -60,11 +60,7 @@ body {
   position: absolute;
   border-radius: 6px;
 }
-i {
-  display: inline-block;
-  height: 1rem;
-  width: 1rem;
-}
+
 .custom-file-upload:hover {
   box-shadow: inset 300px 0 0 0 yellow;
   color: black;
@@ -299,8 +295,18 @@ label {
   width: 160px;
   align-content: center;
 }
+.bbtn,
 .cancle_btn {
+  width: 60px;
+  height: 45px;
+  color: #fff;
+  background: #2f0953;
   display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 2px;
+  font-size: 18px;
 }
 .back_can_btn {
   display: flex;
@@ -831,6 +837,7 @@ button {
   }
   #db_03 {
     top: 682px;
+    width: 352px;
   }
   #db_04 {
     width: 350px;
