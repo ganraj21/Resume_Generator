@@ -8,9 +8,9 @@ document.getElementById('last_name').innerHTML = localStorage.getItem(
 document.getElementById('first_name').innerHTML = localStorage.getItem(
   'your_first_name',
 )
-//  --|
-let dataImage = localStorage.getItem('imgData');
-document.getElementById('home_profile_img').src = dataImage;
+// //  --|
+// let dataImage = localStorage.getItem('imgData');
+// document.getElementById('home_profile_img').src = dataImage;
 // bannerImg = document.getElementById('tableBanner');
 // bannerImg.src = dataImage;
 // console.log(
@@ -37,16 +37,44 @@ document.getElementById('your-phone-no').innerHTML = localStorage.getItem(
 document.getElementById('your-profile-description').innerHTML = localStorage.getItem(
   'profile_about_information',
 )
+
+// experience section --->
+// your first experience -->
+console.log(
+document.getElementById('your_experience_title_01').innerHTML = localStorage.getItem(
+  'experience_title_01',
+)
+)
+document.getElementById('d_and_c_01').innerHTML = localStorage.getItem('company_title_01');
+document.getElementById('your_profile_experience_description_01').innerHTML = localStorage.getItem(
+  'experience_desc_01',
+)
+// your Second experience -->
+document.getElementById('your_experience_title_02').innerHTML = localStorage.getItem(
+  'experience_title_02',
+)
+document.getElementById('d_and_c_02').innerHTML = localStorage.getItem('company_title_02');
+document.getElementById('your_profile_experience_description_02').innerHTML = localStorage.getItem(
+  'experience_desc_02',
+)
+// your Third experience -->
+document.getElementById('your_experience_title_03').innerHTML = localStorage.getItem(
+  'experience_title_03',
+)
+document.getElementById('d_and_c_03').innerHTML = localStorage.getItem('company_title_03');
+document.getElementById('your_profile_experience_description_03').innerHTML = localStorage.getItem(
+  'experience_desc_03',
+)
+// ----------------------||
+
 // educational information --->
 // first qualification -->
 document.getElementById('education_title_01').innerHTML = localStorage.getItem(
   'academic_qualification_title_01',
 )
-
 document.getElementById('university_title_01').innerHTML = localStorage.getItem(
   'university_qualification_title_01',
 )
-
 document.getElementById('education_time_01').innerHTML = localStorage.getItem(
   'qualification_duration_01',
 )
@@ -54,11 +82,9 @@ document.getElementById('education_time_01').innerHTML = localStorage.getItem(
 document.getElementById('education_title_02').innerHTML = localStorage.getItem(
   'academic_qualification_title_02',
 )
-
 document.getElementById('university_title_02').innerHTML = localStorage.getItem(
   'university_qualification_title_02',
 )
-
 document.getElementById('education_time_02').innerHTML = localStorage.getItem(
   'qualification_duration_02',
 )
@@ -66,24 +92,15 @@ document.getElementById('education_time_02').innerHTML = localStorage.getItem(
 document.getElementById('education_title_03').innerHTML = localStorage.getItem(
   'academic_qualification_title_03',
 )
-
 document.getElementById('university_title_03').innerHTML = localStorage.getItem(
   'university_qualification_title_03',
 )
-
 document.getElementById('education_time_03').innerHTML = localStorage.getItem(
   'qualification_duration_03',
 )
+// -----------------------||
 
-// experience section --->
-document.getElementById('your_experience_title').innerHTML = localStorage.getItem(
-  'experience_title',
-)
 
-document.getElementById('d_and_c').innerHTML = localStorage.getItem('company_title');
-document.getElementById('your_profile_experience_description').innerHTML = localStorage.getItem(
-  'experience_desc',
-)
 // social media --
 // document.getElementById('link-of-linkedin').href = document.getElementById(
 //   'linkedinField',

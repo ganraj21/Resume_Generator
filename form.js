@@ -259,7 +259,6 @@ localStorage.setItem("imgData", imgData);
       'academic_qualification_title_01',
       academic_qualification_title_01,
     )
-
     let university_qualification_title_01 = document.getElementById(
       'University_Name_01',
     ).value
@@ -280,7 +279,6 @@ localStorage.setItem("imgData", imgData);
     'academic_qualification_title_02',
     academic_qualification_title_02,
   )
-
   let university_qualification_title_02 = document.getElementById(
     'University_Name_02',
   ).value
@@ -315,23 +313,58 @@ localStorage.setItem("imgData", imgData);
     let qualification_duration_03 = qualification_03 + ' - ' + duration_03
     localStorage.setItem('qualification_duration_03', qualification_duration_03)
 
-    
+ 
     // experience --->
-    let experience_title = document.getElementById('exp_title').value
-    localStorage.setItem('experience_title', experience_title)
+    // your first experience --->
+    let experience_title_01 = document.getElementById('exp_title_01').value
+    localStorage.setItem('experience_title_01', experience_title_01)
 
-    let company_title =
+    let company_title_01 =
       ' From ' +
-      document.getElementById('c_s_d').value +
+      document.getElementById('c_s_d_01').value +
       ' to ' +
-      document.getElementById('c_e_d').value +
+      document.getElementById('c_e_d_01').value +
       ' | ' +
-      document.getElementById('your_input_company').value
-    localStorage.setItem('company_title', company_title)
+      document.getElementById('your_input_company_01').value
+    localStorage.setItem('company_title_01', company_title_01)
 
-    let experience_desc = document.getElementById('your_company_description')
+    let experience_desc_01 = document.getElementById('your_company_description_01')
       .value
-    localStorage.setItem('experience_desc', experience_desc)
+    localStorage.setItem('experience_desc_01', experience_desc_01)
+  // your Second experience --->
+  let experience_title_02 = document.getElementById('exp_title_02').value
+  localStorage.setItem('experience_title_02', experience_title_02)
+
+  let company_title_02 =
+    ' From ' +
+    document.getElementById('c_s_d_02').value +
+    ' to ' +
+    document.getElementById('c_e_d_02').value +
+    ' | ' +
+    document.getElementById('your_input_company_02').value
+  localStorage.setItem('company_title_02', company_title_02)
+
+  let experience_desc_02 = document.getElementById('your_company_description_02')
+    .value
+  localStorage.setItem('experience_desc_02', experience_desc_02)
+    // your Third experience --->
+    let experience_title_03 = document.getElementById('exp_title_03').value
+    localStorage.setItem('experience_title_03', experience_title_03)
+
+    let company_title_03 =
+      ' From ' +
+      document.getElementById('c_s_d_03').value +
+      ' to ' +
+      document.getElementById('c_e_d_03').value +
+      ' | ' +
+      document.getElementById('your_input_company_03').value
+    localStorage.setItem('company_title_03', company_title_03)
+
+    let experience_desc_03 = document.getElementById('your_company_description_03')
+      .value
+    localStorage.setItem('experience_desc_03', experience_desc_03)
+
+    // -----------------------||
 
     window.location.href = './resume_01/resume_01.html'
 
