@@ -65,7 +65,7 @@ document.getElementById('your_profile_experience_description_03').innerHTML = lo
   'experience_desc_03',
 )
 // ----------------------||
-
+document.getElementById('home-profession').innerHTML = localStorage.getItem("profession_name",)
 // educational information --->
 // first qualification -->
 document.getElementById('education_title_01').innerHTML = localStorage.getItem(

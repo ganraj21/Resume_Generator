@@ -314,6 +314,11 @@ localStorage.setItem("imgData", imgData);
     localStorage.setItem('qualification_duration_03', qualification_duration_03)
 
  
+
+    // ----------------------||
+    let profession_name = document.getElementById('profession_name').value
+    localStorage.setItem("profession_name",profession_name)
+    // ----------------------||
     // experience --->
     // your first experience --->
     let experience_title_01 = document.getElementById('exp_title_01').value
