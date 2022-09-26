@@ -365,10 +365,51 @@ localStorage.setItem("imgData", imgData);
     localStorage.setItem('experience_desc_03', experience_desc_03)
 
     // -----------------------||
+// your certificates date is here --->
+// your first certificate --->
+let certificate_title_01 =  document.getElementById('certificate_title_01').value
+localStorage.setItem('certificate_title_01', certificate_title_01)
 
-    window.location.href = './resume_01/resume_01.html'
+let certificate_description_01 = document.getElementById('certificate_description_01').value
+localStorage.setItem('certificate_description_01', certificate_description_01)
+// your Second certificate --->
+let certificate_title_02 =  document.getElementById('certificate_title_02').value
+localStorage.setItem('certificate_title_02', certificate_title_02)
 
-  }
+let certificate_description_02 = document.getElementById('certificate_description_02').value
+localStorage.setItem('certificate_description_02', certificate_description_02)
+// your Third certificate --->
+
+let certificate_title_03 =  document.getElementById('certificate_title_03').value
+localStorage.setItem('certificate_title_03', certificate_title_03)
+
+let certificate_description_03 = document.getElementById('certificate_description_03').value
+localStorage.setItem('certificate_description_03', certificate_description_03)
+// -----------------------------||
+
+// your project data is here --->
+// first project --->
+let project_title_01 = document.getElementById('project_title_01').value
+localStorage.setItem('project_title_01',project_title_01)
+
+let project_description_01 = document.getElementById('project_description_01').value
+localStorage.setItem('project_description_01',project_description_01)
+// Second project --->
+let project_title_02 = document.getElementById('project_title_02').value
+localStorage.setItem('project_title_02',project_title_02)
+
+let project_description_02 = document.getElementById('project_description_02').value
+localStorage.setItem('project_description_02',project_description_02)
+// Third project --->
+let project_title_03 = document.getElementById('project_title_03').value
+localStorage.setItem('project_title_03',project_title_03)
+
+let project_description_03 = document.getElementById('project_description_03').value
+localStorage.setItem('project_description_03',project_description_03)
+// ----------------||
+window.location.href = './resume_01/resume_01.html'
+
+}
 
     
 } else if (localStorage.getItem('txtValue') == '2') {
