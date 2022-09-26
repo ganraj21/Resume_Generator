@@ -251,27 +251,71 @@ localStorage.setItem("imgData", imgData);
     localStorage.setItem('profile_about_information', profile_about_information)
 
     // education --->
-    let academic_qualification_title = document.getElementById(
+    // first education entry by user -->
+    let academic_qualification_title_01 = document.getElementById(
       'Qualification_Title_01',
     ).value
     localStorage.setItem(
-      'academic_qualification_title',
-      academic_qualification_title,
+      'academic_qualification_title_01',
+      academic_qualification_title_01,
     )
 
-    let university_qualification_title = document.getElementById(
+    let university_qualification_title_01 = document.getElementById(
       'University_Name_01',
     ).value
     localStorage.setItem(
-      'university_qualification_title',
-      university_qualification_title,
+      'university_qualification_title_01',
+      university_qualification_title_01,
     )
 
-    let qualification = document.getElementById('date_01_01').value
-    let duration = document.getElementById('date_02_01').value
-    let qualification_duration = qualification + ' - ' + duration
-    localStorage.setItem('qualification_duration', qualification_duration)
+    let qualification_01 = document.getElementById('date_01_01').value
+    let duration_01 = document.getElementById('date_02_01').value
+    let qualification_duration_01 = qualification_01 + ' - ' + duration_01
+    localStorage.setItem('qualification_duration_01', qualification_duration_01)
+   // Second education entry by user -->
+   let academic_qualification_title_02 = document.getElementById(
+    'Qualification_Title_02',
+  ).value
+  localStorage.setItem(
+    'academic_qualification_title_02',
+    academic_qualification_title_02,
+  )
 
+  let university_qualification_title_02 = document.getElementById(
+    'University_Name_02',
+  ).value
+  localStorage.setItem(
+    'university_qualification_title_02',
+    university_qualification_title_02,
+  )
+
+  let qualification_02 = document.getElementById('date_01_02').value
+  let duration_02 = document.getElementById('date_02_02').value
+  let qualification_duration_02 = qualification_02 + ' - ' + duration_02
+  localStorage.setItem('qualification_duration_02', qualification_duration_02)
+     // Third education entry by user -->
+     let academic_qualification_title_03 = document.getElementById(
+      'Qualification_Title_03',
+    ).value
+    localStorage.setItem(
+      'academic_qualification_title_03',
+      academic_qualification_title_03,
+    )
+
+    let university_qualification_title_03 = document.getElementById(
+      'University_Name_03',
+    ).value
+    localStorage.setItem(
+      'university_qualification_title_03',
+      university_qualification_title_03,
+    )
+
+    let qualification_03 = document.getElementById('date_01_03').value
+    let duration_03 = document.getElementById('date_02_03').value
+    let qualification_duration_03 = qualification_03 + ' - ' + duration_03
+    localStorage.setItem('qualification_duration_03', qualification_duration_03)
+
+    
     // experience --->
     let experience_title = document.getElementById('exp_title').value
     localStorage.setItem('experience_title', experience_title)

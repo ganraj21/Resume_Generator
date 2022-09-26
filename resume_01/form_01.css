@@ -478,7 +478,9 @@ label {
 .five_col label {
   display: flex;
 }
-.cpbtn {
+.cpbtn,
+.sbtn,
+.qbtn {
   color: white;
   border: 1px solid #ffee00;
   background-color: transparent;

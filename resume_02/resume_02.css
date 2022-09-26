@@ -476,6 +476,12 @@ label {
   top: 44px;
   position: absolute;
 }
+.back_can_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
 .qbtn,
 .sbtn,
 .ebtn,

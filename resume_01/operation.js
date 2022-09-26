@@ -1,9 +1,4 @@
 // Compiling information in Resume --->
-// document.getElementById('cv-form').style.display = 'none'
-// document.getElementById('cv-template').style.display = 'block'
-//console.log('Generating resume')
-// location.href = '#area-cv'
-
 document.getElementById('bd-con').style.display = 'flex'
 
 // setting your name here -->
@@ -17,7 +12,7 @@ document.getElementById('first_name').innerHTML = localStorage.getItem(
 let dataImage = localStorage.getItem('imgData');
 document.getElementById('home_profile_img').src = dataImage;
 // bannerImg = document.getElementById('tableBanner');
-bannerImg.src = dataImage;
+// bannerImg.src = dataImage;
 // console.log(
 // .innerHTML = localStorage.getItem("imgData",)
 // )
@@ -43,16 +38,41 @@ document.getElementById('your-profile-description').innerHTML = localStorage.get
   'profile_about_information',
 )
 // educational information --->
-document.getElementById('education-title').innerHTML = localStorage.getItem(
-  'academic_qualification_title',
+// first qualification -->
+document.getElementById('education_title_01').innerHTML = localStorage.getItem(
+  'academic_qualification_title_01',
 )
 
-document.getElementById('university_title').innerHTML = localStorage.getItem(
-  'university_qualification_title',
+document.getElementById('university_title_01').innerHTML = localStorage.getItem(
+  'university_qualification_title_01',
 )
 
-document.getElementById('education_time').innerHTML = localStorage.getItem(
-  'qualification_duration',
+document.getElementById('education_time_01').innerHTML = localStorage.getItem(
+  'qualification_duration_01',
+)
+// Second qualification -->
+document.getElementById('education_title_02').innerHTML = localStorage.getItem(
+  'academic_qualification_title_02',
+)
+
+document.getElementById('university_title_02').innerHTML = localStorage.getItem(
+  'university_qualification_title_02',
+)
+
+document.getElementById('education_time_02').innerHTML = localStorage.getItem(
+  'qualification_duration_02',
+)
+// Third qualification -->
+document.getElementById('education_title_03').innerHTML = localStorage.getItem(
+  'academic_qualification_title_03',
+)
+
+document.getElementById('university_title_03').innerHTML = localStorage.getItem(
+  'university_qualification_title_03',
+)
+
+document.getElementById('education_time_03').innerHTML = localStorage.getItem(
+  'qualification_duration_03',
 )
 
 // experience section --->
