@@ -17,7 +17,14 @@ body {
   align-content: center;
   height: 100%;
 }
-
+.resume_form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
 .first_col,
 .second_col,
 .third_col,
