@@ -466,11 +466,12 @@ const validationForm = () =>{
   let f_name = document.getElementById('nameField_first').value
   let l_name = document.getElementById('nameField_first').value
 
-  if(f_name != ""){
+  if(f_name != ""  && l_name != ""){
     nextFun()
     document.getElementById('nameField_first').style.border = "1px solid #1e0d35"
   }else{
-    document.getElementById('nameField_first').style.border = "1px solid red"
+    f_name==""? f_name..style.border = "1px solid red": l_name.style.border = "1px solid red"
+    //document.getElementById('nameField_first').style.border = "1px solid red"
   }
 
 }
