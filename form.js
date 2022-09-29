@@ -450,3 +450,22 @@ localStorage.setItem('project_description_03',project_description_03)
     window.location.href = './resume_03/resume_03.html'
   }
 }
+
+
+
+// -----------------form validation --->
+
+const validationForm = () =>{
+  let f_name = document.getElementById('nameField_first').value
+  let l_name = document.getElementById('nameField_first').value
+
+  if(f_name != ""  && l_name != ""){
+    nextFun()
+    document.getElementById('nameField_first').style.border = "1px solid #1e0d35"
+  }else{
+    document.getElementById('nameField_first').style.border = "1px solid red"
+  }
+
+}
+
+document.getElementById('nb_btns').addEventListener("click",validationForm)
