@@ -2,9 +2,7 @@
 document.getElementById('bd-con').style.display = 'flex'
 
 // setting your name here -->
-console.log(localStorage.getItem(
-  'your_last_name',
-))
+
 document.getElementById('last_name').innerHTML = localStorage.getItem(
   'your_last_name',
 )

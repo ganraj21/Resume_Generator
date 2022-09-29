@@ -200,17 +200,8 @@ const addEducation_03 = () =>{
 
   // ---------------------------------------------------------------------xxx-------------------------------------
      
-    // ---------------------------------------------------------------------xxx-------------------------------------
-console.log(localStorage.getItem('txtValue'))
-if (localStorage.getItem('txtValue') == '1') {
-  var link = document.createElement('link')
-  link.rel = 'stylesheet'
-  link.type = 'text/css'
-  link.href = './resume_01/form_01.css'
-  document.getElementsByTagName('HEAD')[0].appendChild(link)
-  // -----------------------------xxx-----------------------
- // first-col-->
-  
+  const form_data = () =>{
+    // first-col-->
  let your_first_name = document.getElementById('nameField_first').value
  localStorage.setItem('your_first_name', your_first_name)
   
@@ -395,6 +386,16 @@ localStorage.setItem('project_title_03',project_title_03)
 let project_description_03 = document.getElementById('project_description_03').value
 localStorage.setItem('project_description_03',project_description_03)
 // ----------------||
+  }
+    // ---------------------------------------------------------------------xxx-------------------------------------
+console.log(localStorage.getItem('txtValue'))
+if (localStorage.getItem('txtValue') == '1') {
+  var link = document.createElement('link')
+  link.rel = 'stylesheet'
+  link.type = 'text/css'
+  link.href = './resume_01/form_01.css'
+  document.getElementsByTagName('HEAD')[0].appendChild(link)
+  // -----------------------------xxx-----------------------
 
     // loading function ----------------------->>>
   document.getElementById('bt_gen').addEventListener('click',()=>{
@@ -407,7 +408,8 @@ localStorage.setItem('project_description_03',project_description_03)
   })
   // generate function --->
   const generate_fun = () => {
-          window.location.href = './resume_01/resume_01.html'
+    form_data();
+    window.location.href = './resume_01/resume_01.html'
   }   
 } else if (localStorage.getItem('txtValue') == '2') {
   var link = document.createElement('link')
@@ -427,6 +429,7 @@ localStorage.setItem('project_description_03',project_description_03)
   })
   // generate function --->
   const generate_fun2 = () => {
+    form_data();
     window.location.href = './resume_02/resume_02.html'
   }
 } else {
@@ -447,11 +450,10 @@ localStorage.setItem('project_description_03',project_description_03)
   })
     // generate function --->
   const generate_fun3 = () => {
+    form_data();
     window.location.href = './resume_03/resume_03.html'
   }
 }
-
-
 
 // -----------------form validation --->
 
