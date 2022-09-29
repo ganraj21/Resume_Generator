@@ -2,24 +2,20 @@
 document.getElementById('bd-con').style.display = 'flex'
 
 // setting your name here -->
+console.log(localStorage.getItem(
+  'your_last_name',
+))
 document.getElementById('last_name').innerHTML = localStorage.getItem(
   'your_last_name',
 )
 document.getElementById('first_name').innerHTML = localStorage.getItem(
   'your_first_name',
 )
-// //  --|
-// let dataImage = localStorage.getItem('imgData');
-// document.getElementById('home_profile_img').src = dataImage;
-// bannerImg = document.getElementById('tableBanner');
-// bannerImg.src = dataImage;
-// console.log(
-// .innerHTML = localStorage.getItem("imgData",)
-// )
+
 // setting your profession -->
-// document.getElementById('home-profession').innerHTML = localStorage.getItem(
-//   'professional_profile_name',
-// )
+document.getElementById('home-profession').innerHTML = localStorage.getItem(
+  'professional_profile_name',
+)
 
 // --|
 document.getElementById('your-address-here').innerHTML = localStorage.getItem(
@@ -123,9 +119,6 @@ document.getElementById('your_proj_03').innerHTML = localStorage.getItem("projec
 document.getElementById('your_proj_descrp_03').innerHTML = localStorage.getItem("project_description_03");
 
 
-
-
-
 /*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
@@ -181,7 +174,7 @@ let resumeButton = document.getElementById('resume-button')
 let opt = {
   margin: 0,
   filename: 'myResume.pdf',
-  image: { type: 'jpeg', quality: 0.98 },
+  image: { type: 'jpeg', quality: 0.99 },
   html2canvas: { scale: 4 },
   jsPDF: { format: 'a4', orientation: 'portrait' },
 }
