@@ -470,8 +470,7 @@ const validationForm = () =>{
     nextFun()
     document.getElementById('nameField_first').style.border = "1px solid #1e0d35"
   }else{
-    f_name==""? f_name..style.border = "1px solid red": l_name.style.border = "1px solid red"
-    //document.getElementById('nameField_first').style.border = "1px solid red"
+    document.getElementById('nameField_first').style.border = "1px solid red"
   }
 
 }
