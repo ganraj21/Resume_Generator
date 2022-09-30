@@ -330,10 +330,11 @@ img {
 .home__information {
   display: flex;
   align-items: center;
+  gap: 15px;
   font-size: var(--small-font-size);
 }
 .home__icon {
-  font-size: 1.2rem;
+  font-size: 22px;
   margin-right: 0.25rem;
 }
 
