@@ -1,5 +1,5 @@
 // Compiling information in Resume --->
-document.getElementById('bd-con').style.display = 'flex'
+// document.getElementById('bd-con').style.display = 'flex'
 
 // setting your name here -->
 

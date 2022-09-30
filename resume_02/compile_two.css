@@ -300,7 +300,7 @@ img {
 .home__data {
   background-color: blueviolet;
   gap: 0.5rem;
-  height: 128px;
+  height: 134px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -313,14 +313,29 @@ img {
 }
 .home__img {
   width: 120px;
+  position: relative;
+  top: 0px;
   height: 120px;
+  outline: 9px solid white;
+  margin-top: 6px;
   margin-right: 1.2rem;
   border-radius: 50%;
   justify-content: center;
   margin-bottom: var(--mb-1);
 }
 .home__title {
-  font-size: 1.6rem;
+  display: flex;
+  font-size: 28px;
+  width: 363px;
+  margin-top: -12px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#home-profession {
+  display: flex;
+  font-size: 27px;
+  margin-top: -13px;
+  margin-left: -73px;
 }
 .home__profession {
   font-size: 1.3rem;
@@ -497,6 +512,11 @@ img {
   .nav__list {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem 0.5rem;
+  }
+}
+@media screen and (max-width: 967px) {
+  .home__data {
+    background-color: transparent;
   }
 }
 

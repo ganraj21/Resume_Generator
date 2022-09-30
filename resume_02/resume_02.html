@@ -19,7 +19,7 @@
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
       <nav class="nav bd-container">
-        <a href="#" class="nav__logo">Smith</a>
+        <a href="#" class="nav__logo" id="your_logo_name">Smith</a>
 
         <div class="nav_menu" id="nav-menu">
           <ul class="nav__list">
@@ -75,10 +75,10 @@
             <div class="home__container section bd-grid">
               <div class="home__data bd-grid">
                 <!-- <img src="./img/perfil.jpg" alt="" class="home__img" /> -->
-                <h1 class="home__title">
+                <div class="home__title">
                   <h1 id="first_name">SMITH</h1>
                   <h1 id="last_name"><b>MATTHEW</b></h1>
-                </h1>
+                </div>
                 <h3 class="home_profession" id="home-profession">
                   Web developer
                 </h3>
@@ -465,5 +465,9 @@
     <!--========== MAIN JS ==========-->
     <!-- <script src="./js/main.js"></script> -->
     <script src="../resume_01/operation.js"></script>
+    <script>
+      document.getElementById("your_logo_name").innerHTML =
+        localStorage.getItem("your_first_name");
+    </script>
   </body>
 </html>
