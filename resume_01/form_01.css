@@ -498,12 +498,7 @@ label {
   color: black;
   background-color: #ffee00;
 }
-/* .btns span {
-  height: 36px;
-  width: 31px;
-  text-align: center;
-  align-items: center;
-} */
+
 .back_btn_cert,
 .cnacel_btn_cert {
   display: flex;
@@ -608,6 +603,30 @@ button {
   display: flex;
 }
 /* responsive code ---> */
+@media screen and (min-width: 600px) {
+  .first_col,
+  .second_col,
+  .third_col,
+  .four_col,
+  .five_col {
+    width: 504px;
+    height: 645px;
+  }
+  .first_col h3 {
+    top: 28px;
+    font-size: 22px;
+  }
+  .custom-file-upload {
+    top: 503px;
+  }
+  #db_01 {
+    top: 580px;
+  }
+  .input_02 {
+    top: 84px;
+  }
+}
+
 @media screen and (max-width: 580px) {
   .first_col,
   .second_col,

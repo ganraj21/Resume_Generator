@@ -48,14 +48,13 @@ h1 {
 }
 .imagee {
   display: flex;
-  /* height: 380px; */
   justify-content: center;
   align-items: center;
   padding: 25px 20px 20px 20px;
-  background-color: #1a1a3f;
-  border-radius: 9px;
+  background-color: #12123d;
+  border-radius: 4px;
   flex-direction: column;
-  box-shadow: inset 0px 1px 12px 6px #1a1a3f;
+  box-shadow: inset 0px 1px 12px 6px #12123d;
 }
 .imagee h4 {
   opacity: 0;

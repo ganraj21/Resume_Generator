@@ -26,6 +26,10 @@ document.getElementById('your-email-id').innerHTML = localStorage.getItem(
 document.getElementById('your-phone-no').innerHTML = localStorage.getItem(
   'your_phone_no',
 )
+// social media links --->
+
+console.log(localStorage.getItem('arr'))
+// ---------------------||
 
 // about section --->
 document.getElementById('your-profile-description').innerHTML = localStorage.getItem(

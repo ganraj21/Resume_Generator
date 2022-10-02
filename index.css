@@ -77,8 +77,8 @@ html {
   text-align: center;
 }
 .main_div1 h1 span {
-  margin-left: 9px;
-  color: hwb(193deg 0% 0%);
+  margin: 0px 9px;
+  color: hwb(107deg 0% 0%);
 }
 .main_div1 img {
   display: none;

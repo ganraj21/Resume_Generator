@@ -219,7 +219,11 @@ const addEducation_03 = () =>{
 
  let professional_profile_name = document.getElementById('profession_name').value
  localStorage.setItem('professional_profile_name', professional_profile_name)
-
+// social media links -->
+let codechef = document.getElementById('codeChefField').value;
+const arr = codechef.split('/');
+localStorage.setItem('arr', arr)
+// ----------------------||
  // about information -->
  let profile_about_information = document.getElementById('your-about-info').value
  localStorage.setItem('profile_about_information', profile_about_information)
@@ -456,6 +460,7 @@ if (localStorage.getItem('txtValue') == '1') {
 }
 
 // -----------------form validation --->
+
 
 const validationForm = () =>{
   let f_name = document.getElementById('nameField_first').value
