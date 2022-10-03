@@ -28,6 +28,8 @@ html {
 }
 .logo_text {
   font-size: 24px;
+  height: 26px;
+  font-weight: 500;
 }
 .bg_img {
   background: #0481b2;
