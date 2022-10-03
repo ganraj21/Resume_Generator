@@ -33,14 +33,6 @@ closeIcon.addEventListener('click',()=>{
   console.log("clicked on canceled")
 })
 
-const delay_fun = () =>{
-  setTimeout(console.log("you are clicked on nav menu"), 3000);
-  if(document.getElementById('nav_02')){
-    window.location.href = "./resume_reviews/rrviews.html"
-  }
-  
-  
-}
 const alt_fun = () =>{
   alert("WE ARE WORKING ON THIS TEMPLATE");
   console.log('WE ARE WORKING ON THIS TEMPLATE')

@@ -47,6 +47,9 @@ i {
 #cv-template {
   display: none;
 }
+.btn_gs:hover {
+  background-color: #b3064b;
+}
 
 .background {
   background-color: rgb(58, 58, 58);
