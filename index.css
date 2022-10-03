@@ -153,7 +153,7 @@ html {
     left: 35%;
   }
   .logo_text {
-    margin-left: -125px;
+    margin-left: -111px !important;
   }
   .main_div1 {
     height: 680px;
