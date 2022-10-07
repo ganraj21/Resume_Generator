@@ -11,7 +11,6 @@ const toggleMenu = () =>{
     // closeIcon.style.display = 'none'
     document.getElementById('menus').style.display = "flex";
     document.getElementById('cross').style.display = "none";
-    // menuIcon.style.display = 'block'
     // menuItems.style.color = 'white'
   } else {
     document.getElementById('cross').style.display = "flex";
