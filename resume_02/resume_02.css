@@ -517,6 +517,7 @@ label {
 #db_04 {
   top: 716px;
 }
+
 /* Forth column end here ---||--- */
 
 .five_col {
@@ -633,7 +634,6 @@ label {
 }
 
 .file-upload {
-  /* background-color: #ffffff; */
   margin: 0 auto;
   display: flex;
   padding: 10px;
@@ -711,9 +711,6 @@ label {
     top: 721px;
     width: 472px;
   }
-  /* label {
-    margin-left: 15px;
-  } */
   #db_02 {
     top: 719px;
     width: 476px;
