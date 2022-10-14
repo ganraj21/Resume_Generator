@@ -1,6 +1,4 @@
 // Compiling information in Resume --->
-// document.getElementById('bd-con').style.display = 'flex'
-
 // setting your name here -->
 
 document.getElementById('last_name').innerHTML = localStorage.getItem(
@@ -177,7 +175,7 @@ let opt = {
   margin: 0,
   filename: 'myResume.pdf',
   image: { type: 'jpeg', quality: 0.99 },
-  html2canvas: { scale: 4 },
+  html2canvas: { scale: 5 },
   jsPDF: { format: 'a4', orientation: 'portrait' },
 }
 // Function to call areaCv and Html2Pdf options

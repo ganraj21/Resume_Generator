@@ -72,6 +72,22 @@
         <div class="resume__left">
           <!--========== HOME ==========-->
           <section class="home" id="home">
+            <!-- Theme change button -->
+            <div class="operation_buttons">
+              <i
+                class="bx bx-moon change-theme"
+                title="Theme"
+                id="theme-button"
+              ></i>
+
+              <!-- Button to generate and download and download the pdf. Available for
+                        desktop -->
+              <i
+                class="bx bx-download generate-pdf"
+                title="Generate PDF"
+                id="resume-button"
+              ></i>
+            </div>
             <div class="home__container section bd-grid">
               <div class="home__data bd-grid">
                 <!-- <img src="./img/perfil.jpg" alt="" class="home__img" /> -->
@@ -84,7 +100,9 @@
                 </h3>
 
                 <div>
-                  <a download="" class="home__button-movil">Download</a>
+                  <a download="" class="home__button-movil" onclick="printCV()"
+                    >Download</a
+                  >
                 </div>
               </div>
               <div class="home_address bd-grid">
@@ -98,20 +116,8 @@
                 <span class="home__information" id="your-phone-no">
                   <i class="bx bx-phone home_icon"></i>999-888-777
                 </span>
-                <span class="home__information">
-                  <box-icon name="globe"></box-icon>
-                  https://github.com/resume/home
-                </span>
               </div>
             </div>
-
-            <!-- Button to generate and download and download the pdf. Available for
-            desktop -->
-            <i
-              class="bx bx-download generate-pdf"
-              title="Generate PDF"
-              id="resume-button"
-            ></i>
           </section>
 
           <!--========== SOCIAL ==========-->
@@ -179,7 +185,7 @@
             </div>
           </section>
           <!--========== INTERESTS ==========-->
-          <section class="interests section">
+          <!-- <section class="interests section">
             <h2 class="section-title">Interests</h2>
 
             <div class="interests__container bd-grid">
@@ -200,25 +206,7 @@
                 <span class="interests__name">Fitness</span>
               </div>
             </div>
-          </section>
-          <!--========== LANGUAGES ==========-->
-          <section class="languages section">
-            <h2 class="section-title">Languages</h2>
-
-            <div class="languages__container">
-              <ul class="languages__content bd-grid">
-                <li class="languages__name">
-                  <span class="languages__circle"></span>Spanish
-                </li>
-                <li class="languages__name">
-                  <span class="languages__circle"></span>English
-                </li>
-                <li class="languages__name">
-                  <span class="languages__circle"></span>French
-                </li>
-              </ul>
-            </div>
-          </section>
+          </section> -->
 
           <!--========== EDUCATION ==========-->
           <section class="education section" id="education">
@@ -232,7 +220,7 @@
                 </div>
 
                 <div class="education__data bd-grid">
-                  <h3 class="education__title" id="education-title_01">
+                  <h3 class="education__title" id="education_title_01">
                     MASTER OF DESIGN
                   </h3>
                   <span class="education__studies" id="university_title_01"
@@ -250,7 +238,7 @@
                 </div>
 
                 <div class="education__data bd-grid">
-                  <h3 class="education__title" id="education-title_02">
+                  <h3 class="education__title" id="education_title_02">
                     WEB DEVELOPER
                   </h3>
                   <span class="education__studies" id="university_title_02"
@@ -268,17 +256,36 @@
                 </div>
 
                 <div class="education__data bd-grid">
-                  <h3 class="education__title" id="education-title_02">
+                  <h3 class="education__title" id="education_title_03">
                     MASTER IN UI/UX
                   </h3>
-                  <span class="education__studies" id="university_title_02"
+                  <span class="education__studies" id="university_title_03"
                     >Institute Studies</span
                   >
-                  <span class="education__year" id="education_time_02"
+                  <span class="education__year" id="education_time_03"
                     >2019 - 2021</span
                   >
                 </div>
               </div>
+            </div>
+          </section>
+
+          <!--========== LANGUAGES ==========-->
+          <section class="languages section">
+            <h2 class="section-title">Languages</h2>
+
+            <div class="languages__container">
+              <ul class="languages__content bd-grid">
+                <li class="languages__name">
+                  <span class="languages__circle"></span>Spanish
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span>English
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span>French
+                </li>
+              </ul>
             </div>
           </section>
         </div>
@@ -463,7 +470,7 @@
     <!-- <script src="./js/html2pdf.bundle.min.js"></script> -->
 
     <!--========== MAIN JS ==========-->
-    <!-- <script src="./js/main.js"></script> -->
+    <script src="../resume/assets/js/html2pdf.bundle.min.js"></script>
     <script src="../resume_01/operation.js"></script>
     <script>
       document.getElementById("your_logo_name").innerHTML =

@@ -465,6 +465,7 @@ localStorage.setItem('project_description_03',project_description_03)
 // ----------------||
   }
     // ---------------------------------------------------------------------xxx-------------------------------------
+
 console.log(localStorage.getItem('txtValue'))
 if (localStorage.getItem('txtValue') == '1') {
   var link = document.createElement('link')
@@ -473,7 +474,8 @@ if (localStorage.getItem('txtValue') == '1') {
   link.href = './resume_01/form_01.css'
   document.getElementsByTagName('HEAD')[0].appendChild(link)
   // -----------------------------xxx-----------------------
-
+    // error message border color -->
+    var embc = "1px solid #1e0d35"
     // loading function ----------------------->>>
   document.getElementById('bt_gen').addEventListener('click',()=>{
     document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
@@ -495,6 +497,10 @@ if (localStorage.getItem('txtValue') == '1') {
   link.href = './resume_02/resume_02.css';
   document.getElementsByTagName('HEAD')[0].appendChild(link)
   // -----------------------------xxx-----------------------
+
+      // error message border color -->
+      var embc = "1px solid #fff"
+
   // loading function ----------------------->>>
   document.getElementById('bt_gen').addEventListener('click',()=>{
     document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
@@ -516,6 +522,10 @@ if (localStorage.getItem('txtValue') == '1') {
   link.href = './resume_03/resume_03.css'
   document.getElementsByTagName('HEAD')[0].appendChild(link)
   // ----------------------xxx-----------------------
+
+      // error message border color -->
+      var embc = "1px solid #00e7d6"
+
   // loading function ----------------------->>>
   document.getElementById('bt_gen').addEventListener('click',()=>{
     document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
@@ -543,11 +553,11 @@ const first_section = () =>{
   let address = document.getElementById('addressField').value.length
 
   let check_points = 0;
-  f_name !=0 ? (check_points+=1) && (document.getElementById('nameField_first').style.border = "1px solid #1e0d35"): document.getElementById('nameField_first').style.border = "1px solid red"
-  l_name !=0 ? (check_points+=1) && (document.getElementById('nameField_last').style.border = "1px solid #1e0d35"): document.getElementById('nameField_last').style.border = "1px solid red"
-  phone==10 ? (check_points+=1) && (document.getElementById('contactField-phone').style.border = "1px solid #1e0d35"): document.getElementById('contactField-phone').style.border = "1px solid red"
-  email !=0 ? (check_points+=1) && (document.getElementById('contactField-email').style.border = "1px solid #1e0d35"): document.getElementById('contactField-email').style.border = "1px solid red"
-  address !=0 ? (check_points+=1) && (document.getElementById('addressField').style.border = "1px solid #1e0d35"): document.getElementById('addressField').style.border = "1px solid red"
+  f_name !=0 ? (check_points+=1) && (document.getElementById('nameField_first').style.border = embc): document.getElementById('nameField_first').style.border = "1px solid red"
+  l_name !=0 ? (check_points+=1) && (document.getElementById('nameField_last').style.border = embc): document.getElementById('nameField_last').style.border = "1px solid red"
+  phone==10 ? (check_points+=1) && (document.getElementById('contactField-phone').style.border = embc): document.getElementById('contactField-phone').style.border = "1px solid red"
+  email !=0 ? (check_points+=1) && (document.getElementById('contactField-email').style.border = embc): document.getElementById('contactField-email').style.border = "1px solid red"
+  address !=0 ? (check_points+=1) && (document.getElementById('addressField').style.border = embc): document.getElementById('addressField').style.border = "1px solid red"
    
   if(check_points>=5){
     nextFun()
@@ -591,27 +601,27 @@ const third_section = () =>{
     let cnum_03 = arr_03.filter(word => word !== '').length;
 
 
-    exp_01 !=0 ? (check_points+=1) && (document.getElementById('exp_title_01').style.border = "1px solid #1e0d35"): document.getElementById('exp_title_01').style.border = "1px solid red"
-    exp_02 !=0 ? (check_points+=1) && (document.getElementById('exp_title_02').style.border = "1px solid #1e0d35"): document.getElementById('exp_title_02').style.border = "1px solid red"
-    exp_03 !=0 ? (check_points+=1) && (document.getElementById('exp_title_03').style.border = "1px solid #1e0d35"): document.getElementById('exp_title_03').style.border = "1px solid red"
+    exp_01 !=0 ? (check_points+=1) && (document.getElementById('exp_title_01').style.border = embc): document.getElementById('exp_title_01').style.border = "1px solid red"
+    exp_02 !=0 ? (check_points+=1) && (document.getElementById('exp_title_02').style.border = embc): document.getElementById('exp_title_02').style.border = "1px solid red"
+    exp_03 !=0 ? (check_points+=1) && (document.getElementById('exp_title_03').style.border = embc): document.getElementById('exp_title_03').style.border = "1px solid red"
 
-    exp_ic_01 !=0 ? (check_points+=1) && (document.getElementById('your_input_company_01').style.border = "1px solid #1e0d35"): document.getElementById('your_input_company_01').style.border = "1px solid red"
-    exp_ic_02 !=0 ? (check_points+=1) && (document.getElementById('your_input_company_02').style.border = "1px solid #1e0d35"): document.getElementById('your_input_company_02').style.border = "1px solid red"
-    exp_ic_03 !=0 ? (check_points+=1) && (document.getElementById('your_input_company_03').style.border = "1px solid #1e0d35"): document.getElementById('your_input_company_03').style.border = "1px solid red"
-
-
-    start_d_01 !=0 ? (check_points+=1) && (document.getElementById('c_s_d_01').style.border = "1px solid #1e0d35"): document.getElementById('c_s_d_01').style.border = "1px solid red"
-    start_d_02 !=0 ? (check_points+=1) && (document.getElementById('c_s_d_02').style.border = "1px solid #1e0d35"): document.getElementById('c_s_d_02').style.border = "1px solid red"
-    start_d_03 !=0 ? (check_points+=1) && (document.getElementById('c_s_d_03').style.border = "1px solid #1e0d35"): document.getElementById('c_s_d_03').style.border = "1px solid red"
-
-    end_d_01 !=0 ? (check_points+=1) && (document.getElementById('c_e_d_01').style.border = "1px solid #1e0d35"): document.getElementById('c_e_d_01').style.border = "1px solid red"
-    end_d_02 !=0 ? (check_points+=1) && (document.getElementById('c_e_d_02').style.border = "1px solid #1e0d35"): document.getElementById('c_e_d_02').style.border = "1px solid red"
-    end_d_03 !=0 ? (check_points+=1) && (document.getElementById('c_e_d_03').style.border = "1px solid #1e0d35"): document.getElementById('c_e_d_03').style.border = "1px solid red"
+    exp_ic_01 !=0 ? (check_points+=1) && (document.getElementById('your_input_company_01').style.border = embc): document.getElementById('your_input_company_01').style.border = "1px solid red"
+    exp_ic_02 !=0 ? (check_points+=1) && (document.getElementById('your_input_company_02').style.border = embc): document.getElementById('your_input_company_02').style.border = "1px solid red"
+    exp_ic_03 !=0 ? (check_points+=1) && (document.getElementById('your_input_company_03').style.border = embc): document.getElementById('your_input_company_03').style.border = "1px solid red"
 
 
-    cnum_01 >=20 ? (check_points+=1) && (document.getElementById('your_company_description_01').style.border = "1px solid #1e0d35"): document.getElementById('your_company_description_01').style.border = "1px solid red"
-    cnum_02 >=20 ? (check_points+=1) && (document.getElementById('your_company_description_02').style.border = "1px solid #1e0d35"): document.getElementById('your_company_description_02').style.border = "1px solid red"
-    cnum_03 >=20 ? (check_points+=1) && (document.getElementById('your_company_description_03').style.border = "1px solid #1e0d35"): document.getElementById('your_company_description_03').style.border = "1px solid red"
+    start_d_01 !=0 ? (check_points+=1) && (document.getElementById('c_s_d_01').style.border = embc): document.getElementById('c_s_d_01').style.border = "1px solid red"
+    start_d_02 !=0 ? (check_points+=1) && (document.getElementById('c_s_d_02').style.border = embc): document.getElementById('c_s_d_02').style.border = "1px solid red"
+    start_d_03 !=0 ? (check_points+=1) && (document.getElementById('c_s_d_03').style.border = embc): document.getElementById('c_s_d_03').style.border = "1px solid red"
+
+    end_d_01 !=0 ? (check_points+=1) && (document.getElementById('c_e_d_01').style.border = embc): document.getElementById('c_e_d_01').style.border = "1px solid red"
+    end_d_02 !=0 ? (check_points+=1) && (document.getElementById('c_e_d_02').style.border = embc): document.getElementById('c_e_d_02').style.border = "1px solid red"
+    end_d_03 !=0 ? (check_points+=1) && (document.getElementById('c_e_d_03').style.border = embc): document.getElementById('c_e_d_03').style.border = "1px solid red"
+
+
+    cnum_01 >=20 ? (check_points+=1) && (document.getElementById('your_company_description_01').style.border = embc): document.getElementById('your_company_description_01').style.border = "1px solid red"
+    cnum_02 >=20 ? (check_points+=1) && (document.getElementById('your_company_description_02').style.border = embc): document.getElementById('your_company_description_02').style.border = "1px solid red"
+    cnum_03 >=20 ? (check_points+=1) && (document.getElementById('your_company_description_03').style.border = embc): document.getElementById('your_company_description_03').style.border = "1px solid red"
   }
   about_info();
   bcc_experience();
@@ -686,13 +696,13 @@ const fifth_section = () =>{
   let cd_03 = arr_03.filter(word => word !== '').length;
 
 
-  cert_title_01 !=0 ? (check_points+=1) && (document.getElementById('certificate_title_01').style.border = "1px solid #1e0d35"): document.getElementById('certificate_title_01').style.border = "1px solid red"
-  cert_title_02 !=0 ? (check_points+=1) && (document.getElementById('certificate_title_02').style.border = "1px solid #1e0d35"): document.getElementById('certificate_title_02').style.border = "1px solid red"
-  cert_title_03 !=0 ? (check_points+=1) && (document.getElementById('certificate_title_03').style.border = "1px solid #1e0d35"): document.getElementById('certificate_title_03').style.border = "1px solid red"
+  cert_title_01 !=0 ? (check_points+=1) && (document.getElementById('certificate_title_01').style.border = embc): document.getElementById('certificate_title_01').style.border = "1px solid red"
+  cert_title_02 !=0 ? (check_points+=1) && (document.getElementById('certificate_title_02').style.border = embc): document.getElementById('certificate_title_02').style.border = "1px solid red"
+  cert_title_03 !=0 ? (check_points+=1) && (document.getElementById('certificate_title_03').style.border = embc): document.getElementById('certificate_title_03').style.border = "1px solid red"
 
-  cd_01 !=0 ? (check_points+=1) && (document.getElementById('certificate_description_01').style.border = "1px solid #1e0d35"): document.getElementById('certificate_description_01').style.border = "1px solid red"
-  cd_02 !=0 ? (check_points+=1) && (document.getElementById('certificate_description_02').style.border = "1px solid #1e0d35"): document.getElementById('certificate_description_02').style.border = "1px solid red"
-  cd_03 !=0 ? (check_points+=1) && (document.getElementById('certificate_description_03').style.border = "1px solid #1e0d35"): document.getElementById('certificate_description_03').style.border = "1px solid red"
+  cd_01 !=0 ? (check_points+=1) && (document.getElementById('certificate_description_01').style.border = embc): document.getElementById('certificate_description_01').style.border = "1px solid red"
+  cd_02 !=0 ? (check_points+=1) && (document.getElementById('certificate_description_02').style.border = embc): document.getElementById('certificate_description_02').style.border = "1px solid red"
+  cd_03 !=0 ? (check_points+=1) && (document.getElementById('certificate_description_03').style.border = embc): document.getElementById('certificate_description_03').style.border = "1px solid red"
 
 // projects -->
 
@@ -712,13 +722,13 @@ let pj_02 = arp_02.filter(word => word !== '').length;
 let pj_03 = arp_03.filter(word => word !== '').length;
 
 
-proj_title_01 !=0 ? (check_points+=1) && (document.getElementById('project_title_01').style.border = "1px solid #1e0d35"): document.getElementById('project_title_01').style.border = "1px solid red"
-proj_title_02 !=0 ? (check_points+=1) && (document.getElementById('project_title_02').style.border = "1px solid #1e0d35"): document.getElementById('project_title_02').style.border = "1px solid red"
-proj_title_03 !=0 ? (check_points+=1) && (document.getElementById('project_title_03').style.border = "1px solid #1e0d35"): document.getElementById('project_title_03').style.border = "1px solid red"
+proj_title_01 !=0 ? (check_points+=1) && (document.getElementById('project_title_01').style.border = embc): document.getElementById('project_title_01').style.border = "1px solid red"
+proj_title_02 !=0 ? (check_points+=1) && (document.getElementById('project_title_02').style.border = embc): document.getElementById('project_title_02').style.border = "1px solid red"
+proj_title_03 !=0 ? (check_points+=1) && (document.getElementById('project_title_03').style.border = embc): document.getElementById('project_title_03').style.border = "1px solid red"
 
-pj_01 >=20 ? (check_points+=1) && (document.getElementById('project_description_01').style.border = "1px solid #1e0d35"): document.getElementById('project_description_01').style.border = "1px solid red"
-pj_02 >=20 ? (check_points+=1) && (document.getElementById('project_description_02').style.border = "1px solid #1e0d35"): document.getElementById('project_description_02').style.border = "1px solid red"
-pj_03 >=20 ? (check_points+=1) && (document.getElementById('project_description_03').style.border = "1px solid #1e0d35"): document.getElementById('project_description_03').style.border = "1px solid red"
+pj_01 >=20 ? (check_points+=1) && (document.getElementById('project_description_01').style.border = embc): document.getElementById('project_description_01').style.border = "1px solid red"
+pj_02 >=20 ? (check_points+=1) && (document.getElementById('project_description_02').style.border = embc): document.getElementById('project_description_02').style.border = "1px solid red"
+pj_03 >=20 ? (check_points+=1) && (document.getElementById('project_description_03').style.border = embc): document.getElementById('project_description_03').style.border = "1px solid red"
 
 if(check_points>=12){
   nextFun()
@@ -750,10 +760,10 @@ const second_section = () =>{
 
 
   let check_points = 0 ;
-  linked_in_val !=0 ? (check_points+=1) && (document.getElementById('linkedinField').style.border = "1px solid #1e0d35"): document.getElementById('linkedinField').style.border = "1px solid red"
-  codechef_val !=0 ? (check_points+=1) && (document.getElementById('codeChefField').style.border = "1px solid #1e0d35"): document.getElementById('codeChefField').style.border = "1px solid red"
-  leetcode_val !=0 ? (check_points+=1) && (document.getElementById('fbField').style.border = "1px solid #1e0d35"): document.getElementById('fbField').style.border = "1px solid red"
-  github_val !=0 ? (check_points+=1) && (document.getElementById('githubField').style.border = "1px solid #1e0d35"): document.getElementById('githubField').style.border = "1px solid red"
+  linked_in_val !=0 ? (check_points+=1) && (document.getElementById('linkedinField').style.border = embc): document.getElementById('linkedinField').style.border = "1px solid red"
+  codechef_val !=0 ? (check_points+=1) && (document.getElementById('codeChefField').style.border = embc): document.getElementById('codeChefField').style.border = "1px solid red"
+  leetcode_val !=0 ? (check_points+=1) && (document.getElementById('fbField').style.border = embc): document.getElementById('fbField').style.border = "1px solid red"
+  github_val !=0 ? (check_points+=1) && (document.getElementById('githubField').style.border = embc): document.getElementById('githubField').style.border = "1px solid red"
   
 if(check_points>=4){
   nextFun()

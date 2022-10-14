@@ -12,6 +12,7 @@
   --container-color: #fafafa;
   --container-color-alt: #f0efef;
   --body-color: #fcfcfc;
+  --back-resume-img-color: rgb(217 217 217);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -53,16 +54,20 @@ body.dark-theme {
   --container-color: #212121;
   --container-color-alt: #181616;
   --body-color: #2b2b2b;
+  --back-resume-img-color: rgb(52 52 52);
 }
 /*========== Button Dark/Light ==========*/
 .change-theme {
   position: absolute;
   right: 0;
-  top: 2.2rem;
+  top: 16px;
   display: flex;
   color: var(--text-color);
   font-size: 1.2rem;
   cursor: pointer;
+}
+.operation_buttons {
+  display: flex;
 }
 /*========== Font size variables to scale cv ==========*/
 body.scale-cv {
@@ -75,7 +80,7 @@ body.scale-cv {
 }
 /*========== Generate PDF button ==========*/
 .generate-pdf {
-  display: none;
+  display: flex;
   position: absolute;
   top: 0.9rem;
   left: 0;
@@ -298,7 +303,7 @@ img {
 }
 
 .home__data {
-  background-color: blueviolet;
+  background-color: var(--back-resume-img-color);
   gap: 0.5rem;
   height: 134px;
   text-align: center;
@@ -577,10 +582,45 @@ img {
 
 /* /////// ---------- Profile image -------------/////////// */
 .home__data_img {
-  background-color: blueviolet;
+  background-color: var(--back-resume-img-color);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin: 2.7rem -1.55rem 0 -1.55rem;
+}
+
+@media screen and (max-width: 720px) {
+  .resume__left {
+    padding: 10px 21px 10px 21px;
+    background-color: var(--container-color-alt);
+  }
+  .resume__right {
+    padding: 10px 21px 10px 21px;
+  }
+  .home__title {
+    font-size: 25px;
+    width: 332px;
+  }
+  #home-profession {
+    margin-top: -9px;
+    margin-left: -42px;
+  }
+  .generate-pdf {
+    position: relative;
+    left: 25px;
+  }
+  .change-theme {
+    position: relative;
+  }
+  .operation_buttons {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 0 0 10px 0;
+  }
 }
