@@ -7,152 +7,189 @@
     <title>Resume third</title>
     <link rel="stylesheet" href="./compile_three.css" />
     <link rel="icon" type="image/x-icon" href="../Images/favicon.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
   </head>
   <body>
     <!-- resume-template -->
-    <div class="container" id="resume-template">
-      <h2 class="user_name">Ganesh Ghadge</h2>
-      <div class="important_links">
-        <ul>
-          <li>ganrajp036956@gmail.com</li>
-          <span>| </span>
-          <li>linkedin.com/in/ganesh-ghadge</li>
-          <span>| </span>
-          <li>github.com/ganraj21</li>
-        </ul>
-      </div>
+    <div class="resume_section_container">
+      <div class="resume_container">
+        <!-- Theme change button -->
+        <div class="operation_buttons">
+          <i
+            class="bx bx-moon change-theme"
+            title="Theme"
+            id="theme-button"
+          ></i>
 
-      <!-- Education here --->
-      <div class="education">
-        <label for="">Education</label>
-        <hr />
-        <div class="academics">
-          <div class="qualification_title">
-            <p class="academy_title">
-              Kalinga Institute of Industrial Technology
+          <!-- Button to generate and download and download the pdf. Available for
+                  desktop -->
+          <i
+            class="bx bx-download generate-pdf"
+            title="Generate PDF"
+            id="resume-button"
+          ></i>
+        </div>
+
+        <div class="container" id="resume-template">
+          <h2 class="user_name">Ganesh Ghadge</h2>
+          <div class="important_links">
+            <ul>
+              <li>ganrajp036956@gmail.com</li>
+              <span>| </span>
+              <li>linkedin.com/in/ganesh-ghadge</li>
+              <span>| </span>
+              <li>github.com/ganraj21</li>
+            </ul>
+          </div>
+
+          <!-- Education here --->
+          <div class="education">
+            <label for="">Education</label>
+            <hr />
+            <div class="academics">
+              <div class="qualification_title">
+                <p class="academy_title">
+                  Kalinga Institute of Industrial Technology
+                </p>
+                <p>
+                  <span class="start_date">August 2019</span> -
+                  <span class="end_date">July 2022</span>
+                </p>
+              </div>
+              <div class="qualification_title">
+                <p class="degree__name">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p>
+                  <span class="address">Pune, Maharastra</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience here --->
+          <div class="Experience">
+            <label for="">Experience</label>
+            <hr />
+            <div class="experience_container" id="experience-01">
+              <p class="your__position">Software Development Intern</p>
+              <p class="company__name">Atlassian</p>
+              <p class="exp__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestiae itaque porro quisquam explicabo asperiores fugit ea
+                quod voluptate omnis delectus quibusdam consequuntur molestias
+                blanditiis nostrum, accusamus dolore. Laboriosam, dolorem
+                fugiat?
+              </p>
+            </div>
+
+            <div class="experience_container" id="experience-02">
+              <p class="your__position">Software Development Intern</p>
+              <p class="company__name">Atlassian</p>
+              <p class="exp__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestiae itaque porro quisquam explicabo asperiores fugit ea
+                quod voluptate omnis delectus quibusdam consequuntur molestias
+                blanditiis nostrum, accusamus dolore. Laboriosam, dolorem
+                fugiat?
+              </p>
+            </div>
+
+            <div class="experience_container" id="experience-03">
+              <p class="your__position">Software Development Intern</p>
+              <p class="company__name">Atlassian</p>
+              <p class="exp__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestiae itaque porro quisquam explicabo asperiores fugit ea
+                quod voluptate omnis delectus quibusdam consequuntur molestias
+                blanditiis nostrum, accusamus dolore. Laboriosam, dolorem
+                fugiat?
+              </p>
+            </div>
+          </div>
+
+          <!-- Projects Here --->
+          <div class="projects">
+            <label for="">Projects</label>
+            <hr />
+            <div class="project-01">
+              <p class="project__title">
+                <span class="pj_name">Interview Experience Portal</span> |
+                <span class="project-languages">Java, SpringBoot, Mysql</span>
+              </p>
+              <p class="project__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                expedita perspiciatis odio nobis soluta voluptatibus, accusamus
+                rerum accusantium dignissimos veniam beatae officia quas
+                consectetur aliquid voluptas et totam facilis ut.
+              </p>
+              <p class="project__link">
+                <span>Code Link : </span>
+                <span class="your_project_link"
+                  >https://github.com/ganraj21/</span
+                >
+              </p>
+            </div>
+
+            <div class="project-02">
+              <p class="project__title">
+                <span class="pj_name">Interview Experience Portal</span> |
+                <span class="project-languages">Java, SpringBoot, Mysql</span>
+              </p>
+              <p class="project__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                expedita perspiciatis odio nobis soluta voluptatibus, accusamus
+                rerum accusantium dignissimos veniam beatae officia quas
+                consectetur aliquid voluptas et totam facilis ut.
+              </p>
+              <p class="project__link">
+                <span>Code Link : </span>
+                <span class="your_project_link"
+                  >https://github.com/ganraj21/</span
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Achivements here -->
+          <div class="achivements">
+            <label for="">Achivement</label>
+            <hr />
+            <ul class="achivement__list">
+              <li>AIR 53 and World rank 479 Hashcode 2022</li>
+              <li>78th rank in ICPC Kanpur Online Round 2021</li>
+              <li>QuaterFinalist/ Round 2 qualified in google CodeJam 2021</li>
+              <li>
+                AIR 57 and Global Rank 414 in qualification round of Facebook
+                HackerCup 2021
+              </li>
+              <li>
+                Global rank of 954 out of 10K+ user in Google KickStart 2020
+              </li>
+            </ul>
+          </div>
+
+          <!-- Technical Skills here  -->
+          <div class="technical-skills">
+            <label for="">Technical Skills</label>
+            <hr />
+            <p class="programming__languages">C++ , Java</p>
+            <p class="familiar_with_tech">React, SpringBoot, Java, MySQL</p>
+            <p class="developer__tools">
+              Git, BitBucket, Sublime Text, Visual Studio, Intellij, Eclipse
             </p>
-            <p>
-              <span class="start_date">August 2019</span> -
-              <span class="end_date">July 2022</span>
+            <p class="other__tech">
+              competitive programming, Data Structure & Algorithms
             </p>
           </div>
-          <div class="qualification_title">
-            <p class="degree__name">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-            <p>
-              <span class="address">Pune, Maharastra</span>
-            </p>
-          </div>
         </div>
-      </div>
-
-      <!-- Experience here --->
-      <div class="Experience">
-        <label for="">Experience</label>
-        <hr />
-        <div class="experience_container" id="experience-01">
-          <p class="your__position">Software Development Intern</p>
-          <p class="company__name">Atlassian</p>
-          <p class="exp__description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
-            itaque porro quisquam explicabo asperiores fugit ea quod voluptate
-            omnis delectus quibusdam consequuntur molestias blanditiis nostrum,
-            accusamus dolore. Laboriosam, dolorem fugiat?
-          </p>
-        </div>
-
-        <div class="experience_container" id="experience-02">
-          <p class="your__position">Software Development Intern</p>
-          <p class="company__name">Atlassian</p>
-          <p class="exp__description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
-            itaque porro quisquam explicabo asperiores fugit ea quod voluptate
-            omnis delectus quibusdam consequuntur molestias blanditiis nostrum,
-            accusamus dolore. Laboriosam, dolorem fugiat?
-          </p>
-        </div>
-
-        <div class="experience_container" id="experience-03">
-          <p class="your__position">Software Development Intern</p>
-          <p class="company__name">Atlassian</p>
-          <p class="exp__description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
-            itaque porro quisquam explicabo asperiores fugit ea quod voluptate
-            omnis delectus quibusdam consequuntur molestias blanditiis nostrum,
-            accusamus dolore. Laboriosam, dolorem fugiat?
-          </p>
-        </div>
-      </div>
-
-      <!-- Projects Here --->
-      <div class="projects">
-        <label for="">Projects</label>
-        <hr />
-        <div class="project-01">
-          <p class="project__title">
-            <span class="pj_name">Interview Experience Portal</span> |
-            <span class="project-languages">Java, SpringBoot, Mysql</span>
-          </p>
-          <p class="project__description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-            expedita perspiciatis odio nobis soluta voluptatibus, accusamus
-            rerum accusantium dignissimos veniam beatae officia quas consectetur
-            aliquid voluptas et totam facilis ut.
-          </p>
-          <p class="project__link">
-            <span>Code Link : </span>
-            <span class="your_project_link">https://github.com/ganraj21/</span>
-          </p>
-        </div>
-
-        <div class="project-02">
-          <p class="project__title">
-            <span class="pj_name">Interview Experience Portal</span> |
-            <span class="project-languages">Java, SpringBoot, Mysql</span>
-          </p>
-          <p class="project__description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-            expedita perspiciatis odio nobis soluta voluptatibus, accusamus
-            rerum accusantium dignissimos veniam beatae officia quas consectetur
-            aliquid voluptas et totam facilis ut.
-          </p>
-          <p class="project__link">
-            <span>Code Link : </span>
-            <span class="your_project_link">https://github.com/ganraj21/</span>
-          </p>
-        </div>
-      </div>
-
-      <!-- Achivements here -->
-      <div class="achivements">
-        <label for="">Achivement</label>
-        <hr />
-        <ul class="achivement__list">
-          <li>AIR 53 and World rank 479 Hashcode 2022</li>
-          <li>78th rank in ICPC Kanpur Online Round 2021</li>
-          <li>QuaterFinalist/ Round 2 qualified in google CodeJam 2021</li>
-          <li>
-            AIR 57 and Global Rank 414 in qualification round of Facebook
-            HackerCup 2021
-          </li>
-          <li>Global rank of 954 out of 10K+ user in Google KickStart 2020</li>
-        </ul>
-      </div>
-
-      <!-- Technical Skills here  -->
-      <div class="technical-skills">
-        <label for="">Technical Skills</label>
-        <hr />
-        <p class="programming__languages">C++ , Java</p>
-        <p class="familiar_with_tech">React, SpringBoot, Java, MySQL</p>
-        <p class="developer__tools">
-          Git, BitBucket, Sublime Text, Visual Studio, Intellij, Eclipse
-        </p>
-        <p class="other__tech">
-          competitive programming, Data Structure & Algorithms
-        </p>
       </div>
     </div>
+    <!--========== MAIN JS ==========-->
+    <script src="../resume/assets/js/html2pdf.bundle.min.js"></script>
+    <script src="../resume_01/operation.js"></script>
   </body>
 </html>

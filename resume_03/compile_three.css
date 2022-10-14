@@ -9,9 +9,29 @@ body {
   align-items: center;
   justify-content: center;
 }
-.container {
-  width: 80%;
+.resume_section_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   height: 100vh;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.resume_container {
+  width: 80%;
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+.operation_buttons {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+.container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,13 +85,20 @@ label {
   font-weight: bold;
 }
 
-@media screen and(max-width:580px) {
+@media screen and(min-width:1024px) {
+  .container {
+    height: 100vh;
+  }
+}
+@media screen and(max-width:720px) {
   .container {
     height: 780px;
   }
+  .important_links ul {
+    flex-direction: column !important;
+  }
 }
-@media screen and(max-width:480px) {
-}
+
 @media screen and(max-width:420px) {
 }
 @media screen and(max-width:370px) {

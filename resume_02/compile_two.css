@@ -112,12 +112,28 @@ body.scale-cv {
 .scale-cv .home__img {
   width: 90px;
   height: 90px;
+  margin-right: 1.5rem;
 }
 .scale-cv .home__container {
   gap: 1.5rem;
 }
 .scale-cv .home__data {
   gap: 0.25rem;
+  height: 104px;
+  margin-right: -1.55rem;
+  margin-left: -1.01rem;
+}
+.scale-cv .home__title {
+  font-size: 20px;
+  width: 271px;
+}
+.scale-cv #home-profession {
+  font-size: 21px;
+  margin-top: -9px;
+  margin-left: -40px;
+}
+.scale-cv .home__data_img {
+  margin: 2.7rem -1.1rem -1.55rem;
 }
 .scale-cv .home__address,
 .scale-cv .social__container {

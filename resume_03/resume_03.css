@@ -9,6 +9,7 @@ body {
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
 }
+
 .container_01 {
   flex-direction: column;
   display: flex;
