@@ -601,9 +601,9 @@ const third_section = () =>{
     end_d_03 !=0 ? (check_points+=1) && (document.getElementById('c_e_d_03').style.border = "1px solid #1e0d35"): document.getElementById('c_e_d_03').style.border = "1px solid red"
 
 
-    cnum_01 !=0 ? (check_points+=1) && (document.getElementById('your_company_description_01').style.border = "1px solid #1e0d35"): document.getElementById('your_company_description_01').style.border = "1px solid red"
-    cnum_02 !=0 ? (check_points+=1) && (document.getElementById('your_company_description_02').style.border = "1px solid #1e0d35"): document.getElementById('your_company_description_02').style.border = "1px solid red"
-    cnum_03 !=0 ? (check_points+=1) && (document.getElementById('your_company_description_03').style.border = "1px solid #1e0d35"): document.getElementById('your_company_description_03').style.border = "1px solid red"
+    cnum_01 >=20 ? (check_points+=1) && (document.getElementById('your_company_description_01').style.border = "1px solid #1e0d35"): document.getElementById('your_company_description_01').style.border = "1px solid red"
+    cnum_02 >=20 ? (check_points+=1) && (document.getElementById('your_company_description_02').style.border = "1px solid #1e0d35"): document.getElementById('your_company_description_02').style.border = "1px solid red"
+    cnum_03 >=20 ? (check_points+=1) && (document.getElementById('your_company_description_03').style.border = "1px solid #1e0d35"): document.getElementById('your_company_description_03').style.border = "1px solid red"
   }
   about_info();
   bcc_experience();
@@ -616,8 +616,6 @@ const forth_section = () =>{
   let profession = document.getElementById('profession_name').value.length
 let check_points = 0;
   profession !=0 ? (check_points+=1) && (document.getElementById('profession_name').style.border = "1px solid #1e0d35"): document.getElementById('profession_name').style.border = "1px solid red"
-
-
   const input_profec = () =>{
     let qt_01 = document.getElementById('Qualification_Title_01').value.length
     let qt_02 = document.getElementById('Qualification_Title_02').value.length
@@ -662,6 +660,64 @@ let check_points = 0;
   }
    
 }
+const fifth_section = () =>{
+  // certificates --> 
+  let cert_title_01 = document.getElementById('certificate_title_01').value.length
+  let cert_title_02 = document.getElementById('certificate_title_02').value.length
+  let cert_title_03 = document.getElementById('certificate_title_03').value.length
+
+  let cert_description_01 = document.getElementById('certificate_description_01').value;
+  let cert_description_02 = document.getElementById('certificate_description_02').value;
+  let cert_description_03 = document.getElementById('certificate_description_03').value;
+  const arr_01 = cert_description_01.split(' ');
+  const arr_02 = cert_description_02.split(' ');
+  const arr_03 = cert_description_03.split(' ');
+
+  let cd_01 = arr_01.filter(word => word !== '').length;
+  let cd_02 = arr_02.filter(word => word !== '').length;
+  let cd_03 = arr_03.filter(word => word !== '').length;
+
+
+  cert_title_01 !=0 ? (check_points+=1) && (document.getElementById('certificate_title_01').style.border = "1px solid #1e0d35"): document.getElementById('certificate_title_01').style.border = "1px solid red"
+  cert_title_02 !=0 ? (check_points+=1) && (document.getElementById('certificate_title_02').style.border = "1px solid #1e0d35"): document.getElementById('certificate_title_02').style.border = "1px solid red"
+  cert_title_03 !=0 ? (check_points+=1) && (document.getElementById('certificate_title_03').style.border = "1px solid #1e0d35"): document.getElementById('certificate_title_03').style.border = "1px solid red"
+
+  cd_01 !=0 ? (check_points+=1) && (document.getElementById('certificate_description_01').style.border = "1px solid #1e0d35"): document.getElementById('certificate_description_01').style.border = "1px solid red"
+  cd_02 !=0 ? (check_points+=1) && (document.getElementById('certificate_description_02').style.border = "1px solid #1e0d35"): document.getElementById('certificate_description_02').style.border = "1px solid red"
+  cd_03 !=0 ? (check_points+=1) && (document.getElementById('certificate_description_03').style.border = "1px solid #1e0d35"): document.getElementById('certificate_description_03').style.border = "1px solid red"
+
+// projects -->
+
+let proj_title_01 = document.getElementById('project_title_01').value.length
+let proj_title_02 = document.getElementById('project_title_02').value.length
+let proj_title_03 = document.getElementById('project_title_03').value.length
+
+let proj_description_01 = document.getElementById('project_description_01').value;
+let proj_description_02 = document.getElementById('project_description_02').value;
+let proj_description_03 = document.getElementById('project_description_03').value;
+const arp_01 = proj_description_01.split(' ');
+const arp_02 = proj_description_02.split(' ');
+const arp_03 = proj_description_03.split(' ');
+
+let pj_01 = arp_01.filter(word => word !== '').length;
+let pj_02 = arp_02.filter(word => word !== '').length;
+let pj_03 = arp_03.filter(word => word !== '').length;
+
+
+proj_title_01 !=0 ? (check_points+=1) && (document.getElementById('project_title_01').style.border = "1px solid #1e0d35"): document.getElementById('project_title_01').style.border = "1px solid red"
+proj_title_02 !=0 ? (check_points+=1) && (document.getElementById('project_title_02').style.border = "1px solid #1e0d35"): document.getElementById('project_title_02').style.border = "1px solid red"
+proj_title_03 !=0 ? (check_points+=1) && (document.getElementById('project_title_03').style.border = "1px solid #1e0d35"): document.getElementById('project_title_03').style.border = "1px solid red"
+
+pj_01 >=20 ? (check_points+=1) && (document.getElementById('project_description_01').style.border = "1px solid #1e0d35"): document.getElementById('project_description_01').style.border = "1px solid red"
+pj_02 >=20 ? (check_points+=1) && (document.getElementById('project_description_02').style.border = "1px solid #1e0d35"): document.getElementById('project_description_02').style.border = "1px solid red"
+pj_03 >=20 ? (check_points+=1) && (document.getElementById('project_description_03').style.border = "1px solid #1e0d35"): document.getElementById('project_description_03').style.border = "1px solid red"
+
+if(check_points>=12){
+  nextFun()
+}
+
+}
 document.getElementById('nb_btns_03').addEventListener("click",third_section)
 document.getElementById('nb_btns_04').addEventListener("click",forth_section)
+document.getElementById('nb_btns_04').addEventListener("click",fifth_section)
 document.getElementById('nb_btns_01').addEventListener("click",first_section)
