@@ -42,7 +42,7 @@ body {
 .user_name {
   text-align: center;
 }
-ul {
+#important_usernames {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -94,7 +94,7 @@ label {
   .container {
     height: 780px;
   }
-  .important_links ul {
+  #important_usernames {
     flex-direction: column !important;
   }
 }
