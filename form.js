@@ -495,19 +495,25 @@ if (localStorage.getItem('txtValue') == '1') {
 // -----------------form validation --->
 
 
-const validationForm = () =>{
-  let f_name = document.getElementById('nameField_first').value
-  let l_name = document.getElementById('nameField_first').value
+const first_section = () =>{
+  let f_name = document.getElementById('nameField_first').value.length
+  let l_name = document.getElementById('nameField_last').value.length
+  let phone = document.getElementById('contactField-phone').value.length
+  let email = document.getElementById('contactField-email').value.length
+  let address = document.getElementById('addressField').value.length
 
-  if(f_name != ""  && l_name != ""){
+  let check_points = 0;
+  f_name !=0 ? (check_points+=1) && (document.getElementById('nameField_first').style.border = "1px solid #1e0d35"): document.getElementById('nameField_first').style.border = "1px solid red"
+  l_name !=0 ? (check_points+=1) && (document.getElementById('nameField_last').style.border = "1px solid #1e0d35"): document.getElementById('nameField_last').style.border = "1px solid red"
+  phone==10 ? (check_points+=1) && (document.getElementById('contactField-phone').style.border = "1px solid #1e0d35"): document.getElementById('contactField-phone').style.border = "1px solid red"
+  email !=0 ? (check_points+=1) && (document.getElementById('contactField-email').style.border = "1px solid #1e0d35"): document.getElementById('contactField-email').style.border = "1px solid red"
+  address !=0 ? (check_points+=1) && (document.getElementById('addressField').style.border = "1px solid #1e0d35"): document.getElementById('addressField').style.border = "1px solid red"
+   
+  if(check_points>=5){
     nextFun()
-    document.getElementById('nameField_first').style.border = "1px solid #1e0d35"
-  }else{
-    document.getElementById('nameField_first').style.border = "1px solid red"
+    console.log("first section")
   }
-
 }
-// document.getElementById('nb_btns').disabled = true
 const third_section = () =>{
   var check_points = 0;
   const about_info = () =>{
@@ -560,7 +566,6 @@ else{
   alert("Enter your experience Start Date and End Date")
 }
 
-
     let exp_cd_01 = document.getElementById('your_company_description_01').value;
     let exp_cd_02 = document.getElementById('your_company_description_02').value;
     let exp_cd_03 = document.getElementById('your_company_description_03').value;
@@ -588,5 +593,5 @@ else{
   }
  
 }
-document.getElementById('nb_btns_02').addEventListener("click",third_section)
-// document.getElementById('nb_btns').addEventListener("click",validationForm)
+document.getElementById('nb_btns_03').addEventListener("click",third_section)
+document.getElementById('nb_btns_01').addEventListener("click",first_section)
