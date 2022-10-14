@@ -92,6 +92,7 @@ nextFun = () => {
   // --------|
 
   // --------------------------------------------- experience->
+  
   document.getElementById('bcc_01').style.display = 'flex'
   document.getElementById('bcc_02').style.display = 'none'
   document.getElementById('bcc_03').style.display = 'none'
@@ -107,6 +108,8 @@ nextFun = () => {
   }
   document.getElementById('btn_ex_01').addEventListener('click',add_exp_02)
   document.getElementById('btn_ex_02').addEventListener('click',add_exp_03)
+
+
   // -------------------------------------xxx------------------------
  // ---------------------xxx------------------- certificates_and_projects->
  document.getElementById('cp_01').style.display = 'flex'
@@ -200,7 +203,7 @@ const addEducation_03 = () =>{
 
   // ---------------------------------------------------------------------xxx-------------------------------------
      
-  const form_data = () =>{
+const form_data = () =>{
     // first-col-->
  let your_first_name = document.getElementById('nameField_first').value
  localStorage.setItem('your_first_name', your_first_name)
@@ -474,5 +477,86 @@ const validationForm = () =>{
   }
 
 }
+// document.getElementById('nb_btns').disabled = true
+const third_section = () =>{
+  var check_points = 0;
+  const about_info = () =>{
+    let count = document.getElementById('your-about-info').value ;
+    const arr = count.split(' ');
+    let cnum = arr.filter(word => word !== '').length;
+    if(cnum > 25){
+      // nextFun()
+      check_points += 1;
+    }
+    else{
+      alert("you must write minimum 25 words about yourself.")
+    }
+  }
+  const bcc_experience = ()=>{
+    let exp_01 = document.getElementById('exp_title_01').value.length;
+    let exp_02 = document.getElementById('exp_title_02').value.length;
+    let exp_03 = document.getElementById('exp_title_03').value.length;
 
-document.getElementById('nb_btns').addEventListener("click",validationForm)
+    if(exp_01 !=0 && exp_02 !=0 && exp_03 !=0){
+      check_points += 1;
+    }
+    else{
+      alert("Enter your experience title")
+    }
+
+    let exp_ic_01 = document.getElementById('your_input_company_01').value.length;
+    let exp_ic_02 = document.getElementById('your_input_company_02').value.length;
+    let exp_ic_03 = document.getElementById('your_input_company_03').value.length;
+
+    if(exp_ic_01 !=0 && exp_ic_02 !=0 && exp_ic_03 !=0){
+      check_points += 1;
+    }
+    else{
+      alert("Enter your experience company title")
+    }
+
+    let start_d_01 = document.getElementById('c_s_d_01').value.length
+    let start_d_02 = document.getElementById('c_s_d_02').value.length
+    let start_d_03 = document.getElementById('c_s_d_03').value.length
+
+    let end_d_01 = document.getElementById('c_e_d_01').value.length
+    let end_d_02 = document.getElementById('c_e_d_02').value.length
+    let end_d_03 = document.getElementById('c_e_d_03').value.length
+
+if((start_d_01 !=0 && start_d_02 !=0 && start_d_03 !=0) && (end_d_01 !=0 && end_d_02 !=0 && end_d_03 !=0)){
+  check_points += 1;
+}
+else{
+  alert("Enter your experience Start Date and End Date")
+}
+
+
+    let exp_cd_01 = document.getElementById('your_company_description_01').value;
+    let exp_cd_02 = document.getElementById('your_company_description_02').value;
+    let exp_cd_03 = document.getElementById('your_company_description_03').value;
+    const arr_01 = exp_cd_01.split(' ');
+    const arr_02 = exp_cd_02.split(' ');
+    const arr_03 = exp_cd_03.split(' ');
+
+    let cnum_01 = arr_01.filter(word => word !== '').length;
+    let cnum_02 = arr_02.filter(word => word !== '').length;
+    let cnum_03 = arr_03.filter(word => word !== '').length;
+
+
+
+    if(cnum_01>20 && cnum_02>20 && cnum_03>20){
+      check_points += 1;
+    }
+    else{
+      alert("Enter your experience company description")
+    }
+  }
+  about_info();
+  bcc_experience();
+  if(check_points>=5){
+    nextFun()
+  }
+ 
+}
+document.getElementById('nb_btns_02').addEventListener("click",third_section)
+// document.getElementById('nb_btns').addEventListener("click",validationForm)

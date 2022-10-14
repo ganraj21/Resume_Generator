@@ -213,6 +213,9 @@ img {
   margin-left: var(--mb-3);
   margin-right: var(--mb-3);
   display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 .bd-grid {
   display: grid;
