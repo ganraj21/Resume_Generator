@@ -540,9 +540,9 @@ if (localStorage.getItem('txtValue') == '1') {
   }
 }
 
+
+
 // -----------------form validation --->
-
-
 const first_section = () =>{
   let f_name = document.getElementById('nameField_first').value.length
   let l_name = document.getElementById('nameField_last').value.length
@@ -765,9 +765,7 @@ const second_section = () =>{
 if(check_points>=4){
   nextFun()
 }
-
 }
-
 
 document.getElementById('nb_btns_03').addEventListener("click",third_section)
 document.getElementById('nb_btns_04').addEventListener("click",forth_section)
