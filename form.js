@@ -141,6 +141,57 @@ nextFun = () => {
 
 
   // -------------------------------------xxx------------------------
+
+  
+  // ----------------------------xxx-------------------educations->
+  document.getElementById('aq_01').style.display = 'flex'
+  document.getElementById('aq_02').style.display = 'none'
+  document.getElementById('aq_03').style.display = 'none'
+const addEducation_02 = () =>{
+  document.getElementById('aq_01').style.display = 'none'
+  document.getElementById('aq_02').style.display = 'flex'
+  document.getElementById('aq_03').style.display = 'none'
+  document
+    .getElementById('aq_cancle_01')
+    .addEventListener('click', function () {
+      document.getElementById('aq_02').style.display = 'none'
+      document.getElementById('Qualification_Title_02').value = ''
+      document.getElementById('University_Name_02').value = ''
+      document.getElementById('date_01_02').value = " "
+      document.getElementById('date_02_02').value = " "
+      document.getElementById('aq_01').style.display = 'flex'
+    })
+  document.getElementById('aq_back_01').addEventListener('click', function () {
+    document.getElementById('aq_01').style.display = 'flex'
+    document.getElementById('aq_02').style.display = 'none'
+  })
+}
+const addEducation_03 = () =>{
+  document.getElementById('aq_01').style.display = 'none'
+  document.getElementById('aq_02').style.display = 'none'
+  document.getElementById('aq_03').style.display = 'flex'
+
+  document
+  .getElementById('aq_cancle_01')
+  .addEventListener('click', function () {
+    document.getElementById('aq_03').style.display = 'none'
+    document.getElementById('Qualification_Title_03').value = ''
+    document.getElementById('University_Name_03').value = ''
+    document.getElementById('date_01_03').value = " "
+    document.getElementById('date_02_03').value = " "
+    document.getElementById('aq_02').style.display = 'flex'
+  })
+document.getElementById('aq_back_01').addEventListener('click', function () {
+  document.getElementById('aq_02').style.display = 'flex'
+  document.getElementById('aq_03').style.display = 'none'
+})
+}
+
+  document.getElementById('btn_educ_01').addEventListener('click',addEducation_02)
+  document.getElementById('btn_educ_02').addEventListener('click',addEducation_03)
+  // --------|
+
+
  // ---------------------xxx------------------- certificates_and_projects->
  document.getElementById('cp_01').style.display = 'flex'
  document.getElementById('cp_02').style.display = 'none'
@@ -211,25 +262,6 @@ nextFun = () => {
    .addEventListener('click', add_proj_03)
 
 // -----------|-<
-
-  // ----------------------------xxx-------------------educations->
-  document.getElementById('aq_01').style.display = 'flex'
-  document.getElementById('aq_02').style.display = 'none'
-  document.getElementById('aq_03').style.display = 'none'
-const addEducation_02 = () =>{
-  document.getElementById('aq_01').style.display = 'none'
-  document.getElementById('aq_02').style.display = 'flex'
-  document.getElementById('aq_03').style.display = 'none'
-}
-const addEducation_03 = () =>{
-  document.getElementById('aq_01').style.display = 'none'
-  document.getElementById('aq_02').style.display = 'none'
-  document.getElementById('aq_03').style.display = 'flex'
-}
-
-  document.getElementById('btn_educ_01').addEventListener('click',addEducation_02)
-  document.getElementById('btn_educ_02').addEventListener('click',addEducation_03)
-  // --------|
 
   // ---------------------------------------------------------------------xxx-------------------------------------
      
@@ -580,6 +612,56 @@ const third_section = () =>{
   }
  
 }
+const forth_section = () =>{
+  let profession = document.getElementById('profession_name').value.length
+let check_points = 0;
+  profession !=0 ? (check_points+=1) && (document.getElementById('profession_name').style.border = "1px solid #1e0d35"): document.getElementById('profession_name').style.border = "1px solid red"
+
+
+  const input_profec = () =>{
+    let qt_01 = document.getElementById('Qualification_Title_01').value.length
+    let qt_02 = document.getElementById('Qualification_Title_02').value.length
+    let qt_03 = document.getElementById('Qualification_Title_03').value.length
+
+    let qt_uname_01 = document.getElementById('University_Name_01').value.length
+    let qt_uname_02 = document.getElementById('University_Name_02').value.length
+    let qt_uname_03 = document.getElementById('University_Name_03').value.length
+
+    let qt_start_d_01 = document.getElementById('date_01_01').value.length
+    let qt_start_d_02 = document.getElementById('date_01_02').value.length
+    let qt_start_d_03 = document.getElementById('date_01_03').value.length
+
+    let qt_end_d_01 = document.getElementById('date_02_01').value.length
+    let qt_end_d_02 = document.getElementById('date_02_02').value.length
+    let qt_end_d_03 = document.getElementById('date_02_03').value.length
+
+
+    qt_01 !=0 ? (check_points+=1) && (document.getElementById('Qualification_Title_01').style.border = "1px solid #1e0d35"): document.getElementById('Qualification_Title_01').style.border = "1px solid red"
+    qt_02 !=0 ? (check_points+=1) && (document.getElementById('Qualification_Title_02').style.border = "1px solid #1e0d35"): document.getElementById('Qualification_Title_02').style.border = "1px solid red"
+    qt_03 !=0 ? (check_points+=1) && (document.getElementById('Qualification_Title_03').style.border = "1px solid #1e0d35"): document.getElementById('Qualification_Title_03').style.border = "1px solid red"
+
+    qt_uname_01 !=0 ? (check_points+=1) && (document.getElementById('University_Name_01').style.border = "1px solid #1e0d35"): document.getElementById('University_Name_01').style.border = "1px solid red"
+    qt_uname_02 !=0 ? (check_points+=1) && (document.getElementById('University_Name_02').style.border = "1px solid #1e0d35"): document.getElementById('University_Name_02').style.border = "1px solid red"
+    qt_uname_03 !=0 ? (check_points+=1) && (document.getElementById('University_Name_03').style.border = "1px solid #1e0d35"): document.getElementById('University_Name_03').style.border = "1px solid red"
+
+
+    qt_start_d_01 !=0 ? (check_points+=1) && (document.getElementById('date_01_01').style.border = "1px solid #1e0d35"): document.getElementById('date_01_01').style.border = "1px solid red"
+    qt_start_d_02 !=0 ? (check_points+=1) && (document.getElementById('date_01_02').style.border = "1px solid #1e0d35"): document.getElementById('date_01_02').style.border = "1px solid red"
+    qt_start_d_03 !=0 ? (check_points+=1) && (document.getElementById('date_01_03').style.border = "1px solid #1e0d35"): document.getElementById('date_01_03').style.border = "1px solid red"
+
+    qt_end_d_01 !=0 ? (check_points+=1) && (document.getElementById('date_02_01').style.border = "1px solid #1e0d35"): document.getElementById('date_02_01').style.border = "1px solid red"
+    qt_end_d_02 !=0 ? (check_points+=1) && (document.getElementById('date_02_02').style.border = "1px solid #1e0d35"): document.getElementById('date_02_02').style.border = "1px solid red"
+    qt_end_d_03 !=0 ? (check_points+=1) && (document.getElementById('date_02_03').style.border = "1px solid #1e0d35"): document.getElementById('date_02_03').style.border = "1px solid red"
+
+  }
+
+  input_profec()
+  if(check_points>=12){
+    nextFun()
+    console.log("forth section")
+  }
+   
+}
 document.getElementById('nb_btns_03').addEventListener("click",third_section)
-document.getElementById('nb_btns_04').addEventListener("click",first_section)
+document.getElementById('nb_btns_04').addEventListener("click",forth_section)
 document.getElementById('nb_btns_01').addEventListener("click",first_section)
