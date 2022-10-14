@@ -41,7 +41,7 @@ body {
   height: 784px;
   position: absolute;
   border-radius: 6px;
-  top: 24px;
+  /* top: 24px; */
   padding: 10px 0px 10px 0px;
 }
 .first_col h3 {
@@ -610,7 +610,6 @@ button {
   .four_col,
   .five_col {
     width: 504px;
-    height: 645px;
   }
   .first_col h3 {
     top: 28px;
