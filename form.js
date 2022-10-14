@@ -58,7 +58,6 @@ nextFun = () => {
   document.getElementById('codeChefField').style.display = 'none'
   document.getElementById('fbField').style.display = 'none'
   document.getElementById('githubField').style.display = 'none'
-  document.getElementById('instaField').style.display = 'none'
 
   const codechef_x = () => {
     document.getElementById('codeChefField').style.display = 'flex'
@@ -77,12 +76,6 @@ nextFun = () => {
     document.getElementById('github_btn').style.display = 'none'
   }
   document.getElementById('github_btn').addEventListener('click', github_x)
-
-  const insta_x = () => {
-    document.getElementById('instaField').style.display = 'flex'
-    document.getElementById('insta_btn').style.display = 'none'
-  }
-  document.getElementById('insta_btn').addEventListener('click', insta_x)
 
   const linkedin_x = () => {
     document.getElementById('linkedinField').style.display = 'flex'
@@ -157,8 +150,8 @@ const addEducation_02 = () =>{
       document.getElementById('aq_02').style.display = 'none'
       document.getElementById('Qualification_Title_02').value = ''
       document.getElementById('University_Name_02').value = ''
-      document.getElementById('date_01_02').value = " "
-      document.getElementById('date_02_02').value = " "
+      document.getElementById('date_01_02').value = ''
+      document.getElementById('date_02_02').value = ''
       document.getElementById('aq_01').style.display = 'flex'
     })
   document.getElementById('aq_back_01').addEventListener('click', function () {
@@ -172,16 +165,16 @@ const addEducation_03 = () =>{
   document.getElementById('aq_03').style.display = 'flex'
 
   document
-  .getElementById('aq_cancle_01')
+  .getElementById('aq_cancle_02')
   .addEventListener('click', function () {
     document.getElementById('aq_03').style.display = 'none'
     document.getElementById('Qualification_Title_03').value = ''
     document.getElementById('University_Name_03').value = ''
-    document.getElementById('date_01_03').value = " "
-    document.getElementById('date_02_03').value = " "
+    document.getElementById('date_01_03').value = ''
+    document.getElementById('date_02_03').value = ''
     document.getElementById('aq_02').style.display = 'flex'
   })
-document.getElementById('aq_back_01').addEventListener('click', function () {
+document.getElementById('aq_back_02').addEventListener('click', function () {
   document.getElementById('aq_02').style.display = 'flex'
   document.getElementById('aq_03').style.display = 'none'
 })
@@ -246,12 +239,35 @@ document.getElementById('aq_back_01').addEventListener('click', function () {
      document.getElementById('prj_01').style.display = 'none'
      document.getElementById('prj_02').style.display = 'flex'
      document.getElementById('prj_03').style.display = 'none'
-
+     document
+     .getElementById('cancle_p_01')
+     .addEventListener('click', function () {
+       document.getElementById('prj_02').style.display = 'none'
+       document.getElementById('project_title_02').value = ''
+       document.getElementById('project_description_02').value = ''
+       document.getElementById('prj_01').style.display = 'flex'
+     })
+   document.getElementById('back_p_01').addEventListener('click', function () {
+     document.getElementById('prj_01').style.display = 'flex'
+     document.getElementById('prj_02').style.display = 'none'
+   })
    }
    const add_proj_03 = () =>{
      document.getElementById('prj_01').style.display = 'none'
      document.getElementById('prj_02').style.display = 'none'
      document.getElementById('prj_03').style.display = 'flex'
+     document
+     .getElementById('cancle_p_02')
+     .addEventListener('click', function () {
+       document.getElementById('prj_03').style.display = 'none'
+       document.getElementById('project_title_03').value = ''
+       document.getElementById('project_description_03').value = ''
+       document.getElementById('prj_02').style.display = 'flex'
+     })
+   document.getElementById('back_p_02').addEventListener('click', function () {
+     document.getElementById('prj_02').style.display = 'flex'
+     document.getElementById('prj_03').style.display = 'none'
+   })
      
    }
    document
@@ -715,9 +731,46 @@ pj_03 >=20 ? (check_points+=1) && (document.getElementById('project_description_
 if(check_points>=12){
   nextFun()
 }
+}
+
+
+
+// important links -->
+const linked_btn = () =>{
+  console.log("you clicked on linked btn")
+}
+const codechef_btn = () =>{
+  console.log("you clicked on codechef btn")
+}
+const leetcode_btn = () =>{
+  console.log("you clicked on leetcode btn")
+}
+const github_btn = () =>{
+  console.log("you clicked on github btn")
+}
+
+const second_section = () =>{
+  let linked_in_val = document.getElementById('linkedinField').value.length
+  let codechef_val = document.getElementById('codeChefField').value.length
+  let leetcode_val = document.getElementById('fbField').value.length
+  let github_val = document.getElementById('githubField').value.length
+
+
+  let check_points = 0 ;
+  linked_in_val !=0 ? (check_points+=1) && (document.getElementById('linkedinField').style.border = "1px solid #1e0d35"): document.getElementById('linkedinField').style.border = "1px solid red"
+  codechef_val !=0 ? (check_points+=1) && (document.getElementById('codeChefField').style.border = "1px solid #1e0d35"): document.getElementById('codeChefField').style.border = "1px solid red"
+  leetcode_val !=0 ? (check_points+=1) && (document.getElementById('fbField').style.border = "1px solid #1e0d35"): document.getElementById('fbField').style.border = "1px solid red"
+  github_val !=0 ? (check_points+=1) && (document.getElementById('githubField').style.border = "1px solid #1e0d35"): document.getElementById('githubField').style.border = "1px solid red"
+  
+if(check_points>=4){
+  nextFun()
+}
 
 }
+
+
 document.getElementById('nb_btns_03').addEventListener("click",third_section)
 document.getElementById('nb_btns_04').addEventListener("click",forth_section)
 document.getElementById('nb_btns_04').addEventListener("click",fifth_section)
 document.getElementById('nb_btns_01').addEventListener("click",first_section)
+document.getElementById('nb_btns_02').addEventListener("click",second_section)

@@ -78,61 +78,56 @@
           <div class="imp_text">
             <p id="f_li">
               <li id="f_text">
-                Click on buttons to add your social and important links. you can
-                add max 5 links.
+                Click on buttons to add your social and important links. you
+                must add your three favorite Usernames here.
               </li>
             </p>
             <p id="s_li">
               <li id="s_text">
                 If you are not click on following button then your input for
-                this field is not consider.
+                this field is not considered.
               </li>
             </p>
           </div>
           <div class="input_01">
             <div class="box_input">
-              <button id="linked_btn">LinkedIn</button>
+              <button id="linked_btn" onclick="linked_btn()">LinkedIn</button>
               <input
                 type="text"
                 id="linkedinField"
-                placeholder="https://www.linkedin.com"
+                placeholder="linkedin username"
                 class="linked_input"
               />
             </div>
             <div class="box_input">
-              <button id="codechef_btn">CodeChef</button>
+              <button id="codechef_btn" onclick="codechef_btn()">
+                CodeChef
+              </button>
               <input
                 type="text"
                 id="codeChefField"
-                placeholder="https://www.codechef.com"
+                placeholder="codechef username"
                 class="codechef_input"
               />
             </div>
             <div class="box_input">
-              <button id="leetcode_btn">Leetcode</button>
+              <button id="leetcode_btn" onclick="leetcode_btn()">
+                Leetcode
+              </button>
               <input
                 type="text"
                 id="fbField"
-                placeholder="https://www.leetcode.com"
+                placeholder="leetcode username"
                 class="leetcode_input"
               />
             </div>
             <div class="box_input">
-              <button id="github_btn">GitHub</button>
+              <button id="github_btn" onclick="github_btn()">GitHub</button>
               <input
                 type="text"
                 id="githubField"
-                placeholder="https://www.github.com"
+                placeholder="github username"
                 class="github_input"
-              />
-            </div>
-            <div class="box_input">
-              <button id="insta_btn">Instagram</button>
-              <input
-                type="text"
-                id="instaField"
-                placeholder="https://www.instagram.com"
-                class="insta_input"
               />
             </div>
           </div>
@@ -140,7 +135,7 @@
             <button id="bb_btn" class="back_button" onclick="backFun()">
               <span><i class="fas fa-solid fa-angle-left"></i> </span> Previous
             </button>
-            <button id="nb_btns" class="next_button" onclick="nextFun()">
+            <button id="nb_btns_02" class="next_button">
               Next <span><i class="fas fa-solid fa-angle-right"></i> </span>
             </button>
           </div>
@@ -460,13 +455,17 @@
             <div class="btns" id="aqAddButton">
               <div class="btns">
                 <div class="back_can_btn">
-                  <div class="bbtn">
+                  <div class="bbtn" id="aq_back_02">
                     <i class="fas fa-solid fa-angle-left"></i>
                   </div>
                   <button class="qbtn" id="btn_educ_03">
                     <span> Add Qualification </span>
                   </button>
-                  <div class="cancle_btn" title="cancel this Qualification">
+                  <div
+                    id="aq_cancle_02"
+                    class="cancle_btn"
+                    title="cancel this Qualification"
+                  >
                     <i class="fa-solid fa-xmark"></i>
                   </div>
                 </div>
@@ -633,13 +632,17 @@
             ></textarea>
             <div class="btns">
               <div class="back_can_btn">
-                <div class="bbtn">
+                <div class="bbtn" id="back_p_01">
                   <i class="fas fa-solid fa-angle-left"></i>
                 </div>
                 <button class="cpbtn" id="proj_btn_02">
                   <span> Add Project </span>
                 </button>
-                <div class="cancle_btn" title="cancel this Project">
+                <div
+                  id="cancle_p_01"
+                  class="cancle_btn"
+                  title="cancel this Project"
+                >
                   <i class="fa-solid fa-xmark"></i>
                 </div>
               </div>
@@ -664,13 +667,17 @@
             ></textarea>
             <div class="btns">
               <div class="back_can_btn">
-                <div class="bbtn">
+                <div class="bbtn" id="back_p_02">
                   <i class="fas fa-solid fa-angle-left"></i>
                 </div>
                 <button class="cpbtn" id="proj_btn_03">
                   <span> Add Project </span>
                 </button>
-                <div class="cancle_btn" title="cancel this Project">
+                <div
+                  id="cancle_p_02"
+                  class="cancle_btn"
+                  title="cancel this Project"
+                >
                   <i class="fa-solid fa-xmark"></i>
                 </div>
               </div>
