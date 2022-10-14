@@ -519,37 +519,17 @@ const third_section = () =>{
   const about_info = () =>{
     let count = document.getElementById('your-about-info').value ;
     const arr = count.split(' ');
-    let cnum = arr.filter(word => word !== '').length;
-    if(cnum > 25){
-      // nextFun()
-      check_points += 1;
-    }
-    else{
-      alert("you must write minimum 25 words about yourself.")
-    }
+    let ab_info = arr.filter(word => word !== '').length;
+    ab_info > 25 ? check_points+=1:alert("you must write minimum 25 words about yourself.")
   }
   const bcc_experience = ()=>{
     let exp_01 = document.getElementById('exp_title_01').value.length;
     let exp_02 = document.getElementById('exp_title_02').value.length;
     let exp_03 = document.getElementById('exp_title_03').value.length;
 
-    if(exp_01 !=0 && exp_02 !=0 && exp_03 !=0){
-      check_points += 1;
-    }
-    else{
-      alert("Enter your experience title")
-    }
-
     let exp_ic_01 = document.getElementById('your_input_company_01').value.length;
     let exp_ic_02 = document.getElementById('your_input_company_02').value.length;
     let exp_ic_03 = document.getElementById('your_input_company_03').value.length;
-
-    if(exp_ic_01 !=0 && exp_ic_02 !=0 && exp_ic_03 !=0){
-      check_points += 1;
-    }
-    else{
-      alert("Enter your experience company title")
-    }
 
     let start_d_01 = document.getElementById('c_s_d_01').value.length
     let start_d_02 = document.getElementById('c_s_d_02').value.length
@@ -558,13 +538,6 @@ const third_section = () =>{
     let end_d_01 = document.getElementById('c_e_d_01').value.length
     let end_d_02 = document.getElementById('c_e_d_02').value.length
     let end_d_03 = document.getElementById('c_e_d_03').value.length
-
-if((start_d_01 !=0 && start_d_02 !=0 && start_d_03 !=0) && (end_d_01 !=0 && end_d_02 !=0 && end_d_03 !=0)){
-  check_points += 1;
-}
-else{
-  alert("Enter your experience Start Date and End Date")
-}
 
     let exp_cd_01 = document.getElementById('your_company_description_01').value;
     let exp_cd_02 = document.getElementById('your_company_description_02').value;
@@ -578,20 +551,35 @@ else{
     let cnum_03 = arr_03.filter(word => word !== '').length;
 
 
+    exp_01 !=0 ? (check_points+=1) && (document.getElementById('exp_title_01').style.border = "1px solid #1e0d35"): document.getElementById('exp_title_01').style.border = "1px solid red"
+    exp_02 !=0 ? (check_points+=1) && (document.getElementById('exp_title_02').style.border = "1px solid #1e0d35"): document.getElementById('exp_title_02').style.border = "1px solid red"
+    exp_03 !=0 ? (check_points+=1) && (document.getElementById('exp_title_03').style.border = "1px solid #1e0d35"): document.getElementById('exp_title_03').style.border = "1px solid red"
 
-    if(cnum_01>20 && cnum_02>20 && cnum_03>20){
-      check_points += 1;
-    }
-    else{
-      alert("Enter your experience company description")
-    }
+    exp_ic_01 !=0 ? (check_points+=1) && (document.getElementById('your_input_company_01').style.border = "1px solid #1e0d35"): document.getElementById('your_input_company_01').style.border = "1px solid red"
+    exp_ic_02 !=0 ? (check_points+=1) && (document.getElementById('your_input_company_02').style.border = "1px solid #1e0d35"): document.getElementById('your_input_company_02').style.border = "1px solid red"
+    exp_ic_03 !=0 ? (check_points+=1) && (document.getElementById('your_input_company_03').style.border = "1px solid #1e0d35"): document.getElementById('your_input_company_03').style.border = "1px solid red"
+
+
+    start_d_01 !=0 ? (check_points+=1) && (document.getElementById('c_s_d_01').style.border = "1px solid #1e0d35"): document.getElementById('c_s_d_01').style.border = "1px solid red"
+    start_d_02 !=0 ? (check_points+=1) && (document.getElementById('c_s_d_02').style.border = "1px solid #1e0d35"): document.getElementById('c_s_d_02').style.border = "1px solid red"
+    start_d_03 !=0 ? (check_points+=1) && (document.getElementById('c_s_d_03').style.border = "1px solid #1e0d35"): document.getElementById('c_s_d_03').style.border = "1px solid red"
+
+    end_d_01 !=0 ? (check_points+=1) && (document.getElementById('c_e_d_01').style.border = "1px solid #1e0d35"): document.getElementById('c_e_d_01').style.border = "1px solid red"
+    end_d_02 !=0 ? (check_points+=1) && (document.getElementById('c_e_d_02').style.border = "1px solid #1e0d35"): document.getElementById('c_e_d_02').style.border = "1px solid red"
+    end_d_03 !=0 ? (check_points+=1) && (document.getElementById('c_e_d_03').style.border = "1px solid #1e0d35"): document.getElementById('c_e_d_03').style.border = "1px solid red"
+
+
+    cnum_01 !=0 ? (check_points+=1) && (document.getElementById('your_company_description_01').style.border = "1px solid #1e0d35"): document.getElementById('your_company_description_01').style.border = "1px solid red"
+    cnum_02 !=0 ? (check_points+=1) && (document.getElementById('your_company_description_02').style.border = "1px solid #1e0d35"): document.getElementById('your_company_description_02').style.border = "1px solid red"
+    cnum_03 !=0 ? (check_points+=1) && (document.getElementById('your_company_description_03').style.border = "1px solid #1e0d35"): document.getElementById('your_company_description_03').style.border = "1px solid red"
   }
   about_info();
   bcc_experience();
-  if(check_points>=5){
+  if(check_points>=15){
     nextFun()
   }
  
 }
 document.getElementById('nb_btns_03').addEventListener("click",third_section)
+document.getElementById('nb_btns_04').addEventListener("click",first_section)
 document.getElementById('nb_btns_01').addEventListener("click",first_section)
