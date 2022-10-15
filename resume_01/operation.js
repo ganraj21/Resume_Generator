@@ -1,7 +1,7 @@
 // Compiling information in Resume --->
 // setting your name here -->
 const recentImageDataUrl = localStorage.getItem('recent-image')
-console.log(recentImageDataUrl)
+// console.log(recentImageDataUrl)
 if(recentImageDataUrl){
     document.querySelector("#home_profile_img").setAttribute('src',recentImageDataUrl)
 }
