@@ -1,49 +1,4 @@
-// back button ---->
-var cnt = 1
-document.getElementById('bb_btn').disabled = true
-backFun = () => {
-  if (cnt == 1) {
-    document.getElementById('fc_div').style.display = 'flex'
-    document.getElementById('sc_div').style.display = 'none'
-    document.getElementById('bb_btn').disabled = true
-    document.getElementById('bt_gen').style.display = 'none'
-  } else if (cnt == 2) {
-    document.getElementById('sc_div').style.display = 'flex'
-    document.getElementById('thc_div').style.display = 'none'
-    document.getElementById('bt_gen').style.display = 'none'
-  } else if (cnt == 3) {
-    document.getElementById('f_col').style.display = 'none'
-    document.getElementById('thc_div').style.display = 'flex'
-    document.getElementById('bt_gen').style.display = 'none'
-  }
-  else if (cnt == 4) {
-    document.getElementById('f_col').style.display = 'flex'
-    document.getElementById('ff_col').style.display = 'none'
-    document.getElementById('bt_gen').style.display = 'flex'
-  }
-  cnt--
-}
-// -----------|-<
-// for-ward button
-document.getElementById('bt_gen').style.display = 'none'
-nextFun = () => {
-  if (cnt == 1) {
-    document.getElementById('fc_div').style.display = 'none'
-    document.getElementById('sc_div').style.display = 'flex'
-    document.getElementById('bb_btn').disabled = false
-  } else if (cnt == 2) {
-    document.getElementById('sc_div').style.display = 'none'
-    document.getElementById('thc_div').style.display = 'flex'
-  } else if (cnt == 3) {
-    document.getElementById('thc_div').style.display = 'none'
-    document.getElementById('f_col').style.display = 'flex'
-  } else if (cnt == 4) {
-    document.getElementById('f_col').style.display = 'none'
-    document.getElementById('ff_col').style.display = 'flex'
-    console.log("your nxt btn is display non")
-  }
-  cnt++
-}
+
 
   // link element to it
   document.getElementById('linkedinField').style.display = 'none'
@@ -275,27 +230,6 @@ document.getElementById('aq_back_02').addEventListener('click', function () {
      
 const form_data = () =>{
     // first-col-->
-    // profile photo --->
-
-  //   your_image_file = document.getElementById('your_image_file');
-  //   imgData = getBase64Image(your_image_file);
-  //   localStorage.setItem("imgData", imgData);
-
-  //   function getBase64Image(img) {
-  //     var canvas = document.createElement("canvas");
-  //     canvas.width = img.width;
-  //     canvas.height = img.height;
-  
-  //     var ctx = canvas.getContext("2d");
-  //     ctx.drawImage(img, 10, 10);
-  
-  //     var dataURL = canvas.toDataURL("image/png");
-  
-  //     return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
-  // }
-    // let profile_image = document.getElementById('your_image_file').getAttribute('src')
-    // localStorage.setItem('profile_image', profile_image)
-
  let your_first_name = document.getElementById('nameField_first').value
  localStorage.setItem('your_first_name', your_first_name)
   
@@ -562,32 +496,8 @@ if (localStorage.getItem('txtValue') == '1') {
     window.location.href = '../resume_03/resume_03.html'
   }
 }
-else{
-  var link = document.createElement('link')
-  link.rel = 'stylesheet'
-  link.type = 'text/css'
-  link.href = '../resume_04/resume_04.css'
-  document.getElementsByTagName('HEAD')[0].appendChild(link)
-  // ----------------------xxx-----------------------
 
-      // error message border color -->
-      var embc = "1px solid #00e7d6"
 
-  // loading function ----------------------->>>
-  document.getElementById('bt_gen').addEventListener('click',()=>{
-    document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
-    setTimeout(()=>{
-      document.getElementById('bt_gen').innerHTML  = "Resume Generated"
-      generate_fun3();
-    console.log("YOU clicked on generate btn")
-    },3000);
-  })
-    // generate function --->
-  const generate_fun3 = () => {
-    form_data();
-    window.location.href = '../resume_04/resume_04.html'
-  }
-}
 
 
 // -----------------form validation --->
@@ -816,10 +726,10 @@ if(check_points>=4){
 }
 }
 
-// document.getElementById('nb_btns_03').addEventListener("click",third_section)
-// document.getElementById('nb_btns_04').addEventListener("click",forth_section)
-// document.getElementById('nb_btns_05').addEventListener("click",fifth_section)
-// document.getElementById('nb_btns_01').addEventListener("click",first_section)
-// document.getElementById('nb_btns_02').addEventListener("click",second_section)
+document.getElementById('nb_btns_03').addEventListener("click",third_section)
+document.getElementById('nb_btns_04').addEventListener("click",forth_section)
+document.getElementById('nb_btns_05').addEventListener("click",fifth_section)
+document.getElementById('nb_btns_01').addEventListener("click",first_section)
+document.getElementById('nb_btns_02').addEventListener("click",second_section)
 
 document.getElementById('bt_gen').style.display = "flex"

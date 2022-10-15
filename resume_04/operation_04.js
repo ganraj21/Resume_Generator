@@ -13,18 +13,14 @@ document.getElementById('last_name').innerHTML = localStorage.getItem(
   document.getElementById('your-email-id').innerHTML = localStorage.getItem(
     'your_email',
   )
-//   document.getElementById('your-phone-no').innerHTML = localStorage.getItem(
-//     'your_phone_no',
-//   )
-  // social media links --->
-  
-//   console.log(localStorage.getItem('arr'))
-  // ---------------------||
-  
-  // about section --->
-  document.getElementById('your-profile-description').innerHTML = localStorage.getItem(
-    'profile_about_information',
+  document.getElementById('your-phone-no').innerHTML = localStorage.getItem(
+    'your_phone_no',
   )
+
+  document.getElementById('your-address-here').innerHTML = localStorage.getItem(
+    'your_home_address',
+  )
+  // social media links --->
   
   // experience section --->
   // your first experience -->

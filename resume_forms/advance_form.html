@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume Form</title>
     <link rel="icon" type="image/x-icon" href="./Images/favicon.jpg" />
+    <link rel="stylesheet" href="../resume_04/resume_04.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -53,12 +54,6 @@
             ></textarea>
           </div>
 
-          <label class="custom-file-upload" id="your_profile_image">
-            <span><i class="bx bxs-image-add upload_icon"></i></span>
-            <input type="file" />
-            <span class="uplaod_msg"> Upload Your Image </span>
-          </label>
-
           <div class="direction_button" id="db_01">
             <button id="bb_btn" class="back_button" onclick="backFun()">
               <span><i class="fas fa-solid fa-angle-left"></i> </span> Previous
@@ -100,28 +95,6 @@
               />
             </div>
             <div class="box_input">
-              <button id="codechef_btn" onclick="codechef_btn()">
-                CodeChef
-              </button>
-              <input
-                type="text"
-                id="codeChefField"
-                placeholder="codechef username"
-                class="codechef_input"
-              />
-            </div>
-            <div class="box_input">
-              <button id="leetcode_btn" onclick="leetcode_btn()">
-                Leetcode
-              </button>
-              <input
-                type="text"
-                id="fbField"
-                placeholder="leetcode username"
-                class="leetcode_input"
-              />
-            </div>
-            <div class="box_input">
               <button id="github_btn" onclick="github_btn()">GitHub</button>
               <input
                 type="text"
@@ -146,15 +119,6 @@
       <section class="third_col" id="thc_div">
         <div class="div_fields">
           <h3>Professional Info</h3>
-          <div class="input_0">
-            <label for="" id="alable">About</label>
-            <textarea
-              id="your-about-info"
-              placeholder="About Your-Self"
-              class="weField"
-              rows="5"
-            ></textarea>
-          </div>
           <div class="input_00" id="we">
             <label for="" id="elable">Experience</label>
             <div class="bcc" id="bcc_01">
@@ -198,7 +162,6 @@
                 </button>
               </div>
             </div>
-
             <div class="bcc" id="bcc_02">
               <input
                 type="text"
@@ -252,7 +215,6 @@
                 </div>
               </div>
             </div>
-
             <div class="bcc" id="bcc_03">
               <input
                 type="text"
@@ -323,14 +285,6 @@
       <section class="four_col" id="f_col">
         <div class="div_fields">
           <h3>Professional Info</h3>
-          <div class="input_profec">
-            <label for="" class="plabel">Profession</label>
-            <input
-              placeholder="Your Profession"
-              class="Qualification_input"
-              id="profession_name"
-            />
-          </div>
           <div class="input_educ" id="aq_01">
             <label for="" class="elable">Education</label>
             <input
@@ -420,61 +374,9 @@
               </div>
             </div>
           </div>
-
-          <div class="input_educ" id="aq_03">
-            <label for="" class="elable">Education</label>
-            <input
-              type="text"
-              class="input_title"
-              id="Qualification_Title_03"
-              placeholder="Academic Qualification Title 3"
-            />
-            <input
-              placeholder="University Name 3"
-              class="Qualification_input aqField"
-              id="University_Name_03"
-            />
-            <div class="input_">
-              <input
-                type="number"
-                name="start"
-                id="date_01_03"
-                class="s_date"
-                placeholder="Start year"
-                onblur="(this.type='text')"
-              />
-              <input
-                type="text"
-                name="end"
-                id="date_02_03"
-                class="e_date"
-                placeholder="End year"
-                onblur="(this.type='text')"
-              />
-            </div>
-            <div class="btns" id="aqAddButton">
-              <div class="btns">
-                <div class="back_can_btn">
-                  <div class="bbtn" id="aq_back_02">
-                    <i class="fas fa-solid fa-angle-left"></i>
-                  </div>
-                  <button class="qbtn" id="btn_educ_03">
-                    <span> Add Qualification </span>
-                  </button>
-                  <div
-                    id="aq_cancle_02"
-                    class="cancle_btn"
-                    title="cancel this Qualification"
-                  >
-                    <i class="fa-solid fa-xmark"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="input_skl" id="sk">
-          <label for="" class="slabel">Skills</label>
+          <label for="" class="slabel">Technical Skills</label>
           <input
             placeholder="Your-Skills & Expertise"
             class="Skills_input"
@@ -508,90 +410,7 @@
       <!-- five column -->
       <section class="five_col" id="ff_col">
         <div class="div_fields">
-          <h3>Certificates And Projects</h3>
-          <div class="input_cert" id="cp_01">
-            <label for="" class="clabel">Certificates</label>
-            <input
-              type="text"
-              class="cp_class"
-              id="certificate_title_01"
-              placeholder="Certificate Title 1"
-            />
-            <textarea
-              name=""
-              id="certificate_description_01"
-              cols="30"
-              rows="5"
-              placeholder="Certificate Description 1"
-              class="ld_des"
-            ></textarea>
-            <div class="btns">
-              <button class="cpbtn" id="cert_btn_01">
-                <span> Add Certificate </span>
-              </button>
-            </div>
-          </div>
-          <div class="input_cert" id="cp_02">
-            <label for="" class="clabel">Certificates</label>
-            <input
-              type="text"
-              class="cp_class"
-              name=""
-              id="certificate_title_02"
-              placeholder="Certificate Title 2"
-            />
-            <textarea
-              name=""
-              id="certificate_description_02"
-              cols="30"
-              rows="5"
-              placeholder="Certificate Description 2"
-              class="ld_des"
-            ></textarea>
-            <div class="btns">
-              <span id="back_001" class="bbtn" title="previous"
-                ><i class="fas fa-solid fa-angle-left"></i
-              ></span>
-              <button class="cpbtn" id="cert_btn_02">Add Certificate</button>
-              <span
-                id="cancel_001"
-                class="cancle_btn"
-                title="cancel this certificate"
-              >
-                <i class="fa-solid fa-xmark"></i>
-              </span>
-            </div>
-          </div>
-          <div class="input_cert" id="cp_03">
-            <label for="" class="clabel">Certificates</label>
-            <input
-              type="text"
-              class="cp_class"
-              id="certificate_title_03"
-              placeholder="Certificate Title 3"
-            />
-            <textarea
-              name=""
-              id="certificate_description_03"
-              cols="30"
-              rows="5"
-              placeholder="Certificate Description 3"
-              class="ld_des"
-            ></textarea>
-            <div class="btns">
-              <span id="back_002" class="bbtn"
-                ><i class="fas fa-solid fa-angle-left"></i
-              ></span>
-              <button class="cpbtn" id="cert_btn_02">Add Certificate</button>
-              <span
-                class="cancle_btn"
-                id="cancel_002"
-                title="cancel this certificate"
-              >
-                <i class="fa-solid fa-xmark"></i>
-              </span>
-            </div>
-          </div>
+          <h3>Projects</h3>
           <div class="input_proj" id="prj_01">
             <label for="" class="pplabel">Projects</label>
             <input
@@ -648,41 +467,6 @@
               </div>
             </div>
           </div>
-
-          <div class="input_proj" id="prj_03">
-            <label for="" class="pplabel">Projects</label>
-            <input
-              type="text"
-              class="cp_class"
-              id="project_title_03"
-              placeholder="Project Title 3"
-            />
-            <textarea
-              name=""
-              id="project_description_03"
-              cols="30"
-              rows="5"
-              placeholder="Project Description 3"
-              class="ld_des"
-            ></textarea>
-            <div class="btns">
-              <div class="back_can_btn">
-                <div class="bbtn" id="back_p_02">
-                  <i class="fas fa-solid fa-angle-left"></i>
-                </div>
-                <button class="cpbtn" id="proj_btn_03">
-                  <span> Add Project </span>
-                </button>
-                <div
-                  id="cancle_p_02"
-                  class="cancle_btn"
-                  title="cancel this Project"
-                >
-                  <i class="fa-solid fa-xmark"></i>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="direction_button" id="db_05">
           <button id="bb_btn" class="back_button" onclick="backFun()">
@@ -697,6 +481,32 @@
       </section>
     </div>
     <!-- ----- -->
-    <script src="./form.js"></script>
+    <script src="./advance_form.js"></script>
+    <script src="./nexb.js"></script>
+    <script>
+      if (localStorage.getItem("txtValue") == "4") {
+        {
+          // error message border color -->
+          var embc = "1px solid #00e7d6";
+
+          // loading function ----------------------->>>
+          document.getElementById("bt_gen").addEventListener("click", () => {
+            document.getElementById(
+              "bt_gen"
+            ).innerHTML = `<div class='loader'></div>`;
+            setTimeout(() => {
+              document.getElementById("bt_gen").innerHTML = "Resume Generated";
+              generate_fun3();
+              console.log("YOU clicked on generate btn");
+            }, 3000);
+          });
+          // generate function --->
+          const generate_fun3 = () => {
+            form_data();
+            window.location.href = "../resume_04/resume_04.html";
+          };
+        }
+      }
+    </script>
   </body>
 </html>
