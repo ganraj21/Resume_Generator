@@ -1,6 +1,15 @@
 // Compiling information in Resume --->
 // setting your name here -->
 
+
+    const recentImageDataUrl = localStorage.getItem('recent-image')
+    console.log(recentImageDataUrl)
+    if(recentImageDataUrl){
+        document.querySelector("#home_profile_img").setAttribute('src',recentImageDataUrl)
+    }
+
+
+
 document.getElementById('last_name').innerHTML = localStorage.getItem(
     'your_last_name',
   )
@@ -26,7 +35,7 @@ document.getElementById('last_name').innerHTML = localStorage.getItem(
   )
   // social media links --->
   
-  console.log(localStorage.getItem('arr'))
+//   console.log(localStorage.getItem('arr'))
   // ---------------------||
   
   // about section --->
@@ -157,13 +166,14 @@ document.getElementById('last_name').innerHTML = localStorage.getItem(
   let areaCv = document.getElementById('area-cv')
   
   let resumeButton = document.getElementById('resume-button')
-  let nbPages = 1.1;
+  let nbPages = 1;
   // Html2pdf options
   let opt = {
     margin: 0,
     filename: 'myResume.pdf',
     image: { type: 'jpeg', quality: 0.99 },
-    html2canvas: { dpi: 192, letterRendering: true, width: 790, height: 1120 * nbPages },
+    html2canvas: { dpi: 192, letterRendering: true, width: 790, height: 1110 * nbPages },
+    // html2canvas:  { scale: 3 },
     jsPDF: {unit: 'pt', format: 'a4', orientation: 'portrait' },
   }
   // Function to call areaCv and Html2Pdf options

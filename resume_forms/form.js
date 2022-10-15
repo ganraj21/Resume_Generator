@@ -275,6 +275,27 @@ document.getElementById('aq_back_02').addEventListener('click', function () {
      
 const form_data = () =>{
     // first-col-->
+    // profile photo --->
+
+  //   your_image_file = document.getElementById('your_image_file');
+  //   imgData = getBase64Image(your_image_file);
+  //   localStorage.setItem("imgData", imgData);
+
+  //   function getBase64Image(img) {
+  //     var canvas = document.createElement("canvas");
+  //     canvas.width = img.width;
+  //     canvas.height = img.height;
+  
+  //     var ctx = canvas.getContext("2d");
+  //     ctx.drawImage(img, 10, 10);
+  
+  //     var dataURL = canvas.toDataURL("image/png");
+  
+  //     return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+  // }
+    // let profile_image = document.getElementById('your_image_file').getAttribute('src')
+    // localStorage.setItem('profile_image', profile_image)
+
  let your_first_name = document.getElementById('nameField_first').value
  localStorage.setItem('your_first_name', your_first_name)
   
@@ -719,7 +740,7 @@ const fifth_section = () =>{
   let cd_01 = arr_01.filter(word => word !== '').length;
   let cd_02 = arr_02.filter(word => word !== '').length;
   let cd_03 = arr_03.filter(word => word !== '').length;
-
+  let check_points = 0;
 
   cert_title_01 !=0 ? (check_points+=1) && (document.getElementById('certificate_title_01').style.border = embc): document.getElementById('certificate_title_01').style.border = "1px solid red"
   cert_title_02 !=0 ? (check_points+=1) && (document.getElementById('certificate_title_02').style.border = embc): document.getElementById('certificate_title_02').style.border = "1px solid red"
@@ -795,10 +816,10 @@ if(check_points>=4){
 }
 }
 
-document.getElementById('nb_btns_03').addEventListener("click",third_section)
-document.getElementById('nb_btns_04').addEventListener("click",forth_section)
-document.getElementById('nb_btns_05').addEventListener("click",fifth_section)
-document.getElementById('nb_btns_01').addEventListener("click",first_section)
-document.getElementById('nb_btns_02').addEventListener("click",second_section)
+// document.getElementById('nb_btns_03').addEventListener("click",third_section)
+// document.getElementById('nb_btns_04').addEventListener("click",forth_section)
+// document.getElementById('nb_btns_05').addEventListener("click",fifth_section)
+// document.getElementById('nb_btns_01').addEventListener("click",first_section)
+// document.getElementById('nb_btns_02').addEventListener("click",second_section)
 
-document.getElementById('bt_gen').style.display = "none"
+document.getElementById('bt_gen').style.display = "flex"
