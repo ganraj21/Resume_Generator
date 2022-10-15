@@ -471,7 +471,7 @@ if (localStorage.getItem('txtValue') == '1') {
   var link = document.createElement('link')
   link.rel = 'stylesheet'
   link.type = 'text/css'
-  link.href = './resume_01/form_01.css'
+  link.href = '../resume_01/form_01.css'
   document.getElementsByTagName('HEAD')[0].appendChild(link)
   // -----------------------------xxx-----------------------
     // error message border color -->
@@ -488,13 +488,13 @@ if (localStorage.getItem('txtValue') == '1') {
   // generate function --->
   const generate_fun = () => {
     form_data();
-    window.location.href = './resume_01/resume_01.html'
+    window.location.href = '../resume_01/resume_01.html'
   }   
 } else if (localStorage.getItem('txtValue') == '2') {
   var link = document.createElement('link')
   link.rel = 'stylesheet'
   link.type = 'text/css'
-  link.href = './resume_02/resume_02.css';
+  link.href = '../resume_02/resume_02.css';
   document.getElementsByTagName('HEAD')[0].appendChild(link)
   // -----------------------------xxx-----------------------
 
@@ -513,13 +513,13 @@ if (localStorage.getItem('txtValue') == '1') {
   // generate function --->
   const generate_fun2 = () => {
     form_data();
-    window.location.href = './resume_02/resume_02.html'
+    window.location.href = '../resume_02/resume_02.html'
   }
-} else {
+} else if (localStorage.getItem('txtValue') == '3')  {
   var link = document.createElement('link')
   link.rel = 'stylesheet'
   link.type = 'text/css'
-  link.href = './resume_03/resume_03.css'
+  link.href = '../resume_03/resume_03.css'
   document.getElementsByTagName('HEAD')[0].appendChild(link)
   // ----------------------xxx-----------------------
 
@@ -538,10 +538,35 @@ if (localStorage.getItem('txtValue') == '1') {
     // generate function --->
   const generate_fun3 = () => {
     form_data();
-    window.location.href = './resume_03/resume_03.html'
+    window.location.href = '../resume_03/resume_03.html'
   }
 }
+else{
+  var link = document.createElement('link')
+  link.rel = 'stylesheet'
+  link.type = 'text/css'
+  link.href = '../resume_04/resume_04.css'
+  document.getElementsByTagName('HEAD')[0].appendChild(link)
+  // ----------------------xxx-----------------------
 
+      // error message border color -->
+      var embc = "1px solid #00e7d6"
+
+  // loading function ----------------------->>>
+  document.getElementById('bt_gen').addEventListener('click',()=>{
+    document.getElementById('bt_gen').innerHTML = `<div class='loader'></div>`;
+    setTimeout(()=>{
+      document.getElementById('bt_gen').innerHTML  = "Resume Generated"
+      generate_fun3();
+    console.log("YOU clicked on generate btn")
+    },3000);
+  })
+    // generate function --->
+  const generate_fun3 = () => {
+    form_data();
+    window.location.href = '../resume_04/resume_04.html'
+  }
+}
 
 
 // -----------------form validation --->

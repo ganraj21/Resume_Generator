@@ -212,11 +212,18 @@ img {
   height: auto;
 }
 /*========== CLASS CSS ==========*/
-
+.profile {
+  top: 15px;
+}
 .section {
   padding: 1.5rem 0;
 }
-
+.experience {
+  top: 33px;
+}
+.certificate {
+  top: 61px;
+}
 .section-title {
   font-size: var(--h2-font-size);
   color: var(--title-color);

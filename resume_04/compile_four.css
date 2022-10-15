@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.resume_section_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.resume_container {
+  width: 80%;
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+.operation_buttons {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin: 15px 0 10px 0;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  top: 40px;
+}
+.user_name {
+  text-align: center;
+  font-size: 33px;
+}
+.important_links {
+  margin: 10px 0 10px 0;
+}
+#important_usernames {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 4px;
+}
+span {
+  font-weight: 600;
+  margin: 0px 6px 0px 3px;
+}
+li {
+  list-style: none;
+  margin-right: 9px;
+  text-decoration: none;
+}
+.education,
+.Experience,
+.projects,
+.achivements,
+.experience_container,
+.technical-skills {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 10px 0px;
+}
+.qualification_title {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px;
+}
+.achivement__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+}
+label {
+  font-size: 27px;
+  font-weight: bold;
+}
+.qt_01 {
+  display: flex;
+}
+.education_title {
+  font-weight: 600;
+}
+.academy_title {
+  margin-left: 3px;
+}
+.academics {
+  margin: 10px;
+}
+@media screen and(min-width:1024px) {
+  .container {
+    height: 100vh;
+  }
+}
+@media screen and(max-width:720px) {
+  .container {
+    height: 780px;
+  }
+  #important_usernames {
+    flex-direction: column !important;
+  }
+}
+
+@media screen and(max-width:420px) {
+}
+@media screen and(max-width:370px) {
+}
