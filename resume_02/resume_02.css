@@ -18,11 +18,17 @@ body {
   height: 100%;
 }
 .resume_form_container {
-  width: 90%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
-  align-content: center;
+  background: #fff;
+}
+.hero_section {
+  display: flex;
+  width: 50%;
+  height: 780px;
+  background: linear-gradient(to right, #cc2b5e, #753a88);
 }
 .resume_form {
   width: 100%;
@@ -37,15 +43,12 @@ body {
 .third_col,
 .four_col,
 .five_col {
-  width: 550px;
+  width: 50%;
   display: flex;
-  height: 780px;
   flex-direction: column;
   align-content: center;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 33px;
 }
 .first_col h3,
 .second_col h2,
@@ -73,15 +76,15 @@ body {
   top: 725px;
 }
 .div_fields {
-  background-color: white;
+  /* background-color: white; */
   display: flex;
   height: 100%;
-  padding: 15px 25px 15px 25px;
+  /* padding: 15px 25px 15px 25px; */
   width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  /* position: absolute; */
   align-content: center;
 }
 .input_02 input,
@@ -115,7 +118,7 @@ input {
   display: flex;
   flex-direction: column;
   top: 292px;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .input_02 {
@@ -229,12 +232,12 @@ input[type="file"] {
 /* first column end here ---||---  */
 .imp_text {
   display: flex;
-  height: 100px;
+  height: 217px;
   top: 114px;
   font-size: 18px;
   width: 410px;
   gap: 9px;
-  position: absolute;
+  /* position: absolute; */
   flex-direction: column;
 }
 .second_col {
@@ -401,22 +404,23 @@ label {
   top: 27px;
 }
 .plabel {
-  position: absolute;
+  /* position: absolute; */
   top: -39px;
 }
 .elable {
-  position: absolute;
+  /* position: absolute; */
 }
 .slabel {
-  position: absolute;
+  /* position: absolute; */
   top: 10px;
 }
 .input_profec {
-  position: absolute;
+  /* position: absolute; */
   top: 128px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .Qualification_input {
   background: #d9d9d9;
@@ -441,7 +445,7 @@ label {
 }
 .input_0 {
   display: flex;
-  position: absolute;
+  /* position: absolute; */
   top: 95px;
   width: 458px;
   flex-direction: column;
@@ -450,7 +454,7 @@ label {
   align-items: center;
 }
 .input_00 {
-  position: absolute;
+  /* position: absolute; */
   top: 271px;
   width: 458px;
   display: flex;
@@ -470,7 +474,7 @@ label {
 
 .input_educ {
   display: flex;
-  position: absolute;
+  /* position: absolute; */
   top: 236px;
   height: 286px;
   flex-direction: column;
@@ -484,13 +488,13 @@ label {
   align-items: center;
   top: 499px;
   height: 185px;
-  position: absolute;
+  /* position: absolute; */
   align-content: center;
 }
 .Skills_input {
   height: 48px;
   top: 44px;
-  position: absolute;
+  /* position: absolute; */
 }
 .back_can_btn {
   display: flex;
@@ -540,7 +544,7 @@ label {
   display: flex;
   width: 100%;
   top: 150px;
-  position: absolute;
+  /* position: absolute; */
   flex-direction: column;
   align-content: center;
   justify-content: center;
@@ -567,7 +571,7 @@ label {
 .input_proj {
   display: flex;
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   top: 400px;
   flex-direction: column;
   align-content: center;
@@ -607,12 +611,12 @@ label {
   outline: none;
   top: 188px;
   border: none;
-  position: absolute;
+  /* position: absolute; */
   background: #ce4a11;
   border-radius: 6px;
 }
 .cpbtn span {
-  position: absolute;
+  /* position: absolute; */
   height: 25px;
   font-family: "Inter";
   font-style: normal;
@@ -698,11 +702,60 @@ label {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  position: absolute;
+  /* position: absolute; */
   align-items: center;
   top: 127px;
 }
+@media screen and (min-width: 1024px) {
+  .resume_form_container {
+    height: 640px;
+  }
+  .hero_section {
+    height: 640px;
+  }
+  .input_02 input,
+  textarea,
+  input {
+    height: 35px;
+    width: 370px;
+    margin: 4px !important;
+  }
+  textarea {
+    height: 65px !important;
+  }
+  label {
+    width: 370px;
+    font-size: 14px;
+  }
+  .first_col h3,
+  .second_col h2,
+  .third_col h3,
+  .four_col h3,
+  .five_col h3 {
+    font-size: 33px;
+  }
+  .qbtn,
+  .sbtn,
+  .ebtn,
+  .custom-file-upload {
+    width: 370px;
+    height: 40px;
+    margin-top: 10px;
+  }
+  .direction_button {
+    height: 35px;
+    margin-top: 25px;
+    width: 388px;
+    justify-content: space-between;
+  }
+  button {
+    height: 35px !important;
+  }
+}
 @media screen and (max-width: 580px) {
+  .hero_section {
+    display: none;
+  }
   .first_col,
   .second_col,
   .third_col,
