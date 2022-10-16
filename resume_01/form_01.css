@@ -23,6 +23,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row-reverse;
 }
 .hero_section {
   display: flex;
@@ -49,7 +50,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 550px;
-  background-color: #4c3660;
+  background: linear-gradient(to right, #ec6f66, #f3a183);
   height: 780px;
 }
 .first_col h3 {
@@ -57,7 +58,8 @@ body {
   align-items: center;
   text-align: center;
   font-size: 33px;
-  color: #ffee00;
+  color: #332e27;
+
   align-content: center;
   justify-content: center;
   margin-bottom: 1.1rem;
@@ -71,11 +73,16 @@ body {
   justify-content: center;
   align-content: center;
 }
-
+.upper_section {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
 .custom-file-upload:hover {
-  box-shadow: inset 300px 0 0 0 yellow;
+  box-shadow: inset 300px 0 0 0 #332e27;
   color: black;
   font-weight: 600;
+  width: 370px;
 }
 
 input[type="file"] {
@@ -86,7 +93,6 @@ input[type="file"] {
 }
 .custom-file-upload {
   display: flex;
-  width: 250px;
   height: 50px;
   margin: 0px;
   text-align: center;
@@ -111,8 +117,7 @@ input[type="file"] {
   justify-content: center;
 }
 .input_01 {
-  width: 98%;
-  margin: 2px;
+  margin: 16px;
   display: flex;
   flex-direction: column;
 }
@@ -126,20 +131,6 @@ input[type="file"] {
 .input_02 input {
   background-color: rgb(222, 222, 222);
 }
-label {
-  display: flex;
-  height: 30px;
-  font-size: 18px;
-  width: 100%;
-  margin-top: 10px;
-  margin-left: 15px;
-  font-weight: 500;
-  align-items: flex-end;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-  justify-content: flex-start;
-}
-
 .input_02 input,
 textarea,
 input {
@@ -151,8 +142,8 @@ input {
   border-radius: 4px;
   resize: vertical;
   text-align: center;
-  background-color: rgb(45 16 77);
-  box-shadow: 0px 0px 3px #1e0d35;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px #fff;
 }
 .photo_field {
   display: flex;
@@ -181,18 +172,16 @@ input {
   top: 654px;
 }
 ::placeholder {
-  color: rgb(249, 247, 246);
+  color: rgb(0, 0, 0);
   font-size: 15px;
 }
 
 /* first column end here ---||---  */
 .box_input button {
   border: none;
-  background-color: rgb(45 16 77);
-  box-shadow: 0px 0px 3px black;
+  box-shadow: 0px 0px 3px #fff;
   top: 533px;
   margin: 9px;
-  color: white;
   outline: none;
   width: 232px;
   font-size: 15px;
@@ -205,8 +194,6 @@ input {
   height: 45px;
   margin: 9px;
   border: none;
-  color: #fff;
-  background-color: rgb(45 16 77);
   box-shadow: 0px 0px 3px black;
   border-radius: 4px;
   resize: vertical;
@@ -214,7 +201,7 @@ input {
 }
 .imp_text {
   display: flex;
-  width: 389px;
+  width: 68%;
   color: white;
   font-size: 18px;
   justify-content: center;
@@ -243,7 +230,6 @@ input {
 .third_col {
   display: none;
 }
-
 .third_col h3 {
   display: flex;
   align-items: center;
@@ -268,6 +254,7 @@ input {
   align-content: center;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 label {
   display: none;
@@ -287,8 +274,7 @@ label {
 .cancle_btn {
   width: 60px;
   height: 45px;
-  color: #fff;
-  background: #2f0953;
+  background: yellow;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -560,10 +546,8 @@ p {
 }
 button {
   border: none;
-  background: #002be2;
   top: 550px;
   margin: 9px;
-  color: white;
   outline: none;
   width: 180px;
   font-size: 15px;
@@ -592,9 +576,12 @@ button {
   textarea {
     height: 65px !important;
   }
-  label {
+  #alable,
+  #elable {
     width: 370px !important;
     font-size: 14px;
+    color: black;
+    font-weight: 600;
   }
   .first_col,
   .second_col,
@@ -609,23 +596,58 @@ button {
   .third_col h3,
   .four_col h3,
   .five_col h3 {
-    font-size: 33px;
+    font-size: 31px;
+    margin-bottom: 0.6rem;
+    color: #332e27;
   }
   .qbtn,
   .sbtn,
   .ebtn,
   .custom-file-upload {
-    height: 40px;
+    height: 35px !important;
     margin-top: 10px;
   }
   .direction_button {
     height: 35px;
-    margin-top: 25px;
+    margin-top: 12px;
     width: 388px;
     justify-content: space-between;
   }
   button {
     height: 35px !important;
+  }
+  .box_input input {
+    height: 35px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  .custom-file-upload,
+  .custom-file-upload:hover {
+    width: 240px;
+  }
+  .upper_section {
+    display: flex;
+    width: 80%;
+    height: 50px;
+    align-items: center;
+    align-content: center;
+  }
+  .upper_section_text {
+    font-size: 18px;
+  }
+  .bcc {
+    padding: 0;
+  }
+  .input_ {
+    width: 395px;
+  }
+  .bbtn,
+  .cancle_btn {
+    height: 35px;
+  }
+  .imp_text li {
+    width: 395px;
   }
 }
 @media screen and (max-width: 1000px) {
