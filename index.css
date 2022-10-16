@@ -132,7 +132,6 @@ html {
   right: 25%;
 }
 
-.mySlides:hover #r_img_04,
 .mySlides:hover #r_img_05 {
   opacity: 0.3;
 }

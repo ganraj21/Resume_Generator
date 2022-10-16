@@ -38,27 +38,6 @@ const alt_fun = () =>{
 }
 
 
-// print cv
-
-function readURL(input) {
-  if (input.files && input.files[0]) {
-    var reader = new FileReader()
-
-    reader.onload = function (e) {
-      $('.image-upload-wrap').hide()
-
-      $('.file-upload-image').attr('src', e.target.result)
-      $('.file-upload-content').show()
-
-      $('.image-title').html(input.files[0].name)
-    }
-
-    reader.readAsDataURL(input.files[0])
-  } else {
-    removeUpload()
-  }
-}
-
 // Your resume selection -->
 // one --->
 const image_one_click_event = () => {
@@ -89,4 +68,14 @@ const image_three_click_event = () => {
 document
   .getElementById('r_img_btn_03')
   .addEventListener('click', image_three_click_event)
+// ---|
+// Four --->
+const image_four_click_event = () => {
+  let img = document.getElementById('r_img_btn_04')
+  console.log('you clicked on image Four ')
+  localStorage.setItem('txtValue', (img.value = '4'))
+}
+document
+  .getElementById('r_img_btn_04')
+  .addEventListener('click', image_four_click_event)
 // ---|

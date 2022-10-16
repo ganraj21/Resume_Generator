@@ -316,6 +316,10 @@ label {
   border-radius: 2px;
   font-size: 18px;
 }
+.bbtn:hover,
+.cancle_btn:hover {
+  background-color: #37115a;
+}
 .back_can_btn {
   display: flex;
   align-items: center;
@@ -486,6 +490,7 @@ label {
 .five_col label {
   display: flex;
 }
+.ebtn,
 .cpbtn,
 .sbtn,
 .qbtn {
@@ -494,9 +499,15 @@ label {
   background-color: transparent;
   border-radius: 3px;
 }
-.cpbtn :hover {
+.cpbtn:hover,
+.ebtn:hover,
+.sbtn:hover,
+.qbtn:hover {
+  background: #ffee00;
   color: black;
-  background-color: #ffee00;
+  font-weight: 500;
+  width: 180px;
+  height: 45px;
 }
 
 .back_btn_cert,

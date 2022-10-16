@@ -17,6 +17,13 @@ body {
   align-content: center;
   height: 100%;
 }
+.resume_form_container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
 .resume_form {
   width: 100%;
   height: 100vh;
@@ -50,7 +57,7 @@ body {
   font-family: "Inter";
   font-style: normal;
   width: 372px;
-  position: absolute;
+  /* position: absolute; */
   font-weight: 700;
   font-size: 35px;
   line-height: 42px;
@@ -112,7 +119,7 @@ input {
 }
 
 .input_02 {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -150,6 +157,9 @@ textarea {
   background-color: rgb(222, 222, 222);
   border-radius: 4px;
   resize: vertical;
+}
+textarea {
+  height: 105px !important;
 }
 label {
   display: flex;
@@ -441,7 +451,7 @@ label {
 }
 .input_00 {
   position: absolute;
-  top: 258px;
+  top: 271px;
   width: 458px;
   display: flex;
   align-content: center;
@@ -501,7 +511,7 @@ label {
   height: 50px;
   outline: none;
   border: none;
-  position: absolute;
+  /* position: absolute; */
   background: #ce4a11;
   border-radius: 6px;
 }
@@ -627,7 +637,7 @@ label {
   align-items: center;
   align-content: center;
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0px;
   height: 60px;
   top: 730px;
