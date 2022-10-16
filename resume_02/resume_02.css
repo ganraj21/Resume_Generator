@@ -705,7 +705,6 @@ label {
   .four_col,
   .five_col {
     width: 460px;
-    top: 27px;
   }
   .input_02 {
     width: 90%;
@@ -713,27 +712,8 @@ label {
   .div_fields {
     width: 426px;
   }
-  #db_01 {
-    top: 721px;
-    width: 472px;
-  }
-  #db_02 {
-    top: 719px;
-    width: 476px;
-  }
-  #db_03 {
-    width: 465px;
-  }
-  #db_04 {
-    width: 460px;
-    top: 688px;
-  }
   .five_col h3 {
     font-size: 30px;
-    width: 356px;
-  }
-  #db_05 {
-    top: 675px;
   }
   .btn_gen_text {
     margin-top: 15px;
@@ -746,7 +726,7 @@ label {
     width: 90%;
   }
   label {
-    width: 391px;
+    width: 90% !important;
   }
   .input_02 label {
     margin-left: 15px;
@@ -882,7 +862,7 @@ label {
     width: 312px;
   }
   label {
-    width: 324px;
+    width: 100% !important;
   }
   .first_col h3 {
     font-size: 29px;

@@ -18,6 +18,18 @@ body {
   align-content: center;
   height: 100vh;
 }
+.resume_form_container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero_section {
+  display: flex;
+  width: 50%;
+  height: 780px;
+  background: linear-gradient(to right, #56ab2f, #a8e063);
+}
 .resume_form {
   width: 100%;
   height: 100vh;
@@ -38,11 +50,7 @@ body {
   justify-content: center;
   width: 550px;
   background-color: #4c3660;
-  height: 784px;
-  position: absolute;
-  border-radius: 6px;
-  top: 24px;
-  padding: 10px 0px 10px 0px;
+  height: 780px;
 }
 .first_col h3 {
   display: flex;
@@ -51,22 +59,17 @@ body {
   font-size: 33px;
   color: #ffee00;
   align-content: center;
-  top: 49px;
-  position: absolute;
   justify-content: center;
   margin-bottom: 1.1rem;
 }
 .div_fields {
   display: flex;
+  height: 100%;
+  width: 100%;
   flex-direction: column;
-  padding: 10px 25px 0px 25px;
   align-items: center;
   justify-content: center;
   align-content: center;
-  width: 487px;
-  top: -5px;
-  position: absolute;
-  border-radius: 6px;
 }
 
 .custom-file-upload:hover {
@@ -83,8 +86,6 @@ input[type="file"] {
 }
 .custom-file-upload {
   display: flex;
-  position: absolute;
-  top: 542px;
   width: 250px;
   height: 50px;
   margin: 0px;
@@ -110,22 +111,17 @@ input[type="file"] {
   justify-content: center;
 }
 .input_01 {
-  gap: 12px;
+  width: 98%;
   margin: 2px;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 290px;
 }
 .input_02 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 90%;
-  position: absolute;
-  top: 127px;
-  padding: 20px 0px 20px 0px;
   align-content: space-around;
+  width: 85%;
 }
 .input_02 input {
   background-color: rgb(222, 222, 222);
@@ -147,17 +143,16 @@ label {
 .input_02 input,
 textarea,
 input {
-  width: 418px;
+  width: 100%;
   padding-top: 3px;
   height: 45px;
   margin: 9px;
   border: none;
-  color: #fff;
-  background-color: rgb(45 16 77);
-  box-shadow: 0px 0px 3px #1e0d35;
   border-radius: 4px;
   resize: vertical;
   text-align: center;
+  background-color: rgb(45 16 77);
+  box-shadow: 0px 0px 3px #1e0d35;
 }
 .photo_field {
   display: flex;
@@ -221,8 +216,6 @@ input {
   display: flex;
   width: 389px;
   color: white;
-  top: 96px;
-  position: absolute;
   font-size: 18px;
   justify-content: center;
   align-items: center;
@@ -233,8 +226,6 @@ input {
   display: none;
 }
 .second_col h2 {
-  position: absolute;
-  top: 36px;
   display: flex;
   align-items: center;
   font-size: 33px;
@@ -247,10 +238,6 @@ input {
 .bcc textarea {
   height: 90px;
 }
-#db_02 {
-  top: 685px;
-  width: 450px;
-}
 /* Second column end here ---||--- */
 
 .third_col {
@@ -262,18 +249,13 @@ input {
   align-items: center;
   justify-content: center;
   font-size: 36px;
-  margin-bottom: 27px;
-  position: absolute;
   color: #ffee00;
-  top: 25px;
 }
 .third_col label {
   display: flex;
 }
 .input_0 {
   display: flex;
-  position: absolute;
-  top: 75px;
   width: 458px;
   flex-direction: column;
   justify-content: center;
@@ -281,8 +263,6 @@ input {
   align-items: center;
 }
 .input_00 {
-  position: absolute;
-  top: 230px;
   width: 458px;
   display: flex;
   align-content: center;
@@ -328,9 +308,6 @@ label {
 }
 .dateadd {
   display: inherit;
-}
-#db_03 {
-  top: 681px;
 }
 .input_ {
   width: 439px;
@@ -441,8 +418,6 @@ label {
 .input_profec {
   display: flex;
   width: 450px;
-  position: absolute;
-  top: 90px;
   align-content: center;
   justify-content: center;
   align-items: center;
@@ -457,14 +432,10 @@ label {
   padding: 10px 0px 15px 0px;
   align-items: center;
   align-content: center;
-  position: absolute;
-  top: 188px;
 }
 .input_skl {
   width: 450px;
   display: flex;
-  top: 483px;
-  position: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -482,9 +453,7 @@ label {
   font-size: 36px;
   margin-bottom: 27px;
   color: #ffee00;
-  position: absolute;
   text-align: center;
-  top: 37px;
   width: 249px;
 }
 .five_col label {
@@ -534,9 +503,7 @@ label {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  position: absolute;
   align-items: center;
-  top: 156px;
   width: 458px;
 }
 .input_proj {
@@ -545,14 +512,9 @@ label {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  position: absolute;
-  top: 374px;
   align-items: center;
 }
-#db_05 {
-  top: 655px;
-  width: 451px;
-}
+
 .loader {
   pointer-events: none;
   width: 25px;
@@ -578,7 +540,6 @@ label {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  position: absolute;
   flex-direction: row;
   width: 450px;
 }
@@ -614,26 +575,78 @@ button {
   display: flex;
 }
 /* responsive code ---> */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
+  .resume_form_container {
+    height: 640px;
+  }
+  .hero_section {
+    height: 640px;
+  }
+  .input_02 input,
+  textarea,
+  input {
+    height: 38px;
+    width: 370px;
+    margin: 12px !important;
+  }
+  textarea {
+    height: 65px !important;
+  }
+  label {
+    width: 370px !important;
+    font-size: 14px;
+  }
   .first_col,
   .second_col,
   .third_col,
   .four_col,
   .five_col {
-    width: 504px;
+    width: 50% !important;
+    height: 640px;
+  }
+  .first_col h3,
+  .second_col h2,
+  .third_col h3,
+  .four_col h3,
+  .five_col h3 {
+    font-size: 33px;
+  }
+  .qbtn,
+  .sbtn,
+  .ebtn,
+  .custom-file-upload {
+    height: 40px;
+    margin-top: 10px;
+  }
+  .direction_button {
+    height: 35px;
+    margin-top: 25px;
+    width: 388px;
+    justify-content: space-between;
+  }
+  button {
+    height: 35px !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .resume_form_container {
+    width: 90%;
+  }
+  .first_col,
+  .second_col,
+  .third_col,
+  .four_col,
+  .five_col {
+    height: 780px;
   }
   .first_col h3 {
-    top: 28px;
-    font-size: 22px;
+    font-size: 28px;
+    margin-bottom: 10px;
   }
-  .custom-file-upload {
-    top: 503px;
-  }
-  #db_01 {
-    top: 580px;
-  }
-  .input_02 {
-    top: 84px;
+}
+@media screen and (max-width: 720px) {
+  .hero_section {
+    display: none;
   }
 }
 
