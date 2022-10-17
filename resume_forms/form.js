@@ -498,7 +498,11 @@ if (localStorage.getItem('txtValue') == '1') {
 }
 
 
+const toggle_skl_btn =()=>{
+  document.getElementById('Your_skl_back_btn').style.display = "flex"
+  document.getElementById('Your_skl_cancle_btn').style.display = "flex"
 
+}
 
 // -----------------form validation --->
 const first_section = () =>{

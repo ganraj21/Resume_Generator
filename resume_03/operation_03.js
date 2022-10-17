@@ -172,7 +172,7 @@ document.getElementById('last_name').innerHTML = localStorage.getItem(
     margin: 0,
     filename: 'myResume.pdf',
     image: { type: 'jpeg', quality: 0.99 },
-    html2canvas: { dpi: 192, letterRendering: true, width: 790, height: 1110 * nbPages },
+    html2canvas: { dpi: 192, letterRendering: true, width: 790, height: 1115 * nbPages },
     // html2canvas:  { scale: 3 },
     jsPDF: {unit: 'pt', format: 'a4', orientation: 'portrait' },
   }
@@ -189,4 +189,7 @@ document.getElementById('last_name').innerHTML = localStorage.getItem(
     // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
     setTimeout(removeScale, 5000)
   })
+
+
+  // remove certificate section from resume form
   

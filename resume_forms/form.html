@@ -25,7 +25,9 @@
       <div class="resume_form_container">
         <!-- hero section--->
         <section class="hero_section" id="hs_div">
-          <div class="hero_field"></div>
+          <div class="hero_field">
+            <button class="btn_gen_text" id="bt_gen">Generate Resume</button>
+          </div>
         </section>
         <!-- first column -->
         <section class="first_col" id="fc_div">
@@ -488,36 +490,49 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="input_skl" id="sk">
-            <label for="" class="slabel">Skills</label>
-            <input
-              placeholder="Your-Skills & Expertise"
-              class="Skills_input"
-              id="your-skills"
-            />
-            <div class="btns">
-              <div class="back_can_btn" title="Back Your Skills">
-                <div class="bbtn">
-                  <i class="fas fa-solid fa-angle-left"></i>
-                </div>
-                <button class="sbtn" id="btn_educ_02">
-                  <span> Add Skills </span>
-                </button>
-                <div class="cancle_btn" title="Cancel This Skill">
-                  <i class="fa-solid fa-xmark"></i>
+            <div class="input_skl" id="sk">
+              <label for="" class="slabel">Skills</label>
+              <input
+                placeholder="Your-Skills & Expertise"
+                class="Skills_input"
+                id="your-skills"
+              />
+              <div class="btns">
+                <div class="back_can_btn" title="Back Your Skills">
+                  <div
+                    class="bbtn"
+                    id="Your_skl_back_btn"
+                    style="display: none"
+                  >
+                    <i class="fas fa-solid fa-angle-left"></i>
+                  </div>
+                  <button
+                    class="sbtn"
+                    id="btn_educ_02"
+                    onclick="toggle_skl_btn()"
+                  >
+                    <span> Add Skills </span>
+                  </button>
+                  <div
+                    class="cancle_btn"
+                    title="Cancel This Skill"
+                    id="Your_skl_cancle_btn"
+                    style="display: none"
+                  >
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="direction_button" id="db_04">
-            <button id="bb_btn" class="back_button" onclick="backFun()">
-              <span><i class="fas fa-solid fa-angle-left"></i> </span> Previous
-            </button>
-            <button id="nb_btns_04" class="next_button" onclick="nextFun()">
-              Next <span><i class="fas fa-solid fa-angle-right"></i> </span>
-            </button>
+            <div class="direction_button" id="db_04">
+              <button id="bb_btn" class="back_button" onclick="backFun()">
+                <span><i class="fas fa-solid fa-angle-left"></i> </span>
+                Previous
+              </button>
+              <button id="nb_btns_04" class="next_button" onclick="nextFun()">
+                Next <span><i class="fas fa-solid fa-angle-right"></i> </span>
+              </button>
+            </div>
           </div>
         </section>
 
@@ -542,7 +557,9 @@
                 class="ld_des"
               ></textarea>
               <div class="btns">
-                <button class="cpbtn" id="cert_btn_01">Add Certificate</button>
+                <button class="cpbtn" id="cert_btn_01">
+                  <span> Add Certificate </span>
+                </button>
               </div>
             </div>
             <div class="input_cert" id="cp_02">
@@ -566,7 +583,9 @@
                 <span id="back_001" class="bbtn" title="previous"
                   ><i class="fas fa-solid fa-angle-left"></i
                 ></span>
-                <button class="cpbtn" id="cert_btn_02">Add Certificate</button>
+                <button class="cpbtn" id="cert_btn_02">
+                  <span> Add Certificate </span>
+                </button>
                 <span
                   id="cancel_001"
                   class="cancle_btn"
@@ -596,7 +615,9 @@
                 <span id="back_002" class="bbtn"
                   ><i class="fas fa-solid fa-angle-left"></i
                 ></span>
-                <button class="cpbtn" id="cert_btn_02">Add Certificate</button>
+                <button class="cpbtn" id="cert_btn_02">
+                  <span> Add Certificate </span>
+                </button>
                 <span
                   class="cancle_btn"
                   id="cancel_002"
@@ -697,16 +718,15 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="direction_button" id="db_05">
-            <button id="bb_btn" class="back_button" onclick="backFun()">
-              <span><i class="fas fa-solid fa-angle-left"></i> </span> Previous
-            </button>
-            <button id="nb_btns_05" class="next_button" onclick="nextFun()">
-              Next <span><i class="fas fa-solid fa-angle-right"></i> </span>
-            </button>
-
-            <button class="btn_gen_text" id="bt_gen">Generate Resume</button>
+            <div class="direction_button" id="db_05">
+              <button id="bb_btn" class="back_button" onclick="backFun()">
+                <span><i class="fas fa-solid fa-angle-left"></i> </span>
+                Previous
+              </button>
+              <button id="nb_btns_05" class="next_button" onclick="nextFun()">
+                Next <span><i class="fas fa-solid fa-angle-right"></i> </span>
+              </button>
+            </div>
           </div>
         </section>
       </div>

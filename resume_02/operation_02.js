@@ -164,13 +164,14 @@ document.getElementById('last_name').innerHTML = localStorage.getItem(
   let areaCv = document.getElementById('area-cv')
   
   let resumeButton = document.getElementById('resume-button')
-  
+  let nbPages = 1;
   // Html2pdf options
   let opt = {
     margin: 0,
     filename: 'myResume.pdf',
     image: { type: 'jpeg', quality: 0.99 },
-    html2canvas: { scale: 4 },
+    html2canvas: { dpi: 192, letterRendering: true, width: 790, height: 1110 * nbPages },
+    // html2canvas: { scale: 4 },
     jsPDF: { format: 'a4', orientation: 'portrait' },
   }
   // Function to call areaCv and Html2Pdf options
@@ -184,6 +185,9 @@ document.getElementById('last_name').innerHTML = localStorage.getItem(
     // 2. The PDF is generated
     generateResume()
     // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
-    setTimeout(removeScale, 5000)
+    // setTimeout(removeScale, 5000)
   })
   
+
+
+  // remove project section only
