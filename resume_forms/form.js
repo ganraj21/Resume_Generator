@@ -453,6 +453,10 @@ if (localStorage.getItem('txtValue') == '1') {
   document.getElementsByTagName('HEAD')[0].appendChild(link)
   // -----------------------------xxx-----------------------
 
+  document.getElementById('prj_01').style.display = "none"
+  document.getElementById('prj_02').style.display = "none"
+  document.getElementById('prj_03').style.display = "none"
+
       // error message border color -->
       var embc = "1px solid #fff"
 
@@ -477,7 +481,9 @@ if (localStorage.getItem('txtValue') == '1') {
   link.href = '../resume_03/resume_03.css'
   document.getElementsByTagName('HEAD')[0].appendChild(link)
   // ----------------------xxx-----------------------
-
+  document.getElementById('cp_01').style.display = "none"
+  document.getElementById('cp_02').style.display = "none"
+  document.getElementById('cp_03').style.display = "none"
       // error message border color -->
       var embc = "1px solid #00e7d6"
 

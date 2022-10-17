@@ -646,6 +646,22 @@ label {
 #db_02 {
   margin-top: 38px;
 }
+.container_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.container_image img {
+  width: 431px;
+}
+.hero_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
 
 @media screen and (min-width: 1024px) {
   .resume_form_container {
