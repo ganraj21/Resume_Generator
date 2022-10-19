@@ -9,7 +9,6 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   align-content: center;
   text-align: center;
 }
@@ -36,7 +35,7 @@ i {
   color: #1a1a1a;
   font-weight: 600;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: chivo, helvetica neue, sans-serif;
 }
 
 .row {
@@ -90,137 +89,4 @@ i {
   font-size: 18px;
   margin-bottom: 15px;
   color: #013703;
-}
-
-@media (max-width: 480px) {
-  body {
-    margin: 0px;
-  }
-  .logo {
-    font-size: 30px;
-  }
-  .logo_text {
-    display: flex;
-    margin-left: -169px;
-  }
-  .menu {
-    position: absolute;
-    transform: translateX(-100%);
-    transition: 0.9s;
-    top: 72px;
-    right: 70px;
-    display: flex;
-    left: -72px;
-    bottom: 0;
-    z-index: 99;
-    list-style: none;
-    padding-top: 4rem;
-    background: #031d28;
-    flex-direction: column;
-  }
-
-  .menuItem {
-    margin-left: 0px;
-    width: 248px;
-    height: 50px;
-    display: flex;
-    color: white;
-    margin-bottom: 12px;
-    /* background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593); */
-    background: #727272;
-    margin-bottom: 25px;
-    font-family: sans-serif;
-    font-weight: 600;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    border-radius: 3px;
-  }
-  .n_cp {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    align-content: center;
-  }
-  .login_btn {
-    display: flex;
-    margin-right: 10px;
-  }
-  .hamburger {
-    display: flex;
-    align-items: center;
-    align-content: stretch;
-    justify-content: flex-start;
-    cursor: pointer;
-    color: black;
-    height: 35px;
-    font-size: 33px;
-    width: 35px;
-  }
-  .cros_ic {
-    display: none;
-    color: black;
-    height: 35px;
-    font-size: 33px;
-    width: 35px;
-  }
-  .slideshow-container {
-    justify-content: center;
-    cursor: pointer;
-  }
-  .showMenu {
-    margin-right: 0px;
-    background: #e0dfe1;
-    display: flex;
-    transform: translateX(70px);
-    transition: 0.9s;
-    flex-direction: column;
-    top: 72px;
-    right: 70px;
-    left: -72px;
-    align-items: center;
-  }
-  .closeIcon {
-    display: none;
-  }
-
-  .main_div1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    align-content: flex-start;
-    width: fit-content;
-    margin-bottom: 15px;
-  }
-  .main_div1 h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    width: 316px;
-    text-transform: capitalize;
-  }
-
-  .btn_gs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    line-height: 22px;
-    font-size: 18px;
-    padding: 6px 20px;
-    border-radius: 8px;
-    text-align: center;
-    background-color: #e8065f;
-    box-shadow: 0px 0px 4px black;
-    border: none;
-    outline: none;
-  }
-  .ab_footer p {
-    font-size: 19px;
-    text-align: center;
-    font-weight: 500;
-  }
 }
