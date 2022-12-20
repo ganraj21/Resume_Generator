@@ -1,10 +1,9 @@
 .nav_container {
   display: flex;
-  padding: 9px;
-  height: 55px;
+  height: 74px;
   align-items: center;
   box-shadow: -5px 0px 5px black;
-  
+  width: 100%;
 }
 .n_cp {
   width: 100%;
@@ -23,9 +22,7 @@
 i {
   display: none;
 }
-.hamburger {
-  display: none;
-}
+
 .menu {
   display: flex;
   margin-right: 15px;
