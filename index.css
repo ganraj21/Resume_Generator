@@ -15,7 +15,6 @@ html {
   display: none;
 }
 .front_page {
-  background-color: #01031b;
   height: 100%;
   display: flex;
   color: white;
@@ -32,9 +31,8 @@ html {
   font-weight: 500;
 }
 .bg_img {
-  background: #0481b2;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
-    url(./High_resolution_wallpaper_background_ID_77701662885.jpg); */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url(./High_resolution_wallpaper_background_ID_77701662885.jpg);
   height: 100vh;
   width: 100%;
   color: white;
